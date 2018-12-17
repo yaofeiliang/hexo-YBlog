@@ -1,0 +1,237 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: Y Blog
+subtitle: 我干了什么 究竟拿了时间换了什么
+#网站描述
+#description: 成为更好的自己
+author: 姚飞亮
+keywords: 姚飞亮
+language:
+timezone:
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+#url: http://yoursite.com       # Note: don't forget to modify the CNAME file to your url
+url: http://localhost:4000       # Note: don't forget to modify the CNAME file to your url
+root: /
+#permalink: :year/:month/:day/:title/
+permalink: :category/:title/
+permalink_defaults:
+  lang: en
+
+#Custom Setting Start
+
+# Site settings
+SEOTitle: 姚飞亮 | Blog
+email: yaoadmin@sina.com
+description: "成为更好的自己"
+keyword: "姚飞亮"
+header-img: /img/header_img/banner.jpg
+article-img: /img/article_header/article_bg.jpg
+404-img: /img/header_img/404.png
+signature: true #show signature
+signature-img: img/signature/icon_yaofeiliang.png
+#signature-img:
+
+
+# SNS settings
+# RSS: false
+weibo_username:     yaofeiliang
+zhihu_username:     yaofeiliang
+github_username:    yaofeiliang
+# twitter_username:   Demonbane_x
+#facebook_username:  YenYuHsuan
+linkedin_username:  飞亮-姚-56270a116
+
+# Build settings
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+
+
+# Disqus settings
+#disqus_username: your-disqus-ID
+
+# Duoshuo settings
+# duoshuo_username: kaijun
+# Share component is depend on Comment so we can NOT use share only.
+#duoshuo_share: true                     # set to false if you want to use Comment without Sharing
+
+
+# Analytics settings 分析设置
+#Baidu Analytics 百度分析
+#ba_track_id: r45fhy7653897235wg5ye709d930f62e
+ba_track_id:
+# Google Analytics
+#ga_track_id: 'UA-XXXXXXXX-X'          # Format: UA-xxxxxx-xx
+#ga_domain: yoursite
+ga_track_id: ''          # Format: UA-xxxxxx-xx
+ga_domain:
+
+
+# Sidebar settings
+sidebar: true                       # whether or not using Sidebar.
+sidebar-about-description: "莫名其妙的，敲起了代码！"
+sidebar-avatar: /img/avatar/yaofeiliang.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+widgets:
+- featured-tags
+- short-about
+- recent-posts
+- friends-blog
+- archive
+#- category
+
+# widget behavior
+## Archive
+archives-img: /img/header_img/archives-widget.jpg
+archive_type: 'monthly'
+show_count: true
+
+
+## Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+
+
+## Friends
+friends: [
+    {
+        title: "CSDN Blog 姚飞亮",
+        href: "https://blog.csdn.net/u010932545"
+    },
+    {
+        title: "DockOne 姚飞亮",
+        href: "http://dockone.io/people/姚飞亮"
+    },
+    {
+        title: "阿里云栖社区 姚飞亮",
+        href: "https://yq.aliyun.com/u/yaofeiliang"
+    },
+    {
+        title: "知乎 姚飞亮",
+        href: "https://www.zhihu.com/people/yaofeiliang/activities"
+    },
+    {
+        title: "新浪微博 姚飞亮",
+        href: "http://weibo.com/yaofeiliang"
+    }
+]
+
+
+#Custom Setting End
+
+
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: true
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace:
+
+# Category & Tag
+default_category: article
+category_map:
+  Docker: docker
+  Kubernetes: kubernetes
+  Golang: golang
+  Nginx: nginx
+  Etcd: etcd
+  Database: database
+
+tag_map:
+home_posts_tag: true # show posts tags
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: archives
+
+archive_generator:
+  per_page: 10
+  yearly: true
+  monthly: true
+  daily: false
+
+# Markdown-it config
+## Docs: https://github.com/celsomiranda/hexo-renderer-markdown-it/wiki
+markdown:
+  render:
+    html: true
+    xhtmlOut: false
+    breaks: true
+    linkify: true
+    typographer: true
+    quotes: '“”‘’'
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+
+# recommended-posts
+# reference: https://github.com/huiwang/hexo-recommended-posts
+# recommended_posts:
+#   server: https://api.truelaurel.com #后端推荐服务器地址
+#   timeoutInMillis: 10000 #服务时长，超过此时长，则使用离线推荐模式
+#   internalLinks: 3 #内部文章数量
+#   externalLinks: 0 #外部文章数量
+#   autoDisplay: true, #自动在文章底部显示推荐文章
+#   titleHtml: <h2>推荐文章<span style="font-size:0.45em; color:gray"></span></h2> #自定义标题
+
+# hexo-tag-aplayer
+# reference: https://github.com/MoePlayer/hexo-tag-aplayer
+# aplayer:
+#   meting: true
+
+# MeingJS support for Aplayer
+# reference: https://github.com/metowolf/MetingJS & https://github.com/MoePlayer/APlayer
+metingjs: false
+data-id: 2423410161
+data-server: netease
+data-type: playlist
+data-fixed: true
+  # data-mini:
+  # data-autoplay:
+
+## Themes: https://hexo.io/themes/
+theme: yaofeiliang
+
+#sitemap
+sitemap:
+  path: sitemap.xml
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+# repository: https://github.com/yaofeiliang/xxxxxxx.github.io.git
+# branch: master
+deploy:
+  type: git
+  repository: https://github.com/yaofeiliang/hexo-YBlog
+  branch: gh-pages
+  message: Update CNAME

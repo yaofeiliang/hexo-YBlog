@@ -1,0 +1,290 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+#网站标题
+title: 姚飞亮
+#网站副标题
+subtitle: YaoFeiliang Blog
+#网站描述
+description: 成为更好的自己
+keywords: 姚飞亮
+#您的名字
+author: 姚飞亮
+#网站使用的语言
+language: zh-CN
+#网站时区
+timezone: Asia/Shanghai
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+##如果您的网站存放在子目录中，例如 http://yoursite.com/blog，则请将您的 url 设为 http://yoursite.com/blog 并把 root 设为 /blog/。
+#网址
+url: http://yoursite.com
+#网站根目录
+root: /
+#文章的 永久链接 格式
+#permalink: :year/:month/:day/:title/
+permalink: :category/:title/
+#永久链接中各部分的默认值
+permalink_defaults:
+  lang: en
+
+#Custom Setting Start
+
+# Site settings
+SEOTitle: 姚飞亮 | Blog
+email: yaoadmin@sina.com
+description: ""
+keyword: ""
+header-img: http://ozilwgpje.bkt.clouddn.com/scenery/car.jpg?imageslim
+article-img: /img/article_header/article_bg.jpg
+404-img: /img/header_img/404.png
+signature: false #show signature
+signature-img: img/signature/BeanTechSign-white.png
+
+# SNS settings
+# RSS: false
+# weibo_username:     Demonbaneen
+# zhihu_username:     Demonbane
+github_username:    yaofeiliang
+# twitter_username:   Demonbane_x
+#facebook_username:  YenYuHsuan
+linkedin_username:  yaofeiliang
+
+# Build settings
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+
+
+# Disqus settings
+#disqus_username: your-disqus-ID
+
+# Duoshuo settings
+# duoshuo_username: kaijun
+# Share component is depend on Comment so we can NOT use share only.
+#duoshuo_share: true                     # set to false if you want to use Comment without Sharing
+
+
+# Analytics settings
+#Baidu Analytics
+ba_track_id: r45fhy7653897235wg5ye709d930f62e
+# Google Analytics
+ga_track_id: 'UA-XXXXXXXX-X'          # Format: UA-xxxxxx-xx
+ga_domain: yoursite
+
+# Sidebar settings
+sidebar: true                       # whether or not using Sidebar.
+sidebar-about-description: "Stay hungry,Stay foolish"
+sidebar-avatar: /img/avatar/ironman.png      # use absolute URL, seeing it's used in both `/` and `/about/`
+widgets:
+- featured-tags
+- short-about
+- recent-posts
+- friends-blog
+- archive
+#- category
+
+# widget behavior
+## Archive
+archives-img: /img/header_img/archives-widget.jpg
+archive_type: 'monthly'
+show_count: true
+
+
+## Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+
+
+## Friends
+friends: [
+    {
+        title: "CSDN Blog 胡伟煌",
+        href: "http://blog.csdn.net/huwh_"
+    },
+    {
+        title: "DockOne 胡伟煌",
+        href: "http://dockone.io/people/胡伟煌"
+    },
+    {
+        title: "阿里云栖社区 胡伟煌",
+        href: "https://yq.aliyun.com/u/yaofeiliang"
+    }
+]
+
+
+#Custom Setting End
+
+
+
+# Directory
+#资源文件夹，这个文件夹用来存放内容。	source
+source_dir: source
+#公共文件夹，这个文件夹用于存放生成的站点文件。	public
+public_dir: public
+#标签文件夹	tags
+tag_dir: tags
+#归档文件夹	archives
+archive_dir: archives
+#分类文件夹	categories
+category_dir: categories
+#Include code 文件夹	downloads/code
+code_dir: downloads/code
+#国际化（i18n）文件夹	:lang
+i18n_dir: :lang
+#跳过指定文件的渲染，您可使用 glob 表达式来匹配路径。
+skip_render:
+
+# Writing
+#新文章的文件名称	:title.md
+new_post_name: :title.md # File name of new posts
+#预设布局	post
+default_layout: post
+#在中文和英文之间加入空格	false
+auto_spacing: true
+#把标题转换为 title case	false
+titlecase: false # Transform title into titlecase
+#在新标签中打开链接	true
+external_link: true # Open external links in new tab
+#把文件名称转换为 (1) 小写或 (2) 大写	0
+filename_case: 2
+#显示草稿	false
+render_drafts: false
+#启动 Asset 文件夹	false
+post_asset_folder: true
+#把链接改为与根目录的相对位址	false
+#默认情况下，Hexo生成的超链接都是绝对地址。例如，如果您的网站域名为example.com,您有一篇文章名为hello，那么绝对链接可能像这样：http://example.com/hello.html，它是绝对于域名的。相对链接像这样：/hello.html，也就是说，无论用什么域名访问该站点，都没有关系，这在进行反向代理时可能用到。通常情况下，建议使用绝对地址。
+relative_link: false
+#显示未来的文章	true
+future: true
+#代码块的设置
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace:
+  
+# Home page setting 主页设置
+# path: Root path for your blogs index page. (default = '') 博客索引页的根路径。(default='')
+# per_page: Posts displayed per page. (0 = disable pagination) 每页显示的帖子。(0=禁用分页)
+# order_by: Posts order. (Order by date descending by default) 发布订单。（默认情况下按日期递减的顺序）
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+  
+# Category & Tag
+# 分类 & 标签
+# Category & Tag
+default_category: article
+category_map:
+  Docker: docker
+  Kubernetes: kubernetes
+  Golang: golang
+  Nginx: nginx
+  Etcd: etcd
+  Database: database
+
+tag_map:
+home_posts_tag: true # show posts tags
+
+
+#默认分类	uncategorized
+#default_category: uncategorized
+#分类别名
+#category_map:
+#标签别名
+#tag_map:
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+#日期 / 时间格式
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# Pagination
+## Set per_page to 0 to disable pagination
+#分页
+#每页显示的文章量 (0 = 关闭分页功能)	10
+#per_page: 10
+#分页目录	page
+#pagination_dir: page
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: archives
+
+archive_generator:
+  per_page: 10
+  yearly: true
+  monthly: true
+  daily: false
+
+# Markdown-it config
+## Docs: https://github.com/celsomiranda/hexo-renderer-markdown-it/wiki
+markdown:
+  render:
+    html: true
+    xhtmlOut: false
+    breaks: true
+    linkify: true
+    typographer: true
+    quotes: '“”‘’'
+
+# Extensions 扩展
+## Plugins: https://hexo.io/plugins/
+# recommended-posts
+# reference: https://github.com/huiwang/hexo-recommended-posts
+# recommended_posts:
+#   server: https://api.truelaurel.com #后端推荐服务器地址
+#   timeoutInMillis: 10000 #服务时长，超过此时长，则使用离线推荐模式
+#   internalLinks: 3 #内部文章数量
+#   externalLinks: 0 #外部文章数量
+#   autoDisplay: true, #自动在文章底部显示推荐文章
+#   titleHtml: <h2>推荐文章<span style="font-size:0.45em; color:gray"></span></h2> #自定义标题
+
+# hexo-tag-aplayer
+# reference: https://github.com/MoePlayer/hexo-tag-aplayer
+# aplayer:
+#   meting: true
+
+# MeingJS support for Aplayer
+# reference: https://github.com/metowolf/MetingJS & https://github.com/MoePlayer/APlayer
+metingjs: false
+data-id: 2423410161
+data-server: netease
+data-type: playlist
+data-fixed: true
+  # data-mini:
+  # data-autoplay:
+
+
+## Themes: https://hexo.io/themes/
+#当前主题名称。值为false时禁用主题
+#theme: landscape
+theme: yaofeiliang
+
+#sitemap
+sitemap:
+  path: sitemap.xml
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+#部署部分的设置
+#deploy:
+#  type:
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+# repository: https://github.com/yaofeiliang/xxxxxxx.github.io.git
+# branch: master
+
+deploy:
+  type: git
+  repository: https://github.com/yaofeiliang/hexo-YBlog
+  branch: gh-pages
+  message: Update CNAME
