@@ -61,13 +61,11 @@ anchorjs: true                          # if you want to customize anchor. check
 
 # Analytics settings 分析设置
 #Baidu Analytics 百度分析
-#ba_track_id: r45fhy7653897235wg5ye709d930f62e
-ba_track_id:
+ba_track_id: d226c9b2398c493d7d554d7ce7c7f143
 # Google Analytics
-#ga_track_id: 'UA-XXXXXXXX-X'          # Format: UA-xxxxxx-xx
+ga_track_id: UA-131190664-1         # Format: UA-xxxxxx-xx
 #ga_domain: yoursite
-ga_track_id: ''          # Format: UA-xxxxxx-xx
-ga_domain:
+ga_domain: auto
 
 
 # Sidebar settings
