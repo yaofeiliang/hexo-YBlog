@@ -5,7 +5,7 @@
 
 Yao Feiliang Blog : [www.yaofeiliang.com](http://www.yaofeiliang.com/)
 
-![Theme YaoFeiliang](https://github.com/yaofeiliang/hexo-YBlog/blob/master/public/img/y.png?raw=true)
+![Theme YaoFeiliang](https://github.com/yaofeiliang/hexo-YBlog/tree/master/source/img/y.png?raw=true)
 
 # Install Hexo
 
@@ -81,7 +81,7 @@ You can decide to show post tags or not.
 ```yml
 home_posts_tag: true
 ```
-![home_posts_tag-true](https://github.com/yaofeiliang/hexo-YBlog/blob/master/public/img/article/tag.png)
+![home_posts_tag-true](https://github.com/yaofeiliang/hexo-YBlog/tree/master/source/img/article/tag.png)
 ### Markdown render
 My markdown render engine plugin is [hexo-renderer-markdown-it](https://github.com/celsomiranda/hexo-renderer-markdown-it).
 ```yml
