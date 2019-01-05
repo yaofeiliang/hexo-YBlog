@@ -233,3 +233,9 @@ deploy:
   repository: https://github.com/yaofeiliang/hexo-YBlog
   branch: gh-pages
   message: Update CNAME
+
+# hexo-admin authentification
+admin:
+  username: yaofeiliang
+  password_hash: $2a$10$ejGNfbDc6o54z6QoB6N9O.LJKl3zyu7a4cWt1YDTMr8QqdK/Z0OUm
+  secret: yaofeiliangzhzhkejiaiwebhome
