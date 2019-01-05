@@ -1,15 +1,14 @@
----
-title: "[Hexo] Theme Y Blog"
+title: '[Hexo] Theme Y Blog'
 catalog: true
 toc_nav_num: true
-date: 2018-12-17 10:51:24
-subtitle: "This is hexo theme Demo."
-header-img: "/img/article_header/article_header.png"
+subtitle: This is hexo theme Demo.
+header-img: /img/article_header/article_header.png
 tags:
-- Hexo
+  - Hexo
 catagories:
-- Hexo
-
+  - Hexo
+categories: []
+date: 2018-12-17 10:51:00
 ---
 > This Y Blog theme created by [YaoFeiliang](http://www.yaofeiliang.com/) modified from the original Porter Hux.
 
