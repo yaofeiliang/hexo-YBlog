@@ -57,7 +57,8 @@ anchorjs: true                          # if you want to customize anchor. check
 # duoshuo_username: kaijun
 # Share component is depend on Comment so we can NOT use share only.
 #duoshuo_share: true                     # set to false if you want to use Comment without Sharing
-
+changyan_appid: cyu1mGFzH
+changyan_appkey: ac5f1d303694b7628c52e6311df7877f
 
 # Analytics settings 分析设置
 #Baidu Analytics 百度分析
