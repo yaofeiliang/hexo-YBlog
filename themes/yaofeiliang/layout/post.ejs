@@ -15,8 +15,8 @@ layout: layout
                 post-container">
 
                 <%- page.content %>
-
-
+                <!-- 添加打赏功能 -->
+                <%- partial('_partial/donate') %>
                 <% if(config['changyan_appid']) { %>
                 <!-- 代码1：放在页面需要展示的位置  -->
                 <!-- 如果您配置过sourceid，建议在div标签中配置sourceid、cid(分类id)，没有请忽略  -->
@@ -51,7 +51,8 @@ layout: layout
                 </ul>
 
                 <br>
-                
+                <!-- 添加打赏功能 -->
+                <%- partial('_partial/donate') %>
                 <!-- require APlayer -->
                 <% if(config['metingjs']) { %>
                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.css">
@@ -170,6 +171,8 @@ layout: layout
             </div>
         </div>
     </div>
+
+
 </article>
 
 <% if(config['duoshuo_username']) { %>

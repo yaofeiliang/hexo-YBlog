@@ -39,3 +39,12 @@ fixed: false
 
 > Email: yaoadmin@sina.com
 
+
+### 捐助
+
+> 支付宝
+ ![支付宝](/img/Alipay133.jpg)
+> 微信
+ ![微信](/img/WeChatpay133.jpg)
+
+> 姚飞亮的服务器是收费的，感谢您的捐助。

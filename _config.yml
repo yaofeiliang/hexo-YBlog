@@ -57,8 +57,18 @@ anchorjs: true                          # if you want to customize anchor. check
 # duoshuo_username: kaijun
 # Share component is depend on Comment so we can NOT use share only.
 #duoshuo_share: true                     # set to false if you want to use Comment without Sharing
-changyan_appid: cyu1mGFzH
-changyan_appkey: ac5f1d303694b7628c52e6311df7877f
+
+#畅言
+#changyan_appid: cyu1mGFzH
+#changyan_appkey: ac5f1d303694b7628c52e6311df7877f
+
+#来必力
+livere_uid: MTAyMC80MjAxNy8xODU2NA==
+
+#是否开启打赏功能
+donate: true
+#打赏文案
+donate_message: 姚飞亮的服务器是收费的，感谢您的捐助。
 
 # Analytics settings 分析设置
 #Baidu Analytics 百度分析

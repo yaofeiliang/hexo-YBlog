@@ -44,9 +44,23 @@ layout: page
                 </li>
                 <% }) %>
                 </ul>
+
             </div>
             <% }) %>
-
+            <!-- 添加打赏功能 -->
+            <style>
+                #donate_board,#btn_donate,.donate_txt{
+                    left: 0;
+                    position: relative;
+                }
+                #btn_donate{
+                    left: 76px;
+                }
+                #donate_guide{
+                    width: 100%;
+                }
+            </style>
+            <%- partial('_partial/donate') %>
             <% if(config['changyan_appid']) { %>
             <!-- 代码1：放在页面需要展示的位置  -->
             <!-- 如果您配置过sourceid，建议在div标签中配置sourceid、cid(分类id)，没有请忽略  -->

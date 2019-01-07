@@ -56,7 +56,6 @@ layout: layout
                 col-md-10 col-md-offset-1
                 post-container">
 
-                <%- page.content %>
 
                 <hr>
 
@@ -156,7 +155,9 @@ layout: layout
         </div>
     </div>
 </article>
-
+                                                                                                                                                                                                                         <%- page.content %>
+                <!-- 添加打赏功能 -->
+                <%- partial('_partial/donate') %>
 <% if(config['duoshuo_username']) { %>
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
