@@ -6,6 +6,10 @@ on:
   pull_request:
   workflow_dispatch:
 
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -16,7 +20,9 @@ jobs:
           node-version: '22'
           cache: npm
       - run: npm ci
-      - run: npx hexo clean && npx hexo generate
+      - run: npm run validate:content
+      - run: npm run clean
+      - run: npm run build
       - name: Upload site artifact
         uses: actions/upload-artifact@v4
         with:
@@ -31,16 +37,13 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/download-artifact@v4
         with:
-          node-version: '22'
-          cache: npm
-      - run: npm ci
-      - run: npx hexo clean && npx hexo generate
+          name: public-site
+          path: public
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           publish_branch: gh-pages
-          force_orphan: true

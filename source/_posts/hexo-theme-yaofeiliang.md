@@ -3,12 +3,14 @@ title: '[Hexo] Theme Y Blog'
 catalog: true
 toc_nav_num: true
 subtitle: This is hexo theme Demo.
+description: "Y Blog Hexo 主题的安装、站点配置、侧栏、签名与发布说明。"
 header-img: /img/article_header/article_header.jpg
 tags:
   - Hexo
 categories:
   - Hexo
 date: 2018-12-17 10:51:00
+updated: 2018-12-17 10:51:00
 ---
 ```bash
 git clone https://github.com/yaofeiliang/hexo-YBlog.git ./yaofeiliang

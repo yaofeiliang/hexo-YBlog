@@ -1,0 +1,56 @@
+name: Create daily tech brief
+
+on:
+  schedule:
+    # 09:00 China Standard Time (UTC+8). GitHub may delay scheduled runs.
+    - cron: '0 1 * * 1-5'
+  workflow_dispatch:
+    inputs:
+      max_items:
+        description: 'Maximum items in today’s brief'
+        required: false
+        default: '5'
+
+concurrency:
+  group: daily-tech-brief
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: master
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - name: Collect approved RSS metadata
+        run: node automation/scripts/ingest-news.mjs --write --max-items=${{ inputs.max_items || '5' }}
+      - name: Validate generated content
+        run: npm run validate:content
+      - name: Verify static build
+        run: npm run clean && npm run build
+      - name: Create review pull request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: bot/daily-tech-brief
+          delete-branch: true
+          commit-message: 'content: add daily tech brief'
+          title: 'content: daily tech brief'
+          body: |
+            ## 自动技术简报
+
+            此 PR 仅使用官方 RSS 的标题、发布时间与原文链接生成。
+            请在合并前核对每条来源、相关性和品牌适配性。
+
+            合并后将触发现有发布工作流。
+          labels: automated-content

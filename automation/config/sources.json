@@ -1,0 +1,40 @@
+{
+  "sources": [
+    {
+      "id": "nodejs-blog",
+      "name": "Node.js Official Blog",
+      "type": "rss",
+      "url": "https://nodejs.org/en/feed/blog.xml",
+      "topics": ["node-js", "runtime"],
+      "weight": 100,
+      "maxItems": 5
+    },
+    {
+      "id": "kubernetes-blog",
+      "name": "Kubernetes Blog",
+      "type": "rss",
+      "url": "https://kubernetes.io/feed.xml",
+      "topics": ["kubernetes", "cloud-native", "devops"],
+      "weight": 95,
+      "maxItems": 5
+    },
+    {
+      "id": "hugging-face-blog",
+      "name": "Hugging Face Blog",
+      "type": "rss",
+      "url": "https://huggingface.co/blog/feed.xml",
+      "topics": ["ai", "machine-learning"],
+      "weight": 90,
+      "maxItems": 5
+    },
+    {
+      "id": "openai-news",
+      "name": "OpenAI News",
+      "type": "rss",
+      "url": "https://openai.com/news/rss.xml",
+      "topics": ["ai", "llm"],
+      "weight": 90,
+      "maxItems": 5
+    }
+  ]
+}

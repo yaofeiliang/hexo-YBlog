@@ -1,0 +1,10 @@
+{
+  "keywords": {
+    "node-js": ["node.js", "nodejs", "npm", "javascript", "typescript", "runtime"],
+    "kubernetes": ["kubernetes", "k8s", "container", "docker", "helm", "cloud native"],
+    "ai": ["ai", "llm", "model", "machine learning", "inference", "agent", "transformer"],
+    "devops": ["devops", "ci/cd", "observability", "security", "release", "cloud"]
+  },
+  "minimumScore": 90,
+  "dailyItemLimit": 5
+}

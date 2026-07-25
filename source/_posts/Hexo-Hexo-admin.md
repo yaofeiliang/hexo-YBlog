@@ -1,10 +1,13 @@
+---
 title: '[Hexo]Hexo admin 自动发布文章'
 catalog: true
 author: 姚飞亮
+description: "记录 Hexo Admin 的本地文章编辑与图片粘贴工作流；该工具现仅适合作为历史参考。"
 tags:
   - Hexo
 categories: []
 date: 2019-01-05 22:32:00
+updated: 2019-01-05 22:32:00
 subtitle:
 header-img:
 ---

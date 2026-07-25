@@ -3,7 +3,9 @@ title: "[工具] 网络代理"
 catalog: true
 toc_nav_num: true
 date: 2018-12-20 10:51:24
+updated: 2018-12-20 10:51:24
 subtitle: "搭建代理服务器。"
+description: "历史网络代理工具部署笔记，仅作归档与技术背景参考。"
 header-img: "/img/article_header/article_header.jpg"
 tags:
 - 工具

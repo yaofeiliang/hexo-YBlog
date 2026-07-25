@@ -3,7 +3,9 @@ title: "[工具] 网站访问数据统计"
 catalog: true
 toc_nav_num: true
 date: 2018-12-20 10:46:47
+updated: 2018-12-20 10:46:47
 subtitle: "统计分析网站访问数据"
+description: "网站访问统计工具的历史配置记录；Universal Analytics 已停止服务，实施时应改用现代分析方案。"
 header-img: "/img/article_header/article_header.jpg"
 tags:
 - 工具

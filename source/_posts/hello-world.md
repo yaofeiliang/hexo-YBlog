@@ -1,6 +1,8 @@
 ---
 title: Hello World
 date: 2018-12-17 10:00:00
+updated: 2018-12-17 10:00:00
+description: "Hexo 博客的起步文章，包含创建文章、启动本地服务和生成静态文件的基础命令。"
 categories:
   - article
 ---

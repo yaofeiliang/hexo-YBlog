@@ -1,0 +1,33 @@
+---
+layout: layout
+---
+<div class="container search-page">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="search-page__intro">
+                <h1>搜索文章</h1>
+                <p>检索原创文章与每日技术简报。支持中英文关键词。</p>
+            </div>
+            <div id="search"></div>
+        </div>
+    </div>
+</div>
+<link rel="stylesheet" href="<%= config.root %>pagefind/pagefind-ui.css">
+<script type="module">
+  import { PagefindUI } from "<%= config.root %>pagefind/pagefind-ui.js";
+  new PagefindUI({
+    element: "#search",
+    showSubResults: true,
+    showImages: false,
+    translations: {
+      placeholder: "输入关键词，例如 Kubernetes、Node.js、AI",
+      clear_search: "清除搜索",
+      load_more: "加载更多结果",
+      search_label: "站内搜索",
+      filters_label: "筛选",
+      zero_results: "没有找到相关内容",
+      many_results: "[SEARCH_TERM] 的搜索结果（共 [COUNT] 条）",
+      one_result: "[SEARCH_TERM] 的搜索结果（共 1 条）"
+    }
+  });
+</script>

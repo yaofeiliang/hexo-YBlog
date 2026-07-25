@@ -6,16 +6,20 @@
     "node": ">=20.19.0"
   },
   "scripts": {
-    "build": "hexo generate",
+    "build": "hexo generate && pagefind --site public",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
     "server": "hexo server",
-    "build:preview": "hexo clean && hexo generate --config _config.yml,_config.preview.yml"
+    "build:preview": "hexo clean && hexo generate --config _config.yml,_config.preview.yml && pagefind --site public",
+    "validate:content": "node automation/scripts/validate-content.mjs",
+    "news:dry-run": "node automation/scripts/ingest-news.mjs",
+    "news:ingest": "node automation/scripts/ingest-news.mjs --write"
   },
   "hexo": {
     "version": "8.1.2"
   },
   "dependencies": {
+    "gray-matter": "^4.0.3",
     "hexo": "^8.1.2",
     "hexo-deployer-git": "^4.0.0",
     "hexo-generator-archive": "^2.0.0",
@@ -27,6 +31,8 @@
     "hexo-renderer-ejs": "^2.0.0",
     "hexo-renderer-marked": "^7.0.1",
     "hexo-renderer-stylus": "^3.0.1",
-    "hexo-server": "^3.0.0"
+    "hexo-server": "^3.0.0",
+    "pagefind": "^1.5.2",
+    "rss-parser": "^3.13.0"
   }
 }

@@ -91,6 +91,24 @@ html {
   scroll-behavior: smooth;
 }
 
+.skip-link {
+  position: fixed;
+  z-index: 9999;
+  top: 0.75rem;
+  left: 0.75rem;
+  padding: 0.7rem 1rem;
+  border-radius: 0.5rem;
+  background: var(--brand);
+  color: #fff;
+  transform: translateY(-150%);
+  transition: transform .2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+  color: #fff;
+}
+
 body {
   font-family: var(--font-body);
   color: var(--ink);
@@ -427,6 +445,42 @@ footer .list-inline a:hover {
   border-color: var(--brand);
   color: #fff;
   box-shadow: var(--shadow-soft);
+}
+
+.search-page {
+  min-height: 44vh;
+  padding: 2.5rem 0 4rem;
+}
+
+.search-page__intro {
+  max-width: 42rem;
+  margin-bottom: 1.5rem;
+}
+
+.search-page__intro h1 {
+  margin: 0 0 .6rem;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.search-page__intro p {
+  margin: 0;
+  color: var(--muted);
+}
+
+#search {
+  max-width: 52rem;
+}
+
+#search .pagefind-ui__search-input {
+  border-radius: 12px;
+  border-color: rgba(0, 133, 161, .3);
+  font-family: var(--font-body);
+}
+
+#search .pagefind-ui__result-link {
+  color: var(--brand-deep);
+  font-family: var(--font-display);
 }
 
 @media only screen and (max-width: 767px) {

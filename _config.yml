@@ -156,6 +156,11 @@ prismjs:
 # Category & Tag
 default_category: article
 category_map:
+  article: articles
+  Hexo: hexo
+  Node-js: node-js
+  工具: tools
+  资讯: news
   Docker: docker
   Kubernetes: kubernetes
   Golang: golang

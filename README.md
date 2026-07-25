@@ -1,6 +1,15 @@
 # YBlog
 > This Y Blog theme created by [YaoFeiliang](http://www.yaofeiliang.com/) modified from the original Porter Hux.
 
+## Professional content workflow
+
+- `npm run validate:content` validates article metadata.
+- `npm run build` builds the site and the static Pagefind search index.
+- `npm run news:dry-run` previews eligible official RSS items.
+- `npm run news:ingest` writes a daily technical-brief draft locally.
+
+See [CONTRIBUTING.md](CONTRIBUTING.md), [automation/README.md](automation/README.md), and [docs/ROADMAP.md](docs/ROADMAP.md) for publication and automation rules.
+
 # Live Demo
 
 Yao Feiliang Blog : [www.yaofeiliang.com](http://www.yaofeiliang.com/)

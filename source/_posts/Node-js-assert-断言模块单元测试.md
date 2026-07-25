@@ -1,11 +1,14 @@
+---
 title: '[Node.js] assert 断言模块单元测试'
 catalog: true
 author: 姚飞亮
+description: "介绍 Node.js assert 断言模块的基本用途，以及在单元测试中验证预期结果的方式。"
 tags:
   - Node.js
 categories:
   - Node.js
 date: 2019-01-07 00:55:00
+updated: 2019-01-07 00:55:00
 subtitle:
 header-img:
 ---
