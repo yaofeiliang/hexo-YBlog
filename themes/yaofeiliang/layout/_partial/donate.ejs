@@ -27,9 +27,14 @@
 
     </div>
     <script type="text/javascript">
-      document.getElementById('btn_donate').onclick = function(){
-        $('#donate_board').addClass('hidden');
-        $('#donate_guide').removeClass('hidden');
+      var btn=document.getElementById('btn_donate');
+      var board=document.getElementById('donate_board');
+      var guide=document.getElementById('donate_guide');
+      if(btn&&board&&guide){
+        btn.addEventListener('click',function(){
+          board.classList.add('hidden');
+          guide.classList.remove('hidden');
+        });
       }
     </script>
 </div>

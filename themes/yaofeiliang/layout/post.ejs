@@ -1,152 +1,37 @@
 ---
 layout: layout
 ---
-<!-- Modify by Yu-Hsuan Yen -->
 
-<!-- Post Content -->
 <article>
     <div class="container">
         <div class="row">
-
-            <!-- Post Container -->
-            <div class="
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
-                post-container">
-
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 post-container">
                 <%- page.content %>
-                <!-- 添加打赏功能 -->
+                <% if (config.donate !== false) { %>
                 <%- partial('_partial/donate') %>
-                <% if(config['changyan_appid']) { %>
-                <!-- 代码1：放在页面需要展示的位置  -->
-                <!-- 如果您配置过sourceid，建议在div标签中配置sourceid、cid(分类id)，没有请忽略  -->
-                <style>
-                    #cyReward{
-                        margin-left: 50%;
-                    }
-                    #cy-reward-click{
-                        margin-left: -67px;
-                    }
-                </style>
-                <div id="cyReward" role="cylabs" data-use="reward" sourceid="<%= page.path %>"></div>
-                <!-- 代码2：用来读取评论框配置，此代码需放置在代码1之后。 -->
-                <!-- 如果当前页面有评论框，代码2请勿放置在评论框代码之前。 -->
-                <!-- 如果页面同时使用多个实验室项目，以下代码只需要引入一次，只配置上面的div标签即可 -->
-                <script type="text/javascript" charset="utf-8" src="https://changyan.itc.cn/js/lib/jquery.js"></script>
-                <script type="text/javascript" charset="utf-8" src="https://changyan.sohu.com/js/changyan.labs.https.js?appid=cyu1mGFzH"></script>
                 <% } %>
                 <hr>
-                <!-- Pager -->
                 <ul class="pager">
                     <% if (page.prev){ %>
                         <li class="previous">
-                            <a href="<%- config.root %><%- page.prev.path %>" data-toggle="tooltip" data-placement="top" title="<%- page.prev.title %>">&larr; Previous Post</a>
+                            <a href="<%- config.root %><%- page.prev.path %>" title="<%- page.prev.title %>">← Previous Post</a>
                         </li>
                     <% } %>
                     <% if (page.next){ %>
                         <li class="next">
-                            <a href="<%- config.root %><%- page.next.path %>" data-toggle="tooltip" data-placement="top" title="<%- page.next.title %>">Next Post &rarr;</a>
+                            <a href="<%- config.root %><%- page.next.path %>" title="<%- page.next.title %>">Next Post →</a>
                         </li>
                     <% } %>
                 </ul>
 
-                <br>
-                <!-- require APlayer -->
-                <% if(config['metingjs']) { %>
-                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.css">
-                <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.js"></script>
-                <script src="https://cdn.jsdelivr.net/npm/meting@1.2/dist/Meting.min.js"></script>
-
-                <div class="aplayer"
-                    data-id="<%= config['data-id'] %>"
-                    data-server="<%= config['data-server'] %>"
-                    data-type="<%= config['data-type'] %>"
-                    data-fixed="<%= config['data-fixed'] %>" >
-                </div>
-                <% } %>
-
-                <!-- duoshuo Share start -->
-                <% if(config['duoshuo_share'] && config['duoshuo_username']) { %>
-                    <div class="ds-share"
-                        style="text-align: right"
-                        data-thread-key="<%= page.path %>"
-                        data-title="<%= page.title %>"
-                        data-url="<%= page.permalink %>"
-                        data-images="<%= page["header-img"] ? page.permalink + page["header-img"] : '' %>"
-                        data-content="<%- truncate(strip_html(page.content), {length: 50, omission: '...'}) %> | <%= config.SEOTitle %> " >
-                        <div class="ds-share-inline">
-                          <ul  class="ds-share-icons-16">
-                            <li data-toggle="ds-share-icons-more"><a class="ds-more" href="#">分享到：</a></li>
-                            <li><a class="ds-wechat flat" href="javascript:void(0);" data-service="wechat">微信</a></li>
-                            <li><a class="ds-weibo flat" href="javascript:void(0);" data-service="weibo">微博</a></li>
-                            <li><a class="ds-douban flat" href="javascript:void(0);" data-service="douban">豆瓣</a></li>
-                          </ul>
-                          <div class="ds-share-icons-more">
-                          </div>
-                        </div>
-                    <hr>
-                    </div>
-                <% } %>
-                <!-- 多说 Share end-->
-
-                <% if(config['changyan_appid']) { %>
-
-                <!--PC和WAP自适应版-->
-                <div id="SOHUCS" sid="<%= page.path %>" ></div>
-                <script type="text/javascript">
-                  (function(){
-                    var appid = "<%= config['changyan_appid'] %>";
-                    var conf = 'prod_882c69b38d5375d650c3081183a2458a';
-                    var width = window.innerWidth || document.documentElement.clientWidth;
-                    if (width < 960) {
-                      window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })();
-                </script>
-                <% } %>
-
-                <!-- 多说评论框 start -->
-                <% if(config['duoshuo_username']) { %>
-                    <div class="comment">
-                        <div class="ds-thread"
-                            data-thread-key="<%= page.path %>"
-                            data-title="<%= page.title %>"
-                            data-url="<%= page.permalink %>" >
-                        </div>
-                    </div>
-                <% } %>
-                <!-- 多说评论框 end -->
-
-                <!-- disqus comment start -->
-                <% if(config['disqus_username']) { %>
-                    <div class="comment">
-                        <div id="disqus_thread" class="disqus-thread"></div>
-                    </div>
-                <% } %>
-                <!-- disqus comment end -->
-
-                <% if(config['livere_uid']) { %>
-                    <div class="comment" id="comment-section">
-                        <div class="comment-gate">
-                            <button type="button" id="load-comments-btn">加载评论</button>
-                        </div>
-                        <div id="lv-container" data-id="city" data-uid="<%= config['livere_uid'] %>" hidden></div>
-                    </div>
-                <% } %>
-
+                <%- partial('_partial/comments') %>
             </div>
-            
-            <!-- Tabe of Content -->
-            <%- partial('_partial/toc') %>
-                
-            <!-- Sidebar Container -->
-            <div class="
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
-                sidebar-container">
 
-                <!-- Featured Tags -->
-                <% if(config['featured-tags']) { %>
+            <%- partial('_partial/toc') %>
+
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 sidebar-container">
+                <% if(config['featured-tags'] && page.tags && page.tags.length) { %>
                 <section>
-                    <!-- no hr -->
                     <h5><a href="<%= config.root %>tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
                        <% page.tags.forEach(function(tag){ %>
@@ -156,125 +41,36 @@ layout: layout
                 </section>
                 <% }%>
 
-                <!-- Friends Blog -->
                 <% if(config.friends) { %>
                 <hr>
                 <h5>FRIENDS</h5>
                 <ul class="list-inline">
-
                     <% config.friends.forEach(function(friend){ %>
-                        <li><a href="<%= friend.href %>" target="_blank"><%= friend.title %></a></li>
+                        <li><a href="<%= friend.href %>" target="_blank" rel="noopener noreferrer"><%= friend.title %></a></li>
                     <% }); %>
                 </ul>
                 <% }%>
             </div>
         </div>
     </div>
-
-
 </article>
-
-<% if(config['duoshuo_username']) { %>
-<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-<script type="text/javascript">
-    // dynamic User by Hux
-    var _user = '<%= config['duoshuo_username'] %>';
-
-    // duoshuo comment query.
-    var duoshuoQuery = {short_name: _user };
-    (function() {
-        var ds = document.createElement('script');
-        ds.type = 'text/javascript';ds.async = true;
-        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-        ds.charset = 'UTF-8';
-        (document.getElementsByTagName('head')[0]
-         || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-</script>
-<!-- 多说公共JS代码 end -->
-<% } %>
-
-<% if(config['disqus_username']) { %>
-<!-- disqus embedded js code start (one page only need to embed once) -->
-<script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES * * */
-    var disqus_shortname = "<%= config['disqus_username'] %>";
-    var disqus_identifier = "<%= page.permalink %>";
-    var disqus_url = "<%= page.permalink %>";
-
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<!-- disqus embedded js code start end -->
-<% } %>
-
-<% if(config['livere_uid']) { %>
-<script>
-(function () {
-  var btn = document.getElementById('load-comments-btn');
-  var box = document.getElementById('lv-container');
-  if (!btn || !box) return;
-  function loadLivere() {
-    if (btn.dataset.loaded === '1') return;
-    btn.dataset.loaded = '1';
-    btn.textContent = '评论加载中…';
-    box.hidden = false;
-    if (typeof LivereTower !== 'function') {
-      var j = document.createElement('script');
-      j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-      j.async = true;
-      j.onload = function () { btn.style.display = 'none'; };
-      document.body.appendChild(j);
-    } else {
-      btn.style.display = 'none';
-    }
-  }
-  btn.addEventListener('click', loadLivere);
-  if ('IntersectionObserver' in window) {
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          loadLivere();
-          io.disconnect();
-        }
-      });
-    }, { rootMargin: '200px' });
-    io.observe(document.getElementById('comment-section'));
-  }
-})();
-</script>
-<% } %>
 
 <% if(config['anchorjs']) { %>
 <script>
-    function async(u, c) {
-      var d = document, t = 'script',
-          o = d.createElement(t),
-          s = d.getElementsByTagName(t)[0];
-      o.src = u;
-      if (c) { o.addEventListener('load', function () { c(null); }, false); }
-      s.parentNode.insertBefore(o, s);
-    }
-    async('https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js', function () {
-        anchors.options = {
-          visible: 'hover',
-          placement: 'left',
-          icon: 'ℬ'
-        };
+    (function () {
+      var s = document.createElement('script');
+      s.src = 'https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js';
+      s.async = true;
+      s.onload = function () {
+        anchors.options = { visible: 'hover', placement: 'left', icon: 'ℬ' };
         anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
-    });
+      };
+      document.body.appendChild(s);
+    })();
 </script>
 <style>
     @media all and (min-width: 800px) {
-        .anchorjs-link{
-            position: absolute;
-            left: -0.75em;
-            font-size: 1.1em;
-            margin-top : -0.1em;
-        }
+        .anchorjs-link{ position:absolute; left:-0.75em; font-size:1.1em; margin-top:-0.1em; }
     }
 </style>
 <% } %>

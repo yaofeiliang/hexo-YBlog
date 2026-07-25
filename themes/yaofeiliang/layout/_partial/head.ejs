@@ -39,16 +39,15 @@
     <link rel="preload" as="image" href="<%= heroWebp %>" type="image/webp">
     <link rel="preload" as="image" href="<%= heroAbs %>" type="image/jpeg">
 
-    <%- css('css/bootstrap.min.css') %>
+    <%- css('css/site.css') %>
     <%- css('css/beantech.min.css') %>
-    <%- css('css/highlight') %>
     <%- css('css/widget') %>
     <%- css('css/rocket') %>
     <%- css('css/signature') %>
+    <% if (is_post()) { %>
+    <%- css('css/highlight') %>
     <%- css('css/toc') %>
-    <%- css('css/polish') %>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+    <% } %>
 
     <script type="application/ld+json">
     <%- JSON.stringify(is_post() ? {

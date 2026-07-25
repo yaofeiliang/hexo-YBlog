@@ -2,58 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <ul class="list-inline text-center">
-                <% if (config.RSS !== false) { %>
-                    <li>
-                        <a href="<%= config.root %>atom.xml" title="RSS" rel="noopener">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                <% } %>
-                <% if (config.zhihu_username) { %>
-                    <li>
-                        <a target="_blank" rel="noopener noreferrer" href="https://www.zhihu.com/people/<%= config.zhihu_username %>" title="知乎">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-stack-1x fa-inverse">知</i>
-                            </span>
-                        </a>
-                    </li>
-                <% } %>
-                <% if (config.weibo_username) { %>
-                    <li>
-                        <a target="_blank" rel="noopener noreferrer" href="https://weibo.com/<%= config.weibo_username %>" title="微博">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                <% } %>
-                <% if (config.github_username) { %>
-                    <li>
-                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/<%= config.github_username %>" title="GitHub">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                <% } %>
-                <% if (config.linkedin_username) { %>
-                    <li>
-                        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/<%= config.linkedin_username %>" title="LinkedIn">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                <% } %>
-                </ul>
+                <%- partial('_partial/social-icons') %>
                 <p class="copyright text-muted">
                     Copyright &copy; <%= config.author %> <%= new Date().getFullYear() %>
                     <br>
@@ -65,38 +14,20 @@
     </div>
 </footer>
 
-<%- js('js/jquery.min.js') %>
-<%- js('js/bootstrap.min.js') %>
-<%- js('js/hux-blog.min.js') %>
-
-<script>
-    function async(u, c) {
-      var d = document, t = 'script',
-          o = d.createElement(t),
-          s = d.getElementsByTagName(t)[0];
-      o.src = u;
-      if (c) { o.addEventListener('load', function () { c(null); }, false); }
-      s.parentNode.insertBefore(o, s);
-    }
-    if (document.getElementById('tag_cloud')) {
-        async('<%= config.root %>js/jquery.tagcloud.js', function () {
-            $.fn.tagcloud.defaults = {
-                color: { start: '#9aa3ad', end: '#0085a1' }
-            };
-            $('#tag_cloud a').tagcloud();
-        });
-    }
-</script>
+<script src="<%= config.root %>js/site.js" defer></script>
 
 <% if (config.ba_track_id) { %>
 <script>
     var _hmt = _hmt || [];
     (function() {
-      var hm = document.createElement('script');
-      hm.src = 'https://hm.baidu.com/hm.js?<%= config.ba_track_id %>';
-      hm.async = true;
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(hm, s);
+      function loadBaidu() {
+        var hm = document.createElement('script');
+        hm.src = 'https://hm.baidu.com/hm.js?<%= config.ba_track_id %>';
+        hm.async = true;
+        document.head.appendChild(hm);
+      }
+      if ('requestIdleCallback' in window) requestIdleCallback(loadBaidu, { timeout: 3000 });
+      else setTimeout(loadBaidu, 2000);
     })();
 </script>
 <% } %>

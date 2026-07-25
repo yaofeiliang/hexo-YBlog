@@ -4,8 +4,6 @@ title: "About"
 date: 2018-12-17 10:48:33
 description: "走在成为极客的路上"
 header-img: "/img/header_img/about.jpg"
-aplayer: true
-fixed: false
 ---
 
 ### 一句话

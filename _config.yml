@@ -45,19 +45,7 @@ linkedin_username:  飞亮-姚-56270a116
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
 
-# Disqus settings
-#disqus_username: your-disqus-ID
-
-# Duoshuo settings
-# duoshuo_username: kaijun
-# Share component is depend on Comment so we can NOT use share only.
-#duoshuo_share: true                     # set to false if you want to use Comment without Sharing
-
-#畅言
-#changyan_appid: cyu1mGFzH
-#changyan_appkey: ac5f1d303694b7628c52e6311df7877f
-
-#来必力
+# Comments: Livere only (lazy-loaded in theme)
 livere_uid: MTAyMC80MjAxNy8xODU2NA==
 
 #是否开启打赏功能

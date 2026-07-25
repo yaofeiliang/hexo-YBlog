@@ -1,0 +1,43 @@
+<% if (config['livere_uid']) { %>
+<div class="comment" id="comment-section">
+    <div class="comment-gate">
+        <button type="button" id="load-comments-btn">加载评论</button>
+    </div>
+    <div id="lv-container" data-id="city" data-uid="<%= config['livere_uid'] %>" hidden></div>
+</div>
+<script>
+(function () {
+  var btn = document.getElementById('load-comments-btn');
+  var box = document.getElementById('lv-container');
+  var section = document.getElementById('comment-section');
+  if (!btn || !box || !section) return;
+  function loadLivere() {
+    if (btn.dataset.loaded === '1') return;
+    btn.dataset.loaded = '1';
+    btn.textContent = '评论加载中…';
+    box.hidden = false;
+    if (typeof LivereTower !== 'function') {
+      var j = document.createElement('script');
+      j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+      j.async = true;
+      j.onload = function () { btn.style.display = 'none'; };
+      document.body.appendChild(j);
+    } else {
+      btn.style.display = 'none';
+    }
+  }
+  btn.addEventListener('click', loadLivere);
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          loadLivere();
+          io.disconnect();
+        }
+      });
+    }, { rootMargin: '200px' });
+    io.observe(section);
+  }
+})();
+</script>
+<% } %>

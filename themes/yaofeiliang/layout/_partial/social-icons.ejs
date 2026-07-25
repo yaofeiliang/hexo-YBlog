@@ -1,0 +1,37 @@
+<ul class="list-inline text-center social-icons">
+<% if (config.RSS !== false) { %>
+    <li>
+        <a class="icon-btn" href="<%= config.root %>atom.xml" title="RSS" rel="noopener" aria-label="RSS">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.18 15.64a2.18 2.18 0 0 1 2.18 2.18C8.36 19 7.38 20 6.18 20S4 19 4 17.82s.98-2.18 2.18-2.18M4 4.44v2.86c7.03 0 12.7 5.67 12.7 12.7h2.86C19.56 11.27 12.73 4.44 4 4.44m0 5.72v2.86c3.9 0 7.04 3.14 7.04 7.04h2.86c0-5.47-4.43-9.9-9.9-9.9Z"/></svg>
+        </a>
+    </li>
+<% } %>
+<% if (config.zhihu_username) { %>
+    <li>
+        <a class="icon-btn" target="_blank" rel="noopener noreferrer" href="https://www.zhihu.com/people/<%= config.zhihu_username %>" title="知乎" aria-label="知乎">
+            <span class="icon-text">知</span>
+        </a>
+    </li>
+<% } %>
+<% if (config.weibo_username) { %>
+    <li>
+        <a class="icon-btn" target="_blank" rel="noopener noreferrer" href="https://weibo.com/<%= config.weibo_username %>" title="微博" aria-label="微博">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.1 17.8c-2.9.2-5.4-1.2-5.6-3.1-.2-1.9 2-3.6 4.9-3.8 2.9-.2 5.4 1.2 5.6 3.1.2 1.9-2 3.6-4.9 3.8m1.2-8.6c-.4-.1-.7-.5-.5-.9.4-1.1 1.5-1.7 2.5-1.3 1 .3 1.5 1.5 1.2 2.5-.1.3-.5.5-.9.3-.3-.1-.4-.4-.3-.7.1-.3-.1-.6-.4-.7-.5-.2-.9.1-1 .5-.1.4-.5.6-.6.3M20.3 11c-.2-.1-.4 0-.5.2-.1.2 0 .5.2.6 1.1.6 1.7 1.5 1.5 2.6-.3 1.8-2.7 3.3-5.9 3.7-.3 0-.5.3-.4.6.1.2.3.4.6.3 3.7-.5 6.6-2.3 7-4.7.3-1.7-.7-3.1-2.5-4.1M9.9 12.7c-1.7.3-2.9 1.3-2.7 2.3.2 1 1.8 1.6 3.5 1.3 1.7-.3 2.9-1.3 2.7-2.3-.2-1-1.8-1.6-3.5-1.3m.4 2.5c-.5.1-.9 0-1-.2-.1-.3.1-.6.6-.7.5-.1.9 0 1 .2.1.3-.1.6-.6.7Z"/></svg>
+        </a>
+    </li>
+<% } %>
+<% if (config.github_username) { %>
+    <li>
+        <a class="icon-btn" target="_blank" rel="noopener noreferrer" href="https://github.com/<%= config.github_username %>" title="GitHub" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.48 0-.24-.01-.87-.01-1.7-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.89 1.57 2.34 1.12 2.91.86.09-.66.35-1.12.63-1.38-2.22-.26-4.55-1.14-4.55-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.27 2.75 1.05A9.3 9.3 0 0 1 12 7.5c.85 0 1.7.12 2.5.34 1.9-1.32 2.74-1.05 2.74-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.38-.01 2.49-.01 2.83 0 .26.18.59.69.48A10.27 10.27 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"/></svg>
+        </a>
+    </li>
+<% } %>
+<% if (config.linkedin_username) { %>
+    <li>
+        <a class="icon-btn" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/<%= config.linkedin_username %>" title="LinkedIn" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.94 6.5A2.44 2.44 0 1 1 6.93 1.6a2.44 2.44 0 0 1 .01 4.9ZM2.9 22V8.75h4.1V22H2.9Zm7.2-13.25h3.93v1.82h.06c.55-1.04 1.9-2.13 3.9-2.13 4.17 0 4.94 2.75 4.94 6.32V22h-4.1v-5.6c0-1.34-.03-3.06-1.86-3.06-1.87 0-2.15 1.46-2.15 2.96V22h-4.1V8.75Z"/></svg>
+        </a>
+    </li>
+<% } %>
+</ul>
