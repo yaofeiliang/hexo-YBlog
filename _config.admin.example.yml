@@ -1,0 +1,6 @@
+# Copy to `_config.admin.yml` for local-only hexo-admin (do not commit).
+# Then: npm install hexo-admin --save-dev && npx hexo server
+admin:
+  username: your-username
+  password_hash: replace-with-bcrypt-hash
+  secret: replace-with-long-random-secret

@@ -1,27 +1,29 @@
-<!-- Modified by Yu-Hsuan Yen -->
-<!-- Post Header -->
+<%
+  function withWebp(url) {
+    if (!url) return { jpg: '', webp: '' };
+    const jpg = url;
+    const webp = url.replace(/\.(jpg|jpeg|png)$/i, '.webp');
+    return { jpg, webp };
+  }
+  let hero;
+  if (is_home()) hero = withWebp(config['header-img']);
+  else if (is_post()) hero = withWebp(page['header-img'] || config['article-img']);
+  else hero = withWebp(page['header-img'] || config['archives-img'] || config['header-img']);
+%>
 <style type="text/css">
-    header.intro-header{
-        <% if (is_home()) { %>
-            background-image: url('<%= config["header-img"] %>') 
-            /*config*/
-        <%} else if (is_post()){%>
-            background-image: url('<%= page["header-img"] || config["article-img"]  %>')
-            /*post*/
-        <%} else {%>
-            background-image: url('<%= page["header-img"] || config["archives-img"] %>')
-            /*page*/
-        <%} %>
+    header.intro-header {
+        background-image: url('<%= hero.jpg %>');
+        background-image: -webkit-image-set(url('<%= hero.webp %>') type('image/webp'), url('<%= hero.jpg %>') type('image/jpeg'));
+        background-image: image-set(url('<%= hero.webp %>') type('image/webp'), url('<%= hero.jpg %>') type('image/jpeg'));
     }
-    <% if (config.signature) {%>
-    #signature{
+    <% if (config.signature) { %>
+    #signature {
         background-image: url('<%= config.root + config["signature-img"] %>');
     }
-    <%}%>
+    <% } %>
 </style>
 
-<header class="intro-header" >
-    <!-- Signature -->
+<header class="intro-header">
     <div id="signature">
         <div class="container">
             <div class="row">
@@ -34,21 +36,24 @@
                             <% }) %>
                         </div>
                         <h1><%= page.title %></h1>
-                        <h2 class="subheading"><%= page.subtitle || "" %></h2>
+                        <% if (page.subtitle) { %><h2 class="subheading"><%= page.subtitle %></h2><% } %>
                         <span class="meta">
-                            Posted by <%- page.author || config.author %> on
-                            <%= page.date.format(config.date_format) %>
+                            <%= page.author || config.author %> · <%= page.date.format(config.date_format) %>
                         </span>
+                    </div>
+                <% } else if (is_home()) { %>
+                    <div class="site-heading">
+                        <div class="brand-mark"><%= config.author %></div>
+                        <h1><%= config.title %></h1>
+                        <span class="subheading"><%= config.subtitle || config.description || "" %></span>
                     </div>
                 <% } else { %>
                     <div class="site-heading">
+                        <div class="brand-mark"><%= config.title %></div>
                         <h1><%= page.title || config.title %></h1>
-                        <!--<hr class="small">-->
-                        <span class="subheading"><%= page.description || config.subtitle || "" %></span>
+                        <span class="subheading"><%= page.description || "" %></span>
                     </div>
                 <% } %>
-
-
                 </div>
             </div>
         </div>

@@ -1,45 +1,14 @@
+---
 title: '[Hexo] Theme Y Blog'
 catalog: true
 toc_nav_num: true
 subtitle: This is hexo theme Demo.
-header-img: /img/article_header/article_header.png
+header-img: /img/article_header/article_header.jpg
 tags:
   - Hexo
-catagories:
+categories:
   - Hexo
-categories: []
 date: 2018-12-17 10:51:00
----
-> This Y Blog theme created by [YaoFeiliang](http://www.yaofeiliang.com/) modified from the original Porter Hux.
-
-# Live Demo
-
-Yao Feiliang Blog : [www.yaofeiliang.com](http://www.yaofeiliang.com/)
-
-![Theme YaoFeiliang](/img/y.png)
-
-# Install Hexo
-
-Install Node.js  and Git
-
-```shell
-#For Mac
-brew install node
-brew install git
-```
-
-Install hexo
-
-```shell
-npm install hexo-cli -g
-
-#For more:https://hexo.io/zh-cn/index.html
-```
-
-# Theme Usage
-
-## Init
-
 ---
 ```bash
 git clone https://github.com/yaofeiliang/hexo-YBlog.git ./yaofeiliang

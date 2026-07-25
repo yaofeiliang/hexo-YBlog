@@ -4,10 +4,10 @@ catalog: true
 toc_nav_num: true
 date: 2018-12-20 10:51:24
 subtitle: "搭建代理服务器。"
-header-img: "/img/article_header/article_header.png"
+header-img: "/img/article_header/article_header.jpg"
 tags:
 - 工具
-catagories:
+categories:
 - 工具
 ---
 

@@ -4,53 +4,42 @@ layout: page
 <!-- Main Content -->
 
 <% page.posts.each(function(post){ %>
-<div class="post-preview">
-
+<article class="post-preview">
     <a href="<%- config.root %><%- post.path %>">
         <h2 class="post-title">
             <%- post.title || "Untitled" %>
         </h2>
+        <% if (post.subtitle) { %>
         <h3 class="post-subtitle">
-            <%- post.subtitle || "" %>
+            <%- post.subtitle %>
         </h3>
+        <% } %>
         <div class="post-content-preview">
-            <%- truncate(strip_html(post.content), {length: 200, omission: '...'}) %>...
+            <%- truncate(strip_html(post.content), {length: 160, omission: '…'}) %>
         </div>
     </a>
-    <% if (config.home_posts_tag){%>
-        <p class="post-meta" style="margin: 10px 0;">
-            Posted by <%- post.author || config.author %> on
-            <%= post.date.format(config.date_format) %>
-        </p>
+    <p class="post-meta">
+        <%- post.author || config.author %> · <%= post.date.format(config.date_format) %>
+    </p>
+    <% if (config.home_posts_tag && post.tags && post.tags.length){ %>
         <div class="tags">
             <% post.tags.forEach(function(tag){ %>
               <a href="<%= config.root %>tags/#<%= tag.name %>" title="<%= tag.name %>"><%= tag.name %></a>
             <% }) %>
         </div>
-    <%} else {%>
-        <p class="post-meta">
-            Posted by <%- post.author || config.author %> on
-            <%= post.date.format(config.date_format) %>
-        </p>
-    <%}%>
-
-</div>
-<hr>
+    <% } %>
+</article>
 <% }); %>
-
-
-<!-- Pager -->
 
 <ul class="pager">
     <% if (page.prev){ %>
         <li class="previous">
-            <a href="<%- config.root %><%- page.prev_link %>">&larr; Newer Posts</a>
+            <a href="<%- config.root %><%- page.prev_link %>">← 更新文章</a>
         </li>
     <% } %>
     <% if (page.next){ %>
         <li class="next">
-            <a href="<%- config.root %><%- page.next_link %>">Older Posts &rarr;</a>
+            <a href="<%- config.root %><%- page.next_link %>">更早文章 →</a>
         </li>
     <% } %>
 </ul>
-

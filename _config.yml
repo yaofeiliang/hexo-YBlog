@@ -14,13 +14,12 @@ timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-#url: http://yoursite.com       # Note: don't forget to modify the CNAME file to your url
-url: http://localhost:4000       # Note: don't forget to modify the CNAME file to your url
+url: https://yaofeiliang.top
 root: /
 #permalink: :year/:month/:day/:title/
 permalink: :category/:title/
 permalink_defaults:
-  lang: en
+  lang: zh-CN
 
 #Custom Setting Start
 
@@ -31,19 +30,15 @@ description: "成为更好的自己"
 keyword: "姚飞亮"
 header-img: /img/header_img/banner.jpg
 article-img: /img/article_header/article_bg.jpg
-404-img: /img/header_img/404.png
+404-img: /img/header_img/404.jpg
 signature: true #show signature
 signature-img: img/signature/icon_yaofeiliang.png
-#signature-img:
-
 
 # SNS settings
-# RSS: false
+RSS: true
 weibo_username:     yaofeiliang
 zhihu_username:     yaofeiliang
 github_username:    yaofeiliang
-# twitter_username:   Demonbane_x
-#facebook_username:  YenYuHsuan
 linkedin_username:  飞亮-姚-56270a116
 
 # Build settings
@@ -73,10 +68,9 @@ donate_message: Y Blog服务器是收费的，感谢您的捐助。
 # Analytics settings 分析设置
 #Baidu Analytics 百度分析
 ba_track_id: d226c9b2398c493d7d554d7ce7c7f143
-# Google Analytics
-ga_track_id: UA-131190664-1         # Format: UA-xxxxxx-xx
-#ga_domain: yoursite
-ga_domain: auto
+# Universal Analytics has been sunset; leave unset or use GA4 measurement ID if needed.
+# ga_track_id:
+# ga_domain: auto
 
 
 # Sidebar settings
@@ -111,7 +105,7 @@ friends: [
     },
     {
         title: "DockOne 姚飞亮",
-        href: "http://dockone.io/people/姚飞亮"
+        href: "https://dockone.io/people/姚飞亮"
     },
     {
         title: "阿里云栖社区 姚飞亮",
@@ -123,7 +117,7 @@ friends: [
     },
     {
         title: "新浪微博 姚飞亮",
-        href: "http://weibo.com/yaofeiliang"
+        href: "https://weibo.com/yaofeiliang"
     }
 ]
 
@@ -248,18 +242,24 @@ theme: yaofeiliang
 sitemap:
   path: sitemap.xml
 
+# RSS feed
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content: false
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
-# repository: https://github.com/yaofeiliang/xxxxxxx.github.io.git
-# branch: master
 deploy:
   type: git
   repository: https://github.com/yaofeiliang/hexo-YBlog
   branch: gh-pages
   message: Update CNAME
 
-# hexo-admin authentification
-admin:
-  username: yaofeiliang
-  password_hash: $2a$10$ejGNfbDc6o54z6QoB6N9O.LJKl3zyu7a4cWt1YDTMr8QqdK/Z0OUm
-  secret: yaofeiliangzhzhkejiaiwebhome
+# Optional local-only hexo-admin config: copy `_config.admin.example.yml` to
+# `_config.admin.yml` (gitignored) if you still need the local editor.

@@ -1,60 +1,75 @@
+<%
+  const pageTitle = page.title ? (page.title + ' - ' + config.SEOTitle) : config.SEOTitle;
+  const pageDesc = page.description || page.subtitle || config.description || '';
+  const rawHero = is_home()
+    ? config['header-img']
+    : (is_post()
+      ? (page['header-img'] || config['article-img'])
+      : (page['header-img'] || config['archives-img'] || config['header-img']));
+  const heroPath = (rawHero || '').replace(/^\//, '');
+  const heroAbs = config.url.replace(/\/$/, '') + config.root + heroPath;
+  const heroWebp = heroAbs.replace(/\.(jpg|jpeg|png)$/i, '.webp');
+  const canonical = config.url.replace(/\/$/, '') + config.root + (page.path || '').replace(/index\.html$/, '');
+  const ogType = is_post() ? 'article' : 'website';
+%>
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="<%= config.description %>">
-    <meta name="keyword"  content="<%= config.keyword %>">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="<%= pageDesc %>">
+    <meta name="keywords" content="<%= config.keyword || config.keywords || '' %>">
+    <meta name="author" content="<%= config.author %>">
+    <meta name="theme-color" content="#0085a1">
     <link rel="shortcut icon" href="<%= config.root %>img/y.png">
-    <!-- Place this tag in your head or just before your close body tag. -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-    <title>
-        <% if (page.title) { %>
-          <%= page.title + ' - ' + config.SEOTitle %>
-        <% } else{%>
-          <%= config.SEOTitle %>
-        <% } %>
-    </title>
+    <link rel="alternate" type="application/atom+xml" title="<%= config.title %>" href="<%= config.root %>atom.xml">
+    <title><%= pageTitle %></title>
+    <link rel="canonical" href="<%= canonical %>">
 
-    <link rel="canonical" href="<%= config.url + config.root + (page.path||'').replace('index.html', '') %>">
+    <meta property="og:type" content="<%= ogType %>">
+    <meta property="og:title" content="<%= pageTitle %>">
+    <meta property="og:description" content="<%= pageDesc %>">
+    <meta property="og:url" content="<%= canonical %>">
+    <meta property="og:site_name" content="<%= config.title %>">
+    <meta property="og:image" content="<%= heroAbs %>">
+    <meta property="og:locale" content="zh_CN">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<%= pageTitle %>">
+    <meta name="twitter:description" content="<%= pageDesc %>">
+    <meta name="twitter:image" content="<%= heroAbs %>">
 
-    <!-- Bootstrap Core CSS -->
+    <link rel="preload" as="image" href="<%= heroWebp %>" type="image/webp">
+    <link rel="preload" as="image" href="<%= heroAbs %>" type="image/jpeg">
+
     <%- css('css/bootstrap.min.css') %>
-
-    <!-- Custom CSS --> 
-    <%- css('css/beantech.min.css')%>
-    
-    <!-- Pygments Highlight CSS -->
+    <%- css('css/beantech.min.css') %>
     <%- css('css/highlight') %>
+    <%- css('css/widget') %>
+    <%- css('css/rocket') %>
+    <%- css('css/signature') %>
+    <%- css('css/toc') %>
+    <%- css('css/polish') %>
 
-    <%- css('css/widget')%>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
 
-    <%- css('css/rocket')%>
-
-    <%- css('css/signature')%>
-
-    <%- css('css/toc')%>
-
-    <!-- Custom Fonts -->
-    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
-    <!-- Hux change font-awesome CDN to qiniu -->
-    <link href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-    <!-- Hux Delete, sad but pending in China
-    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
-    css'>
-    -->
-
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <!-- ga & ba script hoook -->
-    <script></script>
+    <script type="application/ld+json">
+    <%- JSON.stringify(is_post() ? {
+      '@context': 'https://schema.org',
+      '@type': 'BlogPosting',
+      headline: page.title,
+      description: pageDesc,
+      image: heroAbs,
+      datePublished: page.date ? page.date.toISOString() : undefined,
+      dateModified: (page.updated || page.date) ? (page.updated || page.date).toISOString() : undefined,
+      author: { '@type': 'Person', name: page.author || config.author },
+      mainEntityOfPage: canonical,
+      publisher: { '@type': 'Person', name: config.author }
+    } : {
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      name: config.title,
+      url: config.url,
+      description: config.description,
+      inLanguage: 'zh-CN',
+      author: { '@type': 'Person', name: config.author }
+    }) %>
+    </script>
 </head>

@@ -9,8 +9,11 @@ public/
 .cache/
 .env
 .env.*
+_config.admin.yml
+_config.*.local.yml
 *.swp
 *~
 .idea/
 .vscode/
 *.sublime-*
+.DS_Store

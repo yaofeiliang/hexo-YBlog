@@ -2,9 +2,8 @@
 <% if(config.friends) { %>
 <h5>FRIENDS</h5>
 <ul class="list-inline">
-
     <% config.friends.forEach(function(friend){ %>
-        <li><a href="<%= friend.href %>" target="_blank"><%= friend.title %></a></li>
+        <li><a href="<%= friend.href %>" target="_blank" rel="noopener noreferrer"><%= friend.title %></a></li>
     <% }); %>
 </ul>
 <% }%>

@@ -124,11 +124,12 @@ layout: layout
                 <!-- disqus comment end -->
 
                 <% if(config['livere_uid']) { %>
-                    <!-- disqus 评论框 start -->
-                    <div class="comment">
-                        <div id="lv-container" data-id="city" data-uid="<%= config['livere_uid'] %>"></div>
+                    <div class="comment" id="comment-section">
+                        <div class="comment-gate">
+                            <button type="button" id="load-comments-btn">加载评论</button>
+                        </div>
+                        <div id="lv-container" data-id="city" data-uid="<%= config['livere_uid'] %>" hidden></div>
                     </div>
-                    <!-- disqus 评论框 end -->
                 <% } %>
 
             </div>
@@ -211,49 +212,62 @@ layout: layout
 <% } %>
 
 <% if(config['livere_uid']) { %>
-    <!-- 来必力City版公共JS代码 start (一个网页只需插入一次) -->
-    <script type="text/javascript">
-       (function(d, s) {
-           var j, e = d.getElementsByTagName(s)[0];
-    
-           if (typeof LivereTower === 'function') { return; }
-    
-           j = d.createElement(s);
-           j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-           j.async = true;
-    
-           e.parentNode.insertBefore(j, e);
-       })(document, 'script');
-    </script>
-    <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
-    <!-- 来必力City版 公共JS代码 end -->
+<script>
+(function () {
+  var btn = document.getElementById('load-comments-btn');
+  var box = document.getElementById('lv-container');
+  if (!btn || !box) return;
+  function loadLivere() {
+    if (btn.dataset.loaded === '1') return;
+    btn.dataset.loaded = '1';
+    btn.textContent = '评论加载中…';
+    box.hidden = false;
+    if (typeof LivereTower !== 'function') {
+      var j = document.createElement('script');
+      j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+      j.async = true;
+      j.onload = function () { btn.style.display = 'none'; };
+      document.body.appendChild(j);
+    } else {
+      btn.style.display = 'none';
+    }
+  }
+  btn.addEventListener('click', loadLivere);
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          loadLivere();
+          io.disconnect();
+        }
+      });
+    }, { rootMargin: '200px' });
+    io.observe(document.getElementById('comment-section'));
+  }
+})();
+</script>
 <% } %>
 
 <% if(config['anchorjs']) { %>
-<!-- async load function -->
 <script>
     function async(u, c) {
       var d = document, t = 'script',
           o = d.createElement(t),
           s = d.getElementsByTagName(t)[0];
       o.src = u;
-      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      if (c) { o.addEventListener('load', function () { c(null); }, false); }
       s.parentNode.insertBefore(o, s);
     }
-</script>
-<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
-<script>
-    async("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+    async('https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js', function () {
         anchors.options = {
           visible: 'hover',
           placement: 'left',
           icon: 'ℬ'
         };
         anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
-    })
+    });
 </script>
 <style>
-    /* place left on bigger screen */
     @media all and (min-width: 800px) {
         .anchorjs-link{
             position: absolute;
