@@ -6,10 +6,10 @@
     : (is_post()
       ? (page['header-img'] || config['article-img'])
       : (page['header-img'] || config['archives-img'] || config['header-img']));
-  const heroPath = (rawHero || '').replace(/^\//, '');
-  const heroAbs = config.url.replace(/\/$/, '') + config.root + heroPath;
+  const heroPath = '/' + (rawHero || '').replace(/^\//, '');
+  const heroAbs = full_url_for(heroPath);
   const heroWebp = heroAbs.replace(/\.(jpg|jpeg|png)$/i, '.webp');
-  const canonical = config.url.replace(/\/$/, '') + config.root + (page.path || '').replace(/index\.html$/, '');
+  const canonical = full_url_for((page.path || '').replace(/index\.html$/, '') || '/');
   const ogType = is_post() ? 'article' : 'website';
 %>
 <head>

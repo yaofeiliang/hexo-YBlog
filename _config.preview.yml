@@ -1,0 +1,4 @@
+# Used only for GitHub project-pages preview builds:
+#   npx hexo generate --config _config.yml,_config.preview.yml
+url: https://yaofeiliang.github.io/hexo-YBlog
+root: /hexo-YBlog/

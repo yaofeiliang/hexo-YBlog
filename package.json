@@ -9,7 +9,8 @@
     "build": "hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
-    "server": "hexo server"
+    "server": "hexo server",
+    "build:preview": "hexo clean && hexo generate --config _config.yml,_config.preview.yml"
   },
   "hexo": {
     "version": "8.1.2"
