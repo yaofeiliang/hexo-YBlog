@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="搭建代理服务器。">
+    <meta name="keywords" content="姚飞亮">
+    <meta name="author" content="姚飞亮">
+    <meta name="theme-color" content="#0085a1">
+    <link rel="shortcut icon" href="/hexo-YBlog/img/y.png">
+    <link rel="alternate" type="application/atom+xml" title="Y Blog" href="/hexo-YBlog/atom.xml">
+    <title>[工具] 网络代理 - 姚飞亮 | Blog</title>
+    <link rel="canonical" href="https://yaofeiliang.github.io/hexo-YBlog/%E5%B7%A5%E5%85%B7/tool-ss/">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="[工具] 网络代理 - 姚飞亮 | Blog">
+    <meta property="og:description" content="搭建代理服务器。">
+    <meta property="og:url" content="https://yaofeiliang.github.io/hexo-YBlog/%E5%B7%A5%E5%85%B7/tool-ss/">
+    <meta property="og:site_name" content="Y Blog">
+    <meta property="og:image" content="https://yaofeiliang.github.io/hexo-YBlog/img/article_header/article_header.jpg">
+    <meta property="og:locale" content="zh_CN">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="[工具] 网络代理 - 姚飞亮 | Blog">
+    <meta name="twitter:description" content="搭建代理服务器。">
+    <meta name="twitter:image" content="https://yaofeiliang.github.io/hexo-YBlog/img/article_header/article_header.jpg">
+
+    <link rel="preload" as="image" href="https://yaofeiliang.github.io/hexo-YBlog/img/article_header/article_header.webp" type="image/webp">
+    <link rel="preload" as="image" href="https://yaofeiliang.github.io/hexo-YBlog/img/article_header/article_header.jpg" type="image/jpeg">
+
+    
+<link rel="stylesheet" href="/hexo-YBlog/css/site.css">
+
+    
+<link rel="stylesheet" href="/hexo-YBlog/css/beantech.min.css">
+
+    
+<link rel="stylesheet" href="/hexo-YBlog/css/widget.css">
+
+    
+<link rel="stylesheet" href="/hexo-YBlog/css/rocket.css">
+
+    
+<link rel="stylesheet" href="/hexo-YBlog/css/signature.css">
+
+    
+    
+<link rel="stylesheet" href="/hexo-YBlog/css/highlight.css">
+
+    
+<link rel="stylesheet" href="/hexo-YBlog/css/toc.css">
+
+    
+
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"BlogPosting","headline":"[工具] 网络代理","description":"搭建代理服务器。","image":"https://yaofeiliang.github.io/hexo-YBlog/img/article_header/article_header.jpg","datePublished":"2018-12-20T02:51:24.000Z","dateModified":"2026-07-25T02:56:12.768Z","author":{"@type":"Person","name":"姚飞亮"},"mainEntityOfPage":"https://yaofeiliang.github.io/hexo-YBlog/%E5%B7%A5%E5%85%B7/tool-ss/","publisher":{"@type":"Person","name":"姚飞亮"}}
+    </script>
+<meta name="generator" content="Hexo 8.1.2"></head>
+
+
+<body ontouchstart="">
+	
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/article_header/article_header.jpg');
+        background-image: -webkit-image-set(url('/img/article_header/article_header.webp') type('image/webp'), url('/img/article_header/article_header.jpg') type('image/jpeg'));
+        background-image: image-set(url('/img/article_header/article_header.webp') type('image/webp'), url('/img/article_header/article_header.jpg') type('image/jpeg'));
+    }
+    
+    #signature {
+        background-image: url('/hexo-YBlog/img/signature/icon_yaofeiliang.png');
+    }
+    
+</style>
+
+<header class="intro-header">
+    <div id="signature">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                
+                    <div class="post-heading">
+                        <div class="tags">
+                            
+                              <a class="tag" href="/hexo-YBlog/tags/#工具" title="工具">工具</a>
+                            
+                        </div>
+                        <h1>[工具] 网络代理</h1>
+                        <h2 class="subheading">搭建代理服务器。</h2>
+                        <span class="meta">
+                            姚飞亮 · 2018-12-20
+                        </span>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+	<nav class="navbar navbar-default navbar-custom navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" aria-controls="huxblog_navbar" aria-expanded="false" aria-label="打开导航菜单">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" style="margin-left:0;padding:10px;" href="/hexo-YBlog/">
+                <img src="/hexo-YBlog/img/y.png" alt="Y Blog" height="100%">
+                <span class="brand-text">Y Blog</span>
+            </a>
+        </div>
+
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/hexo-YBlog/">Home</a>
+                    </li>
+                    
+                        
+                    
+                        
+                        <li>
+                            <a href="/hexo-YBlog/about/">About</a>
+                        </li>
+                        
+                    
+                        
+                        <li>
+                            <a href="/hexo-YBlog/archive/">Archives</a>
+                        </li>
+                        
+                    
+                        
+                        <li>
+                            <a href="/hexo-YBlog/tags/">Tags</a>
+                        </li>
+                        
+                    
+                    <li>
+                        <a href="/hexo-YBlog/atom.xml" rel="noopener">RSS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<script>
+    (function () {
+        var $toggle = document.querySelector('.navbar-toggle');
+        var $navbar = document.querySelector('#huxblog_navbar');
+        var $collapse = document.querySelector('.navbar-collapse');
+        if (!$toggle || !$navbar || !$collapse) return;
+        $toggle.addEventListener('click', function () {
+            var open = $navbar.className.indexOf('in') > -1;
+            if (open) {
+                $navbar.className = ' ';
+                $toggle.setAttribute('aria-expanded', 'false');
+                setTimeout(function () {
+                    if ($navbar.className.indexOf('in') < 0) $collapse.style.height = '0px';
+                }, 400);
+            } else {
+                $collapse.style.height = 'auto';
+                $navbar.className += ' in';
+                $toggle.setAttribute('aria-expanded', 'true');
+            }
+        });
+    })();
+</script>
+
+
+    <main class="main-content-wrap" id="main">
+      
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 post-container">
+                <h1 id="搭建代理服务器"><a href="#搭建代理服务器" class="headerlink" title="搭建代理服务器"></a>搭建代理服务器</h1><h2 id="支持系统"><a href="#支持系统" class="headerlink" title="支持系统"></a>支持系统</h2><p>CentOS 6+</p>
+<p>Debian 7+</p>
+<p>Ubuntu 12+</p>
+<h2 id="使用教程"><a href="#使用教程" class="headerlink" title="使用教程"></a>使用教程</h2><p>一键搭建ss&#x2F;ssr：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/yaofeiliang/ss-yaofeliliang.git</span><br><span class="line"></span><br><span class="line"><span class="built_in">cd</span>  ss-yaofeiliang</span><br><span class="line"></span><br><span class="line">./ss-yaofeiliang.sh -i password 1024</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">[成功] 安装成功尽情冲浪！</span><br><span class="line">你的服务器地址（IP）：</span><br><span class="line">你的密码            ： password</span><br><span class="line">你的端口            ： 1024</span><br><span class="line">你的加密方式        ： aes-256-cfb</span><br><span class="line">欢迎访问YBlog   ： https://www.yaofeiliang.com</span><br><span class="line">你的ss链接：</span><br></pre></td></tr></table></figure>
+
+                
+                <! -- 添加捐赠图标 -->
+<div class ="post-donate">
+    <div id="donate_board" class="donate_bar center">
+        <a id="btn_donate" class="btn_donate" href="javascript:;" title="打赏"></a>
+        <span class="donate_txt">
+            Y Blog服务器是收费的，感谢您的捐助。
+        </span>
+        <br>
+    </div>
+    <div id="donate_guide" class="donate_bar center hidden" >
+        <!-- 方式一：
+            ![](/img/Alipay.jpg)
+            ![](/img/WeChatpay.jpg)
+        -->
+        <!-- 方式二；
+            step1：在_config.yml中添加配置
+                Alipay: /img/Alipay.jpg
+                WeChatpay: /img/WeChatpay.jpg
+            step2：此处两张图片的路径分别设置为如下
+                <img src="/hexo-YBlog/"
+                <img src="/hexo-YBlog/"
+        -->
+        <!--&lt;!&ndash; 支付宝打赏图案 &ndash;&gt;-->
+        <img src="/hexo-YBlog/img/Alipay.jpg" alt="支付宝打赏">
+        <!-- &lt;!&ndash; 微信打赏图案 &ndash;&gt;-->
+        <img src="/hexo-YBlog/img/WeChatpay.jpg" alt="微信打赏">
+
+    </div>
+    <script type="text/javascript">
+      var btn=document.getElementById('btn_donate');
+      var board=document.getElementById('donate_board');
+      var guide=document.getElementById('donate_guide');
+      if(btn&&board&&guide){
+        btn.addEventListener('click',function(){
+          board.classList.add('hidden');
+          guide.classList.remove('hidden');
+        });
+      }
+    </script>
+</div>
+                
+                <hr>
+                <ul class="pager">
+                    
+                        <li class="previous">
+                            <a href="/hexo-YBlog/article/Hexo-Hexo-admin/" title="[Hexo]Hexo admin 自动发布文章">← Previous Post</a>
+                        </li>
+                    
+                    
+                        <li class="next">
+                            <a href="/hexo-YBlog/工具/tool-analytics/" title="[工具] 网站访问数据统计">Next Post →</a>
+                        </li>
+                    
+                </ul>
+
+                
+<div class="comment" id="comment-section">
+    <div class="comment-gate">
+        <button type="button" id="load-comments-btn">加载评论</button>
+    </div>
+    <div id="lv-container" data-id="city" data-uid="MTAyMC80MjAxNy8xODU2NA==" hidden></div>
+</div>
+<script>
+(function () {
+  var btn = document.getElementById('load-comments-btn');
+  var box = document.getElementById('lv-container');
+  var section = document.getElementById('comment-section');
+  if (!btn || !box || !section) return;
+  function loadLivere() {
+    if (btn.dataset.loaded === '1') return;
+    btn.dataset.loaded = '1';
+    btn.textContent = '评论加载中…';
+    box.hidden = false;
+    if (typeof LivereTower !== 'function') {
+      var j = document.createElement('script');
+      j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+      j.async = true;
+      j.onload = function () { btn.style.display = 'none'; };
+      document.body.appendChild(j);
+    } else {
+      btn.style.display = 'none';
+    }
+  }
+  btn.addEventListener('click', loadLivere);
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          loadLivere();
+          io.disconnect();
+        }
+      });
+    }, { rootMargin: '200px' });
+    io.observe(section);
+  }
+})();
+</script>
+
+
+            </div>
+
+            
+  
+    
+      <aside id="sidebar">
+        <div id="toc" class="toc-article">
+        <strong class="toc-title">目录</strong>
+        
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E6%90%AD%E5%BB%BA%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">搭建代理服务器</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E6%94%AF%E6%8C%81%E7%B3%BB%E7%BB%9F"><span class="toc-nav-number">1.1.</span> <span class="toc-nav-text">支持系统</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B"><span class="toc-nav-number">1.2.</span> <span class="toc-nav-text">使用教程</span></a></li></ol></li></ol>
+        
+        </div>
+      </aside>
+    
+
+
+
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 sidebar-container">
+                
+                <section>
+                    <h5><a href="/hexo-YBlog/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                       
+                          <a class="tag" href="/hexo-YBlog/tags/#工具" title="工具">工具</a>
+                        
+                    </div>
+                </section>
+                
+
+                
+                <hr>
+                <h5>FRIENDS</h5>
+                <ul class="list-inline">
+                    
+                        <li><a href="https://blog.csdn.net/u010932545" target="_blank" rel="noopener noreferrer">CSDN Blog 姚飞亮</a></li>
+                    
+                        <li><a href="https://dockone.io/people/姚飞亮" target="_blank" rel="noopener noreferrer">DockOne 姚飞亮</a></li>
+                    
+                        <li><a href="https://yq.aliyun.com/u/yaofeiliang" target="_blank" rel="noopener noreferrer">阿里云栖社区 姚飞亮</a></li>
+                    
+                        <li><a href="https://www.zhihu.com/people/yaofeiliang/activities" target="_blank" rel="noopener noreferrer">知乎 姚飞亮</a></li>
+                    
+                        <li><a href="https://weibo.com/yaofeiliang" target="_blank" rel="noopener noreferrer">新浪微博 姚飞亮</a></li>
+                    
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+<script>
+    (function () {
+      var s = document.createElement('script');
+      s.src = 'https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js';
+      s.async = true;
+      s.onload = function () {
+        anchors.options = { visible: 'hover', placement: 'left', icon: 'ℬ' };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+      };
+      document.body.appendChild(s);
+    })();
+</script>
+<style>
+    @media all and (min-width: 800px) {
+        .anchorjs-link{ position:absolute; left:-0.75em; font-size:1.1em; margin-top:-0.1em; }
+    }
+</style>
+
+
+    </main>
+
+    <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center social-icons">
+
+    <li>
+        <a class="icon-btn" href="/hexo-YBlog/atom.xml" title="RSS" rel="noopener" aria-label="RSS">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.18 15.64a2.18 2.18 0 0 1 2.18 2.18C8.36 19 7.38 20 6.18 20S4 19 4 17.82s.98-2.18 2.18-2.18M4 4.44v2.86c7.03 0 12.7 5.67 12.7 12.7h2.86C19.56 11.27 12.73 4.44 4 4.44m0 5.72v2.86c3.9 0 7.04 3.14 7.04 7.04h2.86c0-5.47-4.43-9.9-9.9-9.9Z"/></svg>
+        </a>
+    </li>
+
+
+    <li>
+        <a class="icon-btn" target="_blank" rel="noopener noreferrer" href="https://www.zhihu.com/people/yaofeiliang" title="知乎" aria-label="知乎">
+            <span class="icon-text">知</span>
+        </a>
+    </li>
+
+
+    <li>
+        <a class="icon-btn" target="_blank" rel="noopener noreferrer" href="https://weibo.com/yaofeiliang" title="微博" aria-label="微博">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.1 17.8c-2.9.2-5.4-1.2-5.6-3.1-.2-1.9 2-3.6 4.9-3.8 2.9-.2 5.4 1.2 5.6 3.1.2 1.9-2 3.6-4.9 3.8m1.2-8.6c-.4-.1-.7-.5-.5-.9.4-1.1 1.5-1.7 2.5-1.3 1 .3 1.5 1.5 1.2 2.5-.1.3-.5.5-.9.3-.3-.1-.4-.4-.3-.7.1-.3-.1-.6-.4-.7-.5-.2-.9.1-1 .5-.1.4-.5.6-.6.3M20.3 11c-.2-.1-.4 0-.5.2-.1.2 0 .5.2.6 1.1.6 1.7 1.5 1.5 2.6-.3 1.8-2.7 3.3-5.9 3.7-.3 0-.5.3-.4.6.1.2.3.4.6.3 3.7-.5 6.6-2.3 7-4.7.3-1.7-.7-3.1-2.5-4.1M9.9 12.7c-1.7.3-2.9 1.3-2.7 2.3.2 1 1.8 1.6 3.5 1.3 1.7-.3 2.9-1.3 2.7-2.3-.2-1-1.8-1.6-3.5-1.3m.4 2.5c-.5.1-.9 0-1-.2-.1-.3.1-.6.6-.7.5-.1.9 0 1 .2.1.3-.1.6-.6.7Z"/></svg>
+        </a>
+    </li>
+
+
+    <li>
+        <a class="icon-btn" target="_blank" rel="noopener noreferrer" href="https://github.com/yaofeiliang" title="GitHub" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.48 0-.24-.01-.87-.01-1.7-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.89 1.57 2.34 1.12 2.91.86.09-.66.35-1.12.63-1.38-2.22-.26-4.55-1.14-4.55-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.27 2.75 1.05A9.3 9.3 0 0 1 12 7.5c.85 0 1.7.12 2.5.34 1.9-1.32 2.74-1.05 2.74-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.38-.01 2.49-.01 2.83 0 .26.18.59.69.48A10.27 10.27 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"/></svg>
+        </a>
+    </li>
+
+
+    <li>
+        <a class="icon-btn" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/飞亮-姚-56270a116" title="LinkedIn" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.94 6.5A2.44 2.44 0 1 1 6.93 1.6a2.44 2.44 0 0 1 .01 4.9ZM2.9 22V8.75h4.1V22H2.9Zm7.2-13.25h3.93v1.82h.06c.55-1.04 1.9-2.13 3.9-2.13 4.17 0 4.94 2.75 4.94 6.32V22h-4.1v-5.6c0-1.34-.03-3.06-1.86-3.06-1.87 0-2.15 1.46-2.15 2.96V22h-4.1V8.75Z"/></svg>
+        </a>
+    </li>
+
+</ul>
+
+                <p class="copyright text-muted">
+                    Copyright &copy; 姚飞亮 2026
+                    <br>
+                    <a href="https://yaofeiliang.github.io/hexo-YBlog" rel="noopener">Y Blog</a>
+                    · 苏ICP备19000128号
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="/hexo-YBlog/js/site.js" defer></script>
+
+
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+      function loadBaidu() {
+        var hm = document.createElement('script');
+        hm.src = 'https://hm.baidu.com/hm.js?d226c9b2398c493d7d554d7ce7c7f143';
+        hm.async = true;
+        document.head.appendChild(hm);
+      }
+      if ('requestIdleCallback' in window) requestIdleCallback(loadBaidu, { timeout: 3000 });
+      else setTimeout(loadBaidu, 2000);
+    })();
+</script>
+
+
+
+	<a id="rocket" href="#top" class="" aria-label="回到顶部"></a>
+</body>
+</html>

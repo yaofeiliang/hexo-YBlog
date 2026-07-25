@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="成为更好的自己">
+    <meta name="keywords" content="姚飞亮">
+    <meta name="author" content="姚飞亮">
+    <meta name="theme-color" content="#0085a1">
+    <link rel="shortcut icon" href="/hexo-YBlog/img/y.png">
+    <link rel="alternate" type="application/atom+xml" title="Y Blog" href="/hexo-YBlog/atom.xml">
+    <title>[Node.js] assert 断言模块单元测试 - 姚飞亮 | Blog</title>
+    <link rel="canonical" href="https://yaofeiliang.github.io/hexo-YBlog/Node-js/Node-js-assert-%E6%96%AD%E8%A8%80%E6%A8%A1%E5%9D%97%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="[Node.js] assert 断言模块单元测试 - 姚飞亮 | Blog">
+    <meta property="og:description" content="成为更好的自己">
+    <meta property="og:url" content="https://yaofeiliang.github.io/hexo-YBlog/Node-js/Node-js-assert-%E6%96%AD%E8%A8%80%E6%A8%A1%E5%9D%97%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/">
+    <meta property="og:site_name" content="Y Blog">
+    <meta property="og:image" content="https://yaofeiliang.github.io/hexo-YBlog/img/article_header/article_bg.jpg">
+    <meta property="og:locale" content="zh_CN">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="[Node.js] assert 断言模块单元测试 - 姚飞亮 | Blog">
+    <meta name="twitter:description" content="成为更好的自己">
+    <meta name="twitter:image" content="https://yaofeiliang.github.io/hexo-YBlog/img/article_header/article_bg.jpg">
+
+    <link rel="preload" as="image" href="https://yaofeiliang.github.io/hexo-YBlog/img/article_header/article_bg.webp" type="image/webp">
+    <link rel="preload" as="image" href="https://yaofeiliang.github.io/hexo-YBlog/img/article_header/article_bg.jpg" type="image/jpeg">
+
+    
+<link rel="stylesheet" href="/hexo-YBlog/css/site.css">
+
+    
+<link rel="stylesheet" href="/hexo-YBlog/css/beantech.min.css">
+
+    
+<link rel="stylesheet" href="/hexo-YBlog/css/widget.css">
+
+    
+<link rel="stylesheet" href="/hexo-YBlog/css/rocket.css">
+
+    
+<link rel="stylesheet" href="/hexo-YBlog/css/signature.css">
+
+    
+    
+<link rel="stylesheet" href="/hexo-YBlog/css/highlight.css">
+
+    
+<link rel="stylesheet" href="/hexo-YBlog/css/toc.css">
+
+    
+
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"BlogPosting","headline":"[Node.js] assert 断言模块单元测试","description":"成为更好的自己","image":"https://yaofeiliang.github.io/hexo-YBlog/img/article_header/article_bg.jpg","datePublished":"2019-01-06T16:55:00.000Z","dateModified":"2026-07-25T02:41:38.351Z","author":{"@type":"Person","name":"姚飞亮"},"mainEntityOfPage":"https://yaofeiliang.github.io/hexo-YBlog/Node-js/Node-js-assert-%E6%96%AD%E8%A8%80%E6%A8%A1%E5%9D%97%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/","publisher":{"@type":"Person","name":"姚飞亮"}}
+    </script>
+<meta name="generator" content="Hexo 8.1.2"></head>
+
+
+<body ontouchstart="">
+	
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/article_header/article_bg.jpg');
+        background-image: -webkit-image-set(url('/img/article_header/article_bg.webp') type('image/webp'), url('/img/article_header/article_bg.jpg') type('image/jpeg'));
+        background-image: image-set(url('/img/article_header/article_bg.webp') type('image/webp'), url('/img/article_header/article_bg.jpg') type('image/jpeg'));
+    }
+    
+    #signature {
+        background-image: url('/hexo-YBlog/img/signature/icon_yaofeiliang.png');
+    }
+    
+</style>
+
+<header class="intro-header">
+    <div id="signature">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                
+                    <div class="post-heading">
+                        <div class="tags">
+                            
+                              <a class="tag" href="/hexo-YBlog/tags/#Node.js" title="Node.js">Node.js</a>
+                            
+                        </div>
+                        <h1>[Node.js] assert 断言模块单元测试</h1>
+                        
+                        <span class="meta">
+                            姚飞亮 · 2019-01-06
+                        </span>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+	<nav class="navbar navbar-default navbar-custom navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" aria-controls="huxblog_navbar" aria-expanded="false" aria-label="打开导航菜单">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" style="margin-left:0;padding:10px;" href="/hexo-YBlog/">
+                <img src="/hexo-YBlog/img/y.png" alt="Y Blog" height="100%">
+                <span class="brand-text">Y Blog</span>
+            </a>
+        </div>
+
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/hexo-YBlog/">Home</a>
+                    </li>
+                    
+                        
+                    
+                        
+                        <li>
+                            <a href="/hexo-YBlog/about/">About</a>
+                        </li>
+                        
+                    
+                        
+                        <li>
+                            <a href="/hexo-YBlog/archive/">Archives</a>
+                        </li>
+                        
+                    
+                        
+                        <li>
+                            <a href="/hexo-YBlog/tags/">Tags</a>
+                        </li>
+                        
+                    
+                    <li>
+                        <a href="/hexo-YBlog/atom.xml" rel="noopener">RSS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<script>
+    (function () {
+        var $toggle = document.querySelector('.navbar-toggle');
+        var $navbar = document.querySelector('#huxblog_navbar');
+        var $collapse = document.querySelector('.navbar-collapse');
+        if (!$toggle || !$navbar || !$collapse) return;
+        $toggle.addEventListener('click', function () {
+            var open = $navbar.className.indexOf('in') > -1;
+            if (open) {
+                $navbar.className = ' ';
+                $toggle.setAttribute('aria-expanded', 'false');
+                setTimeout(function () {
+                    if ($navbar.className.indexOf('in') < 0) $collapse.style.height = '0px';
+                }, 400);
+            } else {
+                $collapse.style.height = 'auto';
+                $navbar.className += ' in';
+                $toggle.setAttribute('aria-expanded', 'true');
+            }
+        });
+    })();
+</script>
+
+
+    <main class="main-content-wrap" id="main">
+      
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 post-container">
+                <h1 id="Node-js-assert-断言模块单元测试"><a href="#Node-js-assert-断言模块单元测试" class="headerlink" title="Node.js assert 断言模块单元测试"></a>Node.js assert 断言模块单元测试</h1><p>在nodejsh中有一个assert模块，这个模块主要用于内部断言测试使用，我们也可以在项目中使用assert模块进行断言的判断。<br>如果是true则测试通过，如果是false则测试不通过。<br>那么这和用if进行判断调试有什么区别呢？</p>
+<blockquote>
+<p>程序一般情况下分为Debug和Release，Debug用于内部测试，Release用于用户使用。</p>
+</blockquote>
+<p><strong>assert</strong></p>
+<blockquote>
+<p>断言仅在Debug版本起作用和宏一样，它用于检查不应该发生的情况。如果断言失败，则程序会终止。（如果if那Release时还得删掉用于调试的代码）</p>
+</blockquote>
+<p><strong>if</strong></p>
+<blockquote>
+<p>表达式的值为真则执行当前语句，否则不执行。if既可以用于判断一条语句；也可以判断复合语句。</p>
+</blockquote>
+<p><strong>区别</strong></p>
+<blockquote>
+<ol>
+<li>if判断语句，如果条件为真，则进行下一条语句；如果条件不为真，执行相反的语句 </li>
+<li>assert,断言不成立时，直接终止 </li>
+<li>if用于检测代码的正确性；assert检测代码的合法性，若断言失败，程序就不能运行</li>
+</ol>
+</blockquote>
+<p><strong>言归正传，还是来看看assert模块的使用，首先先引入断言assert模块</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var assert = require(&#x27;assert&#x27;);</span><br></pre></td></tr></table></figure>
+<h2 id="1-assert-value-message-assert-ok-value-message"><a href="#1-assert-value-message-assert-ok-value-message" class="headerlink" title="1.assert(value, message), assert.ok(value, [message])"></a>1.assert(value, message), assert.ok(value, [message])</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//判断中值是否为true</span><br><span class="line">assert.ifError(value) //测试值是否不为 false，当为 true 时抛出。常用于回调中第一个 error 参数的检查。</span><br><span class="line">var a = 0;</span><br><span class="line">assert(a,&#x27;这里需要值为true&#x27;); 　　//AssertionError: 这里需要值为true</span><br><span class="line">assert.ok(a,&#x27;这里也要为true&#x27;);　　// AssertionError: 这里也要为true</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="2-assert-fail-actual-expected-message-operator"><a href="#2-assert-fail-actual-expected-message-operator" class="headerlink" title="2.assert.fail(actual, expected, message, operator)"></a>2.assert.fail(actual, expected, message, operator)</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//抛出异常,有message时显示message，没有使用operator作为为分隔符</span><br><span class="line">var a = 0;</span><br><span class="line">assert.fail(a,1,&#x27;a！=1&#x27;,&#x27;&lt;&#x27;); // AssertionError: a！=1</span><br><span class="line">assert.fail(a,2,&#x27;&#x27;,&#x27;&lt;&#x27;);　　　　// AssertionError: 0 &lt; 2</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-assert-equal-actual-expected-message"><a href="#3-assert-equal-actual-expected-message" class="headerlink" title="3.assert.equal(actual, expected, [message])"></a>3.assert.equal(actual, expected, [message])</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">//(&quot;==&quot;判断)是否相等 相反：notEqual</span><br><span class="line">　assert.strictEqual(actual, expected, [message])  //(&quot;===&quot;判断)是否相等 相反：notStrictEqual</span><br><span class="line"></span><br><span class="line">复制代码</span><br><span class="line">var a = 2;</span><br><span class="line">var a=&#x27;2&#x27;;</span><br><span class="line"></span><br><span class="line">assert.equal(a,b,&#x27;a,b不相等 ==&#x27;)</span><br><span class="line">assert.notEqual(a,b,&#x27;a,b相等&#x27;)　　　　　　// AssertionError: a,b相等</span><br><span class="line">assert.strictEqual(a,b,&#x27;a,b不完全相等 ===&#x27;)  // AssertionError: a,b不完全相等 ===</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="4-assert-deepEqual-actual-expected-message"><a href="#4-assert-deepEqual-actual-expected-message" class="headerlink" title="4.assert.deepEqual(actual, expected[, message])"></a>4.assert.deepEqual(actual, expected[, message])</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">// 是否深度匹配  相反： notDeepEqual</span><br><span class="line">var buf1 = new Buffer(&#x27;abc&#x27;);</span><br><span class="line">var buf2 = new Buffer(&#x27;abc&#x27;);</span><br><span class="line"></span><br><span class="line">assert.strictEqual(buf1, buf2, &#x27;buf1和buf2不一样&#x27;);  //AssertionError: buf1和buf2不一样</span><br><span class="line">assert.notDeepEqual(buf1, buf2, &#x27;buf1和buf2一样&#x27;);  //AssertionError: buf1和buf2一样</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="5-assert-throws-block-error-message"><a href="#5-assert-throws-block-error-message" class="headerlink" title="5.assert.throws(block, [error], [message])"></a>5.assert.throws(block, [error], [message])</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">//声明一个block用于抛出错误，&#x27;error&#x27;可以是构造函数，验证函数或者正则表达式</span><br><span class="line"></span><br><span class="line">assert.doesNotThrow(block, [message])//声明模块不抛出错误</span><br><span class="line"></span><br><span class="line">复制代码</span><br><span class="line">//构造函数</span><br><span class="line">assert.throws(</span><br><span class="line">  function() &#123;</span><br><span class="line">    throw new Error(&quot;Wrong value&quot;);</span><br><span class="line">  &#125;,</span><br><span class="line">  Error</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line">//正则</span><br><span class="line">assert.throws(</span><br><span class="line">  function() &#123;</span><br><span class="line">    throw new Error(&quot;Wrong value&quot;);</span><br><span class="line">  &#125;,</span><br><span class="line">  /value/</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line">//自定义错误</span><br><span class="line">assert.throws(</span><br><span class="line">  function() &#123;</span><br><span class="line">    throw new Error(&quot;Wrong value&quot;);</span><br><span class="line">  &#125;,</span><br><span class="line">  function(err) &#123;</span><br><span class="line">    if ( (err instanceof Error) &amp;&amp; /value/.test(err) ) &#123;</span><br><span class="line">      return true;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  &quot;unexpected error&quot;</span><br><span class="line">);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+                
+                <! -- 添加捐赠图标 -->
+<div class ="post-donate">
+    <div id="donate_board" class="donate_bar center">
+        <a id="btn_donate" class="btn_donate" href="javascript:;" title="打赏"></a>
+        <span class="donate_txt">
+            Y Blog服务器是收费的，感谢您的捐助。
+        </span>
+        <br>
+    </div>
+    <div id="donate_guide" class="donate_bar center hidden" >
+        <!-- 方式一：
+            ![](/img/Alipay.jpg)
+            ![](/img/WeChatpay.jpg)
+        -->
+        <!-- 方式二；
+            step1：在_config.yml中添加配置
+                Alipay: /img/Alipay.jpg
+                WeChatpay: /img/WeChatpay.jpg
+            step2：此处两张图片的路径分别设置为如下
+                <img src="/hexo-YBlog/"
+                <img src="/hexo-YBlog/"
+        -->
+        <!--&lt;!&ndash; 支付宝打赏图案 &ndash;&gt;-->
+        <img src="/hexo-YBlog/img/Alipay.jpg" alt="支付宝打赏">
+        <!-- &lt;!&ndash; 微信打赏图案 &ndash;&gt;-->
+        <img src="/hexo-YBlog/img/WeChatpay.jpg" alt="微信打赏">
+
+    </div>
+    <script type="text/javascript">
+      var btn=document.getElementById('btn_donate');
+      var board=document.getElementById('donate_board');
+      var guide=document.getElementById('donate_guide');
+      if(btn&&board&&guide){
+        btn.addEventListener('click',function(){
+          board.classList.add('hidden');
+          guide.classList.remove('hidden');
+        });
+      }
+    </script>
+</div>
+                
+                <hr>
+                <ul class="pager">
+                    
+                    
+                        <li class="next">
+                            <a href="/hexo-YBlog/article/Hexo-Hexo-admin/" title="[Hexo]Hexo admin 自动发布文章">Next Post →</a>
+                        </li>
+                    
+                </ul>
+
+                
+<div class="comment" id="comment-section">
+    <div class="comment-gate">
+        <button type="button" id="load-comments-btn">加载评论</button>
+    </div>
+    <div id="lv-container" data-id="city" data-uid="MTAyMC80MjAxNy8xODU2NA==" hidden></div>
+</div>
+<script>
+(function () {
+  var btn = document.getElementById('load-comments-btn');
+  var box = document.getElementById('lv-container');
+  var section = document.getElementById('comment-section');
+  if (!btn || !box || !section) return;
+  function loadLivere() {
+    if (btn.dataset.loaded === '1') return;
+    btn.dataset.loaded = '1';
+    btn.textContent = '评论加载中…';
+    box.hidden = false;
+    if (typeof LivereTower !== 'function') {
+      var j = document.createElement('script');
+      j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+      j.async = true;
+      j.onload = function () { btn.style.display = 'none'; };
+      document.body.appendChild(j);
+    } else {
+      btn.style.display = 'none';
+    }
+  }
+  btn.addEventListener('click', loadLivere);
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          loadLivere();
+          io.disconnect();
+        }
+      });
+    }, { rootMargin: '200px' });
+    io.observe(section);
+  }
+})();
+</script>
+
+
+            </div>
+
+            
+  
+    <style>
+      span.toc-nav-number{ display: none }
+    </style>
+  
+    
+      <aside id="sidebar">
+        <div id="toc" class="toc-article">
+        <strong class="toc-title">目录</strong>
+        
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#Node-js-assert-%E6%96%AD%E8%A8%80%E6%A8%A1%E5%9D%97%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">Node.js assert 断言模块单元测试</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#1-assert-value-message-assert-ok-value-message"><span class="toc-nav-number">1.1.</span> <span class="toc-nav-text">1.assert(value, message), assert.ok(value, [message])</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#2-assert-fail-actual-expected-message-operator"><span class="toc-nav-number">1.2.</span> <span class="toc-nav-text">2.assert.fail(actual, expected, message, operator)</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#3-assert-equal-actual-expected-message"><span class="toc-nav-number">1.3.</span> <span class="toc-nav-text">3.assert.equal(actual, expected, [message])</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#4-assert-deepEqual-actual-expected-message"><span class="toc-nav-number">1.4.</span> <span class="toc-nav-text">4.assert.deepEqual(actual, expected[, message])</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#5-assert-throws-block-error-message"><span class="toc-nav-number">1.5.</span> <span class="toc-nav-text">5.assert.throws(block, [error], [message])</span></a></li></ol></li></ol>
+        
+        </div>
+      </aside>
+    
+
+
+
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 sidebar-container">
+                
+                <section>
+                    <h5><a href="/hexo-YBlog/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                       
+                          <a class="tag" href="/hexo-YBlog/tags/#Node.js" title="Node.js">Node.js</a>
+                        
+                    </div>
+                </section>
+                
+
+                
+                <hr>
+                <h5>FRIENDS</h5>
+                <ul class="list-inline">
+                    
+                        <li><a href="https://blog.csdn.net/u010932545" target="_blank" rel="noopener noreferrer">CSDN Blog 姚飞亮</a></li>
+                    
+                        <li><a href="https://dockone.io/people/姚飞亮" target="_blank" rel="noopener noreferrer">DockOne 姚飞亮</a></li>
+                    
+                        <li><a href="https://yq.aliyun.com/u/yaofeiliang" target="_blank" rel="noopener noreferrer">阿里云栖社区 姚飞亮</a></li>
+                    
+                        <li><a href="https://www.zhihu.com/people/yaofeiliang/activities" target="_blank" rel="noopener noreferrer">知乎 姚飞亮</a></li>
+                    
+                        <li><a href="https://weibo.com/yaofeiliang" target="_blank" rel="noopener noreferrer">新浪微博 姚飞亮</a></li>
+                    
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+<script>
+    (function () {
+      var s = document.createElement('script');
+      s.src = 'https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js';
+      s.async = true;
+      s.onload = function () {
+        anchors.options = { visible: 'hover', placement: 'left', icon: 'ℬ' };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+      };
+      document.body.appendChild(s);
+    })();
+</script>
+<style>
+    @media all and (min-width: 800px) {
+        .anchorjs-link{ position:absolute; left:-0.75em; font-size:1.1em; margin-top:-0.1em; }
+    }
+</style>
+
+
+    </main>
+
+    <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center social-icons">
+
+    <li>
+        <a class="icon-btn" href="/hexo-YBlog/atom.xml" title="RSS" rel="noopener" aria-label="RSS">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.18 15.64a2.18 2.18 0 0 1 2.18 2.18C8.36 19 7.38 20 6.18 20S4 19 4 17.82s.98-2.18 2.18-2.18M4 4.44v2.86c7.03 0 12.7 5.67 12.7 12.7h2.86C19.56 11.27 12.73 4.44 4 4.44m0 5.72v2.86c3.9 0 7.04 3.14 7.04 7.04h2.86c0-5.47-4.43-9.9-9.9-9.9Z"/></svg>
+        </a>
+    </li>
+
+
+    <li>
+        <a class="icon-btn" target="_blank" rel="noopener noreferrer" href="https://www.zhihu.com/people/yaofeiliang" title="知乎" aria-label="知乎">
+            <span class="icon-text">知</span>
+        </a>
+    </li>
+
+
+    <li>
+        <a class="icon-btn" target="_blank" rel="noopener noreferrer" href="https://weibo.com/yaofeiliang" title="微博" aria-label="微博">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.1 17.8c-2.9.2-5.4-1.2-5.6-3.1-.2-1.9 2-3.6 4.9-3.8 2.9-.2 5.4 1.2 5.6 3.1.2 1.9-2 3.6-4.9 3.8m1.2-8.6c-.4-.1-.7-.5-.5-.9.4-1.1 1.5-1.7 2.5-1.3 1 .3 1.5 1.5 1.2 2.5-.1.3-.5.5-.9.3-.3-.1-.4-.4-.3-.7.1-.3-.1-.6-.4-.7-.5-.2-.9.1-1 .5-.1.4-.5.6-.6.3M20.3 11c-.2-.1-.4 0-.5.2-.1.2 0 .5.2.6 1.1.6 1.7 1.5 1.5 2.6-.3 1.8-2.7 3.3-5.9 3.7-.3 0-.5.3-.4.6.1.2.3.4.6.3 3.7-.5 6.6-2.3 7-4.7.3-1.7-.7-3.1-2.5-4.1M9.9 12.7c-1.7.3-2.9 1.3-2.7 2.3.2 1 1.8 1.6 3.5 1.3 1.7-.3 2.9-1.3 2.7-2.3-.2-1-1.8-1.6-3.5-1.3m.4 2.5c-.5.1-.9 0-1-.2-.1-.3.1-.6.6-.7.5-.1.9 0 1 .2.1.3-.1.6-.6.7Z"/></svg>
+        </a>
+    </li>
+
+
+    <li>
+        <a class="icon-btn" target="_blank" rel="noopener noreferrer" href="https://github.com/yaofeiliang" title="GitHub" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.48 0-.24-.01-.87-.01-1.7-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.89 1.57 2.34 1.12 2.91.86.09-.66.35-1.12.63-1.38-2.22-.26-4.55-1.14-4.55-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.27 2.75 1.05A9.3 9.3 0 0 1 12 7.5c.85 0 1.7.12 2.5.34 1.9-1.32 2.74-1.05 2.74-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.38-.01 2.49-.01 2.83 0 .26.18.59.69.48A10.27 10.27 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"/></svg>
+        </a>
+    </li>
+
+
+    <li>
+        <a class="icon-btn" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/飞亮-姚-56270a116" title="LinkedIn" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.94 6.5A2.44 2.44 0 1 1 6.93 1.6a2.44 2.44 0 0 1 .01 4.9ZM2.9 22V8.75h4.1V22H2.9Zm7.2-13.25h3.93v1.82h.06c.55-1.04 1.9-2.13 3.9-2.13 4.17 0 4.94 2.75 4.94 6.32V22h-4.1v-5.6c0-1.34-.03-3.06-1.86-3.06-1.87 0-2.15 1.46-2.15 2.96V22h-4.1V8.75Z"/></svg>
+        </a>
+    </li>
+
+</ul>
+
+                <p class="copyright text-muted">
+                    Copyright &copy; 姚飞亮 2026
+                    <br>
+                    <a href="https://yaofeiliang.github.io/hexo-YBlog" rel="noopener">Y Blog</a>
+                    · 苏ICP备19000128号
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="/hexo-YBlog/js/site.js" defer></script>
+
+
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+      function loadBaidu() {
+        var hm = document.createElement('script');
+        hm.src = 'https://hm.baidu.com/hm.js?d226c9b2398c493d7d554d7ce7c7f143';
+        hm.async = true;
+        document.head.appendChild(hm);
+      }
+      if ('requestIdleCallback' in window) requestIdleCallback(loadBaidu, { timeout: 3000 });
+      else setTimeout(loadBaidu, 2000);
+    })();
+</script>
+
+
+
+	<a id="rocket" href="#top" class="" aria-label="回到顶部"></a>
+</body>
+</html>

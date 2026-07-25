@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="统计分析网站访问数据">
+    <meta name="keywords" content="姚飞亮">
+    <meta name="author" content="姚飞亮">
+    <meta name="theme-color" content="#0085a1">
+    <link rel="shortcut icon" href="/hexo-YBlog/img/y.png">
+    <link rel="alternate" type="application/atom+xml" title="Y Blog" href="/hexo-YBlog/atom.xml">
+    <title>[工具] 网站访问数据统计 - 姚飞亮 | Blog</title>
+    <link rel="canonical" href="https://yaofeiliang.github.io/hexo-YBlog/%E5%B7%A5%E5%85%B7/tool-analytics/">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="[工具] 网站访问数据统计 - 姚飞亮 | Blog">
+    <meta property="og:description" content="统计分析网站访问数据">
+    <meta property="og:url" content="https://yaofeiliang.github.io/hexo-YBlog/%E5%B7%A5%E5%85%B7/tool-analytics/">
+    <meta property="og:site_name" content="Y Blog">
+    <meta property="og:image" content="https://yaofeiliang.github.io/hexo-YBlog/img/article_header/article_header.jpg">
+    <meta property="og:locale" content="zh_CN">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="[工具] 网站访问数据统计 - 姚飞亮 | Blog">
+    <meta name="twitter:description" content="统计分析网站访问数据">
+    <meta name="twitter:image" content="https://yaofeiliang.github.io/hexo-YBlog/img/article_header/article_header.jpg">
+
+    <link rel="preload" as="image" href="https://yaofeiliang.github.io/hexo-YBlog/img/article_header/article_header.webp" type="image/webp">
+    <link rel="preload" as="image" href="https://yaofeiliang.github.io/hexo-YBlog/img/article_header/article_header.jpg" type="image/jpeg">
+
+    
+<link rel="stylesheet" href="/hexo-YBlog/css/site.css">
+
+    
+<link rel="stylesheet" href="/hexo-YBlog/css/beantech.min.css">
+
+    
+<link rel="stylesheet" href="/hexo-YBlog/css/widget.css">
+
+    
+<link rel="stylesheet" href="/hexo-YBlog/css/rocket.css">
+
+    
+<link rel="stylesheet" href="/hexo-YBlog/css/signature.css">
+
+    
+    
+<link rel="stylesheet" href="/hexo-YBlog/css/highlight.css">
+
+    
+<link rel="stylesheet" href="/hexo-YBlog/css/toc.css">
+
+    
+
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"BlogPosting","headline":"[工具] 网站访问数据统计","description":"统计分析网站访问数据","image":"https://yaofeiliang.github.io/hexo-YBlog/img/article_header/article_header.jpg","datePublished":"2018-12-20T02:46:47.000Z","dateModified":"2026-07-25T02:56:12.756Z","author":{"@type":"Person","name":"姚飞亮"},"mainEntityOfPage":"https://yaofeiliang.github.io/hexo-YBlog/%E5%B7%A5%E5%85%B7/tool-analytics/","publisher":{"@type":"Person","name":"姚飞亮"}}
+    </script>
+<meta name="generator" content="Hexo 8.1.2"></head>
+
+
+<body ontouchstart="">
+	
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/article_header/article_header.jpg');
+        background-image: -webkit-image-set(url('/img/article_header/article_header.webp') type('image/webp'), url('/img/article_header/article_header.jpg') type('image/jpeg'));
+        background-image: image-set(url('/img/article_header/article_header.webp') type('image/webp'), url('/img/article_header/article_header.jpg') type('image/jpeg'));
+    }
+    
+    #signature {
+        background-image: url('/hexo-YBlog/img/signature/icon_yaofeiliang.png');
+    }
+    
+</style>
+
+<header class="intro-header">
+    <div id="signature">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                
+                    <div class="post-heading">
+                        <div class="tags">
+                            
+                              <a class="tag" href="/hexo-YBlog/tags/#工具" title="工具">工具</a>
+                            
+                        </div>
+                        <h1>[工具] 网站访问数据统计</h1>
+                        <h2 class="subheading">统计分析网站访问数据</h2>
+                        <span class="meta">
+                            姚飞亮 · 2018-12-20
+                        </span>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+	<nav class="navbar navbar-default navbar-custom navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" aria-controls="huxblog_navbar" aria-expanded="false" aria-label="打开导航菜单">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" style="margin-left:0;padding:10px;" href="/hexo-YBlog/">
+                <img src="/hexo-YBlog/img/y.png" alt="Y Blog" height="100%">
+                <span class="brand-text">Y Blog</span>
+            </a>
+        </div>
+
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/hexo-YBlog/">Home</a>
+                    </li>
+                    
+                        
+                    
+                        
+                        <li>
+                            <a href="/hexo-YBlog/about/">About</a>
+                        </li>
+                        
+                    
+                        
+                        <li>
+                            <a href="/hexo-YBlog/archive/">Archives</a>
+                        </li>
+                        
+                    
+                        
+                        <li>
+                            <a href="/hexo-YBlog/tags/">Tags</a>
+                        </li>
+                        
+                    
+                    <li>
+                        <a href="/hexo-YBlog/atom.xml" rel="noopener">RSS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<script>
+    (function () {
+        var $toggle = document.querySelector('.navbar-toggle');
+        var $navbar = document.querySelector('#huxblog_navbar');
+        var $collapse = document.querySelector('.navbar-collapse');
+        if (!$toggle || !$navbar || !$collapse) return;
+        $toggle.addEventListener('click', function () {
+            var open = $navbar.className.indexOf('in') > -1;
+            if (open) {
+                $navbar.className = ' ';
+                $toggle.setAttribute('aria-expanded', 'false');
+                setTimeout(function () {
+                    if ($navbar.className.indexOf('in') < 0) $collapse.style.height = '0px';
+                }, 400);
+            } else {
+                $collapse.style.height = 'auto';
+                $navbar.className += ' in';
+                $toggle.setAttribute('aria-expanded', 'true');
+            }
+        });
+    })();
+</script>
+
+
+    <main class="main-content-wrap" id="main">
+      
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 post-container">
+                <h1 id="网站访问数据统计工具"><a href="#网站访问数据统计工具" class="headerlink" title="网站访问数据统计工具"></a>网站访问数据统计工具</h1><h2 id="google-analytics添加跟踪代码实现统计分析"><a href="#google-analytics添加跟踪代码实现统计分析" class="headerlink" title="google analytics添加跟踪代码实现统计分析"></a>google analytics添加跟踪代码实现统计分析</h2><p> 其代码添加方式共有三种</p>
+<h3 id="gtag-js"><a href="#gtag-js" class="headerlink" title="gtag.js"></a>gtag.js</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- Global site tag (gtag.js) - Google Analytics --&gt;</span><br><span class="line">&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=UA-111264922-1&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">  window.dataLayer = window.dataLayer || [];</span><br><span class="line">  function gtag()&#123;dataLayer.push(arguments);&#125;</span><br><span class="line">  gtag(&#x27;js&#x27;, new Date());</span><br><span class="line"></span><br><span class="line">  gtag(&#x27;config&#x27;, &#x27;UA-11XXX922-1&#x27;);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<p>事件跟踪代码：<a target="_blank" rel="noopener" href="https://developers.google.com/analytics/devguides/collection/gtagjs/">https://developers.google.com/analytics/devguides/collection/gtagjs/</a></p>
+<h3 id="analytics-js"><a href="#analytics-js" class="headerlink" title="analytics.js"></a>analytics.js</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- Google Analytics --&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">(function(i,s,o,g,r,a,m)&#123;i[&#x27;GoogleAnalyticsObject&#x27;]=r;i[r]=i[r]||function()&#123;</span><br><span class="line">(i[r].q=i[r].q||[]).push(arguments)&#125;,i[r].l=1*new Date();a=s.createElement(o),</span><br><span class="line">m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)</span><br><span class="line">&#125;)(window,document,&#x27;script&#x27;,&#x27;https://www.google-analytics.com/analytics.js&#x27;,&#x27;ga&#x27;);</span><br><span class="line"></span><br><span class="line">ga(&#x27;create&#x27;, &#x27;UA-XXXXX-Y&#x27;, &#x27;auto&#x27;);</span><br><span class="line">ga(&#x27;send&#x27;, &#x27;pageview&#x27;);</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;!-- End Google Analytics --&gt;</span><br></pre></td></tr></table></figure>
+<p>事件跟踪代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">onclick=&quot;ga(&#x27;send&#x27;, &#x27;event&#x27;, &#x27;Videos&#x27;, &#x27;play&#x27;, &#x27;Fall Campaign&#x27;);&quot;</span><br></pre></td></tr></table></figure>
+<p>详细信息请查看google文档：<br>google分析文档</p>
+<h3 id="google代码跟踪管理器GTM"><a href="#google代码跟踪管理器GTM" class="headerlink" title="google代码跟踪管理器GTM"></a>google代码跟踪管理器GTM</h3><h2 id="baidu-analytics添加跟踪代码实现统计分析"><a href="#baidu-analytics添加跟踪代码实现统计分析" class="headerlink" title="baidu analytics添加跟踪代码实现统计分析"></a>baidu analytics添加跟踪代码实现统计分析</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">var _hmt = _hmt || [];</span><br><span class="line">(function() &#123;</span><br><span class="line">  var hm = document.createElement(&quot;script&quot;);</span><br><span class="line">  hm.src = &quot;https://hm.baidu.com/hm.js?d226c9b2398c493d7d554d7ce7c7f143&quot;;</span><br><span class="line">  var s = document.getElementsByTagName(&quot;script&quot;)[0];</span><br><span class="line">  s.parentNode.insertBefore(hm, s);</span><br><span class="line">&#125;)();</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<p>d226c9b2398c493d7d554d7ce7c7f143 改为自己的id</p>
+<h1 id="网站访问数据统计分析-："><a href="#网站访问数据统计分析-：" class="headerlink" title="网站访问数据统计分析 ："></a>网站访问数据统计分析 ：</h1><h2 id="一、网站概况："><a href="#一、网站概况：" class="headerlink" title="一、网站概况："></a>一、网站概况：</h2><h3 id="1、跳出率："><a href="#1、跳出率：" class="headerlink" title="1、跳出率："></a>1、跳出率：</h3><p>   只浏览了一个页面便离开了网站的访问次数占总的访问次数的百分比（入口页面有跳出率、访问页面是退出率）。<br>跳出率的统计意义：<br>统计跳出率的高低是网站分析的一个重要指标,通常用于评估网站的用户体验，可以用于指导网站以及页面的改善。跳出率越高就说明该网站对访问者的吸引力越低，当跳出率达到一定的程度时，就说明网站需要做些优化或者页面更新了。</p>
+<h3 id="2、平均访问时长："><a href="#2、平均访问时长：" class="headerlink" title="2、平均访问时长："></a>2、平均访问时长：</h3><p>在页面停留时间的总和除以PV（入口页面才有平均时长统计）</p>
+<h3 id="3、来源网站："><a href="#3、来源网站：" class="headerlink" title="3、来源网站："></a>3、来源网站：</h3><p>具体某个服务器的数据统计占比（预言：上线之后，券服务的来源网站可能是两个，因为应用部署在2台不同的服务器上了）</p>
+<h2 id="二、入口页面"><a href="#二、入口页面" class="headerlink" title="二、入口页面"></a>二、入口页面</h2><p>从其他服务器访问到券服务页面的第一个URL就是入口页面<br>预言：上线之后，券服务露出口、预览露出口、系统维护、系统异常等都可能成为入口页面</p>
+<h3 id="1、浏览量就是PV"><a href="#1、浏览量就是PV" class="headerlink" title="1、浏览量就是PV"></a>1、浏览量就是PV</h3><h3 id="2、入口页面的UV、IP和网站概况的UV、IP有区别，（例如：在统一浏览器上登陆了2用户，则浏览器Cookie变了，所以IP只有一个，而UV有两个）"><a href="#2、入口页面的UV、IP和网站概况的UV、IP有区别，（例如：在统一浏览器上登陆了2用户，则浏览器Cookie变了，所以IP只有一个，而UV有两个）" class="headerlink" title="2、入口页面的UV、IP和网站概况的UV、IP有区别，（例如：在统一浏览器上登陆了2用户，则浏览器Cookie变了，所以IP只有一个，而UV有两个）"></a>2、入口页面的UV、IP和网站概况的UV、IP有区别，（例如：在统一浏览器上登陆了2用户，则浏览器Cookie变了，所以IP只有一个，而UV有两个）</h3><h3 id="3、跳出率："><a href="#3、跳出率：" class="headerlink" title="3、跳出率："></a>3、跳出率：</h3><p>只浏览了一个页面便离开了网站的访问次数占总的访问次数的百分比</p>
+<h3 id="4、平均访问页数："><a href="#4、平均访问页数：" class="headerlink" title="4、平均访问页数："></a>4、平均访问页数：</h3><p>每人平均访问的页数，既，浏览量除以UV</p>
+<h3 id="5、访问次数："><a href="#5、访问次数：" class="headerlink" title="5、访问次数："></a>5、访问次数：</h3><p>访客对您网站进行访问的次数，是根据访客浏览器和网站服务器之间的互动情况判定。（不同以UV，在百度统计里，以下三种情况会记为新的访问：</p>
+<ol>
+<li>访客关闭浏览器后重新进入该网站；</li>
+<li>访客不关闭浏览器，但是在该网站上不活动超过30分钟，30分钟后访客再次点击该网站上的链接；</li>
+<li>访客任何时候从其他网站到达该网站。）</li>
+</ol>
+<p>注：一天之内您网站的独立访客数(以Cookie为依据)，一天内同一访客多次访问您网站只计算1个访客。<br>疑问：浏览器中Cookie信息时如何保存的？</p>
+<h2 id="三、受访页面"><a href="#三、受访页面" class="headerlink" title="三、受访页面"></a>三、受访页面</h2><h3 id="1、浏览量（PV）："><a href="#1、浏览量（PV）：" class="headerlink" title="1、浏览量（PV）："></a>1、浏览量（PV）：</h3><p>页面被打开的次数，同一页面被打开多次。统计累加（跟入口页面的PV、网站概况的PV没什么区别）</p>
+<h3 id="2、访客数（UV）："><a href="#2、访客数（UV）：" class="headerlink" title="2、访客数（UV）："></a>2、访客数（UV）：</h3><p>通过受访页面的URL来统计的，进入同一页面的URL不一样被记为多次UV</p>
+<h3 id="3、贡献下游浏览量："><a href="#3、贡献下游浏览量：" class="headerlink" title="3、贡献下游浏览量："></a>3、贡献下游浏览量：</h3><p>该页面给站内其他页面带去的直接浏览量，（站内：表示其他页面也在百度统计之内）</p>
+<h3 id="4、退出页面次数："><a href="#4、退出页面次数：" class="headerlink" title="4、退出页面次数："></a>4、退出页面次数：</h3><p>（用户从该页面直接关闭浏览器的次数）</p>
+<h3 id="5、平均停留时间："><a href="#5、平均停留时间：" class="headerlink" title="5、平均停留时间："></a>5、平均停留时间：</h3><p>访客浏览某一页面时所花费的平均时长，页面的停留时长&#x3D;进入下一个页面的时间-进入本页面的时间（只有在受访页面有）。</p>
+<h3 id="6、入口页次数："><a href="#6、入口页次数：" class="headerlink" title="6、入口页次数："></a>6、入口页次数：</h3><p>作为访问会话的入口页面（即：入口URL个数）的次数。</p>
+<h3 id="7、退出率："><a href="#7、退出率：" class="headerlink" title="7、退出率："></a>7、退出率：</h3><p>退出率&#x3D;该页面的退出次数&#x2F;该页面的PV数。<br>注：<br>而且退出率也不是根据提示里面的“退出率&#x3D;该页面的退出次数&#x2F;该页面的PV数”得出的结果。<br>退出率，就是根据该页面的退出次数比上PV数（从百度贴吧中拿到的数据）</p>
+<h2 id="四、流量分析"><a href="#四、流量分析" class="headerlink" title="四、流量分析"></a>四、流量分析</h2><p>实时访客（实时访问统计有问题，无法统计在线人数）<br>IP:入口的服务器IP（目前券服务露出在支付宝内，所以IP是支付宝服务器IP）<br>趋势分析</p>
+<h2 id="五、访问分析"><a href="#五、访问分析" class="headerlink" title="五、访问分析"></a>五、访问分析</h2><p>跳出率：只浏览了一个页面便离开了网站的访问次数占总的访问次数的百分比</p>
+<p>注：在该一栏可以看到访问该服务器的域名</p>
+<h2 id="六、事件分析"><a href="#六、事件分析" class="headerlink" title="六、事件分析"></a>六、事件分析</h2><p>1、事件总数：点击按钮的总数量<br>2、唯一访客事件数：点击按钮的UV</p>
+
+                
+                <! -- 添加捐赠图标 -->
+<div class ="post-donate">
+    <div id="donate_board" class="donate_bar center">
+        <a id="btn_donate" class="btn_donate" href="javascript:;" title="打赏"></a>
+        <span class="donate_txt">
+            Y Blog服务器是收费的，感谢您的捐助。
+        </span>
+        <br>
+    </div>
+    <div id="donate_guide" class="donate_bar center hidden" >
+        <!-- 方式一：
+            ![](/img/Alipay.jpg)
+            ![](/img/WeChatpay.jpg)
+        -->
+        <!-- 方式二；
+            step1：在_config.yml中添加配置
+                Alipay: /img/Alipay.jpg
+                WeChatpay: /img/WeChatpay.jpg
+            step2：此处两张图片的路径分别设置为如下
+                <img src="/hexo-YBlog/"
+                <img src="/hexo-YBlog/"
+        -->
+        <!--&lt;!&ndash; 支付宝打赏图案 &ndash;&gt;-->
+        <img src="/hexo-YBlog/img/Alipay.jpg" alt="支付宝打赏">
+        <!-- &lt;!&ndash; 微信打赏图案 &ndash;&gt;-->
+        <img src="/hexo-YBlog/img/WeChatpay.jpg" alt="微信打赏">
+
+    </div>
+    <script type="text/javascript">
+      var btn=document.getElementById('btn_donate');
+      var board=document.getElementById('donate_board');
+      var guide=document.getElementById('donate_guide');
+      if(btn&&board&&guide){
+        btn.addEventListener('click',function(){
+          board.classList.add('hidden');
+          guide.classList.remove('hidden');
+        });
+      }
+    </script>
+</div>
+                
+                <hr>
+                <ul class="pager">
+                    
+                        <li class="previous">
+                            <a href="/hexo-YBlog/工具/tool-ss/" title="[工具] 网络代理">← Previous Post</a>
+                        </li>
+                    
+                    
+                        <li class="next">
+                            <a href="/hexo-YBlog/Hexo/hexo-theme-yaofeiliang/" title="[Hexo] Theme Y Blog">Next Post →</a>
+                        </li>
+                    
+                </ul>
+
+                
+<div class="comment" id="comment-section">
+    <div class="comment-gate">
+        <button type="button" id="load-comments-btn">加载评论</button>
+    </div>
+    <div id="lv-container" data-id="city" data-uid="MTAyMC80MjAxNy8xODU2NA==" hidden></div>
+</div>
+<script>
+(function () {
+  var btn = document.getElementById('load-comments-btn');
+  var box = document.getElementById('lv-container');
+  var section = document.getElementById('comment-section');
+  if (!btn || !box || !section) return;
+  function loadLivere() {
+    if (btn.dataset.loaded === '1') return;
+    btn.dataset.loaded = '1';
+    btn.textContent = '评论加载中…';
+    box.hidden = false;
+    if (typeof LivereTower !== 'function') {
+      var j = document.createElement('script');
+      j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+      j.async = true;
+      j.onload = function () { btn.style.display = 'none'; };
+      document.body.appendChild(j);
+    } else {
+      btn.style.display = 'none';
+    }
+  }
+  btn.addEventListener('click', loadLivere);
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          loadLivere();
+          io.disconnect();
+        }
+      });
+    }, { rootMargin: '200px' });
+    io.observe(section);
+  }
+})();
+</script>
+
+
+            </div>
+
+            
+  
+    
+      <aside id="sidebar">
+        <div id="toc" class="toc-article">
+        <strong class="toc-title">目录</strong>
+        
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E7%BD%91%E7%AB%99%E8%AE%BF%E9%97%AE%E6%95%B0%E6%8D%AE%E7%BB%9F%E8%AE%A1%E5%B7%A5%E5%85%B7"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">网站访问数据统计工具</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#google-analytics%E6%B7%BB%E5%8A%A0%E8%B7%9F%E8%B8%AA%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0%E7%BB%9F%E8%AE%A1%E5%88%86%E6%9E%90"><span class="toc-nav-number">1.1.</span> <span class="toc-nav-text">google analytics添加跟踪代码实现统计分析</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#gtag-js"><span class="toc-nav-number">1.1.1.</span> <span class="toc-nav-text">gtag.js</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#analytics-js"><span class="toc-nav-number">1.1.2.</span> <span class="toc-nav-text">analytics.js</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#google%E4%BB%A3%E7%A0%81%E8%B7%9F%E8%B8%AA%E7%AE%A1%E7%90%86%E5%99%A8GTM"><span class="toc-nav-number">1.1.3.</span> <span class="toc-nav-text">google代码跟踪管理器GTM</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#baidu-analytics%E6%B7%BB%E5%8A%A0%E8%B7%9F%E8%B8%AA%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0%E7%BB%9F%E8%AE%A1%E5%88%86%E6%9E%90"><span class="toc-nav-number">1.2.</span> <span class="toc-nav-text">baidu analytics添加跟踪代码实现统计分析</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E7%BD%91%E7%AB%99%E8%AE%BF%E9%97%AE%E6%95%B0%E6%8D%AE%E7%BB%9F%E8%AE%A1%E5%88%86%E6%9E%90-%EF%BC%9A"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">网站访问数据统计分析 ：</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E4%B8%80%E3%80%81%E7%BD%91%E7%AB%99%E6%A6%82%E5%86%B5%EF%BC%9A"><span class="toc-nav-number">2.1.</span> <span class="toc-nav-text">一、网站概况：</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#1%E3%80%81%E8%B7%B3%E5%87%BA%E7%8E%87%EF%BC%9A"><span class="toc-nav-number">2.1.1.</span> <span class="toc-nav-text">1、跳出率：</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#2%E3%80%81%E5%B9%B3%E5%9D%87%E8%AE%BF%E9%97%AE%E6%97%B6%E9%95%BF%EF%BC%9A"><span class="toc-nav-number">2.1.2.</span> <span class="toc-nav-text">2、平均访问时长：</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#3%E3%80%81%E6%9D%A5%E6%BA%90%E7%BD%91%E7%AB%99%EF%BC%9A"><span class="toc-nav-number">2.1.3.</span> <span class="toc-nav-text">3、来源网站：</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E4%BA%8C%E3%80%81%E5%85%A5%E5%8F%A3%E9%A1%B5%E9%9D%A2"><span class="toc-nav-number">2.2.</span> <span class="toc-nav-text">二、入口页面</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#1%E3%80%81%E6%B5%8F%E8%A7%88%E9%87%8F%E5%B0%B1%E6%98%AFPV"><span class="toc-nav-number">2.2.1.</span> <span class="toc-nav-text">1、浏览量就是PV</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#2%E3%80%81%E5%85%A5%E5%8F%A3%E9%A1%B5%E9%9D%A2%E7%9A%84UV%E3%80%81IP%E5%92%8C%E7%BD%91%E7%AB%99%E6%A6%82%E5%86%B5%E7%9A%84UV%E3%80%81IP%E6%9C%89%E5%8C%BA%E5%88%AB%EF%BC%8C%EF%BC%88%E4%BE%8B%E5%A6%82%EF%BC%9A%E5%9C%A8%E7%BB%9F%E4%B8%80%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%8A%E7%99%BB%E9%99%86%E4%BA%862%E7%94%A8%E6%88%B7%EF%BC%8C%E5%88%99%E6%B5%8F%E8%A7%88%E5%99%A8Cookie%E5%8F%98%E4%BA%86%EF%BC%8C%E6%89%80%E4%BB%A5IP%E5%8F%AA%E6%9C%89%E4%B8%80%E4%B8%AA%EF%BC%8C%E8%80%8CUV%E6%9C%89%E4%B8%A4%E4%B8%AA%EF%BC%89"><span class="toc-nav-number">2.2.2.</span> <span class="toc-nav-text">2、入口页面的UV、IP和网站概况的UV、IP有区别，（例如：在统一浏览器上登陆了2用户，则浏览器Cookie变了，所以IP只有一个，而UV有两个）</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#3%E3%80%81%E8%B7%B3%E5%87%BA%E7%8E%87%EF%BC%9A"><span class="toc-nav-number">2.2.3.</span> <span class="toc-nav-text">3、跳出率：</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#4%E3%80%81%E5%B9%B3%E5%9D%87%E8%AE%BF%E9%97%AE%E9%A1%B5%E6%95%B0%EF%BC%9A"><span class="toc-nav-number">2.2.4.</span> <span class="toc-nav-text">4、平均访问页数：</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#5%E3%80%81%E8%AE%BF%E9%97%AE%E6%AC%A1%E6%95%B0%EF%BC%9A"><span class="toc-nav-number">2.2.5.</span> <span class="toc-nav-text">5、访问次数：</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E4%B8%89%E3%80%81%E5%8F%97%E8%AE%BF%E9%A1%B5%E9%9D%A2"><span class="toc-nav-number">2.3.</span> <span class="toc-nav-text">三、受访页面</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#1%E3%80%81%E6%B5%8F%E8%A7%88%E9%87%8F%EF%BC%88PV%EF%BC%89%EF%BC%9A"><span class="toc-nav-number">2.3.1.</span> <span class="toc-nav-text">1、浏览量（PV）：</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#2%E3%80%81%E8%AE%BF%E5%AE%A2%E6%95%B0%EF%BC%88UV%EF%BC%89%EF%BC%9A"><span class="toc-nav-number">2.3.2.</span> <span class="toc-nav-text">2、访客数（UV）：</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#3%E3%80%81%E8%B4%A1%E7%8C%AE%E4%B8%8B%E6%B8%B8%E6%B5%8F%E8%A7%88%E9%87%8F%EF%BC%9A"><span class="toc-nav-number">2.3.3.</span> <span class="toc-nav-text">3、贡献下游浏览量：</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#4%E3%80%81%E9%80%80%E5%87%BA%E9%A1%B5%E9%9D%A2%E6%AC%A1%E6%95%B0%EF%BC%9A"><span class="toc-nav-number">2.3.4.</span> <span class="toc-nav-text">4、退出页面次数：</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#5%E3%80%81%E5%B9%B3%E5%9D%87%E5%81%9C%E7%95%99%E6%97%B6%E9%97%B4%EF%BC%9A"><span class="toc-nav-number">2.3.5.</span> <span class="toc-nav-text">5、平均停留时间：</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#6%E3%80%81%E5%85%A5%E5%8F%A3%E9%A1%B5%E6%AC%A1%E6%95%B0%EF%BC%9A"><span class="toc-nav-number">2.3.6.</span> <span class="toc-nav-text">6、入口页次数：</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#7%E3%80%81%E9%80%80%E5%87%BA%E7%8E%87%EF%BC%9A"><span class="toc-nav-number">2.3.7.</span> <span class="toc-nav-text">7、退出率：</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E5%9B%9B%E3%80%81%E6%B5%81%E9%87%8F%E5%88%86%E6%9E%90"><span class="toc-nav-number">2.4.</span> <span class="toc-nav-text">四、流量分析</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E4%BA%94%E3%80%81%E8%AE%BF%E9%97%AE%E5%88%86%E6%9E%90"><span class="toc-nav-number">2.5.</span> <span class="toc-nav-text">五、访问分析</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E5%85%AD%E3%80%81%E4%BA%8B%E4%BB%B6%E5%88%86%E6%9E%90"><span class="toc-nav-number">2.6.</span> <span class="toc-nav-text">六、事件分析</span></a></li></ol></li></ol>
+        
+        </div>
+      </aside>
+    
+
+
+
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 sidebar-container">
+                
+                <section>
+                    <h5><a href="/hexo-YBlog/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                       
+                          <a class="tag" href="/hexo-YBlog/tags/#工具" title="工具">工具</a>
+                        
+                    </div>
+                </section>
+                
+
+                
+                <hr>
+                <h5>FRIENDS</h5>
+                <ul class="list-inline">
+                    
+                        <li><a href="https://blog.csdn.net/u010932545" target="_blank" rel="noopener noreferrer">CSDN Blog 姚飞亮</a></li>
+                    
+                        <li><a href="https://dockone.io/people/姚飞亮" target="_blank" rel="noopener noreferrer">DockOne 姚飞亮</a></li>
+                    
+                        <li><a href="https://yq.aliyun.com/u/yaofeiliang" target="_blank" rel="noopener noreferrer">阿里云栖社区 姚飞亮</a></li>
+                    
+                        <li><a href="https://www.zhihu.com/people/yaofeiliang/activities" target="_blank" rel="noopener noreferrer">知乎 姚飞亮</a></li>
+                    
+                        <li><a href="https://weibo.com/yaofeiliang" target="_blank" rel="noopener noreferrer">新浪微博 姚飞亮</a></li>
+                    
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+<script>
+    (function () {
+      var s = document.createElement('script');
+      s.src = 'https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js';
+      s.async = true;
+      s.onload = function () {
+        anchors.options = { visible: 'hover', placement: 'left', icon: 'ℬ' };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+      };
+      document.body.appendChild(s);
+    })();
+</script>
+<style>
+    @media all and (min-width: 800px) {
+        .anchorjs-link{ position:absolute; left:-0.75em; font-size:1.1em; margin-top:-0.1em; }
+    }
+</style>
+
+
+    </main>
+
+    <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center social-icons">
+
+    <li>
+        <a class="icon-btn" href="/hexo-YBlog/atom.xml" title="RSS" rel="noopener" aria-label="RSS">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.18 15.64a2.18 2.18 0 0 1 2.18 2.18C8.36 19 7.38 20 6.18 20S4 19 4 17.82s.98-2.18 2.18-2.18M4 4.44v2.86c7.03 0 12.7 5.67 12.7 12.7h2.86C19.56 11.27 12.73 4.44 4 4.44m0 5.72v2.86c3.9 0 7.04 3.14 7.04 7.04h2.86c0-5.47-4.43-9.9-9.9-9.9Z"/></svg>
+        </a>
+    </li>
+
+
+    <li>
+        <a class="icon-btn" target="_blank" rel="noopener noreferrer" href="https://www.zhihu.com/people/yaofeiliang" title="知乎" aria-label="知乎">
+            <span class="icon-text">知</span>
+        </a>
+    </li>
+
+
+    <li>
+        <a class="icon-btn" target="_blank" rel="noopener noreferrer" href="https://weibo.com/yaofeiliang" title="微博" aria-label="微博">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.1 17.8c-2.9.2-5.4-1.2-5.6-3.1-.2-1.9 2-3.6 4.9-3.8 2.9-.2 5.4 1.2 5.6 3.1.2 1.9-2 3.6-4.9 3.8m1.2-8.6c-.4-.1-.7-.5-.5-.9.4-1.1 1.5-1.7 2.5-1.3 1 .3 1.5 1.5 1.2 2.5-.1.3-.5.5-.9.3-.3-.1-.4-.4-.3-.7.1-.3-.1-.6-.4-.7-.5-.2-.9.1-1 .5-.1.4-.5.6-.6.3M20.3 11c-.2-.1-.4 0-.5.2-.1.2 0 .5.2.6 1.1.6 1.7 1.5 1.5 2.6-.3 1.8-2.7 3.3-5.9 3.7-.3 0-.5.3-.4.6.1.2.3.4.6.3 3.7-.5 6.6-2.3 7-4.7.3-1.7-.7-3.1-2.5-4.1M9.9 12.7c-1.7.3-2.9 1.3-2.7 2.3.2 1 1.8 1.6 3.5 1.3 1.7-.3 2.9-1.3 2.7-2.3-.2-1-1.8-1.6-3.5-1.3m.4 2.5c-.5.1-.9 0-1-.2-.1-.3.1-.6.6-.7.5-.1.9 0 1 .2.1.3-.1.6-.6.7Z"/></svg>
+        </a>
+    </li>
+
+
+    <li>
+        <a class="icon-btn" target="_blank" rel="noopener noreferrer" href="https://github.com/yaofeiliang" title="GitHub" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.48 0-.24-.01-.87-.01-1.7-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.89 1.57 2.34 1.12 2.91.86.09-.66.35-1.12.63-1.38-2.22-.26-4.55-1.14-4.55-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.27 2.75 1.05A9.3 9.3 0 0 1 12 7.5c.85 0 1.7.12 2.5.34 1.9-1.32 2.74-1.05 2.74-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.38-.01 2.49-.01 2.83 0 .26.18.59.69.48A10.27 10.27 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"/></svg>
+        </a>
+    </li>
+
+
+    <li>
+        <a class="icon-btn" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/飞亮-姚-56270a116" title="LinkedIn" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.94 6.5A2.44 2.44 0 1 1 6.93 1.6a2.44 2.44 0 0 1 .01 4.9ZM2.9 22V8.75h4.1V22H2.9Zm7.2-13.25h3.93v1.82h.06c.55-1.04 1.9-2.13 3.9-2.13 4.17 0 4.94 2.75 4.94 6.32V22h-4.1v-5.6c0-1.34-.03-3.06-1.86-3.06-1.87 0-2.15 1.46-2.15 2.96V22h-4.1V8.75Z"/></svg>
+        </a>
+    </li>
+
+</ul>
+
+                <p class="copyright text-muted">
+                    Copyright &copy; 姚飞亮 2026
+                    <br>
+                    <a href="https://yaofeiliang.github.io/hexo-YBlog" rel="noopener">Y Blog</a>
+                    · 苏ICP备19000128号
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="/hexo-YBlog/js/site.js" defer></script>
+
+
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+      function loadBaidu() {
+        var hm = document.createElement('script');
+        hm.src = 'https://hm.baidu.com/hm.js?d226c9b2398c493d7d554d7ce7c7f143';
+        hm.async = true;
+        document.head.appendChild(hm);
+      }
+      if ('requestIdleCallback' in window) requestIdleCallback(loadBaidu, { timeout: 3000 });
+      else setTimeout(loadBaidu, 2000);
+    })();
+</script>
+
+
+
+	<a id="rocket" href="#top" class="" aria-label="回到顶部"></a>
+</body>
+</html>
