@@ -1,7 +1,17 @@
-
 # Code Highlight theme
 # Available value:
 #    normal | night | night yilia | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
 # night yilia - https://github.com/litten/hexo-theme-yilia
 highlight_theme: night eighties
+
+# Sidebar widgets (used when theme.widgets is preferred over site config)
+widgets:
+- featured-tags
+- short-about
+- recent-posts
+- friends-blog
+- archive
+
+show_count: true
+donate_message: Y Blog服务器是收费的，感谢您的捐助。

@@ -2,6 +2,6 @@
 <% if (site.categories.length){ %>
     <h5><%= __('categories') %></h3>
     <div class="widget">
-      <%- list_categories({show_count: theme.show_count}) %>
+      <%- list_categories({show_count: theme.show_count || config.show_count}) %>
     </div>
 <% } %>

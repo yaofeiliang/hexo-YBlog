@@ -9,20 +9,21 @@ Yao Feiliang Blog : [www.yaofeiliang.com](http://www.yaofeiliang.com/)
 
 # Install Hexo
 
-Install Node.js  and Git
+Requires **Node.js >= 20.19** (Hexo 8) and Git.
 
 ```shell
-#For Mac
+# For Mac
 brew install node
 brew install git
 ```
 
-Install hexo
+Install dependencies (Hexo CLI is available via `npx` after install):
 
 ```shell
-npm install hexo-cli -g
+npm install
 
-#For more:https://hexo.io/zh-cn/index.html
+# Optional global CLI: npm install hexo-cli -g
+# Docs: https://hexo.io/zh-cn/index.html
 ```
 
 # Theme Usage
@@ -110,10 +111,10 @@ async("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
 ---
 Some hexo command:
 ```bash
-hexo new post "<post name>" # you can change post to another layout if you want
-hexo clean && hexo generate # generate the static file
-hexo server # run hexo in local environment
-hexo deploy # hexo will push the static files automatically into the specific branch(gh-pages) of your repo!
+npm run server                 # local preview (http://localhost:4000)
+npm run clean && npm run build # clean + generate static files
+npm run deploy                 # deploy to the configured git branch
+npx hexo new post "<post name>"
 ```
 
 # Have fun ^_^ 
