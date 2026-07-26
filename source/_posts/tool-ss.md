@@ -11,6 +11,10 @@ tags:
 - 工具
 categories:
 - 工具
+series: "工具与运维"
+difficulty: intermediate
+prerequisites:
+  - Linux 基础
 ---
 
 # 搭建代理服务器

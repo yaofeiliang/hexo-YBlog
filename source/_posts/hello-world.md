@@ -5,6 +5,11 @@ updated: 2018-12-17 10:00:00
 description: "Hexo 博客的起步文章，包含创建文章、启动本地服务和生成静态文件的基础命令。"
 categories:
   - article
+series: "博客搭建基础"
+difficulty: beginner
+prerequisites:
+  - Node.js
+  - npm
 ---
 Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 

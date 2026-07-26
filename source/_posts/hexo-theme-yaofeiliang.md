@@ -11,6 +11,11 @@ categories:
   - Hexo
 date: 2018-12-17 10:51:00
 updated: 2018-12-17 10:51:00
+series: "Hexo 维护笔记"
+difficulty: intermediate
+prerequisites:
+  - Hexo 基础
+  - Git
 ---
 ```bash
 git clone https://github.com/yaofeiliang/hexo-YBlog.git ./yaofeiliang

@@ -11,6 +11,10 @@ tags:
 - 工具
 categories:
 - 工具
+series: "工具与运维"
+difficulty: beginner
+prerequisites:
+  - HTML 基础
 ---
 
 # 网站访问数据统计工具

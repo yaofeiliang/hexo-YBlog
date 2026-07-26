@@ -1,0 +1,14 @@
+<section class="community-card" aria-labelledby="community-title">
+    <div class="community-card__eyebrow" data-i18n="community.eyebrow">一起完善这篇文章</div>
+    <h2 id="community-title" data-i18n="community.title">参与讨论</h2>
+    <p data-i18n="community.description">欢迎补充实践经验、提出问题或指出过时内容。高质量反馈会帮助这篇文章持续变得更好。</p>
+    <div class="community-card__actions">
+        <a class="community-card__button" href="#comment-section" data-i18n="community.comment">留言讨论</a>
+        <% if (config.community && config.community.guidelines_url) { %>
+        <a class="community-card__text-link" href="<%= url_for(config.community.guidelines_url) %>" data-i18n="community.guidelines">交流原则</a>
+        <% } %>
+    </div>
+    <% if (config.community && config.community.response_commitment) { %>
+    <small class="community-card__commitment" data-i18n="community.commitment"><%= config.community.response_commitment %></small>
+    <% } %>
+</section>

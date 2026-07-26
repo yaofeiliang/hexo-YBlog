@@ -30,6 +30,22 @@ for (const target of entries) {
     console.error(`ERROR ${relative}: digest must declare sources and source_count`);
     errors++;
   }
+  if (data.difficulty && !['beginner', 'intermediate', 'advanced'].includes(data.difficulty)) {
+    console.error(`ERROR ${relative}: difficulty must be beginner, intermediate, or advanced`);
+    errors++;
+  }
+  if (data.prerequisites && !Array.isArray(data.prerequisites)) {
+    console.error(`ERROR ${relative}: prerequisites must be a list`);
+    errors++;
+  }
+  if (data.last_verified && Number.isNaN(new Date(data.last_verified).getTime())) {
+    console.error(`ERROR ${relative}: last_verified must be a valid date`);
+    errors++;
+  }
+  if (data.translations && (Array.isArray(data.translations) || typeof data.translations !== 'object')) {
+    console.error(`ERROR ${relative}: translations must map locale codes to article URLs`);
+    errors++;
+  }
 }
 console.log(`Validated ${entries.length} post(s): ${errors} error(s), ${warnings} warning(s).`);
 process.exitCode = errors ? 1 : 0;

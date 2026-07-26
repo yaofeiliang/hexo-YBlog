@@ -9,6 +9,7 @@
       'nav.about': '关于',
       'nav.tags': '标签',
       'nav.archive': '归档',
+      'nav.topics': '知识地图',
       'nav.search': '搜索',
       'nav.rss': 'RSS',
       'nav.menu': '打开导航菜单',
@@ -19,6 +20,7 @@
       'pages.tags': '标签',
       'pages.archive': '归档',
       'pages.search': '搜索',
+      'pages.topics': '知识地图',
       'search.title': '搜索文章',
       'search.intro': '检索原创文章与每日技术简报。支持中英文关键词。',
       'search.placeholder': '输入关键词，例如 Kubernetes、Node.js、AI',
@@ -39,13 +41,37 @@
       'comments.loading': '评论加载中…',
       'footer.rights': '保留所有权利',
       'content.originalLanguage': '本文原始语言为中文。',
-      'skip.main': '跳到正文'
+      'skip.main': '跳到正文',
+      'knowledge.title': '阅读信息',
+      'knowledge.series': '系列',
+      'knowledge.difficulty': '难度',
+      'knowledge.prerequisites': '前置知识',
+      'knowledge.lastVerified': '最后验证',
+      'knowledge.difficulty.beginner': '入门',
+      'knowledge.difficulty.intermediate': '进阶',
+      'knowledge.difficulty.advanced': '高级',
+      'community.eyebrow': '一起完善这篇文章',
+      'community.title': '参与讨论',
+      'community.description': '欢迎补充实践经验、提出问题或指出过时内容。高质量反馈会帮助这篇文章持续变得更好。',
+      'community.comment': '留言讨论',
+      'community.guidelines': '交流原则',
+      'community.commitment': '我会阅读每一条有建设性的留言，并尽力回复。',
+      'subscribe.title': '持续关注',
+      'subscribe.description': '订阅更新，把值得长期保存的技术实践带回你的阅读器。',
+      'subscribe.rss': '订阅 RSS',
+      'subscribe.github': '关注项目',
+      'topics.eyebrow': '从问题到实践',
+      'topics.title': '知识地图',
+      'topics.description': '按主题浏览持续维护的技术笔记、实践文章与背景资料。',
+      'topics.articles': '篇文章',
+      'topics.explore': '浏览此主题 →'
     },
     en: {
       'nav.home': 'Home',
       'nav.about': 'About',
       'nav.tags': 'Topics',
       'nav.archive': 'Archive',
+      'nav.topics': 'Knowledge map',
       'nav.search': 'Search',
       'nav.rss': 'RSS',
       'nav.menu': 'Open navigation menu',
@@ -56,6 +82,7 @@
       'pages.tags': 'Topics',
       'pages.archive': 'Archive',
       'pages.search': 'Search',
+      'pages.topics': 'Knowledge map',
       'search.title': 'Search articles',
       'search.intro': 'Search original writing and daily technology briefs.',
       'search.placeholder': 'Search Kubernetes, Node.js, AI…',
@@ -76,7 +103,30 @@
       'comments.loading': 'Loading comments…',
       'footer.rights': 'All rights reserved',
       'content.originalLanguage': 'This article was originally written in Chinese.',
-      'skip.main': 'Skip to content'
+      'skip.main': 'Skip to content',
+      'knowledge.title': 'Reading details',
+      'knowledge.series': 'Series',
+      'knowledge.difficulty': 'Level',
+      'knowledge.prerequisites': 'Prerequisites',
+      'knowledge.lastVerified': 'Last verified',
+      'knowledge.difficulty.beginner': 'Beginner',
+      'knowledge.difficulty.intermediate': 'Intermediate',
+      'knowledge.difficulty.advanced': 'Advanced',
+      'community.eyebrow': 'Help improve this article',
+      'community.title': 'Join the conversation',
+      'community.description': 'Share practical experience, ask a question, or flag outdated guidance. Thoughtful feedback helps keep this article useful.',
+      'community.comment': 'Leave a comment',
+      'community.guidelines': 'Discussion principles',
+      'community.commitment': 'I read constructive comments and do my best to reply.',
+      'subscribe.title': 'Stay in the loop',
+      'subscribe.description': 'Subscribe for technology practices worth keeping in your reading workflow.',
+      'subscribe.rss': 'Subscribe via RSS',
+      'subscribe.github': 'Follow the project',
+      'topics.eyebrow': 'From questions to practice',
+      'topics.title': 'Knowledge map',
+      'topics.description': 'Explore continuously maintained technical notes, practical articles, and background material by topic.',
+      'topics.articles': 'articles',
+      'topics.explore': 'Explore this topic →'
     }
   };
 
@@ -135,6 +185,9 @@
     });
     document.querySelectorAll('[data-i18n-aria]').forEach(function (element) {
       element.setAttribute('aria-label', t(element.getAttribute('data-i18n-aria'), locale));
+    });
+    document.querySelectorAll('[data-difficulty]').forEach(function (element) {
+      element.textContent = t('knowledge.difficulty.' + element.getAttribute('data-difficulty'), locale);
     });
     applyImages(locale);
     document.dispatchEvent(new CustomEvent('yblog:localechange', { detail: { locale: locale } }));

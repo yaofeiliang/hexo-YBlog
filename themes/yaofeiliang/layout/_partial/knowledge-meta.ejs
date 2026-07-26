@@ -1,0 +1,22 @@
+<%
+  const hasKnowledgeMeta = page.series || page.difficulty || page.last_verified || (page.prerequisites && page.prerequisites.length);
+%>
+<% if (hasKnowledgeMeta) { %>
+<aside class="knowledge-meta" aria-label="文章信息">
+    <div class="knowledge-meta__title" data-i18n="knowledge.title">阅读信息</div>
+    <dl>
+        <% if (page.series) { %>
+        <div><dt data-i18n="knowledge.series">系列</dt><dd><%= page.series %></dd></div>
+        <% } %>
+        <% if (page.difficulty) { %>
+        <div><dt data-i18n="knowledge.difficulty">难度</dt><dd data-difficulty="<%= page.difficulty %>"><%= page.difficulty %></dd></div>
+        <% } %>
+        <% if (page.prerequisites && page.prerequisites.length) { %>
+        <div><dt data-i18n="knowledge.prerequisites">前置知识</dt><dd><%= page.prerequisites.join(' · ') %></dd></div>
+        <% } %>
+        <% if (page.last_verified) { %>
+        <div><dt data-i18n="knowledge.lastVerified">最后验证</dt><dd><%= date(page.last_verified, config.date_format) %></dd></div>
+        <% } %>
+    </dl>
+</aside>
+<% } %>

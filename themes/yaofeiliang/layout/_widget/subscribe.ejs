@@ -1,0 +1,12 @@
+<section class="subscribe-widget">
+    <h5 data-i18n="subscribe.title">持续关注</h5>
+    <p data-i18n="subscribe.description">订阅更新，把值得长期保存的技术实践带回你的阅读器。</p>
+    <div class="subscribe-widget__actions">
+        <% if (config.RSS !== false) { %>
+        <a href="<%= config.root %>atom.xml" data-i18n="subscribe.rss">订阅 RSS</a>
+        <% } %>
+        <% if (config.github_repository_url) { %>
+        <a href="<%= config.github_repository_url %>" target="_blank" rel="noopener noreferrer" data-i18n="subscribe.github">关注项目</a>
+        <% } %>
+    </div>
+</section>

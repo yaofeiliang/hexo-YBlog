@@ -5,6 +5,14 @@
     const webp = url.replace(/\.(jpg|jpeg|png)$/i, '.webp');
     return { jpg, webp };
   }
+  const pageTitleLabels = {
+    'about/': 'pages.about',
+    'tags/': 'pages.tags',
+    'archive/': 'pages.archive',
+    'search/': 'pages.search',
+    'topics/': 'pages.topics'
+  };
+  const pageTitleLabel = pageTitleLabels[(page.path || '').replace('index.html', '')];
   let hero;
   let heroEn;
   if (is_home()) {
@@ -58,7 +66,7 @@
                 <% } else { %>
                     <div class="site-heading">
                         <div class="brand-mark"><%= config.title %></div>
-                        <h1><%= page.title || config.title %></h1>
+                        <h1<% if (pageTitleLabel) { %> data-i18n="<%= pageTitleLabel %>"<% } %>><%= page.title || config.title %></h1>
                         <span class="subheading"><%= page.description || "" %></span>
                     </div>
                 <% } %>

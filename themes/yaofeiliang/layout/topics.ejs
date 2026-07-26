@@ -1,0 +1,35 @@
+---
+layout: layout
+---
+<main class="container knowledge-map" data-pagefind-body>
+    <div class="row">
+        <section class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <header class="knowledge-map__intro">
+                <p class="knowledge-map__eyebrow" data-i18n="topics.eyebrow">从问题到实践</p>
+                <h1 data-i18n="topics.title">知识地图</h1>
+                <p data-i18n="topics.description">按主题浏览持续维护的技术笔记、实践文章与背景资料。</p>
+            </header>
+
+            <div class="knowledge-map__grid">
+            <% site.categories.sort('length', -1).each(function(category) { %>
+                <% const posts = category.posts.sort('date', -1); %>
+                <section class="knowledge-map__topic">
+                    <div class="knowledge-map__topic-heading">
+                        <h2><a href="<%= url_for(category.path) %>"><%= category.name %></a></h2>
+                        <span><%= category.length %> <span data-i18n="topics.articles">篇文章</span></span>
+                    </div>
+                    <ol>
+                    <% posts.limit(3).each(function(post) { %>
+                        <li>
+                            <a href="<%= url_for(post.path) %>"><%= post.title %></a>
+                            <time datetime="<%= post.date.toISOString() %>"><%= post.date.format(config.date_format) %></time>
+                        </li>
+                    <% }); %>
+                    </ol>
+                    <a class="knowledge-map__more" href="<%= url_for(category.path) %>" data-i18n="topics.explore">浏览此主题 →</a>
+                </section>
+            <% }); %>
+            </div>
+        </section>
+    </div>
+</main>

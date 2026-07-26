@@ -23,6 +23,11 @@ tags:
   - DevOps
 catalog: true
 header-img: /img/article_header/article_bg.jpg
+series: "Kubernetes 实践"
+difficulty: intermediate # beginner | intermediate | advanced
+prerequisites:
+  - Docker 基础
+last_verified: 2026-07-26
 ---
 ```
 
@@ -30,6 +35,8 @@ header-img: /img/article_header/article_bg.jpg
 - 图片放在同名文章资源目录；避免直接提交未经压缩的大图。
 - 面向国际读者的图片不要把关键说明写死在图内；需要文字时提供 `*-zh-CN` 与 `*-en` 两个版本。
 - 修改既有文章时更新 `updated`。
+- 技术结论重新验证后更新 `last_verified`；不能确认有效性的旧文应明确保留其历史语境。
+- 使用 `series`、`difficulty` 和 `prerequisites`，让文章可进入知识地图并支持连续学习。
 - 外部转载必须取得授权；资讯类仅做简短导读并提供原文链接。
 - 提交前运行：`npm run validate:content && npm run build`。
 

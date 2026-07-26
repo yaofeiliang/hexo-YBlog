@@ -10,6 +10,11 @@ date: 2019-01-05 22:32:00
 updated: 2019-01-05 22:32:00
 subtitle:
 header-img:
+series: "Hexo 维护笔记"
+difficulty: intermediate
+prerequisites:
+  - Hexo 基础
+  - npm
 ---
 #Hexo admin 自动发布文章
 首先因为有的图片外链是不能查看的比如我们的csdn，这个时候需要先执行npm命令下载插件，再下载图片在复制到某个文件夹，再进行引用，真的是好麻烦，但是自从有了hexo-admin，妈妈再也不用担心我了，直接用qq截图或者复制某个图片，commad（control）+v到我们的hexo-admin即可，会自动下载，并引用～idea编辑器也不错但是不能实现拷贝图片的功能～

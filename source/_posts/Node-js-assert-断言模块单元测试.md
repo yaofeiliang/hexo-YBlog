@@ -11,6 +11,11 @@ date: 2019-01-07 00:55:00
 updated: 2019-01-07 00:55:00
 subtitle:
 header-img:
+series: "Node.js 基础"
+difficulty: beginner
+prerequisites:
+  - JavaScript
+  - Node.js
 ---
 # Node.js assert 断言模块单元测试
 
