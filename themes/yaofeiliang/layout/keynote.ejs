@@ -10,12 +10,12 @@ layout: layout
                 <ul class="pager">
                     <% if (page.prev){ %>
                         <li class="previous">
-                            <a href="<%- config.root %><%- page.prev.path %>" title="<%- page.prev.title %>">← Previous Post</a>
+                            <a href="<%- config.root %><%- page.prev.path %>" title="<%- page.prev.title %>" data-i18n="post.previous">← 上一篇</a>
                         </li>
                     <% } %>
                     <% if (page.next){ %>
                         <li class="next">
-                            <a href="<%- config.root %><%- page.next.path %>" title="<%- page.next.title %>">Next Post →</a>
+                            <a href="<%- config.root %><%- page.next.path %>" title="<%- page.next.title %>" data-i18n="post.next">下一篇 →</a>
                         </li>
                     <% } %>
                 </ul>

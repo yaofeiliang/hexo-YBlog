@@ -174,6 +174,18 @@ a:hover, a:focus {
   will-change: transform;
 }
 
+.hero-curve {
+  position: absolute;
+  z-index: 2;
+  right: -8%;
+  bottom: -1px;
+  left: -8%;
+  height: clamp(42px, 7vw, 92px);
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  background: var(--paper-soft);
+  pointer-events: none;
+}
+
 @keyframes heroDrift {
   from { transform: scale(1.04) translate3d(0, 0, 0); }
   to { transform: scale(1.1) translate3d(-1.2%, -1%, 0); }
@@ -277,11 +289,42 @@ a:hover, a:focus {
   letter-spacing: 0.12em;
 }
 
+.locale-switcher {
+  display: flex;
+  align-items: center;
+}
+
+.locale-switcher__button {
+  min-width: 3.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 999px;
+  padding: 0.35rem 0.7rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font: 600 0.72rem/1 var(--font-body);
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: background .2s ease, color .2s ease, transform .2s ease;
+}
+
+.locale-switcher__button:hover,
+.locale-switcher__button:focus-visible {
+  background: #fff;
+  color: var(--brand-deep);
+  transform: translateY(-1px);
+}
+
 .navbar-custom.is-fixed {
   background-color: rgba(255, 253, 249, 0.92) !important;
   backdrop-filter: blur(12px) saturate(1.15);
   border-bottom: 1px solid var(--line) !important;
   box-shadow: 0 8px 30px rgba(15, 35, 45, 0.06);
+}
+
+.navbar-custom.is-fixed .locale-switcher__button {
+  border-color: rgba(0, 133, 161, 0.4);
+  background: rgba(0, 133, 161, 0.07);
+  color: var(--brand-deep);
 }
 
 /* Home list */
@@ -331,6 +374,22 @@ a:hover, a:focus {
   line-height: 1.7;
   color: #727981;
   max-width: 42rem;
+}
+
+.content-language-note {
+  display: none;
+  margin: 0 0 1.75rem;
+  border-left: 3px solid var(--brand);
+  border-radius: 0 10px 10px 0;
+  padding: 0.75rem 1rem;
+  background: rgba(0, 133, 161, 0.08);
+  background: color-mix(in srgb, var(--brand) 8%, transparent);
+  color: #49626a;
+  font-size: 0.9em;
+}
+
+html[data-locale="en"] .content-language-note {
+  display: block;
 }
 
 .post-preview > .post-meta,
@@ -488,7 +547,124 @@ footer .list-inline a:hover {
     min-height: 52vh;
   }
 
+  .hero-curve {
+    right: -18%;
+    left: -18%;
+    height: 42px;
+  }
+
   .navbar-custom .navbar-brand .brand-text {
     font-size: 0.95rem;
+  }
+
+  .navbar-custom {
+    padding-top: env(safe-area-inset-top);
+  }
+
+  .navbar-custom .navbar-brand {
+    padding-left: 14px !important;
+  }
+
+  .navbar-default .navbar-collapse {
+    width: min(18rem, calc(100vw - 2rem));
+    max-height: calc(100vh - 5rem);
+    overflow-y: auto;
+    border-radius: 14px;
+  }
+
+  #huxblog_navbar .navbar-nav {
+    padding: 0.5rem;
+  }
+
+  #huxblog_navbar .nav li a {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    text-transform: none;
+    letter-spacing: 0.04em;
+  }
+
+  #huxblog_navbar .locale-switcher {
+    padding: 0.5rem 0.65rem;
+  }
+
+  #huxblog_navbar .locale-switcher__button {
+    width: 100%;
+    min-height: 38px;
+    border-color: rgba(0, 133, 161, 0.35);
+    background: rgba(0, 133, 161, 0.08);
+    color: var(--brand-deep);
+  }
+
+  .main-content-wrap {
+    padding-top: 0;
+  }
+
+  .post-container {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .post-preview {
+    padding: 1.2rem 0;
+  }
+
+  .post-preview > a > .post-title {
+    font-size: 1.32rem;
+  }
+
+  .sidebar-container {
+    padding-top: 1.5rem;
+  }
+
+  .search-page {
+    padding: 1.5rem 0 3rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .intro-header {
+    min-height: 54vh;
+  }
+
+  .intro-header .site-heading,
+  .intro-header .post-heading,
+  .intro-header .page-heading {
+    padding-top: 9rem;
+    padding-bottom: 6rem;
+  }
+
+  .sidebar-container {
+    padding-top: 1rem;
+  }
+
+  .post-container {
+    font-size: 1.06rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    width: min(1240px, calc(100vw - 8rem));
+  }
+
+  .intro-header .site-heading,
+  .intro-header .post-heading,
+  .intro-header .page-heading {
+    padding-top: clamp(10rem, 18vh, 14rem);
+    padding-bottom: clamp(6rem, 12vh, 9rem);
+  }
+}
+
+@media (max-height: 620px) and (orientation: landscape) {
+  .intro-header {
+    min-height: 430px;
+  }
+
+  .intro-header .site-heading,
+  .intro-header .post-heading,
+  .intro-header .page-heading {
+    padding-top: 6.5rem;
+    padding-bottom: 4rem;
   }
 }

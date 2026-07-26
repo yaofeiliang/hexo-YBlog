@@ -1,7 +1,7 @@
 <% if (config['livere_uid']) { %>
 <div class="comment" id="comment-section">
     <div class="comment-gate">
-        <button type="button" id="load-comments-btn">加载评论</button>
+        <button type="button" id="load-comments-btn" data-i18n="comments.load">加载评论</button>
     </div>
     <div id="lv-container" data-id="city" data-uid="<%= config['livere_uid'] %>" hidden></div>
 </div>
@@ -14,7 +14,7 @@
   function loadLivere() {
     if (btn.dataset.loaded === '1') return;
     btn.dataset.loaded = '1';
-    btn.textContent = '评论加载中…';
+    btn.textContent = window.YBlogI18n ? window.YBlogI18n.t('comments.loading') : '评论加载中…';
     box.hidden = false;
     if (typeof LivereTower !== 'function') {
       var j = document.createElement('script');

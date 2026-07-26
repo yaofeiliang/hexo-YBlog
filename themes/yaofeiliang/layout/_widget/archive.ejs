@@ -1,5 +1,5 @@
 <% if (site.posts.length){ %>
-    <h5><%= __('ARCHIVES') %></h5>
+    <h5 data-i18n="widget.archives">归档</h5>
     <div class="widget">
       <%- list_archives({show_count: config.show_count, type: config.archive_type}) %>
     </div>

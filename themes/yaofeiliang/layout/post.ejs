@@ -6,6 +6,7 @@ layout: layout
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 post-container">
+                <p class="content-language-note" data-i18n="content.originalLanguage">本文原始语言为中文。</p>
                 <%- page.content %>
                 <% if (config.donate !== false) { %>
                 <%- partial('_partial/donate') %>
@@ -14,12 +15,12 @@ layout: layout
                 <ul class="pager">
                     <% if (page.prev){ %>
                         <li class="previous">
-                            <a href="<%- config.root %><%- page.prev.path %>" title="<%- page.prev.title %>">← Previous Post</a>
+                            <a href="<%- config.root %><%- page.prev.path %>" title="<%- page.prev.title %>" data-i18n="post.previous">← 上一篇</a>
                         </li>
                     <% } %>
                     <% if (page.next){ %>
                         <li class="next">
-                            <a href="<%- config.root %><%- page.next.path %>" title="<%- page.next.title %>">Next Post →</a>
+                            <a href="<%- config.root %><%- page.next.path %>" title="<%- page.next.title %>" data-i18n="post.next">下一篇 →</a>
                         </li>
                     <% } %>
                 </ul>
@@ -32,7 +33,7 @@ layout: layout
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 sidebar-container">
                 <% if(config['featured-tags'] && page.tags && page.tags.length) { %>
                 <section>
-                    <h5><a href="<%= config.root %>tags/">FEATURED TAGS</a></h5>
+                    <h5><a href="<%= config.root %>tags/" data-i18n="widget.featuredTags">精选标签</a></h5>
                     <div class="tags">
                        <% page.tags.forEach(function(tag){ %>
                           <a class="tag" href="<%= config.root %>tags/#<%= tag.name %>" title="<%= tag.name %>"><%= tag.name %></a>
@@ -43,7 +44,7 @@ layout: layout
 
                 <% if(config.friends) { %>
                 <hr>
-                <h5>FRIENDS</h5>
+                <h5 data-i18n="widget.friends">友情链接</h5>
                 <ul class="list-inline">
                     <% config.friends.forEach(function(friend){ %>
                         <li><a href="<%= friend.href %>" target="_blank" rel="noopener noreferrer"><%= friend.title %></a></li>

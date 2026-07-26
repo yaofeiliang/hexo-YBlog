@@ -29,7 +29,9 @@ email: yaoadmin@sina.com
 description: "成为更好的自己"
 keyword: "姚飞亮"
 header-img: /img/header_img/banner.jpg
+header-img-en: /img/header_img/banner.jpg
 article-img: /img/article_header/article_bg.jpg
+article-img-en: /img/article_header/article_bg.jpg
 404-img: /img/header_img/404.jpg
 signature: true #show signature
 signature-img: img/signature/icon_yaofeiliang.png
@@ -76,6 +78,7 @@ widgets:
 # widget behavior
 ## Archive
 archives-img: /img/header_img/archives-widget.jpg
+archives-img-en: /img/header_img/archives-widget.jpg
 archive_type: 'monthly'
 show_count: true
 

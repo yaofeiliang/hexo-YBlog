@@ -6,9 +6,17 @@
     return { jpg, webp };
   }
   let hero;
-  if (is_home()) hero = withWebp(config['header-img']);
-  else if (is_post()) hero = withWebp(page['header-img'] || config['article-img']);
-  else hero = withWebp(page['header-img'] || config['archives-img'] || config['header-img']);
+  let heroEn;
+  if (is_home()) {
+    hero = withWebp(config['header-img']);
+    heroEn = withWebp(config['header-img-en'] || config['header-img']);
+  } else if (is_post()) {
+    hero = withWebp(page['header-img'] || config['article-img']);
+    heroEn = withWebp(page['header-img-en'] || config['article-img-en'] || page['header-img'] || config['article-img']);
+  } else {
+    hero = withWebp(page['header-img'] || config['archives-img'] || config['header-img']);
+    heroEn = withWebp(page['header-img-en'] || config['archives-img-en'] || page['header-img'] || config['archives-img'] || config['header-img']);
+  }
 %>
 <style type="text/css">
     header.intro-header {
@@ -23,7 +31,7 @@
     <% } %>
 </style>
 
-<header class="intro-header">
+<header class="intro-header" data-i18n-image data-image-zh="<%= hero.jpg %>" data-image-en="<%= heroEn.jpg %>">
     <div id="signature">
         <div class="container">
             <div class="row">
@@ -45,7 +53,7 @@
                     <div class="site-heading">
                         <div class="brand-mark"><%= config.author %></div>
                         <h1><%= config.title %></h1>
-                        <span class="subheading"><%= config.subtitle || config.description || "" %></span>
+                        <span class="subheading" data-i18n="hero.subtitle"><%= config.subtitle || config.description || "" %></span>
                     </div>
                 <% } else { %>
                     <div class="site-heading">
@@ -58,4 +66,5 @@
             </div>
         </div>
     </div>
+    <div class="hero-curve" aria-hidden="true"></div>
 </header>

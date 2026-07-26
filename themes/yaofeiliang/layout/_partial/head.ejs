@@ -15,6 +15,17 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <script>
+      (function () {
+        try {
+          var query = new URLSearchParams(location.search).get('lang');
+          var saved = query || localStorage.getItem('yblog.locale');
+          var locale = saved || ((navigator.languages || [navigator.language || '']).some(function (item) { return /^zh/i.test(item); }) ? 'zh-CN' : 'en');
+          document.documentElement.lang = /^zh/i.test(locale) ? 'zh-CN' : 'en';
+          document.documentElement.dataset.locale = document.documentElement.lang;
+        } catch (_) {}
+      })();
+    </script>
     <meta name="description" content="<%= pageDesc %>">
     <meta name="keywords" content="<%= config.keyword || config.keywords || '' %>">
     <meta name="author" content="<%= config.author %>">
@@ -54,6 +65,7 @@
     <%- css('css/highlight') %>
     <%- css('css/toc') %>
     <% } %>
+    <script src="<%= config.root %>js/i18n.js" defer></script>
 
     <script type="application/ld+json">
     <%- JSON.stringify(is_post() ? {

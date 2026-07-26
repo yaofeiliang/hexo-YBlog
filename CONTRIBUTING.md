@@ -28,9 +28,12 @@ header-img: /img/article_header/article_bg.jpg
 
 - 文件名使用英文 kebab-case，标题可以使用中文。
 - 图片放在同名文章资源目录；避免直接提交未经压缩的大图。
+- 面向国际读者的图片不要把关键说明写死在图内；需要文字时提供 `*-zh-CN` 与 `*-en` 两个版本。
 - 修改既有文章时更新 `updated`。
 - 外部转载必须取得授权；资讯类仅做简短导读并提供原文链接。
 - 提交前运行：`npm run validate:content && npm run build`。
+
+详见 [国际化策略](docs/INTERNATIONALIZATION.md)。
 
 ## 每日技术简报
 

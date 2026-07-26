@@ -7,7 +7,7 @@
     <% if (is_post()){ %>
       <aside id="sidebar">
         <div id="toc" class="toc-article">
-        <strong class="toc-title">目录</strong>
+        <strong class="toc-title" data-i18n="toc.title">目录</strong>
         <% if (toc(page.content) != ""){ %>
           <%- toc(page.content, { "class": "toc-nav" }) %>
         <% } else { %>
