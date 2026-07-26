@@ -49,6 +49,8 @@
    npm run admin:deploy
    ```
 
+   该命令会拒绝使用仓库中的示例 D1 ID 部署，避免后台意外连接到错误数据库。
+
 6. 将 Worker 绑定到 `admin.你的域名`。部署成功后，将公开站 `_config.yml` 的 `admin_analytics_endpoint` 设为：
 
    ```text
@@ -71,3 +73,4 @@
 - GitHub OAuth token 以 AES-GCM 加密后保存在 D1；会话为 12 小时 HttpOnly cookie。
 - API 变更请求要求 CSRF token，并写入审计日志。
 - `/api/analytics/collect` 仅接受 `PUBLIC_SITE_ORIGIN` 指定的公开站点来源。
+- 生产部署前应在 Cloudflare 为管理域名启用 HTTPS，并在 GitHub 账号启用双重验证。

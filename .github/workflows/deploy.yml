@@ -24,6 +24,7 @@ jobs:
       - run: npm run admin:typecheck
       - run: npm run clean
       - run: npm run build
+      - run: npm run validate:links
       - name: Upload site artifact
         uses: actions/upload-artifact@v4
         with:
