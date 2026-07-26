@@ -49,6 +49,14 @@ anchorjs: true                          # if you want to customize anchor. check
 
 # Comments: Livere only (lazy-loaded in theme)
 livere_uid: MTAyMC80MjAxNy8xODU2NA==
+# Set to `giscus` only after GitHub Discussions is enabled and all values below
+# are configured. Until then, LiveRe remains the active provider.
+comments_provider: livere
+# giscus:
+#   repo: yaofeiliang/hexo-YBlog
+#   repo_id:
+#   category: General
+#   category_id:
 
 # Community: comments are the primary discussion channel. Keep this text clear
 # so readers know where to contribute and when to expect a response.
@@ -86,6 +94,10 @@ widgets:
 ## Subscription
 github_repository: yaofeiliang/hexo-YBlog
 github_repository_url: https://github.com/yaofeiliang/hexo-YBlog
+
+# Optional privacy-first analytics endpoint from the Cloudflare admin service.
+# Leave empty until `admin/` has been deployed.
+admin_analytics_endpoint:
 
 ## Archive
 archives-img: /img/header_img/archives-widget.jpg

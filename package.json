@@ -13,7 +13,11 @@
     "build:preview": "hexo clean && hexo generate --config _config.yml,_config.preview.yml && pagefind --site public",
     "validate:content": "node automation/scripts/validate-content.mjs",
     "news:dry-run": "node automation/scripts/ingest-news.mjs",
-    "news:ingest": "node automation/scripts/ingest-news.mjs --write"
+    "news:ingest": "node automation/scripts/ingest-news.mjs --write",
+    "admin:dev": "wrangler dev --config admin/wrangler.toml",
+    "admin:deploy": "wrangler deploy --config admin/wrangler.toml",
+    "admin:db:local": "wrangler d1 execute yblog-admin --local --file admin/schema.sql --config admin/wrangler.toml",
+    "admin:typecheck": "tsc --noEmit -p admin/tsconfig.json"
   },
   "hexo": {
     "version": "8.1.2"
@@ -32,7 +36,13 @@
     "hexo-renderer-marked": "^7.0.1",
     "hexo-renderer-stylus": "^3.0.1",
     "hexo-server": "^3.0.0",
+    "hono": "^4.12.32",
     "pagefind": "^1.5.2",
     "rss-parser": "^3.13.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20260726.1",
+    "typescript": "^7.0.2",
+    "wrangler": "^4.114.0"
   }
 }

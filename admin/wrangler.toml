@@ -1,0 +1,21 @@
+name = "yblog-admin"
+main = "src/index.ts"
+compatibility_date = "2026-07-26"
+workers_dev = true
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+not_found_handling = "single-page-application"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "yblog-admin"
+# Replace after running: npx wrangler d1 create yblog-admin
+database_id = "00000000-0000-0000-0000-000000000000"
+
+[vars]
+GITHUB_REPOSITORY = "yaofeiliang/hexo-YBlog"
+DEFAULT_BRANCH = "master"
+PUBLIC_SITE_ORIGIN = "https://yaofeiliang.top"
+COMMENTS_PROVIDER = "giscus"

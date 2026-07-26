@@ -11,6 +11,8 @@ public/
 .env.*
 _config.admin.yml
 _config.*.local.yml
+admin/.dev.vars
+admin/.wrangler/
 *.swp
 *~
 .idea/

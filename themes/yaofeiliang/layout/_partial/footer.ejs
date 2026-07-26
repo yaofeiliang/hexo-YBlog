@@ -15,6 +15,9 @@
 </footer>
 
 <script src="<%= config.root %>js/site.js" defer></script>
+<% if (config.admin_analytics_endpoint) { %>
+<script src="<%= config.root %>js/analytics.js" defer></script>
+<% } %>
 
 <% if (config.ba_track_id) { %>
 <script>

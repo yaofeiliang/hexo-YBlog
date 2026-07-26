@@ -1,0 +1,9 @@
+# Never commit real values. Copy to admin/.dev.vars for local development.
+GITHUB_CLIENT_ID=
+GITHUB_CLIENT_SECRET=
+# 32+ random characters. Generate with: openssl rand -base64 48
+TOKEN_ENCRYPTION_KEY=
+# Comma-separated GitHub accounts permitted to manage this site.
+ADMIN_GITHUB_LOGINS=yaofeiliang
+# Local callback URL for `npm run admin:dev`.
+OAUTH_REDIRECT_URI=http://localhost:8787/auth/callback
