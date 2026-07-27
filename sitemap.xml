@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://yaofeiliang.com/search/index.html</loc>
+    <loc>https://yaofeiliang.com/tags/index.html</loc>
     
     <lastmod>2026-07-27</lastmod>
     
@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/tags/index.html</loc>
+    <loc>https://yaofeiliang.com/search/index.html</loc>
     
     <lastmod>2026-07-27</lastmod>
     
@@ -29,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/about/index.html</loc>
+    <loc>https://yaofeiliang.com/404.html</loc>
     
     <lastmod>2026-07-27</lastmod>
     
@@ -47,7 +47,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/404.html</loc>
+    <loc>https://yaofeiliang.com/about/index.html</loc>
     
     <lastmod>2026-07-27</lastmod>
     
@@ -156,14 +156,14 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/categories/hexo/</loc>
+    <loc>https://yaofeiliang.com/categories/tools/</loc>
     <lastmod>2026-07-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/categories/tools/</loc>
+    <loc>https://yaofeiliang.com/categories/hexo/</loc>
     <lastmod>2026-07-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
