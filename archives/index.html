@@ -1,58 +1,72 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-analytics-endpoint="">
 
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <script>
+      (function () {
+        try {
+          var query = new URLSearchParams(location.search).get('lang');
+          var saved = query || localStorage.getItem('yblog.locale');
+          var locale = saved || ((navigator.languages || [navigator.language || '']).some(function (item) { return /^zh/i.test(item); }) ? 'zh-CN' : 'en');
+          document.documentElement.lang = /^zh/i.test(locale) ? 'zh-CN' : 'en';
+          document.documentElement.dataset.locale = document.documentElement.lang;
+        } catch (_) {}
+      })();
+    </script>
     <meta name="description" content="成为更好的自己">
     <meta name="keywords" content="姚飞亮">
     <meta name="author" content="姚飞亮">
     <meta name="theme-color" content="#0085a1">
-    <link rel="shortcut icon" href="/hexo-YBlog/img/y.png">
-    <link rel="alternate" type="application/atom+xml" title="Y Blog" href="/hexo-YBlog/atom.xml">
+    <link rel="shortcut icon" href="/img/y.png">
+    <link rel="alternate" type="application/atom+xml" title="Y Blog" href="/atom.xml">
     <title>姚飞亮 | Blog</title>
-    <link rel="canonical" href="https://yaofeiliang.github.io/hexo-YBlog/archives/">
+    <link rel="canonical" href="https://yaofeiliang.com/archives/">
 
     <meta property="og:type" content="website">
     <meta property="og:title" content="姚飞亮 | Blog">
     <meta property="og:description" content="成为更好的自己">
-    <meta property="og:url" content="https://yaofeiliang.github.io/hexo-YBlog/archives/">
+    <meta property="og:url" content="https://yaofeiliang.com/archives/">
     <meta property="og:site_name" content="Y Blog">
-    <meta property="og:image" content="https://yaofeiliang.github.io/hexo-YBlog/img/header_img/archives-widget.jpg">
+    <meta property="og:image" content="https://yaofeiliang.com/img/header_img/archives-widget.jpg">
     <meta property="og:locale" content="zh_CN">
+    
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="姚飞亮 | Blog">
     <meta name="twitter:description" content="成为更好的自己">
-    <meta name="twitter:image" content="https://yaofeiliang.github.io/hexo-YBlog/img/header_img/archives-widget.jpg">
+    <meta name="twitter:image" content="https://yaofeiliang.com/img/header_img/archives-widget.jpg">
 
-    <link rel="preload" as="image" href="https://yaofeiliang.github.io/hexo-YBlog/img/header_img/archives-widget.webp" type="image/webp">
-    <link rel="preload" as="image" href="https://yaofeiliang.github.io/hexo-YBlog/img/header_img/archives-widget.jpg" type="image/jpeg">
-
-    
-<link rel="stylesheet" href="/hexo-YBlog/css/site.css">
+    <link rel="preload" as="image" href="https://yaofeiliang.com/img/header_img/archives-widget.webp" type="image/webp">
+    <link rel="preload" as="image" href="https://yaofeiliang.com/img/header_img/archives-widget.jpg" type="image/jpeg">
 
     
-<link rel="stylesheet" href="/hexo-YBlog/css/beantech.min.css">
+<link rel="stylesheet" href="/css/site.css">
 
     
-<link rel="stylesheet" href="/hexo-YBlog/css/widget.css">
+<link rel="stylesheet" href="/css/beantech.min.css">
 
     
-<link rel="stylesheet" href="/hexo-YBlog/css/rocket.css">
+<link rel="stylesheet" href="/css/widget.css">
 
     
-<link rel="stylesheet" href="/hexo-YBlog/css/signature.css">
+<link rel="stylesheet" href="/css/rocket.css">
 
     
+<link rel="stylesheet" href="/css/signature.css">
+
+    
+    <script src="/js/i18n.js" defer></script>
 
     <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"WebSite","name":"Y Blog","url":"https://yaofeiliang.github.io/hexo-YBlog","description":"成为更好的自己","inLanguage":"zh-CN","author":{"@type":"Person","name":"姚飞亮"}}
+    {"@context":"https://schema.org","@type":"WebSite","name":"Y Blog","url":"https://yaofeiliang.com","description":"成为更好的自己","inLanguage":"zh-CN","author":{"@type":"Person","name":"姚飞亮"}}
     </script>
 <meta name="generator" content="Hexo 8.1.2"></head>
 
 
 <body ontouchstart="">
+    <a class="skip-link" href="#main">跳到正文</a>
 	
 <style type="text/css">
     header.intro-header {
@@ -62,12 +76,12 @@
     }
     
     #signature {
-        background-image: url('/hexo-YBlog/img/signature/icon_yaofeiliang.png');
+        background-image: url('/img/signature/icon_yaofeiliang.png');
     }
     
 </style>
 
-<header class="intro-header">
+<header class="intro-header" data-i18n-image data-image-zh="/img/header_img/archives-widget.jpg" data-image-en="/img/header_img/archives-widget.jpg">
     <div id="signature">
         <div class="container">
             <div class="row">
@@ -83,19 +97,21 @@
             </div>
         </div>
     </div>
+    <div class="hero-curve" aria-hidden="true"></div>
 </header>
 
-	<nav class="navbar navbar-default navbar-custom navbar-fixed-top" role="navigation">
+	
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle" aria-controls="huxblog_navbar" aria-expanded="false" aria-label="打开导航菜单">
+            <button type="button" class="navbar-toggle" aria-controls="huxblog_navbar" aria-expanded="false" aria-label="打开导航菜单" data-i18n-aria="nav.menu">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" style="margin-left:0;padding:10px;" href="/hexo-YBlog/">
-                <img src="/hexo-YBlog/img/y.png" alt="Y Blog" height="100%">
+            <a class="navbar-brand" style="margin-left:0;padding:10px;" href="/">
+                <img src="/img/y.png" alt="Y Blog" height="100%">
                 <span class="brand-text">Y Blog</span>
             </a>
         </div>
@@ -104,31 +120,51 @@
             <div class="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="/hexo-YBlog/">Home</a>
+                        <a href="/" data-i18n="nav.home">首页</a>
                     </li>
                     
                         
-                    
                         
                         <li>
-                            <a href="/hexo-YBlog/about/">About</a>
+                            <a href="/about/" data-i18n="nav.about">About</a>
                         </li>
                         
                     
                         
+                        
                         <li>
-                            <a href="/hexo-YBlog/archive/">Archives</a>
+                            <a href="/archive/" data-i18n="nav.archive">Archives</a>
                         </li>
                         
                     
                         
+                        
+                    
+                        
+                        
+                    
+                        
+                        
                         <li>
-                            <a href="/hexo-YBlog/tags/">Tags</a>
+                            <a href="/topics/" data-i18n="nav.topics">知识地图</a>
+                        </li>
+                        
+                    
+                        
+                        
+                        <li>
+                            <a href="/tags/" data-i18n="nav.tags">Tags</a>
                         </li>
                         
                     
                     <li>
-                        <a href="/hexo-YBlog/atom.xml" rel="noopener">RSS</a>
+                        <a href="/atom.xml" rel="noopener">RSS</a>
+                    </li>
+                    <li>
+                        <a href="/search/" data-i18n="nav.search">搜索</a>
+                    </li>
+                    <li class="locale-switcher">
+                        <button type="button" class="locale-switcher__button" data-locale-switch data-i18n="locale.switch" data-i18n-aria="locale.switchAria" aria-label="切换至 English">English</button>
                     </li>
                 </ul>
             </div>
@@ -163,7 +199,7 @@
       <div class="container">
     <div class="row">
         
-            <div class="col-lg-8 col-lg-offset-1 col-md-8 col-md-offset-1 col-sm-12 post-container">
+            <div class="col-lg-8 col-lg-offset-1 col-md-8 col-md-offset-1 col-sm-12 post-container" data-pagefind-body>
                 
 <div class="container">
     <div class="row">
@@ -179,7 +215,7 @@
                  <li>
                     01-06
                     <span aria-hidden="true"> » </span>
-                    <a href="/hexo-YBlog/Node-js/Node-js-assert-断言模块单元测试/" style="color: #0085a1">
+                    <a href="/Node-js/Node-js-assert-断言模块单元测试/" style="color: #0085a1">
                         <span>[Node.js] assert 断言模块单元测试</span>
                     </a>
                 </li>
@@ -187,7 +223,7 @@
                  <li>
                     01-05
                     <span aria-hidden="true"> » </span>
-                    <a href="/hexo-YBlog/article/Hexo-Hexo-admin/" style="color: #0085a1">
+                    <a href="/article/Hexo-Hexo-admin/" style="color: #0085a1">
                         <span>[Hexo]Hexo admin 自动发布文章</span>
                     </a>
                 </li>
@@ -204,7 +240,7 @@
                  <li>
                     12-20
                     <span aria-hidden="true"> » </span>
-                    <a href="/hexo-YBlog/工具/tool-ss/" style="color: #0085a1">
+                    <a href="/tools/tool-ss/" style="color: #0085a1">
                         <span>[工具] 网络代理</span>
                     </a>
                 </li>
@@ -212,7 +248,7 @@
                  <li>
                     12-20
                     <span aria-hidden="true"> » </span>
-                    <a href="/hexo-YBlog/工具/tool-analytics/" style="color: #0085a1">
+                    <a href="/tools/tool-analytics/" style="color: #0085a1">
                         <span>[工具] 网站访问数据统计</span>
                     </a>
                 </li>
@@ -220,7 +256,7 @@
                  <li>
                     12-17
                     <span aria-hidden="true"> » </span>
-                    <a href="/hexo-YBlog/Hexo/hexo-theme-yaofeiliang/" style="color: #0085a1">
+                    <a href="/hexo/hexo-theme-yaofeiliang/" style="color: #0085a1">
                         <span>[Hexo] Theme Y Blog</span>
                     </a>
                 </li>
@@ -228,7 +264,7 @@
                  <li>
                     12-17
                     <span aria-hidden="true"> » </span>
-                    <a href="/hexo-YBlog/article/hello-world/" style="color: #0085a1">
+                    <a href="/articles/hello-world/" style="color: #0085a1">
                         <span>Hello World</span>
                     </a>
                 </li>
@@ -242,7 +278,7 @@
     <div id="donate_board" class="donate_bar center">
         <a id="btn_donate" class="btn_donate" href="javascript:;" title="打赏"></a>
         <span class="donate_txt">
-            Y Blog服务器是收费的，感谢您的捐助。
+            
         </span>
         <br>
     </div>
@@ -256,13 +292,13 @@
                 Alipay: /img/Alipay.jpg
                 WeChatpay: /img/WeChatpay.jpg
             step2：此处两张图片的路径分别设置为如下
-                <img src="/hexo-YBlog/"
-                <img src="/hexo-YBlog/"
+                <img src="/"
+                <img src="/"
         -->
         <!--&lt;!&ndash; 支付宝打赏图案 &ndash;&gt;-->
-        <img src="/hexo-YBlog/img/Alipay.jpg" alt="支付宝打赏">
+        <img src="/img/Alipay.jpg" alt="支付宝打赏">
         <!-- &lt;!&ndash; 微信打赏图案 &ndash;&gt;-->
-        <img src="/hexo-YBlog/img/WeChatpay.jpg" alt="微信打赏">
+        <img src="/img/WeChatpay.jpg" alt="微信打赏">
 
     </div>
     <script type="text/javascript">
@@ -297,17 +333,17 @@
 
 <section>
     <!-- no hr -->
-    <h5><a href="/hexo-YBlog/tags/">FEATURED TAGS</a></h5>
+    <h5><a href="/tags/" data-i18n="widget.featuredTags">精选标签</a></h5>
     <div class="tags">
         
             
-        
-            
-            <a href="/hexo-YBlog/tags/#Hexo" title="Hexo" rel="2">Hexo</a>
+            <a href="/tags/#Hexo" title="Hexo" rel="2">Hexo</a>
             
         
             
-            <a href="/hexo-YBlog/tags/#工具" title="工具" rel="2">工具</a>
+        
+            
+            <a href="/tags/#工具" title="工具" rel="2">工具</a>
             
         
     </div>
@@ -316,7 +352,7 @@
         <hr>
     
         <section class="visible-md visible-lg">
-    <h5><a href="/hexo-YBlog/about/">ABOUT ME</a></h5>
+    <h5><a href="/about/">ABOUT ME</a></h5>
     <div class="short-about">
         
             <img id="avatar_pic" src="/img/avatar/yaofeiliang.jpg" alt="姚飞亮" loading="lazy" decoding="async" />
@@ -327,7 +363,7 @@
         <ul class="list-inline text-center social-icons">
 
     <li>
-        <a class="icon-btn" href="/hexo-YBlog/atom.xml" title="RSS" rel="noopener" aria-label="RSS">
+        <a class="icon-btn" href="/atom.xml" title="RSS" rel="noopener" aria-label="RSS">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.18 15.64a2.18 2.18 0 0 1 2.18 2.18C8.36 19 7.38 20 6.18 20S4 19 4 17.82s.98-2.18 2.18-2.18M4 4.44v2.86c7.03 0 12.7 5.67 12.7 12.7h2.86C19.56 11.27 12.73 4.44 4 4.44m0 5.72v2.86c3.9 0 7.04 3.14 7.04 7.04h2.86c0-5.47-4.43-9.9-9.9-9.9Z"/></svg>
         </a>
     </li>
@@ -373,23 +409,23 @@
     <ul>
       
         <li>
-          <a href="/hexo-YBlog/Node-js/Node-js-assert-%E6%96%AD%E8%A8%80%E6%A8%A1%E5%9D%97%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/">[Node.js] assert 断言模块单元测试</a>
+          <a href="/Node-js/Node-js-assert-%E6%96%AD%E8%A8%80%E6%A8%A1%E5%9D%97%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/">[Node.js] assert 断言模块单元测试</a>
         </li>
       
         <li>
-          <a href="/hexo-YBlog/article/Hexo-Hexo-admin/">[Hexo]Hexo admin 自动发布文章</a>
+          <a href="/article/Hexo-Hexo-admin/">[Hexo]Hexo admin 自动发布文章</a>
         </li>
       
         <li>
-          <a href="/hexo-YBlog/%E5%B7%A5%E5%85%B7/tool-ss/">[工具] 网络代理</a>
+          <a href="/tools/tool-ss/">[工具] 网络代理</a>
         </li>
       
         <li>
-          <a href="/hexo-YBlog/%E5%B7%A5%E5%85%B7/tool-analytics/">[工具] 网站访问数据统计</a>
+          <a href="/tools/tool-analytics/">[工具] 网站访问数据统计</a>
         </li>
       
         <li>
-          <a href="/hexo-YBlog/Hexo/hexo-theme-yaofeiliang/">[Hexo] Theme Y Blog</a>
+          <a href="/hexo/hexo-theme-yaofeiliang/">[Hexo] Theme Y Blog</a>
         </li>
       
     </ul>
@@ -399,7 +435,7 @@
     
         <!-- Friends Blog -->
 
-<h5>FRIENDS</h5>
+<h5 data-i18n="widget.friends">友情链接</h5>
 <ul class="list-inline">
     
         <li><a href="https://blog.csdn.net/u010932545" target="_blank" rel="noopener noreferrer">CSDN Blog 姚飞亮</a></li>
@@ -418,9 +454,9 @@
         <hr>
     
         
-    <h5>ARCHIVES</h5>
+    <h5 data-i18n="widget.archives">归档</h5>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/hexo-YBlog/archives/2019/01/">一月 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/hexo-YBlog/archives/2018/12/">十二月 2018</a><span class="archive-list-count">4</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">一月 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">十二月 2018</a><span class="archive-list-count">4</span></li></ul>
     </div>
 
         <hr>
@@ -439,7 +475,7 @@
                 <ul class="list-inline text-center social-icons">
 
     <li>
-        <a class="icon-btn" href="/hexo-YBlog/atom.xml" title="RSS" rel="noopener" aria-label="RSS">
+        <a class="icon-btn" href="/atom.xml" title="RSS" rel="noopener" aria-label="RSS">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.18 15.64a2.18 2.18 0 0 1 2.18 2.18C8.36 19 7.38 20 6.18 20S4 19 4 17.82s.98-2.18 2.18-2.18M4 4.44v2.86c7.03 0 12.7 5.67 12.7 12.7h2.86C19.56 11.27 12.73 4.44 4 4.44m0 5.72v2.86c3.9 0 7.04 3.14 7.04 7.04h2.86c0-5.47-4.43-9.9-9.9-9.9Z"/></svg>
         </a>
     </li>
@@ -477,15 +513,16 @@
                 <p class="copyright text-muted">
                     Copyright &copy; 姚飞亮 2026
                     <br>
-                    <a href="https://yaofeiliang.github.io/hexo-YBlog" rel="noopener">Y Blog</a>
-                    · 苏ICP备19000128号
+                    <a href="https://yaofeiliang.com" rel="noopener">Y Blog</a>
+                    · <span data-i18n="footer.rights">保留所有权利</span>
                 </p>
             </div>
         </div>
     </div>
 </footer>
 
-<script src="/hexo-YBlog/js/site.js" defer></script>
+<script src="/js/site.js" defer></script>
+
 
 
 <script>

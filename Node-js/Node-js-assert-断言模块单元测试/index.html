@@ -1,65 +1,84 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-analytics-endpoint="">
 
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="description" content="成为更好的自己">
+    <script>
+      (function () {
+        try {
+          var query = new URLSearchParams(location.search).get('lang');
+          var saved = query || localStorage.getItem('yblog.locale');
+          var locale = saved || ((navigator.languages || [navigator.language || '']).some(function (item) { return /^zh/i.test(item); }) ? 'zh-CN' : 'en');
+          document.documentElement.lang = /^zh/i.test(locale) ? 'zh-CN' : 'en';
+          document.documentElement.dataset.locale = document.documentElement.lang;
+        } catch (_) {}
+      })();
+    </script>
+    <meta name="description" content="介绍 Node.js assert 断言模块的基本用途，以及在单元测试中验证预期结果的方式。">
     <meta name="keywords" content="姚飞亮">
     <meta name="author" content="姚飞亮">
     <meta name="theme-color" content="#0085a1">
-    <link rel="shortcut icon" href="/hexo-YBlog/img/y.png">
-    <link rel="alternate" type="application/atom+xml" title="Y Blog" href="/hexo-YBlog/atom.xml">
+    <link rel="shortcut icon" href="/img/y.png">
+    <link rel="alternate" type="application/atom+xml" title="Y Blog" href="/atom.xml">
     <title>[Node.js] assert 断言模块单元测试 - 姚飞亮 | Blog</title>
-    <link rel="canonical" href="https://yaofeiliang.github.io/hexo-YBlog/Node-js/Node-js-assert-%E6%96%AD%E8%A8%80%E6%A8%A1%E5%9D%97%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/">
+    <link rel="canonical" href="https://yaofeiliang.com/Node-js/Node-js-assert-%E6%96%AD%E8%A8%80%E6%A8%A1%E5%9D%97%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/">
 
     <meta property="og:type" content="article">
     <meta property="og:title" content="[Node.js] assert 断言模块单元测试 - 姚飞亮 | Blog">
-    <meta property="og:description" content="成为更好的自己">
-    <meta property="og:url" content="https://yaofeiliang.github.io/hexo-YBlog/Node-js/Node-js-assert-%E6%96%AD%E8%A8%80%E6%A8%A1%E5%9D%97%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/">
+    <meta property="og:description" content="介绍 Node.js assert 断言模块的基本用途，以及在单元测试中验证预期结果的方式。">
+    <meta property="og:url" content="https://yaofeiliang.com/Node-js/Node-js-assert-%E6%96%AD%E8%A8%80%E6%A8%A1%E5%9D%97%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/">
     <meta property="og:site_name" content="Y Blog">
-    <meta property="og:image" content="https://yaofeiliang.github.io/hexo-YBlog/img/article_header/article_bg.jpg">
+    <meta property="og:image" content="https://yaofeiliang.com/img/article_header/article_bg.jpg">
     <meta property="og:locale" content="zh_CN">
+    
+    <meta property="article:published_time" content="2019-01-06T16:55:00.000Z">
+    <meta property="article:modified_time" content="2019-01-06T16:55:00.000Z">
+    <meta property="article:author" content="姚飞亮">
+    <meta property="article:tag" content="Node.js">
+    
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="[Node.js] assert 断言模块单元测试 - 姚飞亮 | Blog">
-    <meta name="twitter:description" content="成为更好的自己">
-    <meta name="twitter:image" content="https://yaofeiliang.github.io/hexo-YBlog/img/article_header/article_bg.jpg">
+    <meta name="twitter:description" content="介绍 Node.js assert 断言模块的基本用途，以及在单元测试中验证预期结果的方式。">
+    <meta name="twitter:image" content="https://yaofeiliang.com/img/article_header/article_bg.jpg">
 
-    <link rel="preload" as="image" href="https://yaofeiliang.github.io/hexo-YBlog/img/article_header/article_bg.webp" type="image/webp">
-    <link rel="preload" as="image" href="https://yaofeiliang.github.io/hexo-YBlog/img/article_header/article_bg.jpg" type="image/jpeg">
-
-    
-<link rel="stylesheet" href="/hexo-YBlog/css/site.css">
+    <link rel="preload" as="image" href="https://yaofeiliang.com/img/article_header/article_bg.webp" type="image/webp">
+    <link rel="preload" as="image" href="https://yaofeiliang.com/img/article_header/article_bg.jpg" type="image/jpeg">
 
     
-<link rel="stylesheet" href="/hexo-YBlog/css/beantech.min.css">
+<link rel="stylesheet" href="/css/site.css">
 
     
-<link rel="stylesheet" href="/hexo-YBlog/css/widget.css">
+<link rel="stylesheet" href="/css/beantech.min.css">
 
     
-<link rel="stylesheet" href="/hexo-YBlog/css/rocket.css">
+<link rel="stylesheet" href="/css/widget.css">
 
     
-<link rel="stylesheet" href="/hexo-YBlog/css/signature.css">
+<link rel="stylesheet" href="/css/rocket.css">
+
+    
+<link rel="stylesheet" href="/css/signature.css">
 
     
     
-<link rel="stylesheet" href="/hexo-YBlog/css/highlight.css">
+<link rel="stylesheet" href="/css/highlight.css">
 
     
-<link rel="stylesheet" href="/hexo-YBlog/css/toc.css">
+<link rel="stylesheet" href="/css/toc.css">
 
     
+    <script src="/js/i18n.js" defer></script>
 
     <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"BlogPosting","headline":"[Node.js] assert 断言模块单元测试","description":"成为更好的自己","image":"https://yaofeiliang.github.io/hexo-YBlog/img/article_header/article_bg.jpg","datePublished":"2019-01-06T16:55:00.000Z","dateModified":"2026-07-25T02:41:38.351Z","author":{"@type":"Person","name":"姚飞亮"},"mainEntityOfPage":"https://yaofeiliang.github.io/hexo-YBlog/Node-js/Node-js-assert-%E6%96%AD%E8%A8%80%E6%A8%A1%E5%9D%97%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/","publisher":{"@type":"Person","name":"姚飞亮"}}
+    {"@context":"https://schema.org","@type":"BlogPosting","headline":"[Node.js] assert 断言模块单元测试","description":"介绍 Node.js assert 断言模块的基本用途，以及在单元测试中验证预期结果的方式。","image":"https://yaofeiliang.com/img/article_header/article_bg.jpg","datePublished":"2019-01-06T16:55:00.000Z","dateModified":"2019-01-06T16:55:00.000Z","author":{"@type":"Person","name":"姚飞亮"},"mainEntityOfPage":"https://yaofeiliang.com/Node-js/Node-js-assert-%E6%96%AD%E8%A8%80%E6%A8%A1%E5%9D%97%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/","publisher":{"@type":"Person","name":"姚飞亮"}}
     </script>
 <meta name="generator" content="Hexo 8.1.2"></head>
 
 
 <body ontouchstart="">
+    <a class="skip-link" href="#main">跳到正文</a>
 	
 <style type="text/css">
     header.intro-header {
@@ -69,12 +88,12 @@
     }
     
     #signature {
-        background-image: url('/hexo-YBlog/img/signature/icon_yaofeiliang.png');
+        background-image: url('/img/signature/icon_yaofeiliang.png');
     }
     
 </style>
 
-<header class="intro-header">
+<header class="intro-header" data-i18n-image data-image-zh="/img/article_header/article_bg.jpg" data-image-en="/img/article_header/article_bg.jpg">
     <div id="signature">
         <div class="container">
             <div class="row">
@@ -83,7 +102,7 @@
                     <div class="post-heading">
                         <div class="tags">
                             
-                              <a class="tag" href="/hexo-YBlog/tags/#Node.js" title="Node.js">Node.js</a>
+                              <a class="tag" href="/tags/#Node.js" title="Node.js">Node.js</a>
                             
                         </div>
                         <h1>[Node.js] assert 断言模块单元测试</h1>
@@ -97,19 +116,21 @@
             </div>
         </div>
     </div>
+    <div class="hero-curve" aria-hidden="true"></div>
 </header>
 
-	<nav class="navbar navbar-default navbar-custom navbar-fixed-top" role="navigation">
+	
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle" aria-controls="huxblog_navbar" aria-expanded="false" aria-label="打开导航菜单">
+            <button type="button" class="navbar-toggle" aria-controls="huxblog_navbar" aria-expanded="false" aria-label="打开导航菜单" data-i18n-aria="nav.menu">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" style="margin-left:0;padding:10px;" href="/hexo-YBlog/">
-                <img src="/hexo-YBlog/img/y.png" alt="Y Blog" height="100%">
+            <a class="navbar-brand" style="margin-left:0;padding:10px;" href="/">
+                <img src="/img/y.png" alt="Y Blog" height="100%">
                 <span class="brand-text">Y Blog</span>
             </a>
         </div>
@@ -118,31 +139,51 @@
             <div class="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="/hexo-YBlog/">Home</a>
+                        <a href="/" data-i18n="nav.home">首页</a>
                     </li>
                     
                         
-                    
                         
                         <li>
-                            <a href="/hexo-YBlog/about/">About</a>
+                            <a href="/about/" data-i18n="nav.about">About</a>
                         </li>
                         
                     
                         
+                        
                         <li>
-                            <a href="/hexo-YBlog/archive/">Archives</a>
+                            <a href="/archive/" data-i18n="nav.archive">Archives</a>
                         </li>
                         
                     
                         
+                        
+                    
+                        
+                        
+                    
+                        
+                        
                         <li>
-                            <a href="/hexo-YBlog/tags/">Tags</a>
+                            <a href="/topics/" data-i18n="nav.topics">知识地图</a>
+                        </li>
+                        
+                    
+                        
+                        
+                        <li>
+                            <a href="/tags/" data-i18n="nav.tags">Tags</a>
                         </li>
                         
                     
                     <li>
-                        <a href="/hexo-YBlog/atom.xml" rel="noopener">RSS</a>
+                        <a href="/atom.xml" rel="noopener">RSS</a>
+                    </li>
+                    <li>
+                        <a href="/search/" data-i18n="nav.search">搜索</a>
+                    </li>
+                    <li class="locale-switcher">
+                        <button type="button" class="locale-switcher__button" data-locale-switch data-i18n="locale.switch" data-i18n-aria="locale.switchAria" aria-label="切换至 English">English</button>
                     </li>
                 </ul>
             </div>
@@ -175,10 +216,30 @@
 
     <main class="main-content-wrap" id="main">
       
-<article>
+<article data-pagefind-body>
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 post-container">
+                <p class="content-language-note" data-i18n="content.originalLanguage">本文原始语言为中文。</p>
+                
+
+<aside class="knowledge-meta" aria-label="文章信息">
+    <div class="knowledge-meta__title" data-i18n="knowledge.title">阅读信息</div>
+    <dl>
+        
+        <div><dt data-i18n="knowledge.series">系列</dt><dd>Node.js 基础</dd></div>
+        
+        
+        <div><dt data-i18n="knowledge.difficulty">难度</dt><dd data-difficulty="beginner">beginner</dd></div>
+        
+        
+        <div><dt data-i18n="knowledge.prerequisites">前置知识</dt><dd>JavaScript · Node.js</dd></div>
+        
+        
+    </dl>
+</aside>
+
+
                 <h1 id="Node-js-assert-断言模块单元测试"><a href="#Node-js-assert-断言模块单元测试" class="headerlink" title="Node.js assert 断言模块单元测试"></a>Node.js assert 断言模块单元测试</h1><p>在nodejsh中有一个assert模块，这个模块主要用于内部断言测试使用，我们也可以在项目中使用assert模块进行断言的判断。<br>如果是true则测试通过，如果是false则测试不通过。<br>那么这和用if进行判断调试有什么区别呢？</p>
 <blockquote>
 <p>程序一般情况下分为Debug和Release，Debug用于内部测试，Release用于用户使用。</p>
@@ -215,7 +276,7 @@
     <div id="donate_board" class="donate_bar center">
         <a id="btn_donate" class="btn_donate" href="javascript:;" title="打赏"></a>
         <span class="donate_txt">
-            Y Blog服务器是收费的，感谢您的捐助。
+            
         </span>
         <br>
     </div>
@@ -229,13 +290,13 @@
                 Alipay: /img/Alipay.jpg
                 WeChatpay: /img/WeChatpay.jpg
             step2：此处两张图片的路径分别设置为如下
-                <img src="/hexo-YBlog/"
-                <img src="/hexo-YBlog/"
+                <img src="/"
+                <img src="/"
         -->
         <!--&lt;!&ndash; 支付宝打赏图案 &ndash;&gt;-->
-        <img src="/hexo-YBlog/img/Alipay.jpg" alt="支付宝打赏">
+        <img src="/img/Alipay.jpg" alt="支付宝打赏">
         <!-- &lt;!&ndash; 微信打赏图案 &ndash;&gt;-->
-        <img src="/hexo-YBlog/img/WeChatpay.jpg" alt="微信打赏">
+        <img src="/img/WeChatpay.jpg" alt="微信打赏">
 
     </div>
     <script type="text/javascript">
@@ -256,15 +317,30 @@
                     
                     
                         <li class="next">
-                            <a href="/hexo-YBlog/article/Hexo-Hexo-admin/" title="[Hexo]Hexo admin 自动发布文章">Next Post →</a>
+                            <a href="/article/Hexo-Hexo-admin/" title="[Hexo]Hexo admin 自动发布文章" data-i18n="post.next">下一篇 →</a>
                         </li>
                     
                 </ul>
 
+                <section class="community-card" aria-labelledby="community-title">
+    <div class="community-card__eyebrow" data-i18n="community.eyebrow">一起完善这篇文章</div>
+    <h2 id="community-title" data-i18n="community.title">参与讨论</h2>
+    <p data-i18n="community.description">欢迎补充实践经验、提出问题或指出过时内容。高质量反馈会帮助这篇文章持续变得更好。</p>
+    <div class="community-card__actions">
+        <a class="community-card__button" href="#comment-section" data-i18n="community.comment">留言讨论</a>
+        
+        <a class="community-card__text-link" href="/about/" data-i18n="community.guidelines">交流原则</a>
+        
+    </div>
+    
+    <small class="community-card__commitment" data-i18n="community.commitment">我会阅读每一条有建设性的留言，并尽力回复。</small>
+    
+</section>
+
                 
 <div class="comment" id="comment-section">
     <div class="comment-gate">
-        <button type="button" id="load-comments-btn">加载评论</button>
+        <button type="button" id="load-comments-btn" data-i18n="comments.load">加载评论</button>
     </div>
     <div id="lv-container" data-id="city" data-uid="MTAyMC80MjAxNy8xODU2NA==" hidden></div>
 </div>
@@ -277,7 +353,7 @@
   function loadLivere() {
     if (btn.dataset.loaded === '1') return;
     btn.dataset.loaded = '1';
-    btn.textContent = '评论加载中…';
+    btn.textContent = window.YBlogI18n ? window.YBlogI18n.t('comments.loading') : '评论加载中…';
     box.hidden = false;
     if (typeof LivereTower !== 'function') {
       var j = document.createElement('script');
@@ -316,7 +392,7 @@
     
       <aside id="sidebar">
         <div id="toc" class="toc-article">
-        <strong class="toc-title">目录</strong>
+        <strong class="toc-title" data-i18n="toc.title">目录</strong>
         
           <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#Node-js-assert-%E6%96%AD%E8%A8%80%E6%A8%A1%E5%9D%97%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">Node.js assert 断言模块单元测试</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#1-assert-value-message-assert-ok-value-message"><span class="toc-nav-number">1.1.</span> <span class="toc-nav-text">1.assert(value, message), assert.ok(value, [message])</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#2-assert-fail-actual-expected-message-operator"><span class="toc-nav-number">1.2.</span> <span class="toc-nav-text">2.assert.fail(actual, expected, message, operator)</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#3-assert-equal-actual-expected-message"><span class="toc-nav-number">1.3.</span> <span class="toc-nav-text">3.assert.equal(actual, expected, [message])</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#4-assert-deepEqual-actual-expected-message"><span class="toc-nav-number">1.4.</span> <span class="toc-nav-text">4.assert.deepEqual(actual, expected[, message])</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#5-assert-throws-block-error-message"><span class="toc-nav-number">1.5.</span> <span class="toc-nav-text">5.assert.throws(block, [error], [message])</span></a></li></ol></li></ol>
         
@@ -329,10 +405,10 @@
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 sidebar-container">
                 
                 <section>
-                    <h5><a href="/hexo-YBlog/tags/">FEATURED TAGS</a></h5>
+                    <h5><a href="/tags/" data-i18n="widget.featuredTags">精选标签</a></h5>
                     <div class="tags">
                        
-                          <a class="tag" href="/hexo-YBlog/tags/#Node.js" title="Node.js">Node.js</a>
+                          <a class="tag" href="/tags/#Node.js" title="Node.js">Node.js</a>
                         
                     </div>
                 </section>
@@ -340,7 +416,7 @@
 
                 
                 <hr>
-                <h5>FRIENDS</h5>
+                <h5 data-i18n="widget.friends">友情链接</h5>
                 <ul class="list-inline">
                     
                         <li><a href="https://blog.csdn.net/u010932545" target="_blank" rel="noopener noreferrer">CSDN Blog 姚飞亮</a></li>
@@ -389,7 +465,7 @@
                 <ul class="list-inline text-center social-icons">
 
     <li>
-        <a class="icon-btn" href="/hexo-YBlog/atom.xml" title="RSS" rel="noopener" aria-label="RSS">
+        <a class="icon-btn" href="/atom.xml" title="RSS" rel="noopener" aria-label="RSS">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.18 15.64a2.18 2.18 0 0 1 2.18 2.18C8.36 19 7.38 20 6.18 20S4 19 4 17.82s.98-2.18 2.18-2.18M4 4.44v2.86c7.03 0 12.7 5.67 12.7 12.7h2.86C19.56 11.27 12.73 4.44 4 4.44m0 5.72v2.86c3.9 0 7.04 3.14 7.04 7.04h2.86c0-5.47-4.43-9.9-9.9-9.9Z"/></svg>
         </a>
     </li>
@@ -427,15 +503,16 @@
                 <p class="copyright text-muted">
                     Copyright &copy; 姚飞亮 2026
                     <br>
-                    <a href="https://yaofeiliang.github.io/hexo-YBlog" rel="noopener">Y Blog</a>
-                    · 苏ICP备19000128号
+                    <a href="https://yaofeiliang.com" rel="noopener">Y Blog</a>
+                    · <span data-i18n="footer.rights">保留所有权利</span>
                 </p>
             </div>
         </div>
     </div>
 </footer>
 
-<script src="/hexo-YBlog/js/site.js" defer></script>
+<script src="/js/site.js" defer></script>
+
 
 
 <script>
