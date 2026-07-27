@@ -39,7 +39,7 @@ jobs:
       - name: Verify static build
         run: npm run clean && npm run build
       - name: Create review pull request
-        uses: peter-evans/create-pull-request@v7
+        uses: peter-evans/create-pull-request@v8
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: bot/daily-tech-brief
