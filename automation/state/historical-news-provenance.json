@@ -1,0 +1,2737 @@
+{
+  "schemaVersion": 1,
+  "collectedAt": "2026-07-27T09:00:00+08:00",
+  "policy": "Each item is a retrospective index of a verified official release. It is not represented as an article originally published by this site on the source date.",
+  "items": [
+    {
+      "historicalPeriod": "2019-01",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v4.29.0",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v4.29.0",
+      "sourcePublished": "2019-01-20T17:39:05Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2019-01",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.3.1",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.3.1",
+      "sourcePublished": "2019-01-22T07:16:16Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2019-01",
+      "source": "TypeScript",
+      "repository": "microsoft/TypeScript",
+      "title": "TypeScript 3.3",
+      "sourceUrl": "https://github.com/microsoft/TypeScript/releases/tag/v3.3.1",
+      "sourcePublished": "2019-01-31T21:11:29Z",
+      "topic": "typescript",
+      "selectionReason": "TypeScript 语言与工具链的正式版本或候选版本发布信息。"
+    },
+    {
+      "historicalPeriod": "2019-02",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v4.29.6",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v4.29.6",
+      "sourcePublished": "2019-02-28T09:45:27Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2019-02",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.3.4",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.3.4",
+      "sourcePublished": "2019-02-25T18:37:14Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2019-02",
+      "source": "TypeScript",
+      "repository": "microsoft/TypeScript",
+      "title": "TypeScript 3.3.3333",
+      "sourceUrl": "https://github.com/microsoft/TypeScript/releases/tag/v3.3.3333",
+      "sourcePublished": "2019-02-22T01:07:45Z",
+      "topic": "typescript",
+      "selectionReason": "TypeScript 语言与工具链的正式版本或候选版本发布信息。"
+    },
+    {
+      "historicalPeriod": "2019-03",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.4.2",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.4.2",
+      "sourcePublished": "2019-03-21T10:18:11Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2019-03",
+      "source": "TypeScript",
+      "repository": "microsoft/TypeScript",
+      "title": "TypeScript 3.4.1",
+      "sourceUrl": "https://github.com/microsoft/TypeScript/releases/tag/v3.4.1",
+      "sourcePublished": "2019-03-29T17:57:00Z",
+      "topic": "typescript",
+      "selectionReason": "TypeScript 语言与工具链的正式版本或候选版本发布信息。"
+    },
+    {
+      "historicalPeriod": "2019-03",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.4.1",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.4.1",
+      "sourcePublished": "2019-03-19T23:12:20Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2019-04",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v4.30.0",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v4.30.0",
+      "sourcePublished": "2019-04-12T20:07:58Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2019-04",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.4.4",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.4.4",
+      "sourcePublished": "2019-04-26T21:19:58Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2019-04",
+      "source": "TypeScript",
+      "repository": "microsoft/TypeScript",
+      "title": "TypeScript 3.4.5",
+      "sourceUrl": "https://github.com/microsoft/TypeScript/releases/tag/v3.4.5",
+      "sourcePublished": "2019-04-24T21:32:41Z",
+      "topic": "typescript",
+      "selectionReason": "TypeScript 语言与工具链的正式版本或候选版本发布信息。"
+    },
+    {
+      "historicalPeriod": "2019-05",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v4.32.2",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v4.32.2",
+      "sourcePublished": "2019-05-22T23:13:17Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2019-05",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.4.5",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.4.5",
+      "sourcePublished": "2019-05-21T18:07:27Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2019-05",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v4.32.1",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v4.32.1",
+      "sourcePublished": "2019-05-22T06:32:24Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2019-06",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v4.35.0",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v4.35.0",
+      "sourcePublished": "2019-06-20T04:37:25Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2019-06",
+      "source": "TypeScript",
+      "repository": "microsoft/TypeScript",
+      "title": "TypeScript 3.5.2",
+      "sourceUrl": "https://github.com/microsoft/TypeScript/releases/tag/v3.5.2",
+      "sourcePublished": "2019-06-14T21:54:47Z",
+      "topic": "typescript",
+      "selectionReason": "TypeScript 语言与工具链的正式版本或候选版本发布信息。"
+    },
+    {
+      "historicalPeriod": "2019-06",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v4.34.0",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v4.34.0",
+      "sourcePublished": "2019-06-12T23:11:04Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2019-07",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v4.38.0",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v4.38.0",
+      "sourcePublished": "2019-07-26T07:33:13Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2019-07",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.5.5",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.5.5",
+      "sourcePublished": "2019-07-17T21:30:52Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2019-07",
+      "source": "TypeScript",
+      "repository": "microsoft/TypeScript",
+      "title": "TypeScript 3.6.0 Beta",
+      "sourceUrl": "https://github.com/microsoft/TypeScript/releases/tag/v3.6-beta",
+      "sourcePublished": "2019-07-19T17:49:21Z",
+      "topic": "typescript",
+      "selectionReason": "TypeScript 语言与工具链的正式版本或候选版本发布信息。"
+    },
+    {
+      "historicalPeriod": "2019-08",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v4.39.3",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v4.39.3",
+      "sourcePublished": "2019-08-27T12:09:26Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2019-08",
+      "source": "TypeScript",
+      "repository": "microsoft/TypeScript",
+      "title": "TypeScript 3.6.2",
+      "sourceUrl": "https://github.com/microsoft/TypeScript/releases/tag/v3.6.2",
+      "sourcePublished": "2019-08-28T20:06:57Z",
+      "topic": "typescript",
+      "selectionReason": "TypeScript 语言与工具链的正式版本或候选版本发布信息。"
+    },
+    {
+      "historicalPeriod": "2019-08",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v4.39.2",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v4.39.2",
+      "sourcePublished": "2019-08-13T17:47:26Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2019-09",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v4.41.0",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v4.41.0",
+      "sourcePublished": "2019-09-24T15:49:25Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2019-09",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.6.2",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.6.2",
+      "sourcePublished": "2019-09-23T21:24:04Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2019-09",
+      "source": "TypeScript",
+      "repository": "microsoft/TypeScript",
+      "title": "TypeScript 3.6.3",
+      "sourceUrl": "https://github.com/microsoft/TypeScript/releases/tag/v3.6.3",
+      "sourcePublished": "2019-09-10T20:48:15Z",
+      "topic": "typescript",
+      "selectionReason": "TypeScript 语言与工具链的正式版本或候选版本发布信息。"
+    },
+    {
+      "historicalPeriod": "2019-10",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v4.41.2",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v4.41.2",
+      "sourcePublished": "2019-10-15T13:05:06Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2019-10",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.6.4",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.6.4",
+      "sourcePublished": "2019-10-10T14:31:17Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2019-10",
+      "source": "TypeScript",
+      "repository": "microsoft/TypeScript",
+      "title": "TypeScript 3.7.1 RC",
+      "sourceUrl": "https://github.com/microsoft/TypeScript/releases/tag/v3.7-rc",
+      "sourcePublished": "2019-10-25T07:06:06Z",
+      "topic": "typescript",
+      "selectionReason": "TypeScript 语言与工具链的正式版本或候选版本发布信息。"
+    },
+    {
+      "historicalPeriod": "2019-11",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.7.4",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.7.4",
+      "sourcePublished": "2019-11-22T23:37:25Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2019-11",
+      "source": "TypeScript",
+      "repository": "microsoft/TypeScript",
+      "title": "TypeScript 3.7.2",
+      "sourceUrl": "https://github.com/microsoft/TypeScript/releases/tag/v3.7.2",
+      "sourcePublished": "2019-11-06T15:15:24Z",
+      "topic": "typescript",
+      "selectionReason": "TypeScript 语言与工具链的正式版本或候选版本发布信息。"
+    },
+    {
+      "historicalPeriod": "2019-11",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.7.3",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.7.3",
+      "sourcePublished": "2019-11-08T20:54:26Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2019-12",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v4.41.5",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v4.41.5",
+      "sourcePublished": "2019-12-27T21:12:40Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2019-12",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.7.7",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.7.7",
+      "sourcePublished": "2019-12-19T00:55:21Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2019-12",
+      "source": "TypeScript",
+      "repository": "microsoft/TypeScript",
+      "title": "TypeScript 3.7.4",
+      "sourceUrl": "https://github.com/microsoft/TypeScript/releases/tag/v3.7.4",
+      "sourcePublished": "2019-12-30T21:33:20Z",
+      "topic": "typescript",
+      "selectionReason": "TypeScript 语言与工具链的正式版本或候选版本发布信息。"
+    },
+    {
+      "historicalPeriod": "2020-01",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.8.5",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.8.5",
+      "sourcePublished": "2020-01-31T19:01:17Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2020-01",
+      "source": "TypeScript",
+      "repository": "microsoft/TypeScript",
+      "title": "TypeScript 3.6.5",
+      "sourceUrl": "https://github.com/microsoft/TypeScript/releases/tag/v3.6.5",
+      "sourcePublished": "2020-01-23T20:37:35Z",
+      "topic": "typescript",
+      "selectionReason": "TypeScript 语言与工具链的正式版本或候选版本发布信息。"
+    },
+    {
+      "historicalPeriod": "2020-01",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.8.4",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.8.4",
+      "sourcePublished": "2020-01-30T12:42:53Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2020-02",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v4.41.6",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v4.41.6",
+      "sourcePublished": "2020-02-11T10:18:22Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2020-02",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.8.6",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.8.6",
+      "sourcePublished": "2020-02-27T12:24:25Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2020-02",
+      "source": "TypeScript",
+      "repository": "microsoft/TypeScript",
+      "title": "TypeScript 3.8.3",
+      "sourceUrl": "https://github.com/microsoft/TypeScript/releases/tag/v3.8.3",
+      "sourcePublished": "2020-02-28T22:16:53Z",
+      "topic": "typescript",
+      "selectionReason": "TypeScript 语言与工具链的正式版本或候选版本发布信息。"
+    },
+    {
+      "historicalPeriod": "2020-03",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v4.42.1",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v4.42.1",
+      "sourcePublished": "2020-03-24T06:25:00Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2020-03",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.9.4",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.9.4",
+      "sourcePublished": "2020-03-24T08:33:24Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2020-03",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v4.42.0",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v4.42.0",
+      "sourcePublished": "2020-03-02T08:42:25Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2020-04",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v4.43.0",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v4.43.0",
+      "sourcePublished": "2020-04-21T14:27:06Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2020-04",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.9.6",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.9.6",
+      "sourcePublished": "2020-04-29T18:41:29Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2020-04",
+      "source": "TypeScript",
+      "repository": "microsoft/TypeScript",
+      "title": "TypeScript 3.9 RC",
+      "sourceUrl": "https://github.com/microsoft/TypeScript/releases/tag/v3.9-rc",
+      "sourcePublished": "2020-04-28T22:47:47Z",
+      "topic": "typescript",
+      "selectionReason": "TypeScript 语言与工具链的正式版本或候选版本发布信息。"
+    },
+    {
+      "historicalPeriod": "2020-05",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.10.2",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.10.2",
+      "sourcePublished": "2020-05-30T19:29:15Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2020-05",
+      "source": "TypeScript",
+      "repository": "microsoft/TypeScript",
+      "title": "TypeScript 3.9.3",
+      "sourceUrl": "https://github.com/microsoft/TypeScript/releases/tag/v3.9.3",
+      "sourcePublished": "2020-05-19T23:01:22Z",
+      "topic": "typescript",
+      "selectionReason": "TypeScript 语言与工具链的正式版本或候选版本发布信息。"
+    },
+    {
+      "historicalPeriod": "2020-05",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.10.1",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.10.1",
+      "sourcePublished": "2020-05-27T22:13:25Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2020-06",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.10.4",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.10.4",
+      "sourcePublished": "2020-06-30T13:20:33Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2020-06",
+      "source": "TypeScript",
+      "repository": "microsoft/TypeScript",
+      "title": "TypeScript 3.9.5",
+      "sourceUrl": "https://github.com/microsoft/TypeScript/releases/tag/v3.9.5",
+      "sourcePublished": "2020-06-04T23:51:56Z",
+      "topic": "typescript",
+      "selectionReason": "TypeScript 语言与工具链的正式版本或候选版本发布信息。"
+    },
+    {
+      "historicalPeriod": "2020-06",
+      "source": "Visual Studio Code",
+      "repository": "microsoft/vscode",
+      "title": "May 2020",
+      "sourceUrl": "https://github.com/microsoft/vscode/releases/tag/1.46.0",
+      "sourcePublished": "2020-06-19T06:58:40Z",
+      "topic": "vscode",
+      "selectionReason": "开发工具的正式版本发布信息。"
+    },
+    {
+      "historicalPeriod": "2020-07",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v4.44.1",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v4.44.1",
+      "sourcePublished": "2020-07-30T08:04:39Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2020-07",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.11.0",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.11.0",
+      "sourcePublished": "2020-07-30T21:43:59Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2020-07",
+      "source": "TypeScript",
+      "repository": "microsoft/TypeScript",
+      "title": "TypeScript 3.9.7",
+      "sourceUrl": "https://github.com/microsoft/TypeScript/releases/tag/v3.9.7",
+      "sourcePublished": "2020-07-16T19:50:47Z",
+      "topic": "typescript",
+      "selectionReason": "TypeScript 语言与工具链的正式版本或候选版本发布信息。"
+    },
+    {
+      "historicalPeriod": "2020-08",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "v1.19.0",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.19.0",
+      "sourcePublished": "2020-08-26T18:30:19Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2020-08",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.11.5",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.11.5",
+      "sourcePublished": "2020-08-31T20:12:30Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2020-08",
+      "source": "TypeScript",
+      "repository": "microsoft/TypeScript",
+      "title": "TypeScript 4.0",
+      "sourceUrl": "https://github.com/microsoft/TypeScript/releases/tag/v4.0.2",
+      "sourcePublished": "2020-08-20T23:59:45Z",
+      "topic": "typescript",
+      "selectionReason": "TypeScript 语言与工具链的正式版本或候选版本发布信息。"
+    },
+    {
+      "historicalPeriod": "2020-09",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "v1.19.2",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.19.2",
+      "sourcePublished": "2020-09-16T19:41:55Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2020-09",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v4.44.2",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v4.44.2",
+      "sourcePublished": "2020-09-17T23:44:47Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2020-09",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.11.6",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.11.6",
+      "sourcePublished": "2020-09-03T15:59:34Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2020-10",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "v1.18.10",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.18.10",
+      "sourcePublished": "2020-10-15T18:22:47Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2020-10",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v5.3.2",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v5.3.2",
+      "sourcePublished": "2020-10-29T19:54:27Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2020-10",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.12.4",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.12.4",
+      "sourcePublished": "2020-10-19T19:18:16Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2020-11",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "v1.18.12",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.18.12",
+      "sourcePublished": "2020-11-12T18:09:25Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2020-11",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v5.9.0",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v5.9.0",
+      "sourcePublished": "2020-11-28T21:52:36Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2020-11",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.12.9",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.12.9",
+      "sourcePublished": "2020-11-24T21:04:17Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2020-12",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.20.1",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.20.1",
+      "sourcePublished": "2020-12-18T15:24:11Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2020-12",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v5.11.1",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v5.11.1",
+      "sourcePublished": "2020-12-28T18:06:53Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2020-12",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.12.12",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.12.12",
+      "sourcePublished": "2020-12-23T14:08:59Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2021-01",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.20.2",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.20.2",
+      "sourcePublished": "2021-01-13T19:14:04Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2021-01",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v5.19.0",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v5.19.0",
+      "sourcePublished": "2021-01-29T19:01:50Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2021-01",
+      "source": "TypeScript",
+      "repository": "microsoft/TypeScript",
+      "title": "TypeScript 4.2 Beta",
+      "sourceUrl": "https://github.com/microsoft/TypeScript/releases/tag/v4.2-beta",
+      "sourcePublished": "2021-01-20T22:58:28Z",
+      "topic": "typescript",
+      "selectionReason": "TypeScript 语言与工具链的正式版本或候选版本发布信息。"
+    },
+    {
+      "historicalPeriod": "2021-02",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.20.4",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.20.4",
+      "sourcePublished": "2021-02-18T19:40:10Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2021-02",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v5.24.2",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v5.24.2",
+      "sourcePublished": "2021-02-24T20:23:23Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2021-02",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.13.8",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.13.8",
+      "sourcePublished": "2021-02-26T23:44:09Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2021-03",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.20.5",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.20.5",
+      "sourcePublished": "2021-03-18T19:34:09Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2021-03",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v5.28.0",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v5.28.0",
+      "sourcePublished": "2021-03-24T12:36:12Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2021-03",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.13.14",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.13.14",
+      "sourcePublished": "2021-03-29T14:23:25Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2021-04",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.18.18",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.18.18",
+      "sourcePublished": "2021-04-15T05:32:45Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2021-04",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v5.36.2",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v5.36.2",
+      "sourcePublished": "2021-04-30T11:48:53Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2021-04",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.14.0",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.14.0",
+      "sourcePublished": "2021-04-29T20:14:57Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2021-05",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.21.1",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.21.1",
+      "sourcePublished": "2021-05-12T20:37:54Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2021-05",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v5.38.1",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v5.38.1",
+      "sourcePublished": "2021-05-27T21:13:28Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2021-05",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.14.4",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.14.4",
+      "sourcePublished": "2021-05-28T17:01:48Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2021-06",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.21.2",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.21.2",
+      "sourcePublished": "2021-06-17T18:56:28Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2021-06",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v5.41.1",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v5.41.1",
+      "sourcePublished": "2021-06-29T14:31:01Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2021-06",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.14.7",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.14.7",
+      "sourcePublished": "2021-06-21T21:55:08Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2021-07",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.21.3",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.21.3",
+      "sourcePublished": "2021-07-15T23:14:28Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2021-07",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v5.47.1",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v5.47.1",
+      "sourcePublished": "2021-07-29T14:21:24Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2021-07",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.14.8",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.14.8",
+      "sourcePublished": "2021-07-20T18:42:34Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2021-08",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.22.1",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.22.1",
+      "sourcePublished": "2021-08-19T17:43:38Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2021-08",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v5.51.1",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v5.51.1",
+      "sourcePublished": "2021-08-19T14:16:41Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2021-08",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.15.3",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.15.3",
+      "sourcePublished": "2021-08-11T07:20:34Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2021-09",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.22.2",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.22.2",
+      "sourcePublished": "2021-09-15T23:39:41Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2021-09",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v5.55.1",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v5.55.1",
+      "sourcePublished": "2021-09-29T08:57:34Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2021-09",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.15.7",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.15.7",
+      "sourcePublished": "2021-09-17T23:07:59Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2021-10",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.22.3",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.22.3",
+      "sourcePublished": "2021-10-28T01:30:23Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2021-10",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v5.61.0",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v5.61.0",
+      "sourcePublished": "2021-10-29T14:01:05Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2021-10",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.16.1",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.16.1",
+      "sourcePublished": "2021-10-30T21:42:11Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2021-11",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.22.4",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.22.4",
+      "sourcePublished": "2021-11-17T21:45:37Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2021-11",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v5.64.4",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v5.64.4",
+      "sourcePublished": "2021-11-25T15:49:36Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2021-11",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.16.4",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.16.4",
+      "sourcePublished": "2021-11-16T23:14:28Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2021-12",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.23.1",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.23.1",
+      "sourcePublished": "2021-12-16T16:07:55Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2021-12",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v5.65.0",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v5.65.0",
+      "sourcePublished": "2021-12-06T13:57:50Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2021-12",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.16.7",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.16.7",
+      "sourcePublished": "2021-12-31T00:24:13Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2022-01",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.23.3",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.23.3",
+      "sourcePublished": "2022-01-26T00:05:03Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2022-01",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v5.68.0",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v5.68.0",
+      "sourcePublished": "2022-01-31T16:26:27Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2022-01",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.16.12",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.16.12",
+      "sourcePublished": "2022-01-22T15:14:15Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2022-02",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.23.4",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.23.4",
+      "sourcePublished": "2022-02-17T16:24:31Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2022-02",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v5.69.1",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v5.69.1",
+      "sourcePublished": "2022-02-17T13:47:42Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2022-02",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.17.6",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.17.6",
+      "sourcePublished": "2022-02-21T22:59:33Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2022-03",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.23.5",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.23.5",
+      "sourcePublished": "2022-03-16T22:48:49Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2022-03",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v5.70.0",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v5.70.0",
+      "sourcePublished": "2022-03-03T14:24:13Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2022-03",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.17.8",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.17.8",
+      "sourcePublished": "2022-03-18T20:32:24Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2022-04",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.23.6",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.23.6",
+      "sourcePublished": "2022-04-20T19:17:02Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2022-04",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v5.72.0",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v5.72.0",
+      "sourcePublished": "2022-04-07T12:36:36Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2022-04",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.17.11",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.17.11",
+      "sourcePublished": "2022-04-29T22:08:25Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2022-05",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.24.1",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.24.1",
+      "sourcePublished": "2022-05-26T03:31:07Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2022-05",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v5.72.1",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v5.72.1",
+      "sourcePublished": "2022-05-10T10:41:58Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2022-05",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.18.4",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.18.4",
+      "sourcePublished": "2022-05-29T21:50:59Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2022-06",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.24.2",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.24.2",
+      "sourcePublished": "2022-06-17T03:43:42Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2022-06",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v5.73.0",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v5.73.0",
+      "sourcePublished": "2022-06-02T11:25:33Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2022-06",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.18.7",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.18.7",
+      "sourcePublished": "2022-06-28T21:14:16Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2022-07",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.24.3",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.24.3",
+      "sourcePublished": "2022-07-13T19:58:07Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2022-07",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v5.74.0",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v5.74.0",
+      "sourcePublished": "2022-07-25T08:00:50Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2022-07",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.18.9",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.18.9",
+      "sourcePublished": "2022-07-18T22:13:53Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2022-08",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.25.0",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.25.0",
+      "sourcePublished": "2022-08-23T21:27:47Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2022-08",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.18.13",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.18.13",
+      "sourcePublished": "2022-08-22T18:05:10Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2022-08",
+      "source": "Rust",
+      "repository": "rust-lang/rust",
+      "title": "Rust 1.63.0",
+      "sourceUrl": "https://github.com/rust-lang/rust/releases/tag/1.63.0",
+      "sourcePublished": "2022-08-11T20:49:19Z",
+      "topic": "rust",
+      "selectionReason": "Rust 编程语言的正式版本发布信息。"
+    },
+    {
+      "historicalPeriod": "2022-09",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.25.2",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.25.2",
+      "sourcePublished": "2022-09-21T20:18:10Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2022-09",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.19.3",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.19.3",
+      "sourcePublished": "2022-09-27T19:17:22Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2022-09",
+      "source": "Rust",
+      "repository": "rust-lang/rust",
+      "title": "Rust 1.64.0",
+      "sourceUrl": "https://github.com/rust-lang/rust/releases/tag/1.64.0",
+      "sourcePublished": "2022-09-22T13:31:04Z",
+      "topic": "rust",
+      "selectionReason": "Rust 编程语言的正式版本发布信息。"
+    },
+    {
+      "historicalPeriod": "2022-10",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.24.7",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.24.7",
+      "sourcePublished": "2022-10-13T17:19:17Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2022-10",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.20.0",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.20.0",
+      "sourcePublished": "2022-10-27T13:21:10Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2022-10",
+      "source": "Visual Studio Code",
+      "repository": "microsoft/vscode",
+      "title": "September 2022 Recovery",
+      "sourceUrl": "https://github.com/microsoft/vscode/releases/tag/1.72.1",
+      "sourcePublished": "2022-10-11T17:19:31Z",
+      "topic": "vscode",
+      "selectionReason": "开发工具的正式版本发布信息。"
+    },
+    {
+      "historicalPeriod": "2022-11",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.23.14",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.23.14",
+      "sourcePublished": "2022-11-10T17:43:29Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2022-11",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v5.75.0",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v5.75.0",
+      "sourcePublished": "2022-11-09T15:28:06Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2022-11",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.20.6",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.20.6",
+      "sourcePublished": "2022-11-28T12:02:11Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2022-12",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.26.0",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.26.0",
+      "sourcePublished": "2022-12-09T04:00:59Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2022-12",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.20.11",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.20.11",
+      "sourcePublished": "2022-12-23T21:18:07Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2022-12",
+      "source": "Rust",
+      "repository": "rust-lang/rust",
+      "title": "Rust 1.66.0",
+      "sourceUrl": "https://github.com/rust-lang/rust/releases/tag/1.66.0",
+      "sourcePublished": "2022-12-15T16:11:13Z",
+      "topic": "rust",
+      "selectionReason": "Rust 编程语言的正式版本发布信息。"
+    },
+    {
+      "historicalPeriod": "2023-01",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.24.10",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.24.10",
+      "sourcePublished": "2023-01-19T17:16:48Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2023-01",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.20.14",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.20.14",
+      "sourcePublished": "2023-01-27T21:52:58Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2023-01",
+      "source": "Rust",
+      "repository": "rust-lang/rust",
+      "title": "Rust 1.67.0",
+      "sourceUrl": "https://github.com/rust-lang/rust/releases/tag/1.67.0",
+      "sourcePublished": "2023-01-26T15:13:55Z",
+      "topic": "rust",
+      "selectionReason": "Rust 编程语言的正式版本发布信息。"
+    },
+    {
+      "historicalPeriod": "2023-02",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.26.2",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.26.2",
+      "sourcePublished": "2023-02-28T23:09:55Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2023-02",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.21.2",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.21.2",
+      "sourcePublished": "2023-02-23T09:39:02Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2023-02",
+      "source": "Rust",
+      "repository": "rust-lang/rust",
+      "title": "Rust 1.67.1",
+      "sourceUrl": "https://github.com/rust-lang/rust/releases/tag/1.67.1",
+      "sourcePublished": "2023-02-10T09:25:10Z",
+      "topic": "rust",
+      "selectionReason": "Rust 编程语言的正式版本发布信息。"
+    },
+    {
+      "historicalPeriod": "2023-03",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.26.3",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.26.3",
+      "sourcePublished": "2023-03-17T19:20:24Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2023-03",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v5.77.0",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v5.77.0",
+      "sourcePublished": "2023-03-29T14:23:49Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2023-03",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.21.4",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.21.4",
+      "sourcePublished": "2023-03-31T09:18:06Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2023-04",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.27.1",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.27.1",
+      "sourcePublished": "2023-04-14T16:21:18Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2023-04",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v5.81.0",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v5.81.0",
+      "sourcePublished": "2023-04-26T15:06:42Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2023-04",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.21.7",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.21.7",
+      "sourcePublished": "2023-04-29T15:48:58Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2023-05",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.25.10",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.25.10",
+      "sourcePublished": "2023-05-18T00:47:41Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2023-05",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v5.85.0",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v5.85.0",
+      "sourcePublished": "2023-05-31T19:36:55Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2023-05",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.22.4",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.22.4",
+      "sourcePublished": "2023-05-29T14:31:49Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2023-06",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.27.3",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.27.3",
+      "sourcePublished": "2023-06-14T21:36:39Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2023-06",
+      "source": "Angular",
+      "repository": "angular/angular",
+      "title": "v16.1.3",
+      "sourceUrl": "https://github.com/angular/angular/releases/tag/16.1.3",
+      "sourcePublished": "2023-06-28T15:04:41Z",
+      "topic": "angular",
+      "selectionReason": "Web 应用框架的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2023-06",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v5.88.1",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v5.88.1",
+      "sourcePublished": "2023-06-28T17:33:44Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2023-07",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.24.16",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.24.16",
+      "sourcePublished": "2023-07-19T21:20:11Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2023-07",
+      "source": "Angular",
+      "repository": "angular/angular",
+      "title": "v16.1.7",
+      "sourceUrl": "https://github.com/angular/angular/releases/tag/16.1.7",
+      "sourcePublished": "2023-07-26T16:02:49Z",
+      "topic": "angular",
+      "selectionReason": "Web 应用框架的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2023-07",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v5.88.2",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v5.88.2",
+      "sourcePublished": "2023-07-12T18:19:04Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2023-08",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.28.1",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.28.1",
+      "sourcePublished": "2023-08-24T13:58:23Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2023-08",
+      "source": "Angular",
+      "repository": "angular/angular",
+      "title": "v16.2.3",
+      "sourceUrl": "https://github.com/angular/angular/releases/tag/16.2.3",
+      "sourcePublished": "2023-08-30T17:59:55Z",
+      "topic": "angular",
+      "selectionReason": "Web 应用框架的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2023-08",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.22.14",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.22.14",
+      "sourcePublished": "2023-08-30T15:54:04Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2023-09",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.25.14",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.25.14",
+      "sourcePublished": "2023-09-13T21:03:07Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2023-09",
+      "source": "Angular",
+      "repository": "angular/angular",
+      "title": "v16.2.7",
+      "sourceUrl": "https://github.com/angular/angular/releases/tag/16.2.7",
+      "sourcePublished": "2023-09-27T20:28:40Z",
+      "topic": "angular",
+      "selectionReason": "Web 应用框架的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2023-09",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v4.47.0",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v4.47.0",
+      "sourcePublished": "2023-09-06T17:21:19Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2023-10",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.25.15",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.25.15",
+      "sourcePublished": "2023-10-18T16:20:06Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2023-10",
+      "source": "Angular",
+      "repository": "angular/angular",
+      "title": "v16.2.11",
+      "sourceUrl": "https://github.com/angular/angular/releases/tag/16.2.11",
+      "sourcePublished": "2023-10-25T21:26:14Z",
+      "topic": "angular",
+      "selectionReason": "Web 应用框架的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2023-10",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v5.89.0",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v5.89.0",
+      "sourcePublished": "2023-10-13T22:32:14Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2023-11",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.25.16",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.25.16",
+      "sourcePublished": "2023-11-16T11:30:38Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2023-11",
+      "source": "Angular",
+      "repository": "angular/angular",
+      "title": "v17.0.5",
+      "sourceUrl": "https://github.com/angular/angular/releases/tag/17.0.5",
+      "sourcePublished": "2023-11-29T17:18:19Z",
+      "topic": "angular",
+      "selectionReason": "Web 应用框架的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2023-11",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.23.5",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.23.5",
+      "sourcePublished": "2023-11-29T10:29:14Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2023-12",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.26.12",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.26.12",
+      "sourcePublished": "2023-12-20T13:27:00Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2023-12",
+      "source": "Angular",
+      "repository": "angular/angular",
+      "title": "v17.0.8",
+      "sourceUrl": "https://github.com/angular/angular/releases/tag/17.0.8",
+      "sourcePublished": "2023-12-21T14:25:29Z",
+      "topic": "angular",
+      "selectionReason": "Web 应用框架的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2023-12",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.23.7",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.23.7",
+      "sourcePublished": "2023-12-30T00:10:44Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2024-01",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.26.13",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.26.13",
+      "sourcePublished": "2024-01-17T19:42:17Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2024-01",
+      "source": "Angular",
+      "repository": "angular/angular",
+      "title": "v17.1.2",
+      "sourceUrl": "https://github.com/angular/angular/releases/tag/17.1.2",
+      "sourcePublished": "2024-01-31T19:04:30Z",
+      "topic": "angular",
+      "selectionReason": "Web 应用框架的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2024-01",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v5.90.0",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v5.90.0",
+      "sourcePublished": "2024-01-24T13:10:06Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2024-02",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.29.2",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.29.2",
+      "sourcePublished": "2024-02-14T18:01:57Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2024-02",
+      "source": "Angular",
+      "repository": "angular/angular",
+      "title": "v17.2.3",
+      "sourceUrl": "https://github.com/angular/angular/releases/tag/17.2.3",
+      "sourcePublished": "2024-02-28T00:23:43Z",
+      "topic": "angular",
+      "selectionReason": "Web 应用框架的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2024-02",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v5.90.3",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v5.90.3",
+      "sourcePublished": "2024-02-19T12:37:33Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2024-03",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.29.3",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.29.3",
+      "sourcePublished": "2024-03-15T20:15:39Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2024-03",
+      "source": "Angular",
+      "repository": "angular/angular",
+      "title": "v17.3.2",
+      "sourceUrl": "https://github.com/angular/angular/releases/tag/17.3.2",
+      "sourcePublished": "2024-03-28T16:56:46Z",
+      "topic": "angular",
+      "selectionReason": "Web 应用框架的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2024-03",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v5.91.0",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v5.91.0",
+      "sourcePublished": "2024-03-20T16:13:55Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2024-04",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.30.0",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.30.0",
+      "sourcePublished": "2024-04-17T20:45:16Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2024-04",
+      "source": "Angular",
+      "repository": "angular/angular",
+      "title": "v17.3.6",
+      "sourceUrl": "https://github.com/angular/angular/releases/tag/17.3.6",
+      "sourcePublished": "2024-04-25T15:25:58Z",
+      "topic": "angular",
+      "selectionReason": "Web 应用框架的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2024-04",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.24.5",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.24.5",
+      "sourcePublished": "2024-04-29T18:35:47Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2024-05",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.27.14",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.27.14",
+      "sourcePublished": "2024-05-15T08:02:18Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2024-05",
+      "source": "Angular",
+      "repository": "angular/angular",
+      "title": "v18.0.1",
+      "sourceUrl": "https://github.com/angular/angular/releases/tag/18.0.1",
+      "sourcePublished": "2024-05-29T16:05:44Z",
+      "topic": "angular",
+      "selectionReason": "Web 应用框架的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2024-05",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.24.6",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.24.6",
+      "sourcePublished": "2024-05-24T12:26:06Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2024-06",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.30.2",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.30.2",
+      "sourcePublished": "2024-06-12T04:05:34Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2024-06",
+      "source": "Angular",
+      "repository": "angular/angular",
+      "title": "v18.0.5",
+      "sourceUrl": "https://github.com/angular/angular/releases/tag/18.0.5",
+      "sourcePublished": "2024-06-27T00:13:29Z",
+      "topic": "angular",
+      "selectionReason": "Web 应用框架的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2024-06",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v5.92.1",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v5.92.1",
+      "sourcePublished": "2024-06-19T16:21:05Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2024-07",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.30.3",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.30.3",
+      "sourcePublished": "2024-07-17T11:51:07Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2024-07",
+      "source": "Angular",
+      "repository": "angular/angular",
+      "title": "v18.1.3",
+      "sourceUrl": "https://github.com/angular/angular/releases/tag/18.1.3",
+      "sourcePublished": "2024-07-31T17:17:12Z",
+      "topic": "angular",
+      "selectionReason": "Web 应用框架的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2024-07",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v5.93.0",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v5.93.0",
+      "sourcePublished": "2024-07-11T18:37:15Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2024-08",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.28.13",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.28.13",
+      "sourcePublished": "2024-08-15T02:04:06Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2024-08",
+      "source": "Angular",
+      "repository": "angular/angular",
+      "title": "v18.2.2",
+      "sourceUrl": "https://github.com/angular/angular/releases/tag/18.2.2",
+      "sourcePublished": "2024-08-28T21:32:28Z",
+      "topic": "angular",
+      "selectionReason": "Web 应用框架的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2024-08",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v5.94.0",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v5.94.0",
+      "sourcePublished": "2024-08-22T13:02:40Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2024-09",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.30.5",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.30.5",
+      "sourcePublished": "2024-09-12T02:55:16Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2024-09",
+      "source": "Angular",
+      "repository": "angular/angular",
+      "title": "v18.2.6",
+      "sourceUrl": "https://github.com/angular/angular/releases/tag/18.2.6",
+      "sourcePublished": "2024-09-25T17:00:13Z",
+      "topic": "angular",
+      "selectionReason": "Web 应用框架的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2024-09",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v5.95.0",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v5.95.0",
+      "sourcePublished": "2024-09-25T14:18:39Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2024-10",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.31.2",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.31.2",
+      "sourcePublished": "2024-10-23T12:18:35Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2024-10",
+      "source": "Angular",
+      "repository": "angular/angular",
+      "title": "v18.2.10",
+      "sourceUrl": "https://github.com/angular/angular/releases/tag/18.2.10",
+      "sourcePublished": "2024-10-30T19:07:37Z",
+      "topic": "angular",
+      "selectionReason": "Web 应用框架的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2024-10",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v5.96.0",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v5.96.0",
+      "sourcePublished": "2024-10-31T22:02:29Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2024-11",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.31.3",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.31.3",
+      "sourcePublished": "2024-11-21T01:12:52Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2024-11",
+      "source": "Angular",
+      "repository": "angular/angular",
+      "title": "v18.2.13",
+      "sourceUrl": "https://github.com/angular/angular/releases/tag/18.2.13",
+      "sourcePublished": "2024-11-26T18:04:51Z",
+      "topic": "angular",
+      "selectionReason": "Web 应用框架的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2024-11",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v5.96.1",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v5.96.1",
+      "sourcePublished": "2024-11-01T11:01:35Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2024-12",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.32.0",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.32.0",
+      "sourcePublished": "2024-12-11T21:13:11Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2024-12",
+      "source": "Angular",
+      "repository": "angular/angular",
+      "title": "v19.0.5",
+      "sourceUrl": "https://github.com/angular/angular/releases/tag/19.0.5",
+      "sourcePublished": "2024-12-18T18:57:26Z",
+      "topic": "angular",
+      "selectionReason": "Web 应用框架的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2024-12",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v5.97.1",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v5.97.1",
+      "sourcePublished": "2024-12-05T14:19:51Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2025-01",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.29.13",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.29.13",
+      "sourcePublished": "2025-01-15T21:51:33Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2025-01",
+      "source": "Angular",
+      "repository": "angular/angular",
+      "title": "v19.1.4",
+      "sourceUrl": "https://github.com/angular/angular/releases/tag/19.1.4",
+      "sourcePublished": "2025-01-29T23:08:35Z",
+      "topic": "angular",
+      "selectionReason": "Web 应用框架的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2025-01",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.26.7",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.26.7",
+      "sourcePublished": "2025-01-24T16:06:40Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2025-02",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.32.2",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.32.2",
+      "sourcePublished": "2025-02-13T09:39:03Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2025-02",
+      "source": "Angular",
+      "repository": "angular/angular",
+      "title": "v19.2.0",
+      "sourceUrl": "https://github.com/angular/angular/releases/tag/19.2.0",
+      "sourcePublished": "2025-02-26T21:10:08Z",
+      "topic": "angular",
+      "selectionReason": "Web 应用框架的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2025-02",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v5.98.0",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v5.98.0",
+      "sourcePublished": "2025-02-13T16:29:55Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2025-03",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.32.3",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.32.3",
+      "sourcePublished": "2025-03-12T03:32:51Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2025-03",
+      "source": "Angular",
+      "repository": "angular/angular",
+      "title": "19.2.4",
+      "sourceUrl": "https://github.com/angular/angular/releases/tag/19.2.4",
+      "sourcePublished": "2025-03-27T03:26:42Z",
+      "topic": "angular",
+      "selectionReason": "Web 应用框架的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2025-03",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.27.0",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.27.0",
+      "sourcePublished": "2025-03-24T17:43:51Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2025-04",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.33.0",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.33.0",
+      "sourcePublished": "2025-04-23T17:44:49Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2025-04",
+      "source": "Angular",
+      "repository": "angular/angular",
+      "title": "19.2.9",
+      "sourceUrl": "https://github.com/angular/angular/releases/tag/19.2.9",
+      "sourcePublished": "2025-04-30T17:27:39Z",
+      "topic": "angular",
+      "selectionReason": "Web 应用框架的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2025-04",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v5.99.7",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v5.99.7",
+      "sourcePublished": "2025-04-25T10:51:27Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2025-05",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.30.13",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.30.13",
+      "sourcePublished": "2025-05-15T17:56:34Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2025-05",
+      "source": "Angular",
+      "repository": "angular/angular",
+      "title": "20.0.0",
+      "sourceUrl": "https://github.com/angular/angular/releases/tag/20.0.0",
+      "sourcePublished": "2025-05-28T13:52:47Z",
+      "topic": "angular",
+      "selectionReason": "Web 应用框架的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2025-05",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v5.99.9",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v5.99.9",
+      "sourcePublished": "2025-05-20T11:57:38Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2025-06",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.30.14",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.30.14",
+      "sourcePublished": "2025-06-18T18:59:13Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2025-06",
+      "source": "Angular",
+      "repository": "angular/angular",
+      "title": "20.0.5",
+      "sourceUrl": "https://github.com/angular/angular/releases/tag/20.0.5",
+      "sourcePublished": "2025-06-25T16:45:59Z",
+      "topic": "angular",
+      "selectionReason": "Web 应用框架的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2025-06",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.27.7",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.27.7",
+      "sourcePublished": "2025-06-26T14:19:27Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2025-07",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.31.11",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.31.11",
+      "sourcePublished": "2025-07-15T23:11:27Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2025-07",
+      "source": "Angular",
+      "repository": "angular/angular",
+      "title": "20.1.4",
+      "sourceUrl": "https://github.com/angular/angular/releases/tag/20.1.4",
+      "sourcePublished": "2025-07-31T08:39:00Z",
+      "topic": "angular",
+      "selectionReason": "Web 应用框架的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2025-07",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v5.101.0",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v5.101.0",
+      "sourcePublished": "2025-07-28T13:44:22Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2025-08",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.34.0",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.34.0",
+      "sourcePublished": "2025-08-27T17:19:17Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2025-08",
+      "source": "Angular",
+      "repository": "angular/angular",
+      "title": "20.2.3",
+      "sourceUrl": "https://github.com/angular/angular/releases/tag/20.2.3",
+      "sourcePublished": "2025-08-29T12:33:39Z",
+      "topic": "angular",
+      "selectionReason": "Web 应用框架的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2025-08",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v5.101.3",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v5.101.3",
+      "sourcePublished": "2025-08-18T12:55:38Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2025-09",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.31.13",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.31.13",
+      "sourcePublished": "2025-09-10T04:03:49Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2025-09",
+      "source": "Angular",
+      "repository": "angular/angular",
+      "title": "20.3.2",
+      "sourceUrl": "https://github.com/angular/angular/releases/tag/20.3.2",
+      "sourcePublished": "2025-09-24T23:22:31Z",
+      "topic": "angular",
+      "selectionReason": "Web 应用框架的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2025-09",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v5.102.0",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v5.102.0",
+      "sourcePublished": "2025-09-29T18:44:06Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2025-10",
+      "source": "Angular",
+      "repository": "angular/angular",
+      "title": "20.3.9",
+      "sourceUrl": "https://github.com/angular/angular/releases/tag/20.3.9",
+      "sourcePublished": "2025-10-29T17:35:30Z",
+      "topic": "angular",
+      "selectionReason": "Web 应用框架的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2025-10",
+      "source": "webpack",
+      "repository": "webpack/webpack",
+      "title": "v5.102.1",
+      "sourceUrl": "https://github.com/webpack/webpack/releases/tag/v5.102.1",
+      "sourcePublished": "2025-10-07T16:38:22Z",
+      "topic": "webpack",
+      "selectionReason": "前端构建工具的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2025-10",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.28.5",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.28.5",
+      "sourcePublished": "2025-10-23T15:21:19Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2025-11",
+      "source": "Next.js",
+      "repository": "vercel/next.js",
+      "title": "v16.0.6",
+      "sourceUrl": "https://github.com/vercel/next.js/releases/tag/v16.0.6",
+      "sourcePublished": "2025-11-30T15:55:54Z",
+      "topic": "next-js",
+      "selectionReason": "React 应用框架的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2025-11",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.32.10",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.32.10",
+      "sourcePublished": "2025-11-12T12:01:02Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2025-11",
+      "source": "Angular",
+      "repository": "angular/angular",
+      "title": "19.2.16",
+      "sourceUrl": "https://github.com/angular/angular/releases/tag/19.2.16",
+      "sourcePublished": "2025-11-26T08:04:42Z",
+      "topic": "angular",
+      "selectionReason": "Web 应用框架的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2025-12",
+      "source": "Next.js",
+      "repository": "vercel/next.js",
+      "title": "v16.1.1",
+      "sourceUrl": "https://github.com/vercel/next.js/releases/tag/v16.1.1",
+      "sourcePublished": "2025-12-22T18:40:01Z",
+      "topic": "next-js",
+      "selectionReason": "React 应用框架的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2025-12",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "Kubernetes v1.35.0",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.35.0",
+      "sourcePublished": "2025-12-17T20:01:55Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2025-12",
+      "source": "Angular",
+      "repository": "angular/angular",
+      "title": "VSCode Extension: 21.0.1",
+      "sourceUrl": "https://github.com/angular/angular/releases/tag/vsix-21.0.1",
+      "sourcePublished": "2025-12-17T21:51:59Z",
+      "topic": "angular",
+      "selectionReason": "Web 应用框架的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2026-01",
+      "source": "Next.js",
+      "repository": "vercel/next.js",
+      "title": "v15.5.11",
+      "sourceUrl": "https://github.com/vercel/next.js/releases/tag/v15.5.11",
+      "sourcePublished": "2026-01-28T23:29:05Z",
+      "topic": "next-js",
+      "selectionReason": "React 应用框架的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2026-01",
+      "source": "Angular",
+      "repository": "angular/angular",
+      "title": "21.1.2",
+      "sourceUrl": "https://github.com/angular/angular/releases/tag/v21.1.2",
+      "sourcePublished": "2026-01-28T20:36:13Z",
+      "topic": "angular",
+      "selectionReason": "Web 应用框架的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2026-01",
+      "source": "Babel",
+      "repository": "babel/babel",
+      "title": "v7.29.0",
+      "sourceUrl": "https://github.com/babel/babel/releases/tag/v7.29.0",
+      "sourcePublished": "2026-01-31T17:43:58Z",
+      "topic": "babel",
+      "selectionReason": "JavaScript 编译工具链的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2026-02",
+      "source": "Next.js",
+      "repository": "vercel/next.js",
+      "title": "v15.5.12",
+      "sourceUrl": "https://github.com/vercel/next.js/releases/tag/v15.5.12",
+      "sourcePublished": "2026-02-04T17:53:23Z",
+      "topic": "next-js",
+      "selectionReason": "React 应用框架的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2026-02",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "v1.35.2",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.35.2",
+      "sourcePublished": "2026-02-27T00:09:07Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2026-02",
+      "source": "Angular",
+      "repository": "angular/angular",
+      "title": "VSCode Extension: 21.2.1",
+      "sourceUrl": "https://github.com/angular/angular/releases/tag/vsix-21.2.1",
+      "sourcePublished": "2026-02-25T23:35:40Z",
+      "topic": "angular",
+      "selectionReason": "Web 应用框架的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2026-03",
+      "source": "Next.js",
+      "repository": "vercel/next.js",
+      "title": "v16.2.1",
+      "sourceUrl": "https://github.com/vercel/next.js/releases/tag/v16.2.1",
+      "sourcePublished": "2026-03-20T23:32:16Z",
+      "topic": "next-js",
+      "selectionReason": "React 应用框架的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2026-03",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "v1.35.3",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.35.3",
+      "sourcePublished": "2026-03-19T03:20:52Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2026-03",
+      "source": "Angular",
+      "repository": "angular/angular",
+      "title": "21.2.6",
+      "sourceUrl": "https://github.com/angular/angular/releases/tag/v21.2.6",
+      "sourcePublished": "2026-03-25T22:42:12Z",
+      "topic": "angular",
+      "selectionReason": "Web 应用框架的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2026-04",
+      "source": "Next.js",
+      "repository": "vercel/next.js",
+      "title": "v16.2.4",
+      "sourceUrl": "https://github.com/vercel/next.js/releases/tag/v16.2.4",
+      "sourcePublished": "2026-04-15T22:35:38Z",
+      "topic": "next-js",
+      "selectionReason": "React 应用框架的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2026-04",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "v1.36.0",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.36.0",
+      "sourcePublished": "2026-04-22T17:57:14Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2026-04",
+      "source": "Angular",
+      "repository": "angular/angular",
+      "title": "21.2.11",
+      "sourceUrl": "https://github.com/angular/angular/releases/tag/v21.2.11",
+      "sourcePublished": "2026-04-29T22:38:44Z",
+      "topic": "angular",
+      "selectionReason": "Web 应用框架的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2026-05",
+      "source": "Next.js",
+      "repository": "vercel/next.js",
+      "title": "v15.5.18",
+      "sourceUrl": "https://github.com/vercel/next.js/releases/tag/v15.5.18",
+      "sourcePublished": "2026-05-07T20:18:27Z",
+      "topic": "next-js",
+      "selectionReason": "React 应用框架的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2026-05",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "v1.36.1",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.36.1",
+      "sourcePublished": "2026-05-12T16:39:25Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2026-05",
+      "source": "Angular",
+      "repository": "angular/angular",
+      "title": "VSCode Extension: 21.2.4",
+      "sourceUrl": "https://github.com/angular/angular/releases/tag/vsix-included-21.2.4",
+      "sourcePublished": "2026-05-28T17:16:39Z",
+      "topic": "angular",
+      "selectionReason": "Web 应用框架的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2026-06",
+      "source": "Next.js",
+      "repository": "vercel/next.js",
+      "title": "v16.2.9",
+      "sourceUrl": "https://github.com/vercel/next.js/releases/tag/v16.2.9",
+      "sourcePublished": "2026-06-10T12:30:06Z",
+      "topic": "next-js",
+      "selectionReason": "React 应用框架的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2026-06",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "v1.36.2",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.36.2",
+      "sourcePublished": "2026-06-12T11:34:56Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2026-06",
+      "source": "Angular",
+      "repository": "angular/angular",
+      "title": "22.0.4",
+      "sourceUrl": "https://github.com/angular/angular/releases/tag/v22.0.4",
+      "sourcePublished": "2026-06-26T17:04:20Z",
+      "topic": "angular",
+      "selectionReason": "Web 应用框架的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2026-07",
+      "source": "Next.js",
+      "repository": "vercel/next.js",
+      "title": "v16.2.12",
+      "sourceUrl": "https://github.com/vercel/next.js/releases/tag/v16.2.12",
+      "sourcePublished": "2026-07-25T23:55:42Z",
+      "topic": "next-js",
+      "selectionReason": "React 应用框架的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2026-07",
+      "source": "Kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "title": "v1.36.3",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/releases/tag/v1.36.3",
+      "sourcePublished": "2026-07-23T00:35:52Z",
+      "topic": "kubernetes",
+      "selectionReason": "云原生编排平台的正式版本发布与维护信息。"
+    },
+    {
+      "historicalPeriod": "2026-07",
+      "source": "Angular",
+      "repository": "angular/angular",
+      "title": "22.0.8",
+      "sourceUrl": "https://github.com/angular/angular/releases/tag/v22.0.8",
+      "sourcePublished": "2026-07-22T14:33:06Z",
+      "topic": "angular",
+      "selectionReason": "Web 应用框架的正式版本发布与维护信息。"
+    }
+  ]
+}

@@ -15,6 +15,8 @@
     "validate:links": "node automation/scripts/validate-internal-links.mjs",
     "news:dry-run": "node automation/scripts/ingest-news.mjs",
     "news:ingest": "node automation/scripts/ingest-news.mjs --write",
+    "news:history:dry-run": "node automation/scripts/generate-historical-news.mjs",
+    "news:history:write": "node automation/scripts/generate-historical-news.mjs --write",
     "admin:dev": "wrangler dev --config admin/wrangler.toml",
     "admin:deploy": "node admin/scripts/predeploy-check.mjs && wrangler deploy --config admin/wrangler.toml",
     "admin:db:local": "wrangler d1 execute yblog-admin --local --file admin/schema.sql --config admin/wrangler.toml",

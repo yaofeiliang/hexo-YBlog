@@ -70,13 +70,14 @@
     <script type="application/ld+json">
     <%- JSON.stringify(is_post() ? {
       '@context': 'https://schema.org',
-      '@type': 'BlogPosting',
+      '@type': page.content_type === 'historical_digest' ? 'NewsArticle' : 'BlogPosting',
       headline: page.title,
       description: pageDesc,
       image: heroAbs,
       datePublished: page.date ? page.date.toISOString() : undefined,
       dateModified: (page.updated || page.date) ? (page.updated || page.date).toISOString() : undefined,
       author: { '@type': 'Person', name: page.author || config.author },
+      isBasedOn: page.content_type === 'historical_digest' ? page.source_url : undefined,
       mainEntityOfPage: canonical,
       publisher: { '@type': 'Person', name: config.author }
     } : {

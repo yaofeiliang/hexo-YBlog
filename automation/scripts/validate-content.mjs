@@ -30,6 +30,30 @@ for (const target of entries) {
     console.error(`ERROR ${relative}: digest must declare sources and source_count`);
     errors++;
   }
+  if (data.content_type === 'historical_digest') {
+    const requiredFields = ['source_url', 'source_published', 'historical_period', 'collection_date'];
+    const missing = requiredFields.filter((field) => !data[field]);
+    if (missing.length || data.source_count !== 1 || !content.includes('## 来源与声明')) {
+      console.error(`ERROR ${relative}: historical_digest requires one source, provenance metadata, and a source declaration`);
+      errors++;
+    }
+    if (!/^20\d{2}-(0[1-9]|1[0-2])$/.test(String(data.historical_period))) {
+      console.error(`ERROR ${relative}: historical_period must use YYYY-MM`);
+      errors++;
+    }
+    if (Number.isNaN(new Date(data.source_published).getTime()) || Number.isNaN(new Date(data.collection_date).getTime())) {
+      console.error(`ERROR ${relative}: source_published and collection_date must be valid dates`);
+      errors++;
+    }
+    if (data.source_url && !/^https:\/\//.test(String(data.source_url))) {
+      console.error(`ERROR ${relative}: source_url must use HTTPS`);
+      errors++;
+    }
+    if (!content.includes('后期整理') || !content.includes('不代表当时即在本站发布')) {
+      console.error(`ERROR ${relative}: historical_digest must disclose its retrospective collection status`);
+      errors++;
+    }
+  }
   if (data.difficulty && !['beginner', 'intermediate', 'advanced'].includes(data.difficulty)) {
     console.error(`ERROR ${relative}: difficulty must be beginner, intermediate, or advanced`);
     errors++;

@@ -56,6 +56,11 @@
                         <span class="meta">
                             <%= page.author || config.author %> · <%= page.date.format(config.date_format) %>
                         </span>
+                        <% if (page.content_type === 'historical_digest') { %>
+                        <span class="meta">
+                            后期整理 · 原始发布日期：<%= date(page.source_published, config.date_format) %> · 本站收录：<%= date(page.collection_date, config.date_format) %>
+                        </span>
+                        <% } %>
                     </div>
                 <% } else if (is_home()) { %>
                     <div class="site-heading">
