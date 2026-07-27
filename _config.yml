@@ -14,7 +14,7 @@ timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://yaofeiliang.top
+url: https://yaofeiliang.com
 root: /
 #permalink: :year/:month/:day/:title/
 permalink: :category/:title/
@@ -66,8 +66,6 @@ community:
 
 #是否开启打赏功能
 donate: true
-#打赏文案
-donate_message: Y Blog服务器是收费的，感谢您的捐助。
 
 # Analytics settings 分析设置
 #Baidu Analytics 百度分析

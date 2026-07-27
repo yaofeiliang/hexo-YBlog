@@ -11,6 +11,7 @@ public/
 .env.*
 _config.admin.yml
 _config.*.local.yml
+_multiconfig.yml
 admin/.dev.vars
 admin/.wrangler/
 *.swp

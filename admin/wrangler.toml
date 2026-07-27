@@ -17,5 +17,5 @@ database_id = "00000000-0000-0000-0000-000000000000"
 [vars]
 GITHUB_REPOSITORY = "yaofeiliang/hexo-YBlog"
 DEFAULT_BRANCH = "master"
-PUBLIC_SITE_ORIGIN = "https://yaofeiliang.top"
+PUBLIC_SITE_ORIGIN = "https://yaofeiliang.com"
 COMMENTS_PROVIDER = "giscus"
