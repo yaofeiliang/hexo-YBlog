@@ -11,15 +11,6 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/search/index.html</loc>
-    
-    <lastmod>2026-07-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://yaofeiliang.com/tags/index.html</loc>
     
     <lastmod>2026-07-28</lastmod>
@@ -38,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/archive/index.html</loc>
+    <loc>https://yaofeiliang.com/about/index.html</loc>
     
     <lastmod>2026-07-28</lastmod>
     
@@ -47,7 +38,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/about/index.html</loc>
+    <loc>https://yaofeiliang.com/archive/index.html</loc>
     
     <lastmod>2026-07-28</lastmod>
     
@@ -434,7 +425,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2026/blockchain-cosmos-sdk-cosmos-sdk-group-v1-0-0/</loc>
+    <loc>https://yaofeiliang.com/news/2026/blockchain-cosmos-sdk-cosmos-sdk-poa-v1-0-0/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -443,7 +434,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2026/blockchain-cosmos-sdk-cosmos-sdk-poa-v1-0-0/</loc>
+    <loc>https://yaofeiliang.com/news/2026/blockchain-cosmos-sdk-cosmos-sdk-group-v1-0-0/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -623,7 +614,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2026/finance-u-s-treasury-2026-02/</loc>
+    <loc>https://yaofeiliang.com/news/2026/finance-sec-sec-2026-02/</loc>
     
     <lastmod>2026-02-20</lastmod>
     
@@ -632,7 +623,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2026/finance-sec-sec-2026-02/</loc>
+    <loc>https://yaofeiliang.com/news/2026/finance-u-s-treasury-2026-02/</loc>
     
     <lastmod>2026-02-20</lastmod>
     
@@ -731,7 +722,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2026/angular-21-1-2/</loc>
+    <loc>https://yaofeiliang.com/news/2026/next-js-v15-5-11/</loc>
     
     <lastmod>2026-01-28</lastmod>
     
@@ -740,7 +731,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2026/next-js-v15-5-11/</loc>
+    <loc>https://yaofeiliang.com/news/2026/angular-21-1-2/</loc>
     
     <lastmod>2026-01-28</lastmod>
     
@@ -965,7 +956,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2025/finance-u-s-treasury-2025-11/</loc>
+    <loc>https://yaofeiliang.com/news/2025/finance-sec-sec-2025-11/</loc>
     
     <lastmod>2025-11-20</lastmod>
     
@@ -974,7 +965,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2025/finance-sec-sec-2025-11/</loc>
+    <loc>https://yaofeiliang.com/news/2025/finance-u-s-treasury-2025-11/</loc>
     
     <lastmod>2025-11-20</lastmod>
     
@@ -1028,7 +1019,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2025/finance-european-central-bank-2025-10-30/</loc>
+    <loc>https://yaofeiliang.com/news/2025/blockchain-bitcoin-core-bitcoin-core-bitcoin-core-28-3/</loc>
     
     <lastmod>2025-10-30</lastmod>
     
@@ -1037,7 +1028,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2025/blockchain-bitcoin-core-bitcoin-core-bitcoin-core-28-3/</loc>
+    <loc>https://yaofeiliang.com/news/2025/finance-european-central-bank-2025-10-30/</loc>
     
     <lastmod>2025-10-30</lastmod>
     
@@ -1073,15 +1064,6 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2025/ai-langchain-langchain-langchain-fireworks-1-0-0/</loc>
-    
-    <lastmod>2025-10-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://yaofeiliang.com/news/2025/ai-langchain-langchain-langchain-huggingface-1-0-0/</loc>
     
     <lastmod>2025-10-17</lastmod>
@@ -1092,6 +1074,15 @@
   
   <url>
     <loc>https://yaofeiliang.com/news/2025/ai-langchain-langchain-langchain-1-0-0/</loc>
+    
+    <lastmod>2025-10-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://yaofeiliang.com/news/2025/ai-langchain-langchain-langchain-fireworks-1-0-0/</loc>
     
     <lastmod>2025-10-17</lastmod>
     
@@ -1181,7 +1172,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2025/finance-federal-reserve/</loc>
+    <loc>https://yaofeiliang.com/news/2025/finance-federal-reserve-fomc-2025-09-17/</loc>
     
     <lastmod>2025-09-17</lastmod>
     
@@ -1190,7 +1181,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2025/finance-federal-reserve-fomc-2025-09-17/</loc>
+    <loc>https://yaofeiliang.com/news/2025/finance-federal-reserve/</loc>
     
     <lastmod>2025-09-17</lastmod>
     
@@ -1469,7 +1460,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2025/blockchain-bitcoin-core-bitcoin-core-bitcoin-core-28-2/</loc>
+    <loc>https://yaofeiliang.com/news/2025/blockchain-go-ethereum-go-ethereum-terran-rivets-v1-16-0/</loc>
     
     <lastmod>2025-06-26</lastmod>
     
@@ -1478,7 +1469,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2025/blockchain-go-ethereum-go-ethereum-terran-rivets-v1-16-0/</loc>
+    <loc>https://yaofeiliang.com/news/2025/blockchain-bitcoin-core-bitcoin-core-bitcoin-core-28-2/</loc>
     
     <lastmod>2025-06-26</lastmod>
     
@@ -1838,7 +1829,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2025/finance-federal-reserve-fomc-2025-03-19/</loc>
+    <loc>https://yaofeiliang.com/news/2025/finance-ecb/</loc>
     
     <lastmod>2025-03-19</lastmod>
     
@@ -1847,7 +1838,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2025/finance-ecb/</loc>
+    <loc>https://yaofeiliang.com/news/2025/finance-federal-reserve-fomc-2025-03-19/</loc>
     
     <lastmod>2025-03-19</lastmod>
     
@@ -1928,7 +1919,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2025/finance-sec-sec-2025-02/</loc>
+    <loc>https://yaofeiliang.com/news/2025/finance-u-s-treasury-2025-02/</loc>
     
     <lastmod>2025-02-20</lastmod>
     
@@ -1937,7 +1928,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2025/finance-u-s-treasury-2025-02/</loc>
+    <loc>https://yaofeiliang.com/news/2025/finance-sec-sec-2025-02/</loc>
     
     <lastmod>2025-02-20</lastmod>
     
@@ -1973,7 +1964,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2025/webpack-v5-98-0/</loc>
+    <loc>https://yaofeiliang.com/news/2025/kubernetes-kubernetes-v1-32-2/</loc>
     
     <lastmod>2025-02-13</lastmod>
     
@@ -1982,7 +1973,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2025/kubernetes-kubernetes-v1-32-2/</loc>
+    <loc>https://yaofeiliang.com/news/2025/webpack-v5-98-0/</loc>
     
     <lastmod>2025-02-13</lastmod>
     
@@ -2126,7 +2117,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2024/blockchain-cosmos-sdk-cosmos-sdk-v0-52-0-rc-1/</loc>
+    <loc>https://yaofeiliang.com/news/2024/finance-federal-reserve-fomc-2024-12-18/</loc>
     
     <lastmod>2024-12-18</lastmod>
     
@@ -2135,7 +2126,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2024/finance-federal-reserve-fomc-2024-12-18/</loc>
+    <loc>https://yaofeiliang.com/news/2024/blockchain-cosmos-sdk-cosmos-sdk-v0-52-0-rc-1/</loc>
     
     <lastmod>2024-12-18</lastmod>
     
@@ -2270,7 +2261,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2024/ai-vllm-vllm-v0-6-4/</loc>
+    <loc>https://yaofeiliang.com/news/2024/ai-vllm-vllm-v0-6-4-post1/</loc>
     
     <lastmod>2024-11-15</lastmod>
     
@@ -2279,7 +2270,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2024/ai-vllm-vllm-v0-6-4-post1/</loc>
+    <loc>https://yaofeiliang.com/news/2024/ai-vllm-vllm-v0-6-4/</loc>
     
     <lastmod>2024-11-15</lastmod>
     
@@ -2585,6 +2576,15 @@
   </url>
   
   <url>
+    <loc>https://yaofeiliang.com/news/2024/finance-sec-sec-2024-08/</loc>
+    
+    <lastmod>2024-08-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://yaofeiliang.com/news/2024/finance-federal-reserve-2024-08/</loc>
     
     <lastmod>2024-08-20</lastmod>
@@ -2595,15 +2595,6 @@
   
   <url>
     <loc>https://yaofeiliang.com/news/2024/finance-u-s-treasury-2024-08/</loc>
-    
-    <lastmod>2024-08-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://yaofeiliang.com/news/2024/finance-sec-sec-2024-08/</loc>
     
     <lastmod>2024-08-20</lastmod>
     
@@ -3521,7 +3512,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2023/babel-v7-23-5/</loc>
+    <loc>https://yaofeiliang.com/news/2023/angular-v17-0-5/</loc>
     
     <lastmod>2023-11-29</lastmod>
     
@@ -3530,7 +3521,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2023/angular-v17-0-5/</loc>
+    <loc>https://yaofeiliang.com/news/2023/babel-v7-23-5/</loc>
     
     <lastmod>2023-11-29</lastmod>
     
@@ -3548,7 +3539,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2023/ai-semantic-kernel-semantic-kernel-dotnet-1-0-0-beta8/</loc>
+    <loc>https://yaofeiliang.com/news/2023/ai-semantic-kernel-semantic-kernel-dotnet-1-0-0-beta7/</loc>
     
     <lastmod>2023-11-16</lastmod>
     
@@ -3557,7 +3548,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2023/ai-semantic-kernel-semantic-kernel-dotnet-1-0-0-beta7/</loc>
+    <loc>https://yaofeiliang.com/news/2023/ai-semantic-kernel-semantic-kernel-dotnet-1-0-0-beta8/</loc>
     
     <lastmod>2023-11-16</lastmod>
     
@@ -3728,7 +3719,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2023/blockchain-openzeppelin-contracts-openzeppelin-contracts-v5-0-0-rc-1/</loc>
+    <loc>https://yaofeiliang.com/news/2023/ai-vllm-vllm-v0-2-0/</loc>
     
     <lastmod>2023-09-28</lastmod>
     
@@ -3737,7 +3728,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2023/ai-vllm-vllm-v0-2-0/</loc>
+    <loc>https://yaofeiliang.com/news/2023/blockchain-openzeppelin-contracts-openzeppelin-contracts-v5-0-0-rc-1/</loc>
     
     <lastmod>2023-09-28</lastmod>
     
@@ -3908,7 +3899,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2023/finance-sec-sec-2023-08/</loc>
+    <loc>https://yaofeiliang.com/news/2023/finance-u-s-treasury-2023-08/</loc>
     
     <lastmod>2023-08-20</lastmod>
     
@@ -3917,7 +3908,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2023/finance-u-s-treasury-2023-08/</loc>
+    <loc>https://yaofeiliang.com/news/2023/finance-sec-sec-2023-08/</loc>
     
     <lastmod>2023-08-20</lastmod>
     
@@ -4097,7 +4088,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2023/blockchain-solana-solana-testnet-v1-16-1/</loc>
+    <loc>https://yaofeiliang.com/news/2023/finance-european-central-bank-2023-06-15/</loc>
     
     <lastmod>2023-06-15</lastmod>
     
@@ -4106,7 +4097,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2023/finance-european-central-bank-2023-06-15/</loc>
+    <loc>https://yaofeiliang.com/news/2023/blockchain-solana-solana-testnet-v1-16-1/</loc>
     
     <lastmod>2023-06-15</lastmod>
     
@@ -4457,7 +4448,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2023/blockchain-go-ethereum-go-ethereum-vana-v1-11-4/</loc>
+    <loc>https://yaofeiliang.com/news/2023/finance-fdic/</loc>
     
     <lastmod>2023-03-10</lastmod>
     
@@ -4466,7 +4457,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2023/finance-fdic/</loc>
+    <loc>https://yaofeiliang.com/news/2023/blockchain-go-ethereum-go-ethereum-vana-v1-11-4/</loc>
     
     <lastmod>2023-03-10</lastmod>
     
@@ -5195,7 +5186,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2022/finance-u-s-treasury-2022-08/</loc>
+    <loc>https://yaofeiliang.com/news/2022/finance-federal-reserve-2022-08/</loc>
     
     <lastmod>2022-08-20</lastmod>
     
@@ -5204,7 +5195,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2022/finance-federal-reserve-2022-08/</loc>
+    <loc>https://yaofeiliang.com/news/2022/finance-u-s-treasury-2022-08/</loc>
     
     <lastmod>2022-08-20</lastmod>
     
@@ -5789,7 +5780,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2022/finance-federal-reserve-2022-02/</loc>
+    <loc>https://yaofeiliang.com/news/2022/finance-sec-sec-2022-02/</loc>
     
     <lastmod>2022-02-20</lastmod>
     
@@ -5798,7 +5789,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2022/finance-sec-sec-2022-02/</loc>
+    <loc>https://yaofeiliang.com/news/2022/finance-federal-reserve-2022-02/</loc>
     
     <lastmod>2022-02-20</lastmod>
     
@@ -6059,7 +6050,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2021/ai-pytorch-pytorch-pytorch-1-10-1-release-small-bug-fix-release/</loc>
+    <loc>https://yaofeiliang.com/news/2021/ai-hugging-face-transformers-hugging-face-transformers-v4-14-0-/</loc>
     
     <lastmod>2021-12-15</lastmod>
     
@@ -6068,7 +6059,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2021/ai-hugging-face-transformers-hugging-face-transformers-v4-14-0-/</loc>
+    <loc>https://yaofeiliang.com/news/2021/ai-pytorch-pytorch-pytorch-1-10-1-release-small-bug-fix-release/</loc>
     
     <lastmod>2021-12-15</lastmod>
     
@@ -6140,7 +6131,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2021/ai-hugging-face-transformers-hugging-face-transformers-v4-12-5-/</loc>
+    <loc>https://yaofeiliang.com/news/2021/blockchain-solana-solana-mainnet-v1-8-5/</loc>
     
     <lastmod>2021-11-17</lastmod>
     
@@ -6149,7 +6140,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2021/blockchain-solana-solana-mainnet-v1-8-5/</loc>
+    <loc>https://yaofeiliang.com/news/2021/ai-hugging-face-transformers-hugging-face-transformers-v4-12-5-/</loc>
     
     <lastmod>2021-11-17</lastmod>
     
@@ -6329,7 +6320,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2021/blockchain-go-ethereum-go-ethereum-attican-beta-v1-10-9/</loc>
+    <loc>https://yaofeiliang.com/news/2021/ai-hugging-face-transformers-hugging-face-transformers-v4-11-1-/</loc>
     
     <lastmod>2021-09-29</lastmod>
     
@@ -6338,7 +6329,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2021/ai-hugging-face-transformers-hugging-face-transformers-v4-11-1-/</loc>
+    <loc>https://yaofeiliang.com/news/2021/blockchain-go-ethereum-go-ethereum-attican-beta-v1-10-9/</loc>
     
     <lastmod>2021-09-29</lastmod>
     
@@ -6446,7 +6437,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2021/finance-federal-reserve-2021-08/</loc>
+    <loc>https://yaofeiliang.com/news/2021/finance-sec-sec-2021-08/</loc>
     
     <lastmod>2021-08-20</lastmod>
     
@@ -6455,7 +6446,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2021/finance-sec-sec-2021-08/</loc>
+    <loc>https://yaofeiliang.com/news/2021/finance-federal-reserve-2021-08/</loc>
     
     <lastmod>2021-08-20</lastmod>
     
@@ -7625,7 +7616,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2020/ai-hugging-face-transformers-hugging-face-transformers-rag/</loc>
+    <loc>https://yaofeiliang.com/news/2020/blockchain-go-ethereum-go-ethereum-noverian-rum-v1-9-22/</loc>
     
     <lastmod>2020-09-28</lastmod>
     
@@ -7634,7 +7625,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2020/blockchain-go-ethereum-go-ethereum-noverian-rum-v1-9-22/</loc>
+    <loc>https://yaofeiliang.com/news/2020/ai-hugging-face-transformers-hugging-face-transformers-rag/</loc>
     
     <lastmod>2020-09-28</lastmod>
     
@@ -7760,7 +7751,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2020/finance-federal-reserve-2020-08/</loc>
+    <loc>https://yaofeiliang.com/news/2020/finance-sec-sec-2020-08/</loc>
     
     <lastmod>2020-08-20</lastmod>
     
@@ -7769,7 +7760,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2020/finance-sec-sec-2020-08/</loc>
+    <loc>https://yaofeiliang.com/news/2020/finance-federal-reserve-2020-08/</loc>
     
     <lastmod>2020-08-20</lastmod>
     
@@ -8066,7 +8057,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2020/blockchain-solana-solana-v1-1-14/</loc>
+    <loc>https://yaofeiliang.com/news/2020/blockchain-solana-solana-v1-2-0/</loc>
     
     <lastmod>2020-05-27</lastmod>
     
@@ -8075,7 +8066,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2020/blockchain-solana-solana-v1-2-0/</loc>
+    <loc>https://yaofeiliang.com/news/2020/blockchain-solana-solana-v1-1-14/</loc>
     
     <lastmod>2020-05-27</lastmod>
     
@@ -8102,7 +8093,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2020/finance-federal-reserve-2020-05/</loc>
+    <loc>https://yaofeiliang.com/news/2020/finance-sec-sec-2020-05/</loc>
     
     <lastmod>2020-05-20</lastmod>
     
@@ -8111,7 +8102,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2020/finance-sec-sec-2020-05/</loc>
+    <loc>https://yaofeiliang.com/news/2020/finance-federal-reserve-2020-05/</loc>
     
     <lastmod>2020-05-20</lastmod>
     
@@ -8408,7 +8399,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2020/finance-sec-sec-2020-02/</loc>
+    <loc>https://yaofeiliang.com/news/2020/finance-federal-reserve-2020-02/</loc>
     
     <lastmod>2020-02-20</lastmod>
     
@@ -8426,7 +8417,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2020/finance-federal-reserve-2020-02/</loc>
+    <loc>https://yaofeiliang.com/news/2020/finance-sec-sec-2020-02/</loc>
     
     <lastmod>2020-02-20</lastmod>
     
@@ -8480,7 +8471,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2020/ai-hugging-face-transformers-hugging-face-transformers-flaubert/</loc>
+    <loc>https://yaofeiliang.com/news/2020/ai-hugging-face-transformers-hugging-face-transformers-patch-v2/</loc>
     
     <lastmod>2020-01-31</lastmod>
     
@@ -8489,7 +8480,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2020/ai-hugging-face-transformers-hugging-face-transformers-patch-v2/</loc>
+    <loc>https://yaofeiliang.com/news/2020/ai-hugging-face-transformers-hugging-face-transformers-flaubert/</loc>
     
     <lastmod>2020-01-31</lastmod>
     
@@ -9317,7 +9308,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2019/blockchain-solana-solana-v0-15-3/</loc>
+    <loc>https://yaofeiliang.com/news/2019/ai-tensorflow-tensorflow-tensorflow-2-0-0-beta0/</loc>
     
     <lastmod>2019-06-07</lastmod>
     
@@ -9326,7 +9317,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2019/ai-tensorflow-tensorflow-tensorflow-2-0-0-beta0/</loc>
+    <loc>https://yaofeiliang.com/news/2019/blockchain-solana-solana-v0-15-3/</loc>
     
     <lastmod>2019-06-07</lastmod>
     
@@ -9722,7 +9713,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2019/finance-u-s-treasury-2019-02/</loc>
+    <loc>https://yaofeiliang.com/news/2019/finance-sec-sec-2019-02/</loc>
     
     <lastmod>2019-02-20</lastmod>
     
@@ -9731,7 +9722,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2019/finance-sec-sec-2019-02/</loc>
+    <loc>https://yaofeiliang.com/news/2019/finance-u-s-treasury-2019-02/</loc>
     
     <lastmod>2019-02-20</lastmod>
     
@@ -9866,7 +9857,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2019/blockchain-go-ethereum-go-ethereum-byzantium-revert-v1-8-21/</loc>
+    <loc>https://yaofeiliang.com/news/2019/finance-federal-reserve-beige-book-201901/</loc>
     
     <lastmod>2019-01-15</lastmod>
     
@@ -9875,7 +9866,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2019/finance-federal-reserve-beige-book-201901/</loc>
+    <loc>https://yaofeiliang.com/news/2019/blockchain-go-ethereum-go-ethereum-byzantium-revert-v1-8-21/</loc>
     
     <lastmod>2019-01-15</lastmod>
     
@@ -9975,14 +9966,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/tags/babel/</loc>
-    <lastmod>2026-07-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://yaofeiliang.com/tags/typescript/</loc>
+    <loc>https://yaofeiliang.com/tags/webpack/</loc>
     <lastmod>2026-07-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -10003,6 +9987,13 @@
   </url>
   
   <url>
+    <loc>https://yaofeiliang.com/tags/typescript/</loc>
+    <lastmod>2026-07-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://yaofeiliang.com/tags/blockchain/</loc>
     <lastmod>2026-07-28</lastmod>
     <changefreq>weekly</changefreq>
@@ -10010,7 +10001,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/tags/webpack/</loc>
+    <loc>https://yaofeiliang.com/tags/babel/</loc>
     <lastmod>2026-07-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -10061,14 +10052,14 @@
 
   
   <url>
-    <loc>https://yaofeiliang.com/categories/Node-js/</loc>
+    <loc>https://yaofeiliang.com/categories/articles/</loc>
     <lastmod>2026-07-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/categories/articles/</loc>
+    <loc>https://yaofeiliang.com/categories/Node-js/</loc>
     <lastmod>2026-07-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
