@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/topics/index.html</loc>
+    <loc>https://yaofeiliang.com/tags/index.html</loc>
     
     <lastmod>2026-07-28</lastmod>
     
@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/tags/index.html</loc>
+    <loc>https://yaofeiliang.com/topics/index.html</loc>
     
     <lastmod>2026-07-28</lastmod>
     
@@ -227,7 +227,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2026/angular-21-1-2/</loc>
+    <loc>https://yaofeiliang.com/news/2026/next-js-v15-5-11/</loc>
     
     <lastmod>2026-01-28</lastmod>
     
@@ -236,7 +236,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2026/next-js-v15-5-11/</loc>
+    <loc>https://yaofeiliang.com/news/2026/angular-21-1-2/</loc>
     
     <lastmod>2026-01-28</lastmod>
     
@@ -254,7 +254,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2025/angular-vscode-extension-21-0-1/</loc>
+    <loc>https://yaofeiliang.com/news/2025/kubernetes-kubernetes-v1-35-0/</loc>
     
     <lastmod>2025-12-17</lastmod>
     
@@ -263,7 +263,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2025/kubernetes-kubernetes-v1-35-0/</loc>
+    <loc>https://yaofeiliang.com/news/2025/angular-vscode-extension-21-0-1/</loc>
     
     <lastmod>2025-12-17</lastmod>
     
@@ -650,7 +650,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2024/webpack-v5-95-0/</loc>
+    <loc>https://yaofeiliang.com/news/2024/angular-v18-2-6/</loc>
     
     <lastmod>2024-09-25</lastmod>
     
@@ -659,7 +659,7 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/news/2024/angular-v18-2-6/</loc>
+    <loc>https://yaofeiliang.com/news/2024/webpack-v5-95-0/</loc>
     
     <lastmod>2024-09-25</lastmod>
     
@@ -2576,14 +2576,14 @@
 
   
   <url>
-    <loc>https://yaofeiliang.com/tags/Node-js/</loc>
+    <loc>https://yaofeiliang.com/tags/Hexo/</loc>
     <lastmod>2026-07-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/tags/Hexo/</loc>
+    <loc>https://yaofeiliang.com/tags/Node-js/</loc>
     <lastmod>2026-07-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -2604,13 +2604,6 @@
   </url>
   
   <url>
-    <loc>https://yaofeiliang.com/tags/webpack/</loc>
-    <lastmod>2026-07-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://yaofeiliang.com/tags/babel/</loc>
     <lastmod>2026-07-28</lastmod>
     <changefreq>weekly</changefreq>
@@ -2619,6 +2612,13 @@
   
   <url>
     <loc>https://yaofeiliang.com/tags/typescript/</loc>
+    <lastmod>2026-07-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://yaofeiliang.com/tags/webpack/</loc>
     <lastmod>2026-07-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

@@ -305,12 +305,12 @@
     </author>
     <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
     <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
-    <category term="angular" scheme="https://yaofeiliang.com/tags/angular/"/>
-    <id>https://yaofeiliang.com/news/2026/angular-21-1-2/</id>
-    <link href="https://yaofeiliang.com/news/2026/angular-21-1-2/"/>
+    <category term="next-js" scheme="https://yaofeiliang.com/tags/next-js/"/>
+    <id>https://yaofeiliang.com/news/2026/next-js-v15-5-11/</id>
+    <link href="https://yaofeiliang.com/news/2026/next-js-v15-5-11/"/>
     <published>2026-01-28T01:00:00.000Z</published>
-    <summary>Angular 于 2026-01-28 发布 21.1.2。本文提炼升级关注点、官方说明摘要与实践检查项。</summary>
-    <title>[技术观察] Angular 21.1.2：前端框架升级该关注什么</title>
+    <summary>Next.js 于 2026-01-28 发布 v15.5.11。本文提炼升级关注点、官方说明摘要与实践检查项。</summary>
+    <title>[技术观察] Next.js v15.5.11：应用框架升级前要看的三件事</title>
     <updated>2026-01-28T01:00:00.000Z</updated>
   </entry>
 </feed>
