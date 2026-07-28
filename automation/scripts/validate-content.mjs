@@ -66,6 +66,50 @@ for (const target of entries) {
       errors++;
     }
   }
+  if (data.content_type === 'industry_digest') {
+    const requiredFields = ['source_url', 'source_published', 'historical_period', 'collection_date', 'industry'];
+    const requiredSections = [
+      '## 先用一句话说清',
+      '## 到底发生了什么',
+      '## 为什么这件事值得盯',
+      '## 用大白话拆开看',
+      '## 风趣旁白：别被标题骗了',
+      '## 接下来可以怎么跟',
+      '## 原始来源与阅读入口',
+      '## 来源与声明'
+    ];
+    const missing = requiredFields.filter((field) => !data[field]);
+    const missingSections = requiredSections.filter((section) => !content.includes(section));
+    const readableLength = content.replace(/[`#>*_\-\[\]()|:\s]/g, '').length;
+    if (missing.length || data.source_count !== 1 || missingSections.length || readableLength < 1_200) {
+      console.error(`ERROR ${relative}: industry_digest requires provenance, industry sections, and at least 1,200 readable characters`);
+      errors++;
+    }
+    if (!['ai', 'blockchain', 'finance'].includes(String(data.industry))) {
+      console.error(`ERROR ${relative}: industry must be ai, blockchain, or finance`);
+      errors++;
+    }
+    if (!/^20\d{2}-(0[1-9]|1[0-2])$/.test(String(data.historical_period))) {
+      console.error(`ERROR ${relative}: historical_period must use YYYY-MM`);
+      errors++;
+    }
+    if (Number.isNaN(new Date(data.source_published).getTime()) || Number.isNaN(new Date(data.collection_date).getTime())) {
+      console.error(`ERROR ${relative}: source_published and collection_date must be valid dates`);
+      errors++;
+    }
+    if (data.source_url && !/^https:\/\//.test(String(data.source_url))) {
+      console.error(`ERROR ${relative}: source_url must use HTTPS`);
+      errors++;
+    }
+    if (!content.includes('后期整理') || !content.includes('不代表当时即在本站发布')) {
+      console.error(`ERROR ${relative}: industry_digest must disclose its retrospective collection status`);
+      errors++;
+    }
+    if (data.industry === 'finance' && !content.includes('非投资建议')) {
+      console.error(`ERROR ${relative}: finance industry_digest must include a non-investment-advice disclaimer`);
+      errors++;
+    }
+  }
   if (data.difficulty && !['beginner', 'intermediate', 'advanced'].includes(data.difficulty)) {
     console.error(`ERROR ${relative}: difficulty must be beginner, intermediate, or advanced`);
     errors++;
