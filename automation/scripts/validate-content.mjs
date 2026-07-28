@@ -37,6 +37,8 @@ for (const target of entries) {
       '## 这个工具是做什么的（通用背景）',
       '## 版本信息一览',
       '## 官方 release 笔记要点',
+      '## 专业深度：机制、约束与二阶效应',
+      '## 专业广度：生态对照与选型含义',
       '## 如果你刚接触，可以先知道这些',
       '## 升级前通用检查清单',
       '## 可以照着做的下一步',
@@ -45,8 +47,8 @@ for (const target of entries) {
     const missing = requiredFields.filter((field) => !data[field]);
     const missingSections = requiredSections.filter((section) => !content.includes(section));
     const readableLength = content.replace(/[`#>*_\-\[\]()|:\s]/g, '').length;
-    if (missing.length || data.source_count !== 1 || missingSections.length || readableLength < 1_000) {
-      console.error(`ERROR ${relative}: historical_digest requires provenance, beginner sections, and at least 1,000 readable characters`);
+    if (missing.length || data.source_count !== 1 || missingSections.length || readableLength < 2_600) {
+      console.error(`ERROR ${relative}: historical_digest requires provenance, professional sections, and at least 2,600 readable characters`);
       errors++;
     }
     if (!/^20\d{2}-(0[1-9]|1[0-2])$/.test(String(data.historical_period))) {
@@ -72,6 +74,8 @@ for (const target of entries) {
       '## 先用一句话说清',
       '## 到底发生了什么',
       '## 为什么这件事值得盯',
+      '## 专业深度：结构、激励与约束',
+      '## 专业广度：产业链与跨市场联动',
       '## 用大白话拆开看',
       '## 风趣旁白：别被标题骗了',
       '## 接下来可以怎么跟',
@@ -81,8 +85,8 @@ for (const target of entries) {
     const missing = requiredFields.filter((field) => !data[field]);
     const missingSections = requiredSections.filter((section) => !content.includes(section));
     const readableLength = content.replace(/[`#>*_\-\[\]()|:\s]/g, '').length;
-    if (missing.length || data.source_count !== 1 || missingSections.length || readableLength < 1_200) {
-      console.error(`ERROR ${relative}: industry_digest requires provenance, industry sections, and at least 1,200 readable characters`);
+    if (missing.length || data.source_count !== 1 || missingSections.length || readableLength < 3_200) {
+      console.error(`ERROR ${relative}: industry_digest requires provenance, professional sections, and at least 3,200 readable characters`);
       errors++;
     }
     if (!['ai', 'blockchain', 'finance'].includes(String(data.industry))) {
