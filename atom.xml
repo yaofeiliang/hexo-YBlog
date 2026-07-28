@@ -12,87 +12,305 @@
   <rights>All rights reserved 2026, 姚飞亮</rights>
   <subtitle>我干了什么 究竟拿了时间换了什么</subtitle>
   <title>Y Blog</title>
-  <updated>2019-01-06T16:55:00.000Z</updated>
+  <updated>2026-07-27T01:00:00.000Z</updated>
   <entry>
     <author>
       <name>姚飞亮</name>
       <email>yaoadmin@sina.com</email>
     </author>
-    <category term="Node.js" scheme="https://yaofeiliang.com/categories/Node-js/"/>
-    <category term="Node.js" scheme="https://yaofeiliang.com/tags/Node-js/"/>
-    <id>https://yaofeiliang.com/Node-js/Node-js-assert-%E6%96%AD%E8%A8%80%E6%A8%A1%E5%9D%97%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/</id>
-    <link href="https://yaofeiliang.com/Node-js/Node-js-assert-%E6%96%AD%E8%A8%80%E6%A8%A1%E5%9D%97%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/"/>
-    <published>2019-01-06T16:55:00.000Z</published>
-    <summary>介绍 Node.js assert 断言模块的基本用途，以及在单元测试中验证预期结果的方式。</summary>
-    <title>[Node.js] assert 断言模块单元测试</title>
-    <updated>2019-01-06T16:55:00.000Z</updated>
+    <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
+    <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
+    <category term="webpack" scheme="https://yaofeiliang.com/tags/webpack/"/>
+    <id>https://yaofeiliang.com/news/2019/webpack-v4-29-0/</id>
+    <link href="https://yaofeiliang.com/news/2019/webpack-v4-29-0/"/>
+    <published>2026-07-27T01:00:00.000Z</published>
+    <summary>webpack 于 2019-01-20 发布的正式版本记录，由姚飞亮于 2026-07-27 后期整理。</summary>
+    <title>[技术资讯] v4.29.0</title>
+    <updated>2026-07-27T01:00:00.000Z</updated>
   </entry>
   <entry>
     <author>
       <name>姚飞亮</name>
       <email>yaoadmin@sina.com</email>
     </author>
-    <category term="Hexo" scheme="https://yaofeiliang.com/tags/Hexo/"/>
-    <id>https://yaofeiliang.com/article/Hexo-Hexo-admin/</id>
-    <link href="https://yaofeiliang.com/article/Hexo-Hexo-admin/"/>
-    <published>2019-01-05T14:32:00.000Z</published>
-    <summary>记录 Hexo Admin 的本地文章编辑与图片粘贴工作流；该工具现仅适合作为历史参考。</summary>
-    <title>[Hexo]Hexo admin 自动发布文章</title>
-    <updated>2019-01-05T14:32:00.000Z</updated>
+    <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
+    <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
+    <category term="babel" scheme="https://yaofeiliang.com/tags/babel/"/>
+    <id>https://yaofeiliang.com/news/2019/babel-v7-3-1/</id>
+    <link href="https://yaofeiliang.com/news/2019/babel-v7-3-1/"/>
+    <published>2026-07-27T01:00:00.000Z</published>
+    <summary>Babel 于 2019-01-22 发布的正式版本记录，由姚飞亮于 2026-07-27 后期整理。</summary>
+    <title>[技术资讯] v7.3.1</title>
+    <updated>2026-07-27T01:00:00.000Z</updated>
   </entry>
   <entry>
     <author>
       <name>姚飞亮</name>
       <email>yaoadmin@sina.com</email>
     </author>
-    <category term="工具" scheme="https://yaofeiliang.com/categories/tools/"/>
-    <category term="工具" scheme="https://yaofeiliang.com/tags/%E5%B7%A5%E5%85%B7/"/>
-    <id>https://yaofeiliang.com/tools/tool-ss/</id>
-    <link href="https://yaofeiliang.com/tools/tool-ss/"/>
-    <published>2018-12-20T02:51:24.000Z</published>
-    <summary>历史网络代理工具部署笔记，仅作归档与技术背景参考。</summary>
-    <title>[工具] 网络代理</title>
-    <updated>2018-12-20T02:51:24.000Z</updated>
+    <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
+    <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
+    <category term="typescript" scheme="https://yaofeiliang.com/tags/typescript/"/>
+    <id>https://yaofeiliang.com/news/2019/typescript-typescript-3-3/</id>
+    <link href="https://yaofeiliang.com/news/2019/typescript-typescript-3-3/"/>
+    <published>2026-07-27T01:00:00.000Z</published>
+    <summary>TypeScript 于 2019-01-31 发布的正式版本记录，由姚飞亮于 2026-07-27 后期整理。</summary>
+    <title>[技术资讯] TypeScript 3.3</title>
+    <updated>2026-07-27T01:00:00.000Z</updated>
   </entry>
   <entry>
     <author>
       <name>姚飞亮</name>
       <email>yaoadmin@sina.com</email>
     </author>
-    <category term="工具" scheme="https://yaofeiliang.com/categories/tools/"/>
-    <category term="工具" scheme="https://yaofeiliang.com/tags/%E5%B7%A5%E5%85%B7/"/>
-    <id>https://yaofeiliang.com/tools/tool-analytics/</id>
-    <link href="https://yaofeiliang.com/tools/tool-analytics/"/>
-    <published>2018-12-20T02:46:47.000Z</published>
-    <summary>网站访问统计工具的历史配置记录；Universal Analytics 已停止服务，实施时应改用现代分析方案。</summary>
-    <title>[工具] 网站访问数据统计</title>
-    <updated>2018-12-20T02:46:47.000Z</updated>
+    <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
+    <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
+    <category term="babel" scheme="https://yaofeiliang.com/tags/babel/"/>
+    <id>https://yaofeiliang.com/news/2019/babel-v7-3-4/</id>
+    <link href="https://yaofeiliang.com/news/2019/babel-v7-3-4/"/>
+    <published>2026-07-27T01:00:00.000Z</published>
+    <summary>Babel 于 2019-02-25 发布的正式版本记录，由姚飞亮于 2026-07-27 后期整理。</summary>
+    <title>[技术资讯] v7.3.4</title>
+    <updated>2026-07-27T01:00:00.000Z</updated>
   </entry>
   <entry>
     <author>
       <name>姚飞亮</name>
       <email>yaoadmin@sina.com</email>
     </author>
-    <category term="Hexo" scheme="https://yaofeiliang.com/categories/hexo/"/>
-    <category term="Hexo" scheme="https://yaofeiliang.com/tags/Hexo/"/>
-    <id>https://yaofeiliang.com/hexo/hexo-theme-yaofeiliang/</id>
-    <link href="https://yaofeiliang.com/hexo/hexo-theme-yaofeiliang/"/>
-    <published>2018-12-17T02:51:00.000Z</published>
-    <summary>Y Blog Hexo 主题的安装、站点配置、侧栏、签名与发布说明。</summary>
-    <title>[Hexo] Theme Y Blog</title>
-    <updated>2018-12-17T02:51:00.000Z</updated>
+    <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
+    <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
+    <category term="webpack" scheme="https://yaofeiliang.com/tags/webpack/"/>
+    <id>https://yaofeiliang.com/news/2019/webpack-v4-29-6/</id>
+    <link href="https://yaofeiliang.com/news/2019/webpack-v4-29-6/"/>
+    <published>2026-07-27T01:00:00.000Z</published>
+    <summary>webpack 于 2019-02-28 发布的正式版本记录，由姚飞亮于 2026-07-27 后期整理。</summary>
+    <title>[技术资讯] v4.29.6</title>
+    <updated>2026-07-27T01:00:00.000Z</updated>
   </entry>
   <entry>
     <author>
       <name>姚飞亮</name>
       <email>yaoadmin@sina.com</email>
     </author>
-    <category term="article" scheme="https://yaofeiliang.com/categories/articles/"/>
-    <id>https://yaofeiliang.com/articles/hello-world/</id>
-    <link href="https://yaofeiliang.com/articles/hello-world/"/>
-    <published>2018-12-17T02:00:00.000Z</published>
-    <summary>Hexo 博客的起步文章，包含创建文章、启动本地服务和生成静态文件的基础命令。</summary>
-    <title>Hello World</title>
-    <updated>2018-12-17T02:00:00.000Z</updated>
+    <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
+    <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
+    <category term="typescript" scheme="https://yaofeiliang.com/tags/typescript/"/>
+    <id>https://yaofeiliang.com/news/2019/typescript-typescript-3-3-3333/</id>
+    <link href="https://yaofeiliang.com/news/2019/typescript-typescript-3-3-3333/"/>
+    <published>2026-07-27T01:00:00.000Z</published>
+    <summary>TypeScript 于 2019-02-22 发布的正式版本记录，由姚飞亮于 2026-07-27 后期整理。</summary>
+    <title>[技术资讯] TypeScript 3.3.3333</title>
+    <updated>2026-07-27T01:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>姚飞亮</name>
+      <email>yaoadmin@sina.com</email>
+    </author>
+    <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
+    <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
+    <category term="typescript" scheme="https://yaofeiliang.com/tags/typescript/"/>
+    <id>https://yaofeiliang.com/news/2019/typescript-typescript-3-4-1/</id>
+    <link href="https://yaofeiliang.com/news/2019/typescript-typescript-3-4-1/"/>
+    <published>2026-07-27T01:00:00.000Z</published>
+    <summary>TypeScript 于 2019-03-29 发布的正式版本记录，由姚飞亮于 2026-07-27 后期整理。</summary>
+    <title>[技术资讯] TypeScript 3.4.1</title>
+    <updated>2026-07-27T01:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>姚飞亮</name>
+      <email>yaoadmin@sina.com</email>
+    </author>
+    <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
+    <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
+    <category term="babel" scheme="https://yaofeiliang.com/tags/babel/"/>
+    <id>https://yaofeiliang.com/news/2019/babel-v7-4-2/</id>
+    <link href="https://yaofeiliang.com/news/2019/babel-v7-4-2/"/>
+    <published>2026-07-27T01:00:00.000Z</published>
+    <summary>Babel 于 2019-03-21 发布的正式版本记录，由姚飞亮于 2026-07-27 后期整理。</summary>
+    <title>[技术资讯] v7.4.2</title>
+    <updated>2026-07-27T01:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>姚飞亮</name>
+      <email>yaoadmin@sina.com</email>
+    </author>
+    <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
+    <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
+    <category term="webpack" scheme="https://yaofeiliang.com/tags/webpack/"/>
+    <id>https://yaofeiliang.com/news/2019/webpack-v4-30-0/</id>
+    <link href="https://yaofeiliang.com/news/2019/webpack-v4-30-0/"/>
+    <published>2026-07-27T01:00:00.000Z</published>
+    <summary>webpack 于 2019-04-12 发布的正式版本记录，由姚飞亮于 2026-07-27 后期整理。</summary>
+    <title>[技术资讯] v4.30.0</title>
+    <updated>2026-07-27T01:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>姚飞亮</name>
+      <email>yaoadmin@sina.com</email>
+    </author>
+    <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
+    <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
+    <category term="babel" scheme="https://yaofeiliang.com/tags/babel/"/>
+    <id>https://yaofeiliang.com/news/2019/babel-v7-4-1/</id>
+    <link href="https://yaofeiliang.com/news/2019/babel-v7-4-1/"/>
+    <published>2026-07-27T01:00:00.000Z</published>
+    <summary>Babel 于 2019-03-19 发布的正式版本记录，由姚飞亮于 2026-07-27 后期整理。</summary>
+    <title>[技术资讯] v7.4.1</title>
+    <updated>2026-07-27T01:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>姚飞亮</name>
+      <email>yaoadmin@sina.com</email>
+    </author>
+    <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
+    <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
+    <category term="typescript" scheme="https://yaofeiliang.com/tags/typescript/"/>
+    <id>https://yaofeiliang.com/news/2019/typescript-typescript-3-4-5/</id>
+    <link href="https://yaofeiliang.com/news/2019/typescript-typescript-3-4-5/"/>
+    <published>2026-07-27T01:00:00.000Z</published>
+    <summary>TypeScript 于 2019-04-24 发布的正式版本记录，由姚飞亮于 2026-07-27 后期整理。</summary>
+    <title>[技术资讯] TypeScript 3.4.5</title>
+    <updated>2026-07-27T01:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>姚飞亮</name>
+      <email>yaoadmin@sina.com</email>
+    </author>
+    <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
+    <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
+    <category term="babel" scheme="https://yaofeiliang.com/tags/babel/"/>
+    <id>https://yaofeiliang.com/news/2019/babel-v7-4-4/</id>
+    <link href="https://yaofeiliang.com/news/2019/babel-v7-4-4/"/>
+    <published>2026-07-27T01:00:00.000Z</published>
+    <summary>Babel 于 2019-04-26 发布的正式版本记录，由姚飞亮于 2026-07-27 后期整理。</summary>
+    <title>[技术资讯] v7.4.4</title>
+    <updated>2026-07-27T01:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>姚飞亮</name>
+      <email>yaoadmin@sina.com</email>
+    </author>
+    <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
+    <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
+    <category term="webpack" scheme="https://yaofeiliang.com/tags/webpack/"/>
+    <id>https://yaofeiliang.com/news/2019/webpack-v4-32-2/</id>
+    <link href="https://yaofeiliang.com/news/2019/webpack-v4-32-2/"/>
+    <published>2026-07-27T01:00:00.000Z</published>
+    <summary>webpack 于 2019-05-22 发布的正式版本记录，由姚飞亮于 2026-07-27 后期整理。</summary>
+    <title>[技术资讯] v4.32.2</title>
+    <updated>2026-07-27T01:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>姚飞亮</name>
+      <email>yaoadmin@sina.com</email>
+    </author>
+    <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
+    <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
+    <category term="webpack" scheme="https://yaofeiliang.com/tags/webpack/"/>
+    <id>https://yaofeiliang.com/news/2019/webpack-v4-32-1/</id>
+    <link href="https://yaofeiliang.com/news/2019/webpack-v4-32-1/"/>
+    <published>2026-07-27T01:00:00.000Z</published>
+    <summary>webpack 于 2019-05-22 发布的正式版本记录，由姚飞亮于 2026-07-27 后期整理。</summary>
+    <title>[技术资讯] v4.32.1</title>
+    <updated>2026-07-27T01:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>姚飞亮</name>
+      <email>yaoadmin@sina.com</email>
+    </author>
+    <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
+    <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
+    <category term="typescript" scheme="https://yaofeiliang.com/tags/typescript/"/>
+    <id>https://yaofeiliang.com/news/2019/typescript-typescript-3-5-2/</id>
+    <link href="https://yaofeiliang.com/news/2019/typescript-typescript-3-5-2/"/>
+    <published>2026-07-27T01:00:00.000Z</published>
+    <summary>TypeScript 于 2019-06-14 发布的正式版本记录，由姚飞亮于 2026-07-27 后期整理。</summary>
+    <title>[技术资讯] TypeScript 3.5.2</title>
+    <updated>2026-07-27T01:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>姚飞亮</name>
+      <email>yaoadmin@sina.com</email>
+    </author>
+    <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
+    <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
+    <category term="webpack" scheme="https://yaofeiliang.com/tags/webpack/"/>
+    <id>https://yaofeiliang.com/news/2019/webpack-v4-35-0/</id>
+    <link href="https://yaofeiliang.com/news/2019/webpack-v4-35-0/"/>
+    <published>2026-07-27T01:00:00.000Z</published>
+    <summary>webpack 于 2019-06-20 发布的正式版本记录，由姚飞亮于 2026-07-27 后期整理。</summary>
+    <title>[技术资讯] v4.35.0</title>
+    <updated>2026-07-27T01:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>姚飞亮</name>
+      <email>yaoadmin@sina.com</email>
+    </author>
+    <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
+    <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
+    <category term="webpack" scheme="https://yaofeiliang.com/tags/webpack/"/>
+    <id>https://yaofeiliang.com/news/2019/webpack-v4-34-0/</id>
+    <link href="https://yaofeiliang.com/news/2019/webpack-v4-34-0/"/>
+    <published>2026-07-27T01:00:00.000Z</published>
+    <summary>webpack 于 2019-06-12 发布的正式版本记录，由姚飞亮于 2026-07-27 后期整理。</summary>
+    <title>[技术资讯] v4.34.0</title>
+    <updated>2026-07-27T01:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>姚飞亮</name>
+      <email>yaoadmin@sina.com</email>
+    </author>
+    <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
+    <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
+    <category term="babel" scheme="https://yaofeiliang.com/tags/babel/"/>
+    <id>https://yaofeiliang.com/news/2019/babel-v7-4-5/</id>
+    <link href="https://yaofeiliang.com/news/2019/babel-v7-4-5/"/>
+    <published>2026-07-27T01:00:00.000Z</published>
+    <summary>Babel 于 2019-05-21 发布的正式版本记录，由姚飞亮于 2026-07-27 后期整理。</summary>
+    <title>[技术资讯] v7.4.5</title>
+    <updated>2026-07-27T01:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>姚飞亮</name>
+      <email>yaoadmin@sina.com</email>
+    </author>
+    <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
+    <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
+    <category term="webpack" scheme="https://yaofeiliang.com/tags/webpack/"/>
+    <id>https://yaofeiliang.com/news/2019/webpack-v4-38-0/</id>
+    <link href="https://yaofeiliang.com/news/2019/webpack-v4-38-0/"/>
+    <published>2026-07-27T01:00:00.000Z</published>
+    <summary>webpack 于 2019-07-26 发布的正式版本记录，由姚飞亮于 2026-07-27 后期整理。</summary>
+    <title>[技术资讯] v4.38.0</title>
+    <updated>2026-07-27T01:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>姚飞亮</name>
+      <email>yaoadmin@sina.com</email>
+    </author>
+    <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
+    <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
+    <category term="typescript" scheme="https://yaofeiliang.com/tags/typescript/"/>
+    <id>https://yaofeiliang.com/news/2019/typescript-typescript-3-6-0-beta/</id>
+    <link href="https://yaofeiliang.com/news/2019/typescript-typescript-3-6-0-beta/"/>
+    <published>2026-07-27T01:00:00.000Z</published>
+    <summary>TypeScript 于 2019-07-19 发布的正式版本记录，由姚飞亮于 2026-07-27 后期整理。</summary>
+    <title>[技术资讯] TypeScript 3.6.0 Beta</title>
+    <updated>2026-07-27T01:00:00.000Z</updated>
   </entry>
 </feed>

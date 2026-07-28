@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-analytics-endpoint="">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <script>
+      (function () {
+        try {
+          var query = new URLSearchParams(location.search).get('lang');
+          var saved = query || localStorage.getItem('yblog.locale');
+          var locale = saved || ((navigator.languages || [navigator.language || '']).some(function (item) { return /^zh/i.test(item); }) ? 'zh-CN' : 'en');
+          document.documentElement.lang = /^zh/i.test(locale) ? 'zh-CN' : 'en';
+          document.documentElement.dataset.locale = document.documentElement.lang;
+        } catch (_) {}
+      })();
+    </script>
+    <meta name="description" content="成为更好的自己">
+    <meta name="keywords" content="姚飞亮">
+    <meta name="author" content="姚飞亮">
+    <meta name="theme-color" content="#0085a1">
+    <link rel="shortcut icon" href="/img/y.png">
+    <link rel="alternate" type="application/atom+xml" title="Y Blog" href="/atom.xml">
+    <title>姚飞亮 | Blog</title>
+    <link rel="canonical" href="https://yaofeiliang.com/archives/24/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="姚飞亮 | Blog">
+    <meta property="og:description" content="成为更好的自己">
+    <meta property="og:url" content="https://yaofeiliang.com/archives/24/">
+    <meta property="og:site_name" content="Y Blog">
+    <meta property="og:image" content="https://yaofeiliang.com/img/header_img/banner.jpg">
+    <meta property="og:locale" content="zh_CN">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="姚飞亮 | Blog">
+    <meta name="twitter:description" content="成为更好的自己">
+    <meta name="twitter:image" content="https://yaofeiliang.com/img/header_img/banner.jpg">
+
+    <link rel="preload" as="image" href="https://yaofeiliang.com/img/header_img/banner.webp" type="image/webp">
+    <link rel="preload" as="image" href="https://yaofeiliang.com/img/header_img/banner.jpg" type="image/jpeg">
+
+    
+<link rel="stylesheet" href="/css/site.css">
+
+    
+<link rel="stylesheet" href="/css/beantech.min.css">
+
+    
+<link rel="stylesheet" href="/css/widget.css">
+
+    
+<link rel="stylesheet" href="/css/rocket.css">
+
+    
+<link rel="stylesheet" href="/css/signature.css">
+
+    
+    <script src="/js/i18n.js" defer></script>
+
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"WebSite","name":"Y Blog","url":"https://yaofeiliang.com","description":"成为更好的自己","inLanguage":"zh-CN","author":{"@type":"Person","name":"姚飞亮"}}
+    </script>
+<meta name="generator" content="Hexo 8.1.2"></head>
+
+
+<body ontouchstart="">
+    <a class="skip-link" href="#main">跳到正文</a>
+	
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/header_img/banner.jpg');
+        background-image: -webkit-image-set(url('/img/header_img/banner.webp') type('image/webp'), url('/img/header_img/banner.jpg') type('image/jpeg'));
+        background-image: image-set(url('/img/header_img/banner.webp') type('image/webp'), url('/img/header_img/banner.jpg') type('image/jpeg'));
+    }
+    
+    #signature {
+        background-image: url('/img/signature/icon_yaofeiliang.png');
+    }
+    
+</style>
+
+<header class="intro-header" data-i18n-image data-image-zh="/img/header_img/banner.jpg" data-image-en="/img/header_img/banner.jpg">
+    <div id="signature">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                
+                    <div class="site-heading">
+                        <div class="brand-mark">姚飞亮</div>
+                        <h1>Y Blog</h1>
+                        <span class="subheading" data-i18n="hero.subtitle">我干了什么 究竟拿了时间换了什么</span>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero-curve" aria-hidden="true"></div>
+</header>
+
+	
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" aria-controls="huxblog_navbar" aria-expanded="false" aria-label="打开导航菜单" data-i18n-aria="nav.menu">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" style="margin-left:0;padding:10px;" href="/">
+                <img src="/img/y.png" alt="Y Blog" height="100%">
+                <span class="brand-text">Y Blog</span>
+            </a>
+        </div>
+
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/" data-i18n="nav.home">首页</a>
+                    </li>
+                    
+                        
+                        
+                    
+                        
+                        
+                        <li>
+                            <a href="/archive/" data-i18n="nav.archive">Archives</a>
+                        </li>
+                        
+                    
+                        
+                        
+                        <li>
+                            <a href="/about/" data-i18n="nav.about">About</a>
+                        </li>
+                        
+                    
+                        
+                        
+                    
+                        
+                        
+                        <li>
+                            <a href="/topics/" data-i18n="nav.topics">知识地图</a>
+                        </li>
+                        
+                    
+                        
+                        
+                        <li>
+                            <a href="/tags/" data-i18n="nav.tags">Tags</a>
+                        </li>
+                        
+                    
+                    <li>
+                        <a href="/atom.xml" rel="noopener">RSS</a>
+                    </li>
+                    <li>
+                        <a href="/search/" data-i18n="nav.search">搜索</a>
+                    </li>
+                    <li class="locale-switcher">
+                        <button type="button" class="locale-switcher__button" data-locale-switch data-i18n="locale.switch" data-i18n-aria="locale.switchAria" aria-label="切换至 English">English</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<script>
+    (function () {
+        var $toggle = document.querySelector('.navbar-toggle');
+        var $navbar = document.querySelector('#huxblog_navbar');
+        var $collapse = document.querySelector('.navbar-collapse');
+        if (!$toggle || !$navbar || !$collapse) return;
+        $toggle.addEventListener('click', function () {
+            var open = $navbar.className.indexOf('in') > -1;
+            if (open) {
+                $navbar.className = ' ';
+                $toggle.setAttribute('aria-expanded', 'false');
+                setTimeout(function () {
+                    if ($navbar.className.indexOf('in') < 0) $collapse.style.height = '0px';
+                }, 400);
+            } else {
+                $collapse.style.height = 'auto';
+                $navbar.className += ' in';
+                $toggle.setAttribute('aria-expanded', 'true');
+            }
+        });
+    })();
+</script>
+
+
+    <main class="main-content-wrap" id="main">
+      <div class="container">
+    <div class="row">
+        
+            <div class="col-lg-8 col-lg-offset-1 col-md-8 col-md-offset-1 col-sm-12 post-container" data-pagefind-body>
+                <!-- Main Content -->
+
+
+<article class="post-preview">
+    <a target="_blank" rel="noopener" href="//news/2025/angular-20-0-0/">
+        <h2 class="post-title">
+            [技术资讯] 20.0.0
+        </h2>
+        
+        <div class="post-content-preview">
+            
+本文由姚飞亮于 2026-07-27 后期整理，用于建立技术动态索引；不代表当时即在本站发布，也不替代原始发布说明。
+
+资讯摘要Angular 于 2025-05-28 发布了「20.0.0」。本文仅收录该官方发布记录的标题、时间与入口，不转载原始内容。
+
+官方来源：Angular
+原始发布日期：2025-05-2…
+        </div>
+    </a>
+    <p class="post-meta">
+        姚飞亮整理 · 2026-07-27
+    </p>
+    
+        <div class="tags">
+            
+              <a href="/tags/#技术资讯" title="技术资讯">技术资讯</a>
+            
+              <a href="/tags/#angular" title="angular">angular</a>
+            
+        </div>
+    
+</article>
+
+<article class="post-preview">
+    <a target="_blank" rel="noopener" href="//news/2025/angular-20-0-5/">
+        <h2 class="post-title">
+            [技术资讯] 20.0.5
+        </h2>
+        
+        <div class="post-content-preview">
+            
+本文由姚飞亮于 2026-07-27 后期整理，用于建立技术动态索引；不代表当时即在本站发布，也不替代原始发布说明。
+
+资讯摘要Angular 于 2025-06-25 发布了「20.0.5」。本文仅收录该官方发布记录的标题、时间与入口，不转载原始内容。
+
+官方来源：Angular
+原始发布日期：2025-06-2…
+        </div>
+    </a>
+    <p class="post-meta">
+        姚飞亮整理 · 2026-07-27
+    </p>
+    
+        <div class="tags">
+            
+              <a href="/tags/#技术资讯" title="技术资讯">技术资讯</a>
+            
+              <a href="/tags/#angular" title="angular">angular</a>
+            
+        </div>
+    
+</article>
+
+<article class="post-preview">
+    <a target="_blank" rel="noopener" href="//news/2025/babel-v7-27-7/">
+        <h2 class="post-title">
+            [技术资讯] v7.27.7
+        </h2>
+        
+        <div class="post-content-preview">
+            
+本文由姚飞亮于 2026-07-27 后期整理，用于建立技术动态索引；不代表当时即在本站发布，也不替代原始发布说明。
+
+资讯摘要Babel 于 2025-06-26 发布了「v7.27.7」。本文仅收录该官方发布记录的标题、时间与入口，不转载原始内容。
+
+官方来源：Babel
+原始发布日期：2025-06-26
+收…
+        </div>
+    </a>
+    <p class="post-meta">
+        姚飞亮整理 · 2026-07-27
+    </p>
+    
+        <div class="tags">
+            
+              <a href="/tags/#技术资讯" title="技术资讯">技术资讯</a>
+            
+              <a href="/tags/#babel" title="babel">babel</a>
+            
+        </div>
+    
+</article>
+
+<article class="post-preview">
+    <a target="_blank" rel="noopener" href="//news/2025/webpack-v5-101-0/">
+        <h2 class="post-title">
+            [技术资讯] v5.101.0
+        </h2>
+        
+        <div class="post-content-preview">
+            
+本文由姚飞亮于 2026-07-27 后期整理，用于建立技术动态索引；不代表当时即在本站发布，也不替代原始发布说明。
+
+资讯摘要webpack 于 2025-07-28 发布了「v5.101.0」。本文仅收录该官方发布记录的标题、时间与入口，不转载原始内容。
+
+官方来源：webpack
+原始发布日期：2025-07…
+        </div>
+    </a>
+    <p class="post-meta">
+        姚飞亮整理 · 2026-07-27
+    </p>
+    
+        <div class="tags">
+            
+              <a href="/tags/#技术资讯" title="技术资讯">技术资讯</a>
+            
+              <a href="/tags/#webpack" title="webpack">webpack</a>
+            
+        </div>
+    
+</article>
+
+<article class="post-preview">
+    <a target="_blank" rel="noopener" href="//news/2025/kubernetes-kubernetes-v1-31-11/">
+        <h2 class="post-title">
+            [技术资讯] Kubernetes v1.31.11
+        </h2>
+        
+        <div class="post-content-preview">
+            
+本文由姚飞亮于 2026-07-27 后期整理，用于建立技术动态索引；不代表当时即在本站发布，也不替代原始发布说明。
+
+资讯摘要Kubernetes 于 2025-07-15 发布了「Kubernetes v1.31.11」。本文仅收录该官方发布记录的标题、时间与入口，不转载原始内容。
+
+官方来源：Kubernet…
+        </div>
+    </a>
+    <p class="post-meta">
+        姚飞亮整理 · 2026-07-27
+    </p>
+    
+        <div class="tags">
+            
+              <a href="/tags/#技术资讯" title="技术资讯">技术资讯</a>
+            
+              <a href="/tags/#kubernetes" title="kubernetes">kubernetes</a>
+            
+        </div>
+    
+</article>
+
+<article class="post-preview">
+    <a target="_blank" rel="noopener" href="//news/2025/angular-20-1-4/">
+        <h2 class="post-title">
+            [技术资讯] 20.1.4
+        </h2>
+        
+        <div class="post-content-preview">
+            
+本文由姚飞亮于 2026-07-27 后期整理，用于建立技术动态索引；不代表当时即在本站发布，也不替代原始发布说明。
+
+资讯摘要Angular 于 2025-07-31 发布了「20.1.4」。本文仅收录该官方发布记录的标题、时间与入口，不转载原始内容。
+
+官方来源：Angular
+原始发布日期：2025-07-3…
+        </div>
+    </a>
+    <p class="post-meta">
+        姚飞亮整理 · 2026-07-27
+    </p>
+    
+        <div class="tags">
+            
+              <a href="/tags/#技术资讯" title="技术资讯">技术资讯</a>
+            
+              <a href="/tags/#angular" title="angular">angular</a>
+            
+        </div>
+    
+</article>
+
+<article class="post-preview">
+    <a target="_blank" rel="noopener" href="//news/2025/kubernetes-kubernetes-v1-33-0/">
+        <h2 class="post-title">
+            [技术资讯] Kubernetes v1.33.0
+        </h2>
+        
+        <div class="post-content-preview">
+            
+本文由姚飞亮于 2026-07-27 后期整理，用于建立技术动态索引；不代表当时即在本站发布，也不替代原始发布说明。
+
+资讯摘要Kubernetes 于 2025-04-23 发布了「Kubernetes v1.33.0」。本文仅收录该官方发布记录的标题、时间与入口，不转载原始内容。
+
+官方来源：Kubernete…
+        </div>
+    </a>
+    <p class="post-meta">
+        姚飞亮整理 · 2026-07-27
+    </p>
+    
+        <div class="tags">
+            
+              <a href="/tags/#技术资讯" title="技术资讯">技术资讯</a>
+            
+              <a href="/tags/#kubernetes" title="kubernetes">kubernetes</a>
+            
+        </div>
+    
+</article>
+
+<article class="post-preview">
+    <a target="_blank" rel="noopener" href="//news/2025/kubernetes-kubernetes-v1-34-0/">
+        <h2 class="post-title">
+            [技术资讯] Kubernetes v1.34.0
+        </h2>
+        
+        <div class="post-content-preview">
+            
+本文由姚飞亮于 2026-07-27 后期整理，用于建立技术动态索引；不代表当时即在本站发布，也不替代原始发布说明。
+
+资讯摘要Kubernetes 于 2025-08-27 发布了「Kubernetes v1.34.0」。本文仅收录该官方发布记录的标题、时间与入口，不转载原始内容。
+
+官方来源：Kubernete…
+        </div>
+    </a>
+    <p class="post-meta">
+        姚飞亮整理 · 2026-07-27
+    </p>
+    
+        <div class="tags">
+            
+              <a href="/tags/#技术资讯" title="技术资讯">技术资讯</a>
+            
+              <a href="/tags/#kubernetes" title="kubernetes">kubernetes</a>
+            
+        </div>
+    
+</article>
+
+<article class="post-preview">
+    <a target="_blank" rel="noopener" href="//news/2025/angular-20-2-3/">
+        <h2 class="post-title">
+            [技术资讯] 20.2.3
+        </h2>
+        
+        <div class="post-content-preview">
+            
+本文由姚飞亮于 2026-07-27 后期整理，用于建立技术动态索引；不代表当时即在本站发布，也不替代原始发布说明。
+
+资讯摘要Angular 于 2025-08-29 发布了「20.2.3」。本文仅收录该官方发布记录的标题、时间与入口，不转载原始内容。
+
+官方来源：Angular
+原始发布日期：2025-08-2…
+        </div>
+    </a>
+    <p class="post-meta">
+        姚飞亮整理 · 2026-07-27
+    </p>
+    
+        <div class="tags">
+            
+              <a href="/tags/#技术资讯" title="技术资讯">技术资讯</a>
+            
+              <a href="/tags/#angular" title="angular">angular</a>
+            
+        </div>
+    
+</article>
+
+<article class="post-preview">
+    <a target="_blank" rel="noopener" href="//news/2025/webpack-v5-101-3/">
+        <h2 class="post-title">
+            [技术资讯] v5.101.3
+        </h2>
+        
+        <div class="post-content-preview">
+            
+本文由姚飞亮于 2026-07-27 后期整理，用于建立技术动态索引；不代表当时即在本站发布，也不替代原始发布说明。
+
+资讯摘要webpack 于 2025-08-18 发布了「v5.101.3」。本文仅收录该官方发布记录的标题、时间与入口，不转载原始内容。
+
+官方来源：webpack
+原始发布日期：2025-08…
+        </div>
+    </a>
+    <p class="post-meta">
+        姚飞亮整理 · 2026-07-27
+    </p>
+    
+        <div class="tags">
+            
+              <a href="/tags/#技术资讯" title="技术资讯">技术资讯</a>
+            
+              <a href="/tags/#webpack" title="webpack">webpack</a>
+            
+        </div>
+    
+</article>
+
+
+<ul class="pager">
+    
+        <li class="previous">
+            <a href="/archives/23/">← 更新文章</a>
+        </li>
+    
+    
+        <li class="next">
+            <a href="/archives/25/">更早文章 →</a>
+        </li>
+    
+</ul>
+
+                
+            </div>
+            <!-- Sidebar Container -->
+<div class="
+    col-lg-3 col-lg-offset-0
+    col-md-3 col-md-offset-0
+    col-sm-12
+    col-xs-12
+    sidebar-container
+">
+    
+        <!-- Featured Tags -->
+
+<section>
+    <!-- no hr -->
+    <h5><a href="/tags/" data-i18n="widget.featuredTags">精选标签</a></h5>
+    <div class="tags">
+        
+            
+            <a href="/tags/#Hexo" title="Hexo" rel="2">Hexo</a>
+            
+        
+            
+        
+            
+            <a href="/tags/#技术资讯" title="技术资讯" rel="273">技术资讯</a>
+            
+        
+            
+            <a href="/tags/#webpack" title="webpack" rel="66">webpack</a>
+            
+        
+            
+            <a href="/tags/#工具" title="工具" rel="2">工具</a>
+            
+        
+            
+            <a href="/tags/#babel" title="babel" rel="64">babel</a>
+            
+        
+            
+            <a href="/tags/#typescript" title="typescript" rel="19">typescript</a>
+            
+        
+            
+            <a href="/tags/#vscode" title="vscode" rel="2">vscode</a>
+            
+        
+            
+            <a href="/tags/#kubernetes" title="kubernetes" rel="70">kubernetes</a>
+            
+        
+            
+            <a href="/tags/#rust" title="rust" rel="5">rust</a>
+            
+        
+            
+            <a href="/tags/#angular" title="angular" rel="38">angular</a>
+            
+        
+            
+            <a href="/tags/#next-js" title="next-js" rel="9">next-js</a>
+            
+        
+    </div>
+</section>
+
+        <hr>
+    
+        <section class="visible-md visible-lg">
+    <h5><a href="/about/">ABOUT ME</a></h5>
+    <div class="short-about">
+        
+            <img id="avatar_pic" src="/img/avatar/yaofeiliang.jpg" alt="姚飞亮" loading="lazy" decoding="async" />
+        
+        
+            <p>莫名其妙的，敲起了代码！</p>
+        
+        <ul class="list-inline text-center social-icons">
+
+    <li>
+        <a class="icon-btn" href="/atom.xml" title="RSS" rel="noopener" aria-label="RSS">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.18 15.64a2.18 2.18 0 0 1 2.18 2.18C8.36 19 7.38 20 6.18 20S4 19 4 17.82s.98-2.18 2.18-2.18M4 4.44v2.86c7.03 0 12.7 5.67 12.7 12.7h2.86C19.56 11.27 12.73 4.44 4 4.44m0 5.72v2.86c3.9 0 7.04 3.14 7.04 7.04h2.86c0-5.47-4.43-9.9-9.9-9.9Z"/></svg>
+        </a>
+    </li>
+
+
+    <li>
+        <a class="icon-btn" target="_blank" rel="noopener noreferrer" href="https://www.zhihu.com/people/yaofeiliang" title="知乎" aria-label="知乎">
+            <span class="icon-text">知</span>
+        </a>
+    </li>
+
+
+    <li>
+        <a class="icon-btn" target="_blank" rel="noopener noreferrer" href="https://weibo.com/yaofeiliang" title="微博" aria-label="微博">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.1 17.8c-2.9.2-5.4-1.2-5.6-3.1-.2-1.9 2-3.6 4.9-3.8 2.9-.2 5.4 1.2 5.6 3.1.2 1.9-2 3.6-4.9 3.8m1.2-8.6c-.4-.1-.7-.5-.5-.9.4-1.1 1.5-1.7 2.5-1.3 1 .3 1.5 1.5 1.2 2.5-.1.3-.5.5-.9.3-.3-.1-.4-.4-.3-.7.1-.3-.1-.6-.4-.7-.5-.2-.9.1-1 .5-.1.4-.5.6-.6.3M20.3 11c-.2-.1-.4 0-.5.2-.1.2 0 .5.2.6 1.1.6 1.7 1.5 1.5 2.6-.3 1.8-2.7 3.3-5.9 3.7-.3 0-.5.3-.4.6.1.2.3.4.6.3 3.7-.5 6.6-2.3 7-4.7.3-1.7-.7-3.1-2.5-4.1M9.9 12.7c-1.7.3-2.9 1.3-2.7 2.3.2 1 1.8 1.6 3.5 1.3 1.7-.3 2.9-1.3 2.7-2.3-.2-1-1.8-1.6-3.5-1.3m.4 2.5c-.5.1-.9 0-1-.2-.1-.3.1-.6.6-.7.5-.1.9 0 1 .2.1.3-.1.6-.6.7Z"/></svg>
+        </a>
+    </li>
+
+
+    <li>
+        <a class="icon-btn" target="_blank" rel="noopener noreferrer" href="https://github.com/yaofeiliang" title="GitHub" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.48 0-.24-.01-.87-.01-1.7-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.89 1.57 2.34 1.12 2.91.86.09-.66.35-1.12.63-1.38-2.22-.26-4.55-1.14-4.55-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.27 2.75 1.05A9.3 9.3 0 0 1 12 7.5c.85 0 1.7.12 2.5.34 1.9-1.32 2.74-1.05 2.74-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.38-.01 2.49-.01 2.83 0 .26.18.59.69.48A10.27 10.27 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"/></svg>
+        </a>
+    </li>
+
+
+    <li>
+        <a class="icon-btn" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/飞亮-姚-56270a116" title="LinkedIn" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.94 6.5A2.44 2.44 0 1 1 6.93 1.6a2.44 2.44 0 0 1 .01 4.9ZM2.9 22V8.75h4.1V22H2.9Zm7.2-13.25h3.93v1.82h.06c.55-1.04 1.9-2.13 3.9-2.13 4.17 0 4.94 2.75 4.94 6.32V22h-4.1v-5.6c0-1.34-.03-3.06-1.86-3.06-1.87 0-2.15 1.46-2.15 2.96V22h-4.1V8.75Z"/></svg>
+        </a>
+    </li>
+
+</ul>
+
+    </div>
+</section>
+
+        <hr>
+    
+        
+  <h5>RECENT POSTS</h3>
+  <div class="widget">
+    <ul>
+      
+        <li>
+          <a href="/news/2019/webpack-v4-29-0/">[技术资讯] v4.29.0</a>
+        </li>
+      
+        <li>
+          <a href="/news/2019/babel-v7-3-1/">[技术资讯] v7.3.1</a>
+        </li>
+      
+        <li>
+          <a href="/news/2019/typescript-typescript-3-3/">[技术资讯] TypeScript 3.3</a>
+        </li>
+      
+        <li>
+          <a href="/news/2019/babel-v7-3-4/">[技术资讯] v7.3.4</a>
+        </li>
+      
+        <li>
+          <a href="/news/2019/webpack-v4-29-6/">[技术资讯] v4.29.6</a>
+        </li>
+      
+    </ul>
+  </div>
+
+        <hr>
+    
+        <!-- Friends Blog -->
+
+<h5 data-i18n="widget.friends">友情链接</h5>
+<ul class="list-inline">
+    
+        <li><a href="https://blog.csdn.net/u010932545" target="_blank" rel="noopener noreferrer">CSDN Blog 姚飞亮</a></li>
+    
+        <li><a href="https://dockone.io/people/姚飞亮" target="_blank" rel="noopener noreferrer">DockOne 姚飞亮</a></li>
+    
+        <li><a href="https://yq.aliyun.com/u/yaofeiliang" target="_blank" rel="noopener noreferrer">阿里云栖社区 姚飞亮</a></li>
+    
+        <li><a href="https://www.zhihu.com/people/yaofeiliang/activities" target="_blank" rel="noopener noreferrer">知乎 姚飞亮</a></li>
+    
+        <li><a href="https://weibo.com/yaofeiliang" target="_blank" rel="noopener noreferrer">新浪微博 姚飞亮</a></li>
+    
+</ul>
+
+
+        <hr>
+    
+        
+    <h5 data-i18n="widget.archives">归档</h5>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/07/">七月 2026</a><span class="archive-list-count">273</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">一月 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">十二月 2018</a><span class="archive-list-count">4</span></li></ul>
+    </div>
+
+        <hr>
+    
+</div>
+        
+    </div>
+</div>
+
+    </main>
+
+    <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center social-icons">
+
+    <li>
+        <a class="icon-btn" href="/atom.xml" title="RSS" rel="noopener" aria-label="RSS">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.18 15.64a2.18 2.18 0 0 1 2.18 2.18C8.36 19 7.38 20 6.18 20S4 19 4 17.82s.98-2.18 2.18-2.18M4 4.44v2.86c7.03 0 12.7 5.67 12.7 12.7h2.86C19.56 11.27 12.73 4.44 4 4.44m0 5.72v2.86c3.9 0 7.04 3.14 7.04 7.04h2.86c0-5.47-4.43-9.9-9.9-9.9Z"/></svg>
+        </a>
+    </li>
+
+
+    <li>
+        <a class="icon-btn" target="_blank" rel="noopener noreferrer" href="https://www.zhihu.com/people/yaofeiliang" title="知乎" aria-label="知乎">
+            <span class="icon-text">知</span>
+        </a>
+    </li>
+
+
+    <li>
+        <a class="icon-btn" target="_blank" rel="noopener noreferrer" href="https://weibo.com/yaofeiliang" title="微博" aria-label="微博">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.1 17.8c-2.9.2-5.4-1.2-5.6-3.1-.2-1.9 2-3.6 4.9-3.8 2.9-.2 5.4 1.2 5.6 3.1.2 1.9-2 3.6-4.9 3.8m1.2-8.6c-.4-.1-.7-.5-.5-.9.4-1.1 1.5-1.7 2.5-1.3 1 .3 1.5 1.5 1.2 2.5-.1.3-.5.5-.9.3-.3-.1-.4-.4-.3-.7.1-.3-.1-.6-.4-.7-.5-.2-.9.1-1 .5-.1.4-.5.6-.6.3M20.3 11c-.2-.1-.4 0-.5.2-.1.2 0 .5.2.6 1.1.6 1.7 1.5 1.5 2.6-.3 1.8-2.7 3.3-5.9 3.7-.3 0-.5.3-.4.6.1.2.3.4.6.3 3.7-.5 6.6-2.3 7-4.7.3-1.7-.7-3.1-2.5-4.1M9.9 12.7c-1.7.3-2.9 1.3-2.7 2.3.2 1 1.8 1.6 3.5 1.3 1.7-.3 2.9-1.3 2.7-2.3-.2-1-1.8-1.6-3.5-1.3m.4 2.5c-.5.1-.9 0-1-.2-.1-.3.1-.6.6-.7.5-.1.9 0 1 .2.1.3-.1.6-.6.7Z"/></svg>
+        </a>
+    </li>
+
+
+    <li>
+        <a class="icon-btn" target="_blank" rel="noopener noreferrer" href="https://github.com/yaofeiliang" title="GitHub" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.48 0-.24-.01-.87-.01-1.7-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.89 1.57 2.34 1.12 2.91.86.09-.66.35-1.12.63-1.38-2.22-.26-4.55-1.14-4.55-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.27 2.75 1.05A9.3 9.3 0 0 1 12 7.5c.85 0 1.7.12 2.5.34 1.9-1.32 2.74-1.05 2.74-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.38-.01 2.49-.01 2.83 0 .26.18.59.69.48A10.27 10.27 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"/></svg>
+        </a>
+    </li>
+
+
+    <li>
+        <a class="icon-btn" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/飞亮-姚-56270a116" title="LinkedIn" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.94 6.5A2.44 2.44 0 1 1 6.93 1.6a2.44 2.44 0 0 1 .01 4.9ZM2.9 22V8.75h4.1V22H2.9Zm7.2-13.25h3.93v1.82h.06c.55-1.04 1.9-2.13 3.9-2.13 4.17 0 4.94 2.75 4.94 6.32V22h-4.1v-5.6c0-1.34-.03-3.06-1.86-3.06-1.87 0-2.15 1.46-2.15 2.96V22h-4.1V8.75Z"/></svg>
+        </a>
+    </li>
+
+</ul>
+
+                <p class="copyright text-muted">
+                    Copyright &copy; 姚飞亮 2026
+                    <br>
+                    <a href="https://yaofeiliang.com" rel="noopener">Y Blog</a>
+                    · <span data-i18n="footer.rights">保留所有权利</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="/js/site.js" defer></script>
+
+
+
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+      function loadBaidu() {
+        var hm = document.createElement('script');
+        hm.src = 'https://hm.baidu.com/hm.js?d226c9b2398c493d7d554d7ce7c7f143';
+        hm.async = true;
+        document.head.appendChild(hm);
+      }
+      if ('requestIdleCallback' in window) requestIdleCallback(loadBaidu, { timeout: 3000 });
+      else setTimeout(loadBaidu, 2000);
+    })();
+</script>
+
+
+
+	<a id="rocket" href="#top" class="" aria-label="回到顶部"></a>
+</body>
+</html>
