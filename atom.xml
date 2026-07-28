@@ -12,7 +12,7 @@
   <rights>All rights reserved 2026, 姚飞亮</rights>
   <subtitle>我干了什么 究竟拿了时间换了什么</subtitle>
   <title>Y Blog</title>
-  <updated>2026-07-27T01:00:00.000Z</updated>
+  <updated>2026-07-25T01:00:00.000Z</updated>
   <entry>
     <author>
       <name>姚飞亮</name>
@@ -20,13 +20,268 @@
     </author>
     <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
     <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
-    <category term="webpack" scheme="https://yaofeiliang.com/tags/webpack/"/>
-    <id>https://yaofeiliang.com/news/2019/webpack-v4-29-0/</id>
-    <link href="https://yaofeiliang.com/news/2019/webpack-v4-29-0/"/>
-    <published>2026-07-27T01:00:00.000Z</published>
-    <summary>webpack 于 2019-01-20 发布的正式版本记录，由姚飞亮于 2026-07-27 后期整理。</summary>
-    <title>[技术资讯] v4.29.0</title>
-    <updated>2026-07-27T01:00:00.000Z</updated>
+    <category term="next-js" scheme="https://yaofeiliang.com/tags/next-js/"/>
+    <id>https://yaofeiliang.com/news/2026/next-js-v16-2-12/</id>
+    <link href="https://yaofeiliang.com/news/2026/next-js-v16-2-12/"/>
+    <published>2026-07-25T01:00:00.000Z</published>
+    <summary>Next.js 于 2026-07-25 发布 v16.2.12。本文提炼升级关注点、官方说明摘要与实践检查项。</summary>
+    <title>[技术观察] Next.js v16.2.12：应用框架升级前要看的三件事</title>
+    <updated>2026-07-25T01:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>姚飞亮</name>
+      <email>yaoadmin@sina.com</email>
+    </author>
+    <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
+    <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
+    <category term="kubernetes" scheme="https://yaofeiliang.com/tags/kubernetes/"/>
+    <id>https://yaofeiliang.com/news/2026/kubernetes-v1-36-3/</id>
+    <link href="https://yaofeiliang.com/news/2026/kubernetes-v1-36-3/"/>
+    <published>2026-07-23T01:00:00.000Z</published>
+    <summary>Kubernetes 于 2026-07-23 发布 v1.36.3。本文提炼升级关注点、官方说明摘要与实践检查项。</summary>
+    <title>[技术观察] Kubernetes v1.36.3：云原生集群升级的版本信号</title>
+    <updated>2026-07-23T01:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>姚飞亮</name>
+      <email>yaoadmin@sina.com</email>
+    </author>
+    <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
+    <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
+    <category term="angular" scheme="https://yaofeiliang.com/tags/angular/"/>
+    <id>https://yaofeiliang.com/news/2026/angular-22-0-8/</id>
+    <link href="https://yaofeiliang.com/news/2026/angular-22-0-8/"/>
+    <published>2026-07-22T01:00:00.000Z</published>
+    <summary>Angular 于 2026-07-22 发布 22.0.8。本文提炼升级关注点、官方说明摘要与实践检查项。</summary>
+    <title>[技术观察] Angular 22.0.8：前端框架升级该关注什么</title>
+    <updated>2026-07-22T01:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>姚飞亮</name>
+      <email>yaoadmin@sina.com</email>
+    </author>
+    <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
+    <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
+    <category term="angular" scheme="https://yaofeiliang.com/tags/angular/"/>
+    <id>https://yaofeiliang.com/news/2026/angular-22-0-4/</id>
+    <link href="https://yaofeiliang.com/news/2026/angular-22-0-4/"/>
+    <published>2026-06-26T01:00:00.000Z</published>
+    <summary>Angular 于 2026-06-26 发布 22.0.4。本文提炼升级关注点、官方说明摘要与实践检查项。</summary>
+    <title>[技术观察] Angular 22.0.4：前端框架升级该关注什么</title>
+    <updated>2026-06-26T01:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>姚飞亮</name>
+      <email>yaoadmin@sina.com</email>
+    </author>
+    <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
+    <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
+    <category term="kubernetes" scheme="https://yaofeiliang.com/tags/kubernetes/"/>
+    <id>https://yaofeiliang.com/news/2026/kubernetes-v1-36-2/</id>
+    <link href="https://yaofeiliang.com/news/2026/kubernetes-v1-36-2/"/>
+    <published>2026-06-12T01:00:00.000Z</published>
+    <summary>Kubernetes 于 2026-06-12 发布 v1.36.2。本文提炼升级关注点、官方说明摘要与实践检查项。</summary>
+    <title>[技术观察] Kubernetes v1.36.2：云原生集群升级的版本信号</title>
+    <updated>2026-06-12T01:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>姚飞亮</name>
+      <email>yaoadmin@sina.com</email>
+    </author>
+    <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
+    <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
+    <category term="next-js" scheme="https://yaofeiliang.com/tags/next-js/"/>
+    <id>https://yaofeiliang.com/news/2026/next-js-v16-2-9/</id>
+    <link href="https://yaofeiliang.com/news/2026/next-js-v16-2-9/"/>
+    <published>2026-06-10T01:00:00.000Z</published>
+    <summary>Next.js 于 2026-06-10 发布 v16.2.9。本文提炼升级关注点、官方说明摘要与实践检查项。</summary>
+    <title>[技术观察] Next.js v16.2.9：应用框架升级前要看的三件事</title>
+    <updated>2026-06-10T01:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>姚飞亮</name>
+      <email>yaoadmin@sina.com</email>
+    </author>
+    <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
+    <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
+    <category term="angular" scheme="https://yaofeiliang.com/tags/angular/"/>
+    <id>https://yaofeiliang.com/news/2026/angular-vscode-extension-21-2-4/</id>
+    <link href="https://yaofeiliang.com/news/2026/angular-vscode-extension-21-2-4/"/>
+    <published>2026-05-28T01:00:00.000Z</published>
+    <summary>Angular 于 2026-05-28 发布 VSCode Extension: 21.2.4。本文提炼升级关注点、官方说明摘要与实践检查项。</summary>
+    <title>[技术观察] Angular VSCode Extension: 21.2.4：前端框架升级该关注什么</title>
+    <updated>2026-05-28T01:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>姚飞亮</name>
+      <email>yaoadmin@sina.com</email>
+    </author>
+    <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
+    <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
+    <category term="kubernetes" scheme="https://yaofeiliang.com/tags/kubernetes/"/>
+    <id>https://yaofeiliang.com/news/2026/kubernetes-v1-36-1/</id>
+    <link href="https://yaofeiliang.com/news/2026/kubernetes-v1-36-1/"/>
+    <published>2026-05-12T01:00:00.000Z</published>
+    <summary>Kubernetes 于 2026-05-12 发布 v1.36.1。本文提炼升级关注点、官方说明摘要与实践检查项。</summary>
+    <title>[技术观察] Kubernetes v1.36.1：云原生集群升级的版本信号</title>
+    <updated>2026-05-12T01:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>姚飞亮</name>
+      <email>yaoadmin@sina.com</email>
+    </author>
+    <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
+    <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
+    <category term="next-js" scheme="https://yaofeiliang.com/tags/next-js/"/>
+    <id>https://yaofeiliang.com/news/2026/next-js-v15-5-18/</id>
+    <link href="https://yaofeiliang.com/news/2026/next-js-v15-5-18/"/>
+    <published>2026-05-07T01:00:00.000Z</published>
+    <summary>Next.js 于 2026-05-07 发布 v15.5.18。本文提炼升级关注点、官方说明摘要与实践检查项。</summary>
+    <title>[技术观察] Next.js v15.5.18：应用框架升级前要看的三件事</title>
+    <updated>2026-05-07T01:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>姚飞亮</name>
+      <email>yaoadmin@sina.com</email>
+    </author>
+    <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
+    <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
+    <category term="angular" scheme="https://yaofeiliang.com/tags/angular/"/>
+    <id>https://yaofeiliang.com/news/2026/angular-21-2-11/</id>
+    <link href="https://yaofeiliang.com/news/2026/angular-21-2-11/"/>
+    <published>2026-04-29T01:00:00.000Z</published>
+    <summary>Angular 于 2026-04-29 发布 21.2.11。本文提炼升级关注点、官方说明摘要与实践检查项。</summary>
+    <title>[技术观察] Angular 21.2.11：前端框架升级该关注什么</title>
+    <updated>2026-04-29T01:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>姚飞亮</name>
+      <email>yaoadmin@sina.com</email>
+    </author>
+    <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
+    <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
+    <category term="kubernetes" scheme="https://yaofeiliang.com/tags/kubernetes/"/>
+    <id>https://yaofeiliang.com/news/2026/kubernetes-v1-36-0/</id>
+    <link href="https://yaofeiliang.com/news/2026/kubernetes-v1-36-0/"/>
+    <published>2026-04-22T01:00:00.000Z</published>
+    <summary>Kubernetes 于 2026-04-22 发布 v1.36.0。本文提炼升级关注点、官方说明摘要与实践检查项。</summary>
+    <title>[技术观察] Kubernetes v1.36.0：云原生集群升级的版本信号</title>
+    <updated>2026-04-22T01:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>姚飞亮</name>
+      <email>yaoadmin@sina.com</email>
+    </author>
+    <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
+    <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
+    <category term="next-js" scheme="https://yaofeiliang.com/tags/next-js/"/>
+    <id>https://yaofeiliang.com/news/2026/next-js-v16-2-4/</id>
+    <link href="https://yaofeiliang.com/news/2026/next-js-v16-2-4/"/>
+    <published>2026-04-15T01:00:00.000Z</published>
+    <summary>Next.js 于 2026-04-15 发布 v16.2.4。本文提炼升级关注点、官方说明摘要与实践检查项。</summary>
+    <title>[技术观察] Next.js v16.2.4：应用框架升级前要看的三件事</title>
+    <updated>2026-04-15T01:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>姚飞亮</name>
+      <email>yaoadmin@sina.com</email>
+    </author>
+    <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
+    <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
+    <category term="angular" scheme="https://yaofeiliang.com/tags/angular/"/>
+    <id>https://yaofeiliang.com/news/2026/angular-21-2-6/</id>
+    <link href="https://yaofeiliang.com/news/2026/angular-21-2-6/"/>
+    <published>2026-03-25T01:00:00.000Z</published>
+    <summary>Angular 于 2026-03-25 发布 21.2.6。本文提炼升级关注点、官方说明摘要与实践检查项。</summary>
+    <title>[技术观察] Angular 21.2.6：前端框架升级该关注什么</title>
+    <updated>2026-03-25T01:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>姚飞亮</name>
+      <email>yaoadmin@sina.com</email>
+    </author>
+    <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
+    <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
+    <category term="next-js" scheme="https://yaofeiliang.com/tags/next-js/"/>
+    <id>https://yaofeiliang.com/news/2026/next-js-v16-2-1/</id>
+    <link href="https://yaofeiliang.com/news/2026/next-js-v16-2-1/"/>
+    <published>2026-03-20T01:00:00.000Z</published>
+    <summary>Next.js 于 2026-03-20 发布 v16.2.1。本文提炼升级关注点、官方说明摘要与实践检查项。</summary>
+    <title>[技术观察] Next.js v16.2.1：应用框架升级前要看的三件事</title>
+    <updated>2026-03-20T01:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>姚飞亮</name>
+      <email>yaoadmin@sina.com</email>
+    </author>
+    <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
+    <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
+    <category term="kubernetes" scheme="https://yaofeiliang.com/tags/kubernetes/"/>
+    <id>https://yaofeiliang.com/news/2026/kubernetes-v1-35-3/</id>
+    <link href="https://yaofeiliang.com/news/2026/kubernetes-v1-35-3/"/>
+    <published>2026-03-19T01:00:00.000Z</published>
+    <summary>Kubernetes 于 2026-03-19 发布 v1.35.3。本文提炼升级关注点、官方说明摘要与实践检查项。</summary>
+    <title>[技术观察] Kubernetes v1.35.3：云原生集群升级的版本信号</title>
+    <updated>2026-03-19T01:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>姚飞亮</name>
+      <email>yaoadmin@sina.com</email>
+    </author>
+    <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
+    <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
+    <category term="kubernetes" scheme="https://yaofeiliang.com/tags/kubernetes/"/>
+    <id>https://yaofeiliang.com/news/2026/kubernetes-v1-35-2/</id>
+    <link href="https://yaofeiliang.com/news/2026/kubernetes-v1-35-2/"/>
+    <published>2026-02-27T01:00:00.000Z</published>
+    <summary>Kubernetes 于 2026-02-27 发布 v1.35.2。本文提炼升级关注点、官方说明摘要与实践检查项。</summary>
+    <title>[技术观察] Kubernetes v1.35.2：云原生集群升级的版本信号</title>
+    <updated>2026-02-27T01:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>姚飞亮</name>
+      <email>yaoadmin@sina.com</email>
+    </author>
+    <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
+    <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
+    <category term="angular" scheme="https://yaofeiliang.com/tags/angular/"/>
+    <id>https://yaofeiliang.com/news/2026/angular-vscode-extension-21-2-1/</id>
+    <link href="https://yaofeiliang.com/news/2026/angular-vscode-extension-21-2-1/"/>
+    <published>2026-02-25T01:00:00.000Z</published>
+    <summary>Angular 于 2026-02-25 发布 VSCode Extension: 21.2.1。本文提炼升级关注点、官方说明摘要与实践检查项。</summary>
+    <title>[技术观察] Angular VSCode Extension: 21.2.1：前端框架升级该关注什么</title>
+    <updated>2026-02-25T01:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>姚飞亮</name>
+      <email>yaoadmin@sina.com</email>
+    </author>
+    <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
+    <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
+    <category term="next-js" scheme="https://yaofeiliang.com/tags/next-js/"/>
+    <id>https://yaofeiliang.com/news/2026/next-js-v15-5-12/</id>
+    <link href="https://yaofeiliang.com/news/2026/next-js-v15-5-12/"/>
+    <published>2026-02-04T01:00:00.000Z</published>
+    <summary>Next.js 于 2026-02-04 发布 v15.5.12。本文提炼升级关注点、官方说明摘要与实践检查项。</summary>
+    <title>[技术观察] Next.js v15.5.12：应用框架升级前要看的三件事</title>
+    <updated>2026-02-04T01:00:00.000Z</updated>
   </entry>
   <entry>
     <author>
@@ -36,12 +291,12 @@
     <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
     <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
     <category term="babel" scheme="https://yaofeiliang.com/tags/babel/"/>
-    <id>https://yaofeiliang.com/news/2019/babel-v7-3-1/</id>
-    <link href="https://yaofeiliang.com/news/2019/babel-v7-3-1/"/>
-    <published>2026-07-27T01:00:00.000Z</published>
-    <summary>Babel 于 2019-01-22 发布的正式版本记录，由姚飞亮于 2026-07-27 后期整理。</summary>
-    <title>[技术资讯] v7.3.1</title>
-    <updated>2026-07-27T01:00:00.000Z</updated>
+    <id>https://yaofeiliang.com/news/2026/babel-v7-29-0/</id>
+    <link href="https://yaofeiliang.com/news/2026/babel-v7-29-0/"/>
+    <published>2026-01-31T01:00:00.000Z</published>
+    <summary>Babel 于 2026-01-31 发布 v7.29.0。本文提炼升级关注点、官方说明摘要与实践检查项。</summary>
+    <title>[技术观察] Babel v7.29.0：编译工具链更新如何影响项目</title>
+    <updated>2026-01-31T01:00:00.000Z</updated>
   </entry>
   <entry>
     <author>
@@ -50,267 +305,12 @@
     </author>
     <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
     <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
-    <category term="typescript" scheme="https://yaofeiliang.com/tags/typescript/"/>
-    <id>https://yaofeiliang.com/news/2019/typescript-typescript-3-3/</id>
-    <link href="https://yaofeiliang.com/news/2019/typescript-typescript-3-3/"/>
-    <published>2026-07-27T01:00:00.000Z</published>
-    <summary>TypeScript 于 2019-01-31 发布的正式版本记录，由姚飞亮于 2026-07-27 后期整理。</summary>
-    <title>[技术资讯] TypeScript 3.3</title>
-    <updated>2026-07-27T01:00:00.000Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>姚飞亮</name>
-      <email>yaoadmin@sina.com</email>
-    </author>
-    <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
-    <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
-    <category term="babel" scheme="https://yaofeiliang.com/tags/babel/"/>
-    <id>https://yaofeiliang.com/news/2019/babel-v7-3-4/</id>
-    <link href="https://yaofeiliang.com/news/2019/babel-v7-3-4/"/>
-    <published>2026-07-27T01:00:00.000Z</published>
-    <summary>Babel 于 2019-02-25 发布的正式版本记录，由姚飞亮于 2026-07-27 后期整理。</summary>
-    <title>[技术资讯] v7.3.4</title>
-    <updated>2026-07-27T01:00:00.000Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>姚飞亮</name>
-      <email>yaoadmin@sina.com</email>
-    </author>
-    <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
-    <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
-    <category term="webpack" scheme="https://yaofeiliang.com/tags/webpack/"/>
-    <id>https://yaofeiliang.com/news/2019/webpack-v4-29-6/</id>
-    <link href="https://yaofeiliang.com/news/2019/webpack-v4-29-6/"/>
-    <published>2026-07-27T01:00:00.000Z</published>
-    <summary>webpack 于 2019-02-28 发布的正式版本记录，由姚飞亮于 2026-07-27 后期整理。</summary>
-    <title>[技术资讯] v4.29.6</title>
-    <updated>2026-07-27T01:00:00.000Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>姚飞亮</name>
-      <email>yaoadmin@sina.com</email>
-    </author>
-    <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
-    <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
-    <category term="typescript" scheme="https://yaofeiliang.com/tags/typescript/"/>
-    <id>https://yaofeiliang.com/news/2019/typescript-typescript-3-3-3333/</id>
-    <link href="https://yaofeiliang.com/news/2019/typescript-typescript-3-3-3333/"/>
-    <published>2026-07-27T01:00:00.000Z</published>
-    <summary>TypeScript 于 2019-02-22 发布的正式版本记录，由姚飞亮于 2026-07-27 后期整理。</summary>
-    <title>[技术资讯] TypeScript 3.3.3333</title>
-    <updated>2026-07-27T01:00:00.000Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>姚飞亮</name>
-      <email>yaoadmin@sina.com</email>
-    </author>
-    <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
-    <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
-    <category term="typescript" scheme="https://yaofeiliang.com/tags/typescript/"/>
-    <id>https://yaofeiliang.com/news/2019/typescript-typescript-3-4-1/</id>
-    <link href="https://yaofeiliang.com/news/2019/typescript-typescript-3-4-1/"/>
-    <published>2026-07-27T01:00:00.000Z</published>
-    <summary>TypeScript 于 2019-03-29 发布的正式版本记录，由姚飞亮于 2026-07-27 后期整理。</summary>
-    <title>[技术资讯] TypeScript 3.4.1</title>
-    <updated>2026-07-27T01:00:00.000Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>姚飞亮</name>
-      <email>yaoadmin@sina.com</email>
-    </author>
-    <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
-    <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
-    <category term="babel" scheme="https://yaofeiliang.com/tags/babel/"/>
-    <id>https://yaofeiliang.com/news/2019/babel-v7-4-2/</id>
-    <link href="https://yaofeiliang.com/news/2019/babel-v7-4-2/"/>
-    <published>2026-07-27T01:00:00.000Z</published>
-    <summary>Babel 于 2019-03-21 发布的正式版本记录，由姚飞亮于 2026-07-27 后期整理。</summary>
-    <title>[技术资讯] v7.4.2</title>
-    <updated>2026-07-27T01:00:00.000Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>姚飞亮</name>
-      <email>yaoadmin@sina.com</email>
-    </author>
-    <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
-    <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
-    <category term="webpack" scheme="https://yaofeiliang.com/tags/webpack/"/>
-    <id>https://yaofeiliang.com/news/2019/webpack-v4-30-0/</id>
-    <link href="https://yaofeiliang.com/news/2019/webpack-v4-30-0/"/>
-    <published>2026-07-27T01:00:00.000Z</published>
-    <summary>webpack 于 2019-04-12 发布的正式版本记录，由姚飞亮于 2026-07-27 后期整理。</summary>
-    <title>[技术资讯] v4.30.0</title>
-    <updated>2026-07-27T01:00:00.000Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>姚飞亮</name>
-      <email>yaoadmin@sina.com</email>
-    </author>
-    <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
-    <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
-    <category term="babel" scheme="https://yaofeiliang.com/tags/babel/"/>
-    <id>https://yaofeiliang.com/news/2019/babel-v7-4-1/</id>
-    <link href="https://yaofeiliang.com/news/2019/babel-v7-4-1/"/>
-    <published>2026-07-27T01:00:00.000Z</published>
-    <summary>Babel 于 2019-03-19 发布的正式版本记录，由姚飞亮于 2026-07-27 后期整理。</summary>
-    <title>[技术资讯] v7.4.1</title>
-    <updated>2026-07-27T01:00:00.000Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>姚飞亮</name>
-      <email>yaoadmin@sina.com</email>
-    </author>
-    <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
-    <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
-    <category term="typescript" scheme="https://yaofeiliang.com/tags/typescript/"/>
-    <id>https://yaofeiliang.com/news/2019/typescript-typescript-3-4-5/</id>
-    <link href="https://yaofeiliang.com/news/2019/typescript-typescript-3-4-5/"/>
-    <published>2026-07-27T01:00:00.000Z</published>
-    <summary>TypeScript 于 2019-04-24 发布的正式版本记录，由姚飞亮于 2026-07-27 后期整理。</summary>
-    <title>[技术资讯] TypeScript 3.4.5</title>
-    <updated>2026-07-27T01:00:00.000Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>姚飞亮</name>
-      <email>yaoadmin@sina.com</email>
-    </author>
-    <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
-    <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
-    <category term="babel" scheme="https://yaofeiliang.com/tags/babel/"/>
-    <id>https://yaofeiliang.com/news/2019/babel-v7-4-4/</id>
-    <link href="https://yaofeiliang.com/news/2019/babel-v7-4-4/"/>
-    <published>2026-07-27T01:00:00.000Z</published>
-    <summary>Babel 于 2019-04-26 发布的正式版本记录，由姚飞亮于 2026-07-27 后期整理。</summary>
-    <title>[技术资讯] v7.4.4</title>
-    <updated>2026-07-27T01:00:00.000Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>姚飞亮</name>
-      <email>yaoadmin@sina.com</email>
-    </author>
-    <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
-    <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
-    <category term="webpack" scheme="https://yaofeiliang.com/tags/webpack/"/>
-    <id>https://yaofeiliang.com/news/2019/webpack-v4-32-2/</id>
-    <link href="https://yaofeiliang.com/news/2019/webpack-v4-32-2/"/>
-    <published>2026-07-27T01:00:00.000Z</published>
-    <summary>webpack 于 2019-05-22 发布的正式版本记录，由姚飞亮于 2026-07-27 后期整理。</summary>
-    <title>[技术资讯] v4.32.2</title>
-    <updated>2026-07-27T01:00:00.000Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>姚飞亮</name>
-      <email>yaoadmin@sina.com</email>
-    </author>
-    <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
-    <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
-    <category term="webpack" scheme="https://yaofeiliang.com/tags/webpack/"/>
-    <id>https://yaofeiliang.com/news/2019/webpack-v4-32-1/</id>
-    <link href="https://yaofeiliang.com/news/2019/webpack-v4-32-1/"/>
-    <published>2026-07-27T01:00:00.000Z</published>
-    <summary>webpack 于 2019-05-22 发布的正式版本记录，由姚飞亮于 2026-07-27 后期整理。</summary>
-    <title>[技术资讯] v4.32.1</title>
-    <updated>2026-07-27T01:00:00.000Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>姚飞亮</name>
-      <email>yaoadmin@sina.com</email>
-    </author>
-    <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
-    <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
-    <category term="typescript" scheme="https://yaofeiliang.com/tags/typescript/"/>
-    <id>https://yaofeiliang.com/news/2019/typescript-typescript-3-5-2/</id>
-    <link href="https://yaofeiliang.com/news/2019/typescript-typescript-3-5-2/"/>
-    <published>2026-07-27T01:00:00.000Z</published>
-    <summary>TypeScript 于 2019-06-14 发布的正式版本记录，由姚飞亮于 2026-07-27 后期整理。</summary>
-    <title>[技术资讯] TypeScript 3.5.2</title>
-    <updated>2026-07-27T01:00:00.000Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>姚飞亮</name>
-      <email>yaoadmin@sina.com</email>
-    </author>
-    <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
-    <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
-    <category term="webpack" scheme="https://yaofeiliang.com/tags/webpack/"/>
-    <id>https://yaofeiliang.com/news/2019/webpack-v4-35-0/</id>
-    <link href="https://yaofeiliang.com/news/2019/webpack-v4-35-0/"/>
-    <published>2026-07-27T01:00:00.000Z</published>
-    <summary>webpack 于 2019-06-20 发布的正式版本记录，由姚飞亮于 2026-07-27 后期整理。</summary>
-    <title>[技术资讯] v4.35.0</title>
-    <updated>2026-07-27T01:00:00.000Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>姚飞亮</name>
-      <email>yaoadmin@sina.com</email>
-    </author>
-    <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
-    <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
-    <category term="webpack" scheme="https://yaofeiliang.com/tags/webpack/"/>
-    <id>https://yaofeiliang.com/news/2019/webpack-v4-34-0/</id>
-    <link href="https://yaofeiliang.com/news/2019/webpack-v4-34-0/"/>
-    <published>2026-07-27T01:00:00.000Z</published>
-    <summary>webpack 于 2019-06-12 发布的正式版本记录，由姚飞亮于 2026-07-27 后期整理。</summary>
-    <title>[技术资讯] v4.34.0</title>
-    <updated>2026-07-27T01:00:00.000Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>姚飞亮</name>
-      <email>yaoadmin@sina.com</email>
-    </author>
-    <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
-    <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
-    <category term="babel" scheme="https://yaofeiliang.com/tags/babel/"/>
-    <id>https://yaofeiliang.com/news/2019/babel-v7-4-5/</id>
-    <link href="https://yaofeiliang.com/news/2019/babel-v7-4-5/"/>
-    <published>2026-07-27T01:00:00.000Z</published>
-    <summary>Babel 于 2019-05-21 发布的正式版本记录，由姚飞亮于 2026-07-27 后期整理。</summary>
-    <title>[技术资讯] v7.4.5</title>
-    <updated>2026-07-27T01:00:00.000Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>姚飞亮</name>
-      <email>yaoadmin@sina.com</email>
-    </author>
-    <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
-    <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
-    <category term="webpack" scheme="https://yaofeiliang.com/tags/webpack/"/>
-    <id>https://yaofeiliang.com/news/2019/webpack-v4-38-0/</id>
-    <link href="https://yaofeiliang.com/news/2019/webpack-v4-38-0/"/>
-    <published>2026-07-27T01:00:00.000Z</published>
-    <summary>webpack 于 2019-07-26 发布的正式版本记录，由姚飞亮于 2026-07-27 后期整理。</summary>
-    <title>[技术资讯] v4.38.0</title>
-    <updated>2026-07-27T01:00:00.000Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>姚飞亮</name>
-      <email>yaoadmin@sina.com</email>
-    </author>
-    <category term="资讯" scheme="https://yaofeiliang.com/categories/news/"/>
-    <category term="技术资讯" scheme="https://yaofeiliang.com/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E8%AE%AF/"/>
-    <category term="typescript" scheme="https://yaofeiliang.com/tags/typescript/"/>
-    <id>https://yaofeiliang.com/news/2019/typescript-typescript-3-6-0-beta/</id>
-    <link href="https://yaofeiliang.com/news/2019/typescript-typescript-3-6-0-beta/"/>
-    <published>2026-07-27T01:00:00.000Z</published>
-    <summary>TypeScript 于 2019-07-19 发布的正式版本记录，由姚飞亮于 2026-07-27 后期整理。</summary>
-    <title>[技术资讯] TypeScript 3.6.0 Beta</title>
-    <updated>2026-07-27T01:00:00.000Z</updated>
+    <category term="angular" scheme="https://yaofeiliang.com/tags/angular/"/>
+    <id>https://yaofeiliang.com/news/2026/angular-21-1-2/</id>
+    <link href="https://yaofeiliang.com/news/2026/angular-21-1-2/"/>
+    <published>2026-01-28T01:00:00.000Z</published>
+    <summary>Angular 于 2026-01-28 发布 21.1.2。本文提炼升级关注点、官方说明摘要与实践检查项。</summary>
+    <title>[技术观察] Angular 21.1.2：前端框架升级该关注什么</title>
+    <updated>2026-01-28T01:00:00.000Z</updated>
   </entry>
 </feed>
