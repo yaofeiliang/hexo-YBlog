@@ -15,6 +15,7 @@ _multiconfig.yml
 admin/.dev.vars
 admin/.wrangler/
 automation/state/historical-news-cache/
+automation/state/historical-news-cache-v2/
 *.swp
 *~
 .idea/
