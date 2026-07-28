@@ -37,7 +37,7 @@ signature: true #show signature
 signature-img: img/signature/icon_yaofeiliang.png
 
 # SNS settings
-RSS: true
+RSS: false
 weibo_username:     yaofeiliang
 zhihu_username:     yaofeiliang
 github_username:    yaofeiliang
@@ -259,16 +259,9 @@ theme: yaofeiliang
 sitemap:
   path: sitemap.xml
 
-# RSS feed
+# RSS feed disabled
 feed:
-  type: atom
-  path: atom.xml
-  limit: 20
-  hub:
-  content: false
-  content_limit: 140
-  content_limit_delim: ' '
-  order_by: -date
+  enable: false
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

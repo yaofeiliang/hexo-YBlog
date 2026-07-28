@@ -31,7 +31,9 @@
     <meta name="author" content="<%= config.author %>">
     <meta name="theme-color" content="#0085a1">
     <link rel="shortcut icon" href="<%= config.root %>img/y.png">
+    <% if (config.RSS !== false) { %>
     <link rel="alternate" type="application/atom+xml" title="<%= config.title %>" href="<%= config.root %>atom.xml">
+    <% } %>
     <title><%= pageTitle %></title>
     <link rel="canonical" href="<%= canonical %>">
 
