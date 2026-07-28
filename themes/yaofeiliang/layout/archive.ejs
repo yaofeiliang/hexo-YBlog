@@ -2,40 +2,44 @@
 layout: page
 ---
 
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <%
-                var years = {};
-                site.posts.sort('date').reverse().forEach(function(post){
-                    var year = post.date.year()
-                    if(years[year]===undefined){
-                        years[year] = [];
-                    }
-                    years[year].push(post);
-                });
-            %>
-            <% Object.keys(years).reverse().forEach(function(year){  %>
-            <div class="one-tag-list">
-                <span class="listing-seperator" id="<%= year %>">
-                    <span class="tag-text"><%= year %></span>
-                </span>
-                <ul>
-                <% years[year].map(function(post){  %>
-                 <li>
-                    <%= post.date.format('MM-DD') %>
-                    <span aria-hidden="true"> » </span>
-                    <a href="<%= url_for(post.path) %>" style="color: #0085a1">
-                        <span><%- post.title || "Untitled" %></span>
-                    </a>
-                </li>
-                <% }) %>
-                </ul>
-            </div>
-            <% }) %>
-            <% if (config.donate !== false) { %>
-            <%- partial('_partial/donate') %>
-            <% } %>
-        </div>
-    </div>
+<%
+  var years = {};
+  site.posts.sort('date').reverse().forEach(function(post){
+    var year = post.date.year();
+    if (years[year] === undefined) {
+      years[year] = [];
+    }
+    years[year].push(post);
+  });
+  var yearKeys = Object.keys(years).reverse();
+%>
+
+<nav class="archive-year-nav" aria-label="Archive years">
+  <% yearKeys.forEach(function(year){ %>
+    <a href="#<%= year %>"><%= year %><span class="archive-year-nav__count"><%= years[year].length %></span></a>
+  <% }) %>
+</nav>
+
+<% yearKeys.forEach(function(year){ %>
+<div class="one-tag-list archive-year-block">
+  <span class="listing-seperator" id="<%= year %>">
+    <span class="tag-text"><%= year %></span>
+    <span class="archive-year-count"><%= years[year].length %> 篇</span>
+  </span>
+  <ul class="archive-post-list">
+  <% years[year].forEach(function(post){ %>
+    <li class="archive-post-item">
+      <time class="archive-post-date" datetime="<%= post.date.toISOString() %>"><%= post.date.format('MM-DD') %></time>
+      <span class="archive-post-sep" aria-hidden="true">»</span>
+      <a class="archive-post-link" href="<%= url_for(post.path) %>">
+        <%- post.title || "Untitled" %>
+      </a>
+    </li>
+  <% }) %>
+  </ul>
 </div>
+<% }) %>
+
+<% if (config.donate !== false) { %>
+<%- partial('_partial/donate') %>
+<% } %>
