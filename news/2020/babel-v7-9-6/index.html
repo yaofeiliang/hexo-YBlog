@@ -16,7 +16,7 @@
         } catch (_) {}
       })();
     </script>
-    <meta name="description" content="Babel 于 2020-04-29 发布 v7.9.6。用通俗语言梳理工具背景、官方发布说明与升级检查步骤。">
+    <meta name="description" content="Babel 于 2020-04-29 发布 v7.9.6。结合官方条目、场景推演与升级检查，帮你判断要不要跟、怎么跟。">
     <meta name="keywords" content="姚飞亮">
     <meta name="author" content="姚飞亮">
     <meta name="theme-color" content="#0085a1">
@@ -27,7 +27,7 @@
 
     <meta property="og:type" content="article">
     <meta property="og:title" content="[技术观察] Babel v7.9.6：编译工具链更新如何影响项目 - 姚飞亮 | Blog">
-    <meta property="og:description" content="Babel 于 2020-04-29 发布 v7.9.6。用通俗语言梳理工具背景、官方发布说明与升级检查步骤。">
+    <meta property="og:description" content="Babel 于 2020-04-29 发布 v7.9.6。结合官方条目、场景推演与升级检查，帮你判断要不要跟、怎么跟。">
     <meta property="og:url" content="https://yaofeiliang.com/news/2020/babel-v7-9-6/">
     <meta property="og:site_name" content="Y Blog">
     <meta property="og:image" content="https://yaofeiliang.com/img/article_header/article_bg.jpg">
@@ -41,7 +41,7 @@
     
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="[技术观察] Babel v7.9.6：编译工具链更新如何影响项目 - 姚飞亮 | Blog">
-    <meta name="twitter:description" content="Babel 于 2020-04-29 发布 v7.9.6。用通俗语言梳理工具背景、官方发布说明与升级检查步骤。">
+    <meta name="twitter:description" content="Babel 于 2020-04-29 发布 v7.9.6。结合官方条目、场景推演与升级检查，帮你判断要不要跟、怎么跟。">
     <meta name="twitter:image" content="https://yaofeiliang.com/img/article_header/article_bg.jpg">
 
     <link rel="preload" as="image" href="https://yaofeiliang.com/img/article_header/article_bg.webp" type="image/webp">
@@ -73,7 +73,7 @@
     <script src="/js/i18n.js" defer></script>
 
     <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"NewsArticle","headline":"[技术观察] Babel v7.9.6：编译工具链更新如何影响项目","description":"Babel 于 2020-04-29 发布 v7.9.6。用通俗语言梳理工具背景、官方发布说明与升级检查步骤。","image":"https://yaofeiliang.com/img/article_header/article_bg.jpg","datePublished":"2020-04-29T01:00:00.000Z","dateModified":"2020-04-29T01:00:00.000Z","author":{"@type":"Person","name":"姚飞亮"},"isBasedOn":"https://github.com/babel/babel/releases/tag/v7.9.6","mainEntityOfPage":"https://yaofeiliang.com/news/2020/babel-v7-9-6/","publisher":{"@type":"Person","name":"姚飞亮"}}
+    {"@context":"https://schema.org","@type":"NewsArticle","headline":"[技术观察] Babel v7.9.6：编译工具链更新如何影响项目","description":"Babel 于 2020-04-29 发布 v7.9.6。结合官方条目、场景推演与升级检查，帮你判断要不要跟、怎么跟。","image":"https://yaofeiliang.com/img/article_header/article_bg.jpg","datePublished":"2020-04-29T01:00:00.000Z","dateModified":"2020-04-29T01:00:00.000Z","author":{"@type":"Person","name":"姚飞亮"},"isBasedOn":"https://github.com/babel/babel/releases/tag/v7.9.6","mainEntityOfPage":"https://yaofeiliang.com/news/2020/babel-v7-9-6/","publisher":{"@type":"Person","name":"姚飞亮"}}
     </script>
 <meta name="generator" content="Hexo 8.1.2"></head>
 
@@ -147,10 +147,6 @@
                     
                         
                         
-                        <li>
-                            <a href="/about/" data-i18n="nav.about">About</a>
-                        </li>
-                        
                     
                         
                         
@@ -162,7 +158,7 @@
                         
                         
                         <li>
-                            <a href="/tags/" data-i18n="nav.tags">Tags</a>
+                            <a href="/about/" data-i18n="nav.about">About</a>
                         </li>
                         
                     
@@ -172,11 +168,15 @@
                         
                         
                         <li>
-                            <a href="/topics/" data-i18n="nav.topics">知识地图</a>
+                            <a href="/tags/" data-i18n="nav.tags">Tags</a>
                         </li>
                         
                     
                         
+                        
+                        <li>
+                            <a href="/topics/" data-i18n="nav.topics">知识地图</a>
+                        </li>
                         
                     
                     <li>
@@ -230,10 +230,15 @@
                 <blockquote>
 <p>本文是对官方发布记录的<strong>后期整理</strong>。它帮助读者判断“这次更新和我有什么关系”，不代表当时即在本站发布，也不替代原始发布说明。</p>
 </blockquote>
-<h2 id="先用一句话说清"><a href="#先用一句话说清" class="headerlink" title="先用一句话说清"></a>先用一句话说清</h2><p>Babel 在 <strong>2020-04-29</strong> 发布了 <strong>v7.9.6</strong>。如果你已经在项目里使用它，这条发布记录值得先收藏：它是判断“要不要升级、升级前该检查什么”的官方入口；如果你还没用过它，也可以把本文当作认识这项工具的一次入门阅读。</p>
-<p>本文分成两层：带有“官方”字样的内容来自发布页；“通用背景”和“通用建议”是帮助初学者理解和执行检查的说明，不表示某一项功能必然在本版本中新增。</p>
+<h2 id="先用一句话说清"><a href="#先用一句话说清" class="headerlink" title="先用一句话说清"></a>先用一句话说清</h2><p>如果你的项目还在用 Babel，2020-04-29 这则 v7.9.6 至少该进待办，不该只进收藏夹。</p>
+<p>落到可审查的判断： Babel 的发布页是事实源头；我做的是把英文&#x2F;术语密集的说明拆成可以讨论、可以排期、可以回滚的中文导读。带“官方”字样的内容来自发布页；场景和检查清单是通用工作方法，不表示某一条一定是本版本新增能力。</p>
+<p><strong>更该认真看的人：</strong> 依赖 Babel 转译、Polyfill 或多环境兼容策略的前端与全栈开发者。</p>
+<p><strong>可以先略过的人：</strong> 完全不依赖 Babel、短期内也没有相关排期的同学——知道有这回事即可。</p>
+<p>一手入口在这里：<a target="_blank" rel="noopener" href="https://github.com/babel/babel/releases/tag/v7.9.6">https://github.com/babel/babel/releases/tag/v7.9.6</a></p>
 <h2 id="这个工具是做什么的（通用背景）"><a href="#这个工具是做什么的（通用背景）" class="headerlink" title="这个工具是做什么的（通用背景）"></a>这个工具是做什么的（通用背景）</h2><p>Babel 是 JavaScript 的“翻译器”。开发者可以使用较新的语法写代码，Babel 再把它转换为目标浏览器或旧环境也能理解的写法。它通常隐藏在构建工具背后，但会直接影响代码能在哪些设备上运行。</p>
-<p>对刚入门的人来说，不需要在第一次阅读时理解所有技术名词。先记住一件事：工具升级的目的通常是修复问题、补充能力或改善开发体验；而项目升级的风险，往往来自旧代码、旧配置或配套插件还没有跟上新规则。</p>
+<p>假设你们仍服务一组长尾浏览器：预设、插件和 Polyfill 策略变化会直接改写兼容矩阵与包体积。</p>
+<p>在这个场景里，版本号本身几乎不提供信息；真正有用的是：渲染&#x2F;构建&#x2F;调度&#x2F;类型检查&#x2F;编辑体验里，哪一条链路可能被碰触。新手也不用一次学完所有名词——先建立“工具负责哪一段流水线”的地图，再回头看发布说明，效率会高很多。</p>
+<p>另外请记住一个反直觉点：升级失败，经常不是因为新版本“坏了”，而是旧配置、旧插件、旧脚本还按去年的假设在工作。所以阅读发布说明时，要把眼睛分一半给“依赖我的东西”。</p>
 <h2 id="版本信息一览"><a href="#版本信息一览" class="headerlink" title="版本信息一览"></a>版本信息一览</h2><table>
 <thead>
 <tr>
@@ -262,69 +267,300 @@
 <td>否（正式发布版本）</td>
 </tr>
 <tr>
+<td>仓库</td>
+<td>babel&#x2F;babel</td>
+</tr>
+<tr>
 <td>官方发布页</td>
 <td><a target="_blank" rel="noopener" href="https://github.com/babel/babel/releases/tag/v7.9.6">查看原文</a></td>
 </tr>
 </tbody></table>
-<p>“预发布”可以理解为正式版前供测试的版本，适合希望提前验证兼容性的人；正式项目是否采用，仍要看团队的测试能力和官方建议。无论是哪一种版本，版本标签和发布日期都来自官方 GitHub Release 记录。</p>
+<p>关于预发布：可以把它理解成“正式开演前的联排”。适合想提前踩坑的人；是否用于生产，要看你们有没有完整测试与回滚能力。版本标签和日期均来自 GitHub Release 元数据，不来自二手新闻改写。</p>
+<p>若你只想 30 秒决策：先看有没有 <strong>security &#x2F; breaking &#x2F; deprecation</strong>；有的话升优先级；都没有，再看它是否碰到你正在疼的那个模块。</p>
 <h2 id="官方-release-笔记要点"><a href="#官方-release-笔记要点" class="headerlink" title="官方 release 笔记要点"></a>官方 release 笔记要点</h2><blockquote>
-<p>以下条目从官方发布页的 Markdown 说明中按标题和列表提取，并保留官方原文表述。由于原始说明主要使用英语，本文不把自动猜测当作“官方中文翻译”；涉及功能细节、影响范围和兼容性，请点击发布页核对上下文。</p>
+<p>下列条目从官方 Markdown 说明中按标题与列表提取，并尽量保留原文。我不会把机翻腔冒充“官方中文版”。具体功能边界、影响范围与兼容性，请以发布页上下文为准。</p>
 </blockquote>
+<p>我从官方说明里抓出了 12 条相对完整的条目，并逐条补了“怎么读”。注意：注释是阅读方法，不是对隐藏功能的猜测。</p>
 <h3 id="eyeglasses-Spec-Compliance"><a href="#eyeglasses-Spec-Compliance" class="headerlink" title=":eyeglasses: Spec Compliance"></a>:eyeglasses: Spec Compliance</h3><ul>
-<li>babel-plugin-proposal-object-rest-spread</li>
-<li>#11471 Fix evaluation order with object spread, 2 (@jridgewell)</li>
-<li>#11412 Fix evaluation order with object spread (@Zzzen)</li>
-<li>babel-helper-replace-supers, babel-plugin-proposal-class-properties, babel-plugin-transform-classes</li>
-<li>#11480 Super property eval order (@jridgewell)</li>
+<li><strong>官方原文：</strong> babel-plugin-proposal-object-rest-spread<ul>
+<li><strong>怎么读：</strong> 把它当作待核验的工程信号：回到模块、配置键与调用链，确认是否命中你们的依赖图。</li>
+</ul>
+</li>
+<li><strong>官方原文：</strong> #11471 Fix evaluation order with object spread, 2 (@jridgewell)<ul>
+<li><strong>怎么读：</strong> 缺陷修复信号：把条目映射到你们是否复现过同类故障；有则收益高，无则仍建议看回归面。</li>
+</ul>
+</li>
+<li><strong>官方原文：</strong> #11412 Fix evaluation order with object spread (@Zzzen)<ul>
+<li><strong>怎么读：</strong> 缺陷修复信号：把条目映射到你们是否复现过同类故障；有则收益高，无则仍建议看回归面。</li>
+</ul>
+</li>
+<li><strong>官方原文：</strong> babel-helper-replace-supers, babel-plugin-proposal-class-properties, babel-plugin-transform-classes<ul>
+<li><strong>怎么读：</strong> 把它当作待核验的工程信号：回到模块、配置键与调用链，确认是否命中你们的依赖图。</li>
+</ul>
+</li>
+<li><strong>官方原文：</strong> #11480 Super property eval order (@jridgewell)<ul>
+<li><strong>怎么读：</strong> 把它当作待核验的工程信号：回到模块、配置键与调用链，确认是否命中你们的依赖图。</li>
+</ul>
+</li>
 </ul>
 <h3 id="rocket-New-Feature"><a href="#rocket-New-Feature" class="headerlink" title=":rocket: New Feature"></a>:rocket: New Feature</h3><ul>
-<li>babel-traverse, babel-types</li>
-<li>#11448 Adding createFlowUnionType in place of createUnionTypeAnnotation without breaking change (@Beraliv)</li>
+<li><strong>官方原文：</strong> babel-traverse, babel-types<ul>
+<li><strong>怎么读：</strong> 把它当作待核验的工程信号：回到模块、配置键与调用链，确认是否命中你们的依赖图。</li>
+</ul>
+</li>
+<li><strong>官方原文：</strong> #11448 Adding createFlowUnionType in place of createUnionTypeAnnotation without breaking change (@Beraliv)<ul>
+<li><strong>怎么读：</strong> 兼容性信号：旧接口&#x2F;旧配置可能失效，应进入变更影响评估（impact assessment），而不是只做冒烟。</li>
+</ul>
+</li>
 </ul>
 <h3 id="bug-Bug-Fix"><a href="#bug-Bug-Fix" class="headerlink" title=":bug: Bug Fix"></a>:bug: Bug Fix</h3><ul>
-<li>babel-helper-create-class-features-plugin, babel-helpers, babel-plugin-transform-modules-commonjs, babel-preset-env</li>
-<li>#11495 Fix helpers.unsupportedIterableToArray for Map and Set (@ChintanAcharya)</li>
-<li>babel-traverse</li>
-<li>#11482 handle objectMethod in scope.isPure (@Zzzen)</li>
-<li>babel-plugin-transform-typescript</li>
-<li>#11410 Throw error for TypeScript declare const enum (@dosentmatter)</li>
+<li><strong>官方原文：</strong> babel-helper-create-class-features-plugin, babel-helpers, babel-plugin-transform-modules-commonjs, babel-preset-env<ul>
+<li><strong>怎么读：</strong> 能力扩展信号：先判断它解决的是产品瓶颈、工程效率还是可观测性，再排优先级。</li>
+</ul>
+</li>
+<li><strong>官方原文：</strong> #11495 Fix helpers.unsupportedIterableToArray for Map and Set (@ChintanAcharya)<ul>
+<li><strong>怎么读：</strong> 缺陷修复信号：把条目映射到你们是否复现过同类故障；有则收益高，无则仍建议看回归面。</li>
+</ul>
+</li>
+<li><strong>官方原文：</strong> babel-traverse<ul>
+<li><strong>怎么读：</strong> 把它当作待核验的工程信号：回到模块、配置键与调用链，确认是否命中你们的依赖图。</li>
+</ul>
+</li>
+<li><strong>官方原文：</strong> #11482 handle objectMethod in scope.isPure (@Zzzen)<ul>
+<li><strong>怎么读：</strong> 把它当作待核验的工程信号：回到模块、配置键与调用链，确认是否命中你们的依赖图。</li>
+</ul>
+</li>
+<li><strong>官方原文：</strong> babel-plugin-transform-typescript<ul>
+<li><strong>怎么读：</strong> 把它当作待核验的工程信号：回到模块、配置键与调用链，确认是否命中你们的依赖图。</li>
+</ul>
+</li>
+<li><strong>官方原文：</strong> #11410 Throw error for TypeScript declare const enum (@dosentmatter)<ul>
+<li><strong>怎么读：</strong> 把它当作待核验的工程信号：回到模块、配置键与调用链，确认是否命中你们的依赖图。</li>
+</ul>
+</li>
+<li><strong>官方原文：</strong> babel-compat-data<ul>
+<li><strong>怎么读：</strong> 把它当作待核验的工程信号：回到模块、配置键与调用链，确认是否命中你们的依赖图。</li>
+</ul>
+</li>
+<li><strong>官方原文：</strong> #11462 chore: add node.js 14 support data (@JLHwung)<ul>
+<li><strong>怎么读：</strong> 能力扩展信号：先判断它解决的是产品瓶颈、工程效率还是可观测性，再排优先级。</li>
+</ul>
+</li>
 </ul>
 <h3 id="nailcare-Polish"><a href="#nailcare-Polish" class="headerlink" title=":nailcare: Polish"></a>:nailcare: Polish</h3><ul>
-<li>babel-compat-data</li>
-<li>#11462 chore: add node.js 14 support data (@JLHwung)</li>
-<li>babel-parser</li>
-<li>#11449 Set exprAllowed to false for star token (@existentialism)</li>
-<li>#11355 fix: disallow expression after binding identifier of (@JLHwung)</li>
-<li>#11417 fix: report missing plugins on type exports (@JLHwung)</li>
+<li><strong>官方原文：</strong> #11355 fix: disallow expression after binding identifier of (@JLHwung)<ul>
+<li><strong>怎么读：</strong> 缺陷修复信号：把条目映射到你们是否复现过同类故障；有则收益高，无则仍建议看回归面。</li>
 </ul>
-<h3 id="怎样读这些条目"><a href="#怎样读这些条目" class="headerlink" title="怎样读这些条目"></a>怎样读这些条目</h3><p>看到 <strong>fix &#x2F; bug fix</strong>，通常表示修复问题；看到 <strong>feature &#x2F; add</strong>，通常表示增加能力；看到 <strong>breaking change &#x2F; deprecation</strong>，要格外小心，因为旧用法可能需要改动。这里的解释只是阅读英文发布说明的通用方法，是否真的影响你的项目，要以条目对应的模块、配置和官方链接为准。</p>
-<h2 id="如果你刚接触，可以先知道这些"><a href="#如果你刚接触，可以先知道这些" class="headerlink" title="如果你刚接触，可以先知道这些"></a>如果你刚接触，可以先知道这些</h2><p>软件版本常见的写法是“主版本.次版本.修订版本”。例如最后一位变化，常用于小范围修复；中间一位变化，可能带来新能力；最前面一位变化，往往意味着更大的兼容性变化。不同项目的发布策略并不完全一样，所以不要只凭数字下结论，仍要阅读官方说明。</p>
-<p>升级也不是“看到新版本就立刻点确认”。更稳妥的做法是把升级当成一次可回退的小实验：保留当前版本记录，在单独分支或测试环境安装新版本，运行构建和测试；确认没有问题后再合并到正式发布流程。这样即使出现异常，也知道该回到哪个版本。</p>
-<p>下面是阅读 Babel 发布记录时常会遇到的词：</p>
+</li>
+<li><strong>官方原文：</strong> #11417 fix: report missing plugins on type exports (@JLHwung)<ul>
+<li><strong>怎么读：</strong> 缺陷修复信号：把条目映射到你们是否复现过同类故障；有则收益高，无则仍建议看回归面。</li>
+</ul>
+</li>
+<li><strong>官方原文：</strong> #11388 fix: do not push new token context when function is following dot&#x2F;questionDot (@JLHwung)<ul>
+<li><strong>怎么读：</strong> 缺陷修复信号：把条目映射到你们是否复现过同类故障；有则收益高，无则仍建议看回归面。</li>
+</ul>
+</li>
+<li><strong>官方原文：</strong> babel-helper-create-class-features-plugin, babel-plugin-proposal-class-properties<ul>
+<li><strong>怎么读：</strong> 能力扩展信号：先判断它解决的是产品瓶颈、工程效率还是可观测性，再排优先级。</li>
+</ul>
+</li>
+<li><strong>官方原文：</strong> #11424 Fix redeclaring private in nested class’s superClass (@jridgewell)<ul>
+<li><strong>怎么读：</strong> 缺陷修复信号：把条目映射到你们是否复现过同类故障；有则收益高，无则仍建议看回归面。</li>
+</ul>
+</li>
+<li><strong>官方原文：</strong> #11405 Fix nested classes reference private fields (@jridgewell)<ul>
+<li><strong>怎么读：</strong> 缺陷修复信号：把条目映射到你们是否复现过同类故障；有则收益高，无则仍建议看回归面。</li>
+</ul>
+</li>
+<li><strong>官方原文：</strong> babel-traverse, babel-types<ul>
+<li><strong>怎么读：</strong> 把它当作待核验的工程信号：回到模块、配置键与调用链，确认是否命中你们的依赖图。</li>
+</ul>
+</li>
+<li><strong>官方原文：</strong> #11378 transform-spread: create TS types (not Flow) when using TS (@Beraliv)<ul>
+<li><strong>怎么读：</strong> 把它当作待核验的工程信号：回到模块、配置键与调用链，确认是否命中你们的依赖图。</li>
+</ul>
+</li>
+</ul>
+<h3 id="memo-Documentation"><a href="#memo-Documentation" class="headerlink" title=":memo: Documentation"></a>:memo: Documentation</h3><ul>
+<li><strong>官方原文：</strong> babel-plugin-transform-runtime<ul>
+<li><strong>怎么读：</strong> 把它当作待核验的工程信号：回到模块、配置键与调用链，确认是否命中你们的依赖图。</li>
+</ul>
+</li>
+<li><strong>官方原文：</strong> #11366 fix: replace backslashes with forward slashes from resolved path for … (@johannes-z)<ul>
+<li><strong>怎么读：</strong> 缺陷修复信号：把条目映射到你们是否复现过同类故障；有则收益高，无则仍建议看回归面。</li>
+</ul>
+</li>
+<li><strong>官方原文：</strong> babel-generator, babel-plugin-proposal-decorators, babel-plugin-proposal-pipeline-operator, babel-plugin-proposal-throw-expressions, babel-plugin-transform-async-to-generator<ul>
+<li><strong>怎么读：</strong> 把它当作待核验的工程信号：回到模块、配置键与调用链，确认是否命中你们的依赖图。</li>
+</ul>
+</li>
+<li><strong>官方原文：</strong> #11382 Unify parens printing for postfix-like expressions (@nicolo-ribaudo)<ul>
+<li><strong>怎么读：</strong> 缺陷修复信号：把条目映射到你们是否复现过同类故障；有则收益高，无则仍建议看回归面。</li>
+</ul>
+</li>
+<li><strong>官方原文：</strong> babel-parser<ul>
+<li><strong>怎么读：</strong> 把它当作待核验的工程信号：回到模块、配置键与调用链，确认是否命中你们的依赖图。</li>
+</ul>
+</li>
+<li><strong>官方原文：</strong> #11478 Add some parser missing plugins errors (@JLHwung)<ul>
+<li><strong>怎么读：</strong> 能力扩展信号：先判断它解决的是产品瓶颈、工程效率还是可观测性，再排优先级。</li>
+</ul>
+</li>
+<li><strong>官方原文：</strong> #11417 fix: report missing plugins on type exports (@JLHwung)<ul>
+<li><strong>怎么读：</strong> 缺陷修复信号：把条目映射到你们是否复现过同类故障；有则收益高，无则仍建议看回归面。</li>
+</ul>
+</li>
+<li><strong>官方原文：</strong> babel-core<ul>
+<li><strong>怎么读：</strong> 把它当作待核验的工程信号：回到模块、配置键与调用链，确认是否命中你们的依赖图。</li>
+</ul>
+</li>
+</ul>
+<h3 id="house-Internal"><a href="#house-Internal" class="headerlink" title=":house: Internal"></a>:house: Internal</h3><ul>
+<li><strong>官方原文：</strong> babel-parser<ul>
+<li><strong>怎么读：</strong> 把它当作待核验的工程信号：回到模块、配置键与调用链，确认是否命中你们的依赖图。</li>
+</ul>
+</li>
+<li><strong>官方原文：</strong> #11492 docs: update AST spec (@JLHwung)<ul>
+<li><strong>怎么读：</strong> 文档信号：往往意味着官方在澄清契约边界；对接入方，契约比营销句更重要。</li>
+</ul>
+</li>
+<li><strong>官方原文：</strong> Other<ul>
+<li><strong>怎么读：</strong> 把它当作待核验的工程信号：回到模块、配置键与调用链，确认是否命中你们的依赖图。</li>
+</ul>
+</li>
+<li><strong>官方原文：</strong> #11493 Add note about experimental nature of @babel&#x2F;eslint- packages (@kaicataldo)<ul>
+<li><strong>怎么读：</strong> 能力扩展信号：先判断它解决的是产品瓶颈、工程效率还是可观测性，再排优先级。</li>
+</ul>
+</li>
+<li><strong>官方原文：</strong> #11403 contributing.md updates [skip ci] (@hzoo)<ul>
+<li><strong>怎么读：</strong> 把它当作待核验的工程信号：回到模块、配置键与调用链，确认是否命中你们的依赖图。</li>
+</ul>
+</li>
+<li><strong>官方原文：</strong> babel-compat-data, babel-preset-env<ul>
+<li><strong>怎么读：</strong> 把它当作待核验的工程信号：回到模块、配置键与调用链，确认是否命中你们的依赖图。</li>
+</ul>
+</li>
+<li><strong>官方原文：</strong> #11496 Update compat table script (@nicolo-ribaudo)<ul>
+<li><strong>怎么读：</strong> 把它当作待核验的工程信号：回到模块、配置键与调用链，确认是否命中你们的依赖图。</li>
+</ul>
+</li>
+<li><strong>官方原文：</strong> #11450 Update compat data (@JLHwung)<ul>
+<li><strong>怎么读：</strong> 把它当作待核验的工程信号：回到模块、配置键与调用链，确认是否命中你们的依赖图。</li>
+</ul>
+</li>
+</ul>
+<h3 id="怎样读这些条目（可复用）"><a href="#怎样读这些条目（可复用）" class="headerlink" title="怎样读这些条目（可复用）"></a>怎样读这些条目（可复用）</h3><ol>
+<li>先扫描标题：Features &#x2F; Bug Fixes &#x2F; Breaking Changes &#x2F; Security 往往比段落叙述更醒目。</li>
+<li>再盯模块名：只有碰到你依赖的包、API、配置键，才值得立刻排期。</li>
+<li>最后才看形容词：更快、更好、更强，统统要落到你自己的基准测试或页面路径上。</li>
+<li>英文不好也不丢人：把关键词丢进翻译工具可以，但结论仍要回到官方段落核对。</li>
+</ol>
+<p>如果某条提到 PR 编号或 issue，那是深挖线索，不是装饰。真正要升级时，点进去看讨论，常能提前知道坑在哪里。</p>
+<h2 id="专业深度：机制、约束与二阶效应"><a href="#专业深度：机制、约束与二阶效应" class="headerlink" title="专业深度：机制、约束与二阶效应"></a>专业深度：机制、约束与二阶效应</h2><p>建议先画最小依赖图：谁直接依赖该版本，谁间接受构建产物&#x2F;类型声明&#x2F;插件影响。影响评估的质量取决于图的完整度。</p>
+<p>对 Babel（v7.9.6 &#x2F; v7.9.6），建议按下列层面对齐阅读，而不是只扫版本号：</p>
+<ul>
+<li><strong>机制层（它可能触达的子系统）：</strong> 语法解析、变换插件、预设目标矩阵、辅助函数&#x2F;Polyfill、与打包器集成</li>
+<li><strong>约束层（最常见的工程风险）：</strong> 目标环境误配、重复 Polyfill、插件顺序问题、与 TypeScript&#x2F;JSX 管道冲突</li>
+<li><strong>证据层（升级后应用哪些指标说话）：</strong> 产物体积、兼容性用例、运行时 ReferenceError、转换耗时</li>
+</ul>
+<p>二阶效应上，版本标签（v7.9.6）只是索引；真正决定组织反应速度的，是你们有没有可复用的回归资产与明确的“不升级”条件。</p>
+<p>进一步做深度拆解时，把官方条目映射到你们的<strong>变更影响矩阵</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>你要填写的内容</th>
+<th>专业用途</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>直接依赖</td>
+<td>锁文件中的精确版本与传递依赖</td>
+<td>判断“是否被点名”</td>
+</tr>
+<tr>
+<td>行为契约</td>
+<td>API&#x2F;配置&#x2F;默认值&#x2F;错误语义</td>
+<td>判断“会不会静默改变结果”</td>
+</tr>
+<tr>
+<td>验证资产</td>
+<td>单测、集成、合成监测、手工路径</td>
+<td>判断“有没有证据闭环”</td>
+</tr>
+<tr>
+<td>发布策略</td>
+<td>金丝雀、双跑、特性开关、冻结窗口</td>
+<td>判断“风险是否可收敛”</td>
+</tr>
+<tr>
+<td>回滚条件</td>
+<td>谁触发、如何执行、RTO 目标</td>
+<td>判断“失败是否可恢复”</td>
+</tr>
+</tbody></table>
+<p>若矩阵填不全，结论不应是“看起来能升”，而应是“尚未完成专业评估”。预发布（否（正式发布版本））尤其如此：它提供的是信息期权，不是生产许可证。</p>
+<h2 id="专业广度：生态对照与选型含义"><a href="#专业广度：生态对照与选型含义" class="headerlink" title="专业广度：生态对照与选型含义"></a>专业广度：生态对照与选型含义</h2><p>专业对比不只看功能清单，而看契约稳定性、迁移工具成熟度、社区修复速度与锁定成本。对 Babel 而言，这些往往比单次版本的亮点列表更能决定是否跟进。</p>
+<p>把这次发布放进更宽的决策坐标系，至少对照五问：</p>
+<ol>
+<li><strong>上游对齐：</strong> 语言运行时、操作系统、容器基础镜像是否仍匹配？</li>
+<li><strong>横向替代：</strong> 若暂缓升级，有没有等价能力或兼容层可续命？</li>
+<li><strong>下游冲击：</strong> 内部平台用户、业务仓库、插件作者谁会收到间接账单？</li>
+<li><strong>组织能力：</strong> 你们的回归资产与 on-call 是否支撑该变更节奏？</li>
+<li><strong>时机选择：</strong> 是该跟随安全补丁窗口，还是并入下个迭代的有计划迁移？</li>
+</ol>
+<p>假设你们仍服务一组长尾浏览器：预设、插件和 Polyfill 策略变化会直接改写兼容矩阵与包体积。 在这个场景中，广度分析的价值是防止“局部最优”：单个仓库升级成功，不代表系统级风险下降。专业团队看的是组合风险，而不是单点绿勾。</p>
+<p>也可用组合拳表述你的立场（写进评审记录）：</p>
+<ul>
+<li><strong>立即跟：</strong> 存在安全暴露或已复现的阻断缺陷，且回滚路径清晰。</li>
+<li><strong>计划跟：</strong> 有明确收益，但需要迁移与回归预算。</li>
+<li><strong>明确不跟：</strong> 收益不足以覆盖验证成本，或处于发布冻结期——并写明复查日期。</li>
+</ul>
+<h2 id="如果你刚接触，可以先知道这些"><a href="#如果你刚接触，可以先知道这些" class="headerlink" title="如果你刚接触，可以先知道这些"></a>如果你刚接触，可以先知道这些</h2><p>软件版本常见写法是“主版本.次版本.修订版本”。最后一位变化，很多项目用来修问题；中间一位可能带来可见的新能力；最前面一位变化，兼容性风险通常最大。但不同项目纪律不同——Babel 也不例外——所以数字只是线索，说明文字才是证据。</p>
+<p>团队里最贵的不是多等一天，而是所有人同时踩进同一个未验证的大版本。</p>
+<p>单独分支或预发环境装新版本 → 跑构建与关键路径 → 没问题再合入主干。听起来慢，其实比线上紧急回滚快。</p>
+<p>阅读 Babel 时，这几个词会反复出现：</p>
 <ul>
 <li><strong>转译：</strong> 不改变程序目的，只把一种写法转换成另一种兼容写法。</li>
 <li><strong>预设：</strong> 一组常用转换规则的集合，用来决定要支持哪些语法和环境。</li>
 <li><strong>Polyfill：</strong> 为旧环境补上缺失 API 的兼容代码。</li>
 </ul>
-<h2 id="升级前通用检查清单"><a href="#升级前通用检查清单" class="headerlink" title="升级前通用检查清单"></a>升级前通用检查清单</h2><p>以下清单是面向 Babel 的<strong>通用建议</strong>，不是对本次发布内容的推断：</p>
+<p>再补一条心态建议：你不需要成为该工具的专家才能读发布说明。你只需要成为“自己项目”的专家——知道哪些页面、哪些流水线、哪些客户路径绝对不能坏。</p>
+<h2 id="升级前通用检查清单"><a href="#升级前通用检查清单" class="headerlink" title="升级前通用检查清单"></a>升级前通用检查清单</h2><p>以下清单是面向 Babel 的<strong>通用建议</strong>，用来降低升级翻车概率；它不是对本版本功能的逐条断言：</p>
 <ol>
-<li>预设、插件与目标浏览器配置</li>
-<li>转译结果和 Polyfill 注入策略</li>
-<li>锁文件与插件生态的兼容性</li>
+<li>预设、插件与目标浏览器配置 —— 请写成可勾选的验证步骤，而不是停留在口头提醒。</li>
+<li>转译结果和 Polyfill 注入策略 —— 请写成可勾选的验证步骤，而不是停留在口头提醒。</li>
+<li>锁文件与插件生态的兼容性 —— 请写成可勾选的验证步骤，而不是停留在口头提醒。</li>
 </ol>
-<p>开始前可以先回答三个简单问题：我现在项目使用的是什么版本？升级后最关键的功能怎样验证？如果失败，怎样恢复到原来的依赖和部署结果？把答案写进任务单，比凭印象升级可靠得多。</p>
+<p>升级前我建议你强制回答四个问题（写下来）：</p>
+<ol>
+<li>当前生产&#x2F;主干锁定的是哪个精确版本？</li>
+<li>升级成功的“最小证据”是什么（哪几个页面、哪几条测试、哪几个指标）？</li>
+<li>失败时回滚到哪里，需要多久？</li>
+<li>谁有权决定“今天跟”还是“下个迭代再跟”？</li>
+</ol>
+<p>假设你们仍服务一组长尾浏览器：预设、插件和 Polyfill 策略变化会直接改写兼容矩阵与包体积。 把上面四个问题套进去，你会立刻知道自己缺的是信息、测试，还是决策人。</p>
 <h2 id="可以照着做的下一步"><a href="#可以照着做的下一步" class="headerlink" title="可以照着做的下一步"></a>可以照着做的下一步</h2><p>升级后不要只看构建成功；请在目标浏览器或自动化测试环境运行关键页面，比较转换后的代码、错误日志和兼容性测试结果。</p>
 <p>在升级分支比较编译产物和测试覆盖，重点检查语法转换与浏览器兼容性。</p>
-<p>完成后，建议在升级记录中写下“旧版本、目标版本、执行日期、验证项目、结果和回滚方式”。这份记录对未来的自己和团队成员都很有用：下次看到相近的发布，就不必从零判断风险。</p>
+<p>实操上，我建议按半天能做完的粒度拆：</p>
+<ol>
+<li><strong>30 分钟：</strong> 通读发布页，标记 security &#x2F; breaking &#x2F; 与你模块相关的条目。</li>
+<li><strong>1–2 小时：</strong> 在独立分支升级依赖，记录锁文件变化与构建日志。</li>
+<li><strong>再 1–2 小时：</strong> 跑最小回归（构建、关键路径、冒烟测试），截图或保存日志。</li>
+<li><strong>收尾 15 分钟：</strong> 写下旧版本、目标版本、结果、遗留风险、回滚命令。</li>
+</ol>
+<p>专业阅读的终点不是立场站队，而是留下可复盘的假设、证据与验证计划。 下一回再遇到 Babel 的发布，你就不是从零开始，而是在更新一张已经存在的风险地图。</p>
 <h2 id="原始来源与阅读入口"><a href="#原始来源与阅读入口" class="headerlink" title="原始来源与阅读入口"></a>原始来源与阅读入口</h2><ul>
 <li>官方来源：Babel</li>
+<li>仓库：babel&#x2F;babel</li>
 <li>原始发布日期：2020-04-29</li>
 <li>收录月份：2020-04</li>
 <li>发布页：<a target="_blank" rel="noopener" href="https://github.com/babel/babel/releases/tag/v7.9.6">https://github.com/babel/babel/releases/tag/v7.9.6</a></li>
 </ul>
 <h2 id="来源与声明"><a href="#来源与声明" class="headerlink" title="来源与声明"></a>来源与声明</h2><ul>
 <li>本文是对官方发布记录的后期整理，不代表姚飞亮在 2020-04 已在本站发表本文。</li>
-<li>事实、版本说明和版权以原始来源为准；如发现链接或日期有误，请联系 <a href="mailto:&#x79;&#x61;&#x6f;&#x61;&#100;&#109;&#105;&#x6e;&#x40;&#x73;&#105;&#110;&#97;&#46;&#x63;&#111;&#x6d;">yaoadmin@sina.com</a>。</li>
+<li>事实、版本说明和版权以原始来源为准；如发现链接或日期有误，请联系 <a href="mailto:&#121;&#x61;&#111;&#x61;&#100;&#x6d;&#x69;&#x6e;&#64;&#x73;&#x69;&#x6e;&#x61;&#x2e;&#99;&#111;&#x6d;">yaoadmin@sina.com</a>。</li>
+<li>文中场景与检查清单用于帮助理解与执行，不构成对本版本未写明能力的承诺。</li>
 </ul>
 
                 
@@ -373,12 +609,12 @@
                 <ul class="pager">
                     
                         <li class="previous">
-                            <a target="_blank" rel="noopener" href="//news/2020/finance-finance-federal-reserve-fomc-2020-04-29/" title="[行业观察] 美联储 FOMC 政策声明（2020-04-29）：把官方声明读成人话" data-i18n="post.previous">← 上一篇</a>
+                            <a target="_blank" rel="noopener" href="//news/2020/finance-federal-reserve-fomc-2020-04-29/" title="[行业观察] 美联储 FOMC 政策声明（2020-04-29）：少一点情绪，多一点结构" data-i18n="post.previous">← 上一篇</a>
                         </li>
                     
                     
                         <li class="next">
-                            <a target="_blank" rel="noopener" href="//news/2020/typescript-typescript-3-9-rc/" title="[技术观察] TypeScript TypeScript 3.9 RC：类型系统升级前的兼容性提示" data-i18n="post.next">下一篇 →</a>
+                            <a target="_blank" rel="noopener" href="//news/2020/typescript-typescript-3-9-rc/" title="[技术观察] TypeScript TypeScript 3.9 RC：给忙碌开发者的人话导读" data-i18n="post.next">下一篇 →</a>
                         </li>
                     
                 </ul>
