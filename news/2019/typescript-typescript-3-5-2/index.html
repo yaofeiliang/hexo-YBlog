@@ -16,7 +16,7 @@
         } catch (_) {}
       })();
     </script>
-    <meta name="description" content="TypeScript 于 2019-06-14 发布 TypeScript 3.5.2。本文提炼升级关注点、官方说明摘要与实践检查项。">
+    <meta name="description" content="TypeScript 于 2019-06-14 发布 TypeScript 3.5.2。用通俗语言梳理工具背景、官方发布说明与升级检查步骤。">
     <meta name="keywords" content="姚飞亮">
     <meta name="author" content="姚飞亮">
     <meta name="theme-color" content="#0085a1">
@@ -27,7 +27,7 @@
 
     <meta property="og:type" content="article">
     <meta property="og:title" content="[技术观察] TypeScript TypeScript 3.5.2：类型系统升级前的兼容性提示 - 姚飞亮 | Blog">
-    <meta property="og:description" content="TypeScript 于 2019-06-14 发布 TypeScript 3.5.2。本文提炼升级关注点、官方说明摘要与实践检查项。">
+    <meta property="og:description" content="TypeScript 于 2019-06-14 发布 TypeScript 3.5.2。用通俗语言梳理工具背景、官方发布说明与升级检查步骤。">
     <meta property="og:url" content="https://yaofeiliang.com/news/2019/typescript-typescript-3-5-2/">
     <meta property="og:site_name" content="Y Blog">
     <meta property="og:image" content="https://yaofeiliang.com/img/article_header/article_bg.jpg">
@@ -41,7 +41,7 @@
     
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="[技术观察] TypeScript TypeScript 3.5.2：类型系统升级前的兼容性提示 - 姚飞亮 | Blog">
-    <meta name="twitter:description" content="TypeScript 于 2019-06-14 发布 TypeScript 3.5.2。本文提炼升级关注点、官方说明摘要与实践检查项。">
+    <meta name="twitter:description" content="TypeScript 于 2019-06-14 发布 TypeScript 3.5.2。用通俗语言梳理工具背景、官方发布说明与升级检查步骤。">
     <meta name="twitter:image" content="https://yaofeiliang.com/img/article_header/article_bg.jpg">
 
     <link rel="preload" as="image" href="https://yaofeiliang.com/img/article_header/article_bg.webp" type="image/webp">
@@ -73,7 +73,7 @@
     <script src="/js/i18n.js" defer></script>
 
     <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"NewsArticle","headline":"[技术观察] TypeScript TypeScript 3.5.2：类型系统升级前的兼容性提示","description":"TypeScript 于 2019-06-14 发布 TypeScript 3.5.2。本文提炼升级关注点、官方说明摘要与实践检查项。","image":"https://yaofeiliang.com/img/article_header/article_bg.jpg","datePublished":"2019-06-14T01:00:00.000Z","dateModified":"2019-06-14T01:00:00.000Z","author":{"@type":"Person","name":"姚飞亮"},"isBasedOn":"https://github.com/microsoft/TypeScript/releases/tag/v3.5.2","mainEntityOfPage":"https://yaofeiliang.com/news/2019/typescript-typescript-3-5-2/","publisher":{"@type":"Person","name":"姚飞亮"}}
+    {"@context":"https://schema.org","@type":"NewsArticle","headline":"[技术观察] TypeScript TypeScript 3.5.2：类型系统升级前的兼容性提示","description":"TypeScript 于 2019-06-14 发布 TypeScript 3.5.2。用通俗语言梳理工具背景、官方发布说明与升级检查步骤。","image":"https://yaofeiliang.com/img/article_header/article_bg.jpg","datePublished":"2019-06-14T01:00:00.000Z","dateModified":"2019-06-14T01:00:00.000Z","author":{"@type":"Person","name":"姚飞亮"},"isBasedOn":"https://github.com/microsoft/TypeScript/releases/tag/v3.5.2","mainEntityOfPage":"https://yaofeiliang.com/news/2019/typescript-typescript-3-5-2/","publisher":{"@type":"Person","name":"姚飞亮"}}
     </script>
 <meta name="generator" content="Hexo 8.1.2"></head>
 
@@ -147,22 +147,22 @@
                     
                         
                         
+                    
+                        
+                        
+                        <li>
+                            <a href="/about/" data-i18n="nav.about">About</a>
+                        </li>
+                        
+                    
+                        
+                        
+                    
+                        
+                        
                         <li>
                             <a href="/archive/" data-i18n="nav.archive">Archives</a>
                         </li>
-                        
-                    
-                        
-                        
-                    
-                        
-                        
-                        <li>
-                            <a href="/tags/" data-i18n="nav.tags">Tags</a>
-                        </li>
-                        
-                    
-                        
                         
                     
                         
@@ -175,7 +175,7 @@
                         
                         
                         <li>
-                            <a href="/about/" data-i18n="nav.about">About</a>
+                            <a href="/tags/" data-i18n="nav.tags">Tags</a>
                         </li>
                         
                     
@@ -230,25 +230,77 @@
                 <blockquote>
 <p>本文是对官方发布记录的<strong>后期整理</strong>。它帮助读者判断“这次更新和我有什么关系”，不代表当时即在本站发布，也不替代原始发布说明。</p>
 </blockquote>
-<h2 id="一分钟看懂"><a href="#一分钟看懂" class="headerlink" title="一分钟看懂"></a>一分钟看懂</h2><p>TypeScript 于 2019-06-14 发布「TypeScript 3.5.2」。这类版本发布通常不只是“更新一个版本号”：它会影响 维护 TypeScript 应用、库或声明文件的开发者 的依赖选择、升级节奏与验证成本。</p>
-<ul>
-<li><strong>适合谁看：</strong> 维护 TypeScript 应用、库或声明文件的开发者</li>
-<li><strong>为什么值得关注：</strong> TypeScript 语言与工具链的正式版本或候选版本发布信息。</li>
-<li><strong>技术发布时间：</strong> 2019-06-14</li>
+<h2 id="先用一句话说清"><a href="#先用一句话说清" class="headerlink" title="先用一句话说清"></a>先用一句话说清</h2><p>TypeScript 在 <strong>2019-06-14</strong> 发布了 <strong>TypeScript 3.5.2</strong>。如果你已经在项目里使用它，这条发布记录值得先收藏：它是判断“要不要升级、升级前该检查什么”的官方入口；如果你还没用过它，也可以把本文当作认识这项工具的一次入门阅读。</p>
+<p>本文分成两层：带有“官方”字样的内容来自发布页；“通用背景”和“通用建议”是帮助初学者理解和执行检查的说明，不表示某一项功能必然在本版本中新增。</p>
+<h2 id="这个工具是做什么的（通用背景）"><a href="#这个工具是做什么的（通用背景）" class="headerlink" title="这个工具是做什么的（通用背景）"></a>这个工具是做什么的（通用背景）</h2><p>TypeScript 是 JavaScript 的“带说明书版本”。它允许你给变量、函数参数和返回结果标注类型，在真正运行代码前先检查许多拼写、传参和数据形状错误。最终发布到浏览器或 Node.js 的仍然是 JavaScript。</p>
+<p>对刚入门的人来说，不需要在第一次阅读时理解所有技术名词。先记住一件事：工具升级的目的通常是修复问题、补充能力或改善开发体验；而项目升级的风险，往往来自旧代码、旧配置或配套插件还没有跟上新规则。</p>
+<h2 id="版本信息一览"><a href="#版本信息一览" class="headerlink" title="版本信息一览"></a>版本信息一览</h2><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>信息</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>工具 &#x2F; 项目</td>
+<td>TypeScript</td>
+</tr>
+<tr>
+<td>发布名称</td>
+<td>TypeScript 3.5.2</td>
+</tr>
+<tr>
+<td>版本标签</td>
+<td>v3.5.2</td>
+</tr>
+<tr>
+<td>原始发布日期</td>
+<td>2019-06-14</td>
+</tr>
+<tr>
+<td>是否预发布</td>
+<td>否（正式发布版本）</td>
+</tr>
+<tr>
+<td>官方发布页</td>
+<td><a target="_blank" rel="noopener" href="https://github.com/microsoft/TypeScript/releases/tag/v3.5.2">查看原文</a></td>
+</tr>
+</tbody></table>
+<p>“预发布”可以理解为正式版前供测试的版本，适合希望提前验证兼容性的人；正式项目是否采用，仍要看团队的测试能力和官方建议。无论是哪一种版本，版本标签和发布日期都来自官方 GitHub Release 记录。</p>
+<h2 id="官方-release-笔记要点"><a href="#官方-release-笔记要点" class="headerlink" title="官方 release 笔记要点"></a>官方 release 笔记要点</h2><blockquote>
+<p>以下条目从官方发布页的 Markdown 说明中按标题和列表提取，并保留官方原文表述。由于原始说明主要使用英语，本文不把自动猜测当作“官方中文翻译”；涉及功能细节、影响范围和兼容性，请点击发布页核对上下文。</p>
+</blockquote>
+<h3 id="官方列出的改动"><a href="#官方列出的改动" class="headerlink" title="官方列出的改动"></a>官方列出的改动</h3><ul>
+<li>fixed issues query for Typescript v3.5.2.</li>
+<li>NuGet package</li>
 </ul>
-<h2 id="这次更新该关注什么"><a href="#这次更新该关注什么" class="headerlink" title="这次更新该关注什么"></a>这次更新该关注什么</h2><p>不要只看版本号。打开官方说明时，建议优先核对以下问题：</p>
+<h3 id="Changes"><a href="#Changes" class="headerlink" title="Changes:"></a>Changes:</h3><ul>
+<li>7f47a08a5e9874f0f97a667bd81eebddec61247c Update LKG</li>
+<li>fbe2f2ff0e04c995a0921c44e85f42c5906f17f0 Update version to ‘3.5.2’</li>
+<li>857873b5303bff99ba4b4903fb547216bdb4e9d4 Merge pull request #31877 from uniqueiniquity&#x2F;port31685 [ #31685 ]</li>
+<li>a2cd10b5ff2c0c9903ea136191b72372e78230df Merge pull request #31685 from uniqueiniquity&#x2F;stopInvalidatingOnOpenFileSave</li>
+<li>a1a2bd602b02f13800dd6e49dac29254df341c2c Merge pull request #31866 from amcasey&#x2F;FunctionHintSpan35</li>
+<li>caa66f64133a5b72b51c47c74e9531d2948a67e7 Add regression test</li>
+</ul>
+<h3 id="怎样读这些条目"><a href="#怎样读这些条目" class="headerlink" title="怎样读这些条目"></a>怎样读这些条目</h3><p>看到 <strong>fix &#x2F; bug fix</strong>，通常表示修复问题；看到 <strong>feature &#x2F; add</strong>，通常表示增加能力；看到 <strong>breaking change &#x2F; deprecation</strong>，要格外小心，因为旧用法可能需要改动。这里的解释只是阅读英文发布说明的通用方法，是否真的影响你的项目，要以条目对应的模块、配置和官方链接为准。</p>
+<h2 id="如果你刚接触，可以先知道这些"><a href="#如果你刚接触，可以先知道这些" class="headerlink" title="如果你刚接触，可以先知道这些"></a>如果你刚接触，可以先知道这些</h2><p>软件版本常见的写法是“主版本.次版本.修订版本”。例如最后一位变化，常用于小范围修复；中间一位变化，可能带来新能力；最前面一位变化，往往意味着更大的兼容性变化。不同项目的发布策略并不完全一样，所以不要只凭数字下结论，仍要阅读官方说明。</p>
+<p>升级也不是“看到新版本就立刻点确认”。更稳妥的做法是把升级当成一次可回退的小实验：保留当前版本记录，在单独分支或测试环境安装新版本，运行构建和测试；确认没有问题后再合并到正式发布流程。这样即使出现异常，也知道该回到哪个版本。</p>
+<p>下面是阅读 TypeScript 发布记录时常会遇到的词：</p>
 <ul>
+<li><strong>类型检查：</strong> 在执行程序前确认数据是否按约定被使用的过程。</li>
+<li><strong>声明文件：</strong> 描述某个 JavaScript 库有哪些函数、参数和类型信息的文件。</li>
+<li><strong>noEmit：</strong> 只做类型检查、不生成 JavaScript 文件的常用检查模式。</li>
+</ul>
+<h2 id="升级前通用检查清单"><a href="#升级前通用检查清单" class="headerlink" title="升级前通用检查清单"></a>升级前通用检查清单</h2><p>以下清单是面向 TypeScript 的<strong>通用建议</strong>，不是对本次发布内容的推断：</p>
+<ol>
 <li>类型推断与严格检查带来的报错变化</li>
 <li>编译目标、模块解析和配置选项</li>
 <li>第三方声明文件与构建工具兼容性</li>
-</ul>
-<p>这些检查项并不声称是该版本新增功能；它们是评估 TypeScript 发布记录时最容易影响实际项目的维度。</p>
-<h2 id="官方发布说明摘要"><a href="#官方发布说明摘要" class="headerlink" title="官方发布说明摘要"></a>官方发布说明摘要</h2><blockquote>
-<p>以下内容根据官方发布页提取，用于帮助定位原始说明；具体功能、修复范围与兼容性结论请以原文为准。</p>
-</blockquote>
-<p>For new features, check out the . For the complete list of fixed issues, check out the . Downloads are available on: Changes: 7f47a08a5e9874f0f97a667bd81eebddec61247c Update LKG fbe2f2ff0e04c995a0921c44e85f42c5906f17f0 Update version to ‘3.5.2’ 857873b5303bff99ba4b4903fb547216bdb4e9d4 Merge pull request 31877 from uniqueiniquity&#x2F;port31685 [ 31685 ] a2cd10b5ff2c0c9903ea136191b72372e78230df Merge pull request 31685 from uniqueiniquity&#x2F;stopInvalidatingOnOpenFileSave a1a2bd602b02f13800dd6e49dac29254df341c2c Merge pull request 31866 from amcasey&#x2F;FunctionHintS</p>
-<h2 id="给项目的实用建议"><a href="#给项目的实用建议" class="headerlink" title="给项目的实用建议"></a>给项目的实用建议</h2><p>先以 noEmit 模式运行类型检查，集中处理新增报错后再更新正式构建配置。</p>
-<p>如果你的项目依赖该工具链，建议把发布页加入升级任务：记录当前版本、目标版本、验证结果和回滚方式。这样下次遇到类似发布时，团队能更快判断是否值得跟进。</p>
+</ol>
+<p>开始前可以先回答三个简单问题：我现在项目使用的是什么版本？升级后最关键的功能怎样验证？如果失败，怎样恢复到原来的依赖和部署结果？把答案写进任务单，比凭印象升级可靠得多。</p>
+<h2 id="可以照着做的下一步"><a href="#可以照着做的下一步" class="headerlink" title="可以照着做的下一步"></a>可以照着做的下一步</h2><p>先用 noEmit 执行类型检查，把新增报错单独记录；再检查测试和构建，最后才更新团队统一使用的 TypeScript 版本。</p>
+<p>先以 noEmit 模式运行类型检查，集中处理新增报错后再更新正式构建配置。</p>
+<p>完成后，建议在升级记录中写下“旧版本、目标版本、执行日期、验证项目、结果和回滚方式”。这份记录对未来的自己和团队成员都很有用：下次看到相近的发布，就不必从零判断风险。</p>
 <h2 id="原始来源与阅读入口"><a href="#原始来源与阅读入口" class="headerlink" title="原始来源与阅读入口"></a>原始来源与阅读入口</h2><ul>
 <li>官方来源：TypeScript</li>
 <li>原始发布日期：2019-06-14</li>
@@ -257,7 +309,7 @@
 </ul>
 <h2 id="来源与声明"><a href="#来源与声明" class="headerlink" title="来源与声明"></a>来源与声明</h2><ul>
 <li>本文是对官方发布记录的后期整理，不代表姚飞亮在 2019-06 已在本站发表本文。</li>
-<li>事实、版本说明和版权以原始来源为准；如发现链接或日期有误，请联系 <a href="mailto:&#121;&#97;&#111;&#97;&#100;&#109;&#x69;&#110;&#64;&#x73;&#105;&#x6e;&#97;&#46;&#99;&#x6f;&#109;">yaoadmin@sina.com</a>。</li>
+<li>事实、版本说明和版权以原始来源为准；如发现链接或日期有误，请联系 <a href="mailto:&#x79;&#x61;&#111;&#97;&#x64;&#109;&#105;&#110;&#64;&#115;&#105;&#x6e;&#x61;&#x2e;&#x63;&#111;&#109;">yaoadmin@sina.com</a>。</li>
 </ul>
 
                 
