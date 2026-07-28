@@ -32,9 +32,21 @@ for (const target of entries) {
   }
   if (data.content_type === 'historical_digest') {
     const requiredFields = ['source_url', 'source_published', 'historical_period', 'collection_date'];
+    const requiredSections = [
+      '## 先用一句话说清',
+      '## 这个工具是做什么的（通用背景）',
+      '## 版本信息一览',
+      '## 官方 release 笔记要点',
+      '## 如果你刚接触，可以先知道这些',
+      '## 升级前通用检查清单',
+      '## 可以照着做的下一步',
+      '## 来源与声明'
+    ];
     const missing = requiredFields.filter((field) => !data[field]);
-    if (missing.length || data.source_count !== 1 || !content.includes('## 来源与声明')) {
-      console.error(`ERROR ${relative}: historical_digest requires one source, provenance metadata, and a source declaration`);
+    const missingSections = requiredSections.filter((section) => !content.includes(section));
+    const readableLength = content.replace(/[`#>*_\-\[\]()|:\s]/g, '').length;
+    if (missing.length || data.source_count !== 1 || missingSections.length || readableLength < 1_000) {
+      console.error(`ERROR ${relative}: historical_digest requires provenance, beginner sections, and at least 1,000 readable characters`);
       errors++;
     }
     if (!/^20\d{2}-(0[1-9]|1[0-2])$/.test(String(data.historical_period))) {
