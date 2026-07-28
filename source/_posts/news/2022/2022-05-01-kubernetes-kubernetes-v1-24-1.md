@@ -3,7 +3,7 @@ title: "[技术观察] Kubernetes Kubernetes v1.24.1：云原生集群升级的�
 date: 2022-05-26 09:00:00
 updated: 2022-05-26 09:00:00
 description: "Kubernetes 于 2022-05-26 发布 Kubernetes v1.24.1。本文提炼升级关注点、官方说明摘要与实践检查项。"
-permalink: /news/2022/kubernetes-kubernetes-v1-24-1/
+permalink: news/2022/kubernetes-kubernetes-v1-24-1/
 categories:
   - 资讯
 tags:

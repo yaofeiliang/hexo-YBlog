@@ -3,7 +3,7 @@ title: "[技术观察] TypeScript TypeScript 3.4.5：类型系统升级前的兼
 date: 2019-04-24 09:00:00
 updated: 2019-04-24 09:00:00
 description: "TypeScript 于 2019-04-24 发布 TypeScript 3.4.5。本文提炼升级关注点、官方说明摘要与实践检查项。"
-permalink: /news/2019/typescript-typescript-3-4-5/
+permalink: news/2019/typescript-typescript-3-4-5/
 categories:
   - 资讯
 tags:

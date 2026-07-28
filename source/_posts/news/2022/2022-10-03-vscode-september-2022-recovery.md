@@ -3,7 +3,7 @@ title: "[技术观察] Visual Studio Code September 2022 Recovery：开发工具
 date: 2022-10-11 09:00:00
 updated: 2022-10-11 09:00:00
 description: "Visual Studio Code 于 2022-10-11 发布 September 2022 Recovery。本文提炼升级关注点、官方说明摘要与实践检查项。"
-permalink: /news/2022/vscode-september-2022-recovery/
+permalink: news/2022/vscode-september-2022-recovery/
 categories:
   - 资讯
 tags:

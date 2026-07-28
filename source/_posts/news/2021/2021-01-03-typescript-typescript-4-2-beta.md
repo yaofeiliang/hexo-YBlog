@@ -3,7 +3,7 @@ title: "[技术观察] TypeScript TypeScript 4.2 Beta：类型系统升级前的
 date: 2021-01-20 09:00:00
 updated: 2021-01-20 09:00:00
 description: "TypeScript 于 2021-01-20 发布 TypeScript 4.2 Beta。本文提炼升级关注点、官方说明摘要与实践检查项。"
-permalink: /news/2021/typescript-typescript-4-2-beta/
+permalink: news/2021/typescript-typescript-4-2-beta/
 categories:
   - 资讯
 tags:

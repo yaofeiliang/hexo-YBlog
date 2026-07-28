@@ -3,7 +3,7 @@ title: "[技术观察] Kubernetes Kubernetes v1.30.14：云原生集群升级的
 date: 2025-06-18 09:00:00
 updated: 2025-06-18 09:00:00
 description: "Kubernetes 于 2025-06-18 发布 Kubernetes v1.30.14。本文提炼升级关注点、官方说明摘要与实践检查项。"
-permalink: /news/2025/kubernetes-kubernetes-v1-30-14/
+permalink: news/2025/kubernetes-kubernetes-v1-30-14/
 categories:
   - 资讯
 tags:

@@ -5,7 +5,7 @@ layout: page
 
 <% page.posts.each(function(post){ %>
 <article class="post-preview">
-    <a href="<%- config.root %><%- post.path %>">
+    <a href="<%= url_for(post.path) %>">
         <h2 class="post-title">
             <%- post.title || "Untitled" %>
         </h2>

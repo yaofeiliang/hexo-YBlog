@@ -3,7 +3,7 @@ title: "[技术观察] Kubernetes Kubernetes v1.30.13：云原生集群升级的
 date: 2025-05-15 09:00:00
 updated: 2025-05-15 09:00:00
 description: "Kubernetes 于 2025-05-15 发布 Kubernetes v1.30.13。本文提炼升级关注点、官方说明摘要与实践检查项。"
-permalink: /news/2025/kubernetes-kubernetes-v1-30-13/
+permalink: news/2025/kubernetes-kubernetes-v1-30-13/
 categories:
   - 资讯
 tags:

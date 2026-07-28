@@ -3,7 +3,7 @@ title: "[技术观察] Kubernetes Kubernetes v1.31.2：云原生集群升级的�
 date: 2024-10-23 09:00:00
 updated: 2024-10-23 09:00:00
 description: "Kubernetes 于 2024-10-23 发布 Kubernetes v1.31.2。本文提炼升级关注点、官方说明摘要与实践检查项。"
-permalink: /news/2024/kubernetes-kubernetes-v1-31-2/
+permalink: news/2024/kubernetes-kubernetes-v1-31-2/
 categories:
   - 资讯
 tags:

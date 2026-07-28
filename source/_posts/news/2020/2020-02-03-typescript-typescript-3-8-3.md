@@ -3,7 +3,7 @@ title: "[技术观察] TypeScript TypeScript 3.8.3：类型系统升级前的兼
 date: 2020-02-28 09:00:00
 updated: 2020-02-28 09:00:00
 description: "TypeScript 于 2020-02-28 发布 TypeScript 3.8.3。本文提炼升级关注点、官方说明摘要与实践检查项。"
-permalink: /news/2020/typescript-typescript-3-8-3/
+permalink: news/2020/typescript-typescript-3-8-3/
 categories:
   - 资讯
 tags:

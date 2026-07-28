@@ -3,7 +3,7 @@ title: "[技术观察] Angular VSCode Extension: 21.2.4：前端框架升级该�
 date: 2026-05-28 09:00:00
 updated: 2026-05-28 09:00:00
 description: "Angular 于 2026-05-28 发布 VSCode Extension: 21.2.4。本文提炼升级关注点、官方说明摘要与实践检查项。"
-permalink: /news/2026/angular-vscode-extension-21-2-4/
+permalink: news/2026/angular-vscode-extension-21-2-4/
 categories:
   - 资讯
 tags:

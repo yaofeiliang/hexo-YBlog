@@ -3,7 +3,7 @@ title: "[技术观察] TypeScript TypeScript 3.3.3333：类型系统升级前的
 date: 2019-02-22 09:00:00
 updated: 2019-02-22 09:00:00
 description: "TypeScript 于 2019-02-22 发布 TypeScript 3.3.3333。本文提炼升级关注点、官方说明摘要与实践检查项。"
-permalink: /news/2019/typescript-typescript-3-3-3333/
+permalink: news/2019/typescript-typescript-3-3-3333/
 categories:
   - 资讯
 tags:

@@ -3,7 +3,7 @@ title: "[技术观察] TypeScript TypeScript 3.6.5：类型系统升级前的兼
 date: 2020-01-23 09:00:00
 updated: 2020-01-23 09:00:00
 description: "TypeScript 于 2020-01-23 发布 TypeScript 3.6.5。本文提炼升级关注点、官方说明摘要与实践检查项。"
-permalink: /news/2020/typescript-typescript-3-6-5/
+permalink: news/2020/typescript-typescript-3-6-5/
 categories:
   - 资讯
 tags:

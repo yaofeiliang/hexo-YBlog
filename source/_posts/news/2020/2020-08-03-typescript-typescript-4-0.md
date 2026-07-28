@@ -3,7 +3,7 @@ title: "[技术观察] TypeScript TypeScript 4.0：类型系统升级前的兼�
 date: 2020-08-20 09:00:00
 updated: 2020-08-20 09:00:00
 description: "TypeScript 于 2020-08-20 发布 TypeScript 4.0。本文提炼升级关注点、官方说明摘要与实践检查项。"
-permalink: /news/2020/typescript-typescript-4-0/
+permalink: news/2020/typescript-typescript-4-0/
 categories:
   - 资讯
 tags:

@@ -3,7 +3,7 @@ title: "[技术观察] Kubernetes Kubernetes v1.29.3：云原生集群升级的�
 date: 2024-03-15 09:00:00
 updated: 2024-03-15 09:00:00
 description: "Kubernetes 于 2024-03-15 发布 Kubernetes v1.29.3。本文提炼升级关注点、官方说明摘要与实践检查项。"
-permalink: /news/2024/kubernetes-kubernetes-v1-29-3/
+permalink: news/2024/kubernetes-kubernetes-v1-29-3/
 categories:
   - 资讯
 tags:

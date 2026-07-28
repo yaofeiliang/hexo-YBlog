@@ -3,7 +3,7 @@ title: "[技术观察] Kubernetes Kubernetes v1.24.16：云原生集群升级的
 date: 2023-07-19 09:00:00
 updated: 2023-07-19 09:00:00
 description: "Kubernetes 于 2023-07-19 发布 Kubernetes v1.24.16。本文提炼升级关注点、官方说明摘要与实践检查项。"
-permalink: /news/2023/kubernetes-kubernetes-v1-24-16/
+permalink: news/2023/kubernetes-kubernetes-v1-24-16/
 categories:
   - 资讯
 tags:

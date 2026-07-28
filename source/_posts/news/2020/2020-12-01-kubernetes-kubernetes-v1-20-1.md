@@ -3,7 +3,7 @@ title: "[技术观察] Kubernetes Kubernetes v1.20.1：云原生集群升级的�
 date: 2020-12-18 09:00:00
 updated: 2020-12-18 09:00:00
 description: "Kubernetes 于 2020-12-18 发布 Kubernetes v1.20.1。本文提炼升级关注点、官方说明摘要与实践检查项。"
-permalink: /news/2020/kubernetes-kubernetes-v1-20-1/
+permalink: news/2020/kubernetes-kubernetes-v1-20-1/
 categories:
   - 资讯
 tags:

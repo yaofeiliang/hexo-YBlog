@@ -17,7 +17,7 @@ layout: layout
                 </span>
                 <% tag.posts.map(function(post){  %>
                  <div class="post-preview">
-                     <a href="<%- config.root %><%- post.path %>">
+                     <a href="<%= url_for(post.path) %>">
                         <h2 class="post-title">
                             <%- post.title || "Untitled" %>
                         </h2>

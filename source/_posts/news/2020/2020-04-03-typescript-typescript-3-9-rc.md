@@ -3,7 +3,7 @@ title: "[技术观察] TypeScript TypeScript 3.9 RC：类型系统升级前的�
 date: 2020-04-28 09:00:00
 updated: 2020-04-28 09:00:00
 description: "TypeScript 于 2020-04-28 发布 TypeScript 3.9 RC。本文提炼升级关注点、官方说明摘要与实践检查项。"
-permalink: /news/2020/typescript-typescript-3-9-rc/
+permalink: news/2020/typescript-typescript-3-9-rc/
 categories:
   - 资讯
 tags:

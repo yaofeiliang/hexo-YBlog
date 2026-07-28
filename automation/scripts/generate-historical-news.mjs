@@ -240,7 +240,7 @@ title: ${escapeYaml(`[技术观察] ${item.source} ${item.title}：${profile.tit
 date: ${dateOnly(item.publishedAt)} 09:00:00
 updated: ${dateOnly(item.publishedAt)} 09:00:00
 description: ${escapeYaml(`${item.source} 于 ${dateOnly(item.publishedAt)} 发布 ${item.title}。本文提炼升级关注点、官方说明摘要与实践检查项。`)}
-permalink: /news/${year}/${slug}/
+permalink: news/${year}/${slug}/
 categories:
   - 资讯
 tags:

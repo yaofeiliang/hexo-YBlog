@@ -3,7 +3,7 @@ title: "[技术观察] Angular VSCode Extension: 21.0.1：前端框架升级该�
 date: 2025-12-17 09:00:00
 updated: 2025-12-17 09:00:00
 description: "Angular 于 2025-12-17 发布 VSCode Extension: 21.0.1。本文提炼升级关注点、官方说明摘要与实践检查项。"
-permalink: /news/2025/angular-vscode-extension-21-0-1/
+permalink: news/2025/angular-vscode-extension-21-0-1/
 categories:
   - 资讯
 tags:

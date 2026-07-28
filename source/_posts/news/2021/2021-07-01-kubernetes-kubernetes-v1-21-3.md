@@ -3,7 +3,7 @@ title: "[技术观察] Kubernetes Kubernetes v1.21.3：云原生集群升级的�
 date: 2021-07-15 09:00:00
 updated: 2021-07-15 09:00:00
 description: "Kubernetes 于 2021-07-15 发布 Kubernetes v1.21.3。本文提炼升级关注点、官方说明摘要与实践检查项。"
-permalink: /news/2021/kubernetes-kubernetes-v1-21-3/
+permalink: news/2021/kubernetes-kubernetes-v1-21-3/
 categories:
   - 资讯
 tags:
