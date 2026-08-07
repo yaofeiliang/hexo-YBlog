@@ -1,4 +1,35 @@
 {
   "version": 1,
-  "items": {}
+  "items": {
+    "582a41de0b44954cbdcdae88f30ab1d6b0f517b06c08c306b2038372003b6da3": {
+      "url": "https://kubernetes.io/blog/2026/07/31/kubernetes-v1-37-sneak-peek/",
+      "title": "Kubernetes v1.37 Sneak Peek",
+      "firstSeen": "2026-08-07T03:48:55.264Z",
+      "source": "kubernetes-blog"
+    },
+    "fa8dc50b2456095c7af63f67f0667528870e574f9067ea3b65cccf03df5e7a74": {
+      "url": "https://kubernetes.io/blog/2026/07/29/controller-runtime-cache-explained/",
+      "title": "How the controller-runtime Cache Actually Works, and Why Your Controller Does Not Crash the API Server",
+      "firstSeen": "2026-08-07T03:48:55.264Z",
+      "source": "kubernetes-blog"
+    },
+    "645624c7eeb4c62cfa586285200674302791f2502f8eea4550bdbe0a05585236": {
+      "url": "https://kubernetes.io/blog/2026/08/03/gateway-api-v1-6-release/",
+      "title": "Gateway API v1.6: TCPRoute and UDPRoute Graduate to Standard",
+      "firstSeen": "2026-08-07T03:48:55.264Z",
+      "source": "kubernetes-blog"
+    },
+    "695b8d5359717af832522bae398e7d8a106f324345bf89e5ad33707472c83694": {
+      "url": "https://kubernetes.io/blog/2026/07/14/custom-metrics-exporter-kubernetes/",
+      "title": "Building a Custom Metrics Exporter for Kubernetes",
+      "firstSeen": "2026-08-07T03:48:55.264Z",
+      "source": "kubernetes-blog"
+    },
+    "c99ec862b4e71599bc42c6f96a94ea0c61758ad0ed0c0445d6331b28e4539a2c": {
+      "url": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models",
+      "title": "Third-party cyber evaluations involving OpenAI models",
+      "firstSeen": "2026-08-07T03:48:55.264Z",
+      "source": "openai-news"
+    }
+  }
 }
