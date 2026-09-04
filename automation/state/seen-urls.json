@@ -1,4 +1,35 @@
 {
   "version": 1,
-  "items": {}
+  "items": {
+    "4db85808102385e4d30e74f1750db5fae160f9eed5072dcc2257141772d69b40": {
+      "url": "https://kubernetes.io/blog/2026/09/01/kubernetes-v1-37-etcd-range-stream/",
+      "title": "Kubernetes v1.37: etcd RangeStream Cuts Memory Use on Large List Reads",
+      "firstSeen": "2026-09-04T05:35:08.625Z",
+      "source": "kubernetes-blog"
+    },
+    "cae3cde0353c76965b26611f788177e236b92b33ace8643381597464870ea007": {
+      "url": "https://kubernetes.io/blog/2026/09/03/kubernetes-v1-37-dra-updates/",
+      "title": "Kubernetes v1.37: DRA Updates",
+      "firstSeen": "2026-09-04T05:35:08.625Z",
+      "source": "kubernetes-blog"
+    },
+    "70479d5f705bda65e91751be910a1e717d84363e084bdf6257c871741667fc3f": {
+      "url": "https://kubernetes.io/blog/2026/09/02/kubernetes-v1-37-hpa-scale-to-zero-beta/",
+      "title": "Kubernetes v1.37: Scale Workloads to Zero with HorizontalPodAutoscaler",
+      "firstSeen": "2026-09-04T05:35:08.625Z",
+      "source": "kubernetes-blog"
+    },
+    "56d533531e70b4ee9ec41a11a22ea9a92a6ceb183573afa54d7e05872ed3e92e": {
+      "url": "https://kubernetes.io/blog/2026/08/31/kubernetes-v1-37-storage-version-migration-ga/",
+      "title": "Kubernetes v1.37: Storage Version Migration Enabled by Default",
+      "firstSeen": "2026-09-04T05:35:08.625Z",
+      "source": "kubernetes-blog"
+    },
+    "29c56b0eccaaddb03b2022e7e1319bc7a5b89159182f4accf7b458a9f9675ee3": {
+      "url": "https://kubernetes.io/blog/2026/08/28/kubernetes-v1-37-pod-certificates-and-cluster-trust-bundles/",
+      "title": "Kubernetes v1.37: Pod Certificates and Cluster Trust Bundles",
+      "firstSeen": "2026-09-04T05:35:08.625Z",
+      "source": "kubernetes-blog"
+    }
+  }
 }
