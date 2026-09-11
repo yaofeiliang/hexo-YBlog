@@ -1,4 +1,35 @@
 {
   "version": 1,
-  "items": {}
+  "items": {
+    "ba7190af76453d7582b8db08227cfd1caa565bf5236d1fa0341cf89f79397710": {
+      "url": "https://kubernetes.io/blog/2026/09/10/kubernetes-v1-37-scheduler-preemption-for-in-place-pod-resize-alpha/",
+      "title": "Kubernetes v1.37: Scheduler Preemption for In-Place Pod Resize (Alpha)",
+      "firstSeen": "2026-09-11T05:37:24.032Z",
+      "source": "kubernetes-blog"
+    },
+    "dec1072acd008ff8f7e45a71621a25eb5920a1cf099db4b89293f4b9d20c5580": {
+      "url": "https://kubernetes.io/blog/2026/09/08/kubernetes-v1-37-advancing-workload-aware-scheduling/",
+      "title": "Kubernetes v1.37: Advancing Workload-Aware Scheduling",
+      "firstSeen": "2026-09-11T05:37:24.032Z",
+      "source": "kubernetes-blog"
+    },
+    "58cd2f8e771e42a3fea4055353cbf5e40136b29874410286b4b1d9c868c5992b": {
+      "url": "https://kubernetes.io/blog/2026/09/04/kubernetes-v1-37-rootless-beta/",
+      "title": "Kubernetes v1.37: KubeletInUserNamespace (aka Rootless mode) Graduates to Beta",
+      "firstSeen": "2026-09-11T05:37:24.032Z",
+      "source": "kubernetes-blog"
+    },
+    "1bf01c3c33d621ca90d6e0ef65725a472eaf5edb55e92221cec928769863cdc7": {
+      "url": "https://kubernetes.io/blog/2026/09/09/kubernetes-v1-37-node-lifecycle-conditions/",
+      "title": "Kubernetes v1.37: Introducing Node Lifecycle Conditions",
+      "firstSeen": "2026-09-11T05:37:24.032Z",
+      "source": "kubernetes-blog"
+    },
+    "cae3cde0353c76965b26611f788177e236b92b33ace8643381597464870ea007": {
+      "url": "https://kubernetes.io/blog/2026/09/03/kubernetes-v1-37-dra-updates/",
+      "title": "Kubernetes v1.37: DRA Updates",
+      "firstSeen": "2026-09-11T05:37:24.032Z",
+      "source": "kubernetes-blog"
+    }
+  }
 }
