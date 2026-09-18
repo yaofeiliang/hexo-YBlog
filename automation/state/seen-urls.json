@@ -1,4 +1,35 @@
 {
   "version": 1,
-  "items": {}
+  "items": {
+    "b402f515f974f7c95e16c68c66d095c4a5d56ee1587405736bb76743cda1e0da": {
+      "url": "https://kubernetes.io/blog/2026/09/16/kubernetes-v1-37-hardening-container-storage/",
+      "title": "Kubernetes v1.37: Hardening Container Storage with Bind Mount Options and EmptyDir Permissions",
+      "firstSeen": "2026-09-18T05:33:26.242Z",
+      "source": "kubernetes-blog"
+    },
+    "3de19e2c537ba9f2f6d81b8bdc36f30e1867453601cd942045e2f2d5be6574ad": {
+      "url": "https://kubernetes.io/blog/2026/09/14/kubernetes-v1-37-memory-qos-graduates-to-beta/",
+      "title": "Kubernetes v1.37: Memory QoS Graduates to Beta",
+      "firstSeen": "2026-09-18T05:33:26.242Z",
+      "source": "kubernetes-blog"
+    },
+    "96fc811601db05f9112d8cd17449e37ed9883317a661b856ce788c8613d32e07": {
+      "url": "https://kubernetes.io/blog/2026/09/11/kubernetes-v1-37-native-histograms-beta/",
+      "title": "Kubernetes v1.37: Native Histograms Graduates to Beta",
+      "firstSeen": "2026-09-18T05:33:26.242Z",
+      "source": "kubernetes-blog"
+    },
+    "6916be41936b06cd45f24176ca5695da5812042043d22bd3335623fb85b9afce": {
+      "url": "https://kubernetes.io/blog/2026/09/15/kubernetes-v1-37-pod-level-resource-managers-beta/",
+      "title": "Kubernetes v1.37: Pod-Level Resource Managers graduated to Beta",
+      "firstSeen": "2026-09-18T05:33:26.242Z",
+      "source": "kubernetes-blog"
+    },
+    "c0074c24996b0581878087db58a295d4883528efba674b68bcd0349bc7541d75": {
+      "url": "https://kubernetes.io/blog/2026/09/14/csi-changed-block-tracking-beta/",
+      "title": "Kubernetes Changed Block Tracking API - Beta Differences",
+      "firstSeen": "2026-09-18T05:33:26.242Z",
+      "source": "kubernetes-blog"
+    }
+  }
 }
