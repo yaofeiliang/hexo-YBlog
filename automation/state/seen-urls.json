@@ -1,4 +1,35 @@
 {
   "version": 1,
-  "items": {}
+  "items": {
+    "b402f515f974f7c95e16c68c66d095c4a5d56ee1587405736bb76743cda1e0da": {
+      "url": "https://kubernetes.io/blog/2026/09/16/kubernetes-v1-37-hardening-container-storage/",
+      "title": "Kubernetes v1.37: Hardening Container Storage with Bind Mount Options and EmptyDir Permissions",
+      "firstSeen": "2026-09-25T05:49:38.319Z",
+      "source": "kubernetes-blog"
+    },
+    "ad7c514d2355adee81409d51cc8d97ca015298959e7360919471bf439fea3d8a": {
+      "url": "https://kubernetes.io/blog/2026/09/22/sig-apps-spotlight/",
+      "title": "Spotlight on SIG Apps",
+      "firstSeen": "2026-09-25T05:49:38.319Z",
+      "source": "kubernetes-blog"
+    },
+    "206c285589f14136ad72bd25d0e227dbd4f32eda7df21fed9475a78a0cec93b2": {
+      "url": "https://kubernetes.io/blog/2026/09/21/kubernetes-v1-37-pvc-last-used-time/",
+      "title": "Kubernetes v1.37: Tracking When a PersistentVolumeClaim Was Last Used (Beta)",
+      "firstSeen": "2026-09-25T05:49:38.319Z",
+      "source": "kubernetes-blog"
+    },
+    "6916be41936b06cd45f24176ca5695da5812042043d22bd3335623fb85b9afce": {
+      "url": "https://kubernetes.io/blog/2026/09/15/kubernetes-v1-37-pod-level-resource-managers-beta/",
+      "title": "Kubernetes v1.37: Pod-Level Resource Managers graduated to Beta",
+      "firstSeen": "2026-09-25T05:49:38.319Z",
+      "source": "kubernetes-blog"
+    },
+    "c0074c24996b0581878087db58a295d4883528efba674b68bcd0349bc7541d75": {
+      "url": "https://kubernetes.io/blog/2026/09/14/csi-changed-block-tracking-beta/",
+      "title": "Kubernetes Changed Block Tracking API - Beta Differences",
+      "firstSeen": "2026-09-25T05:49:38.319Z",
+      "source": "kubernetes-blog"
+    }
+  }
 }
