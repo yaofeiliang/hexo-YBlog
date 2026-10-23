@@ -1,4 +1,35 @@
 {
   "version": 1,
-  "items": {}
+  "items": {
+    "4622528705e7449b29d989c76013d8d99fb02a7fe2606524422eaddb15ad18f3": {
+      "url": "https://kubernetes.io/blog/2026/10/14/tracing-kueue-admission-with-headlamp/",
+      "title": "Why Is My Kubernetes Job Still Pending? Tracing Kueue Admission with Headlamp",
+      "firstSeen": "2026-10-23T05:44:20.427Z",
+      "source": "kubernetes-blog"
+    },
+    "a5ffcf8d373c735182ae9f9a68a69c89efb5b16a13bbe147847983ccd0c2a89f": {
+      "url": "https://kubernetes.io/blog/2026/10/06/kubernetes-cgroups-v2-shift/",
+      "title": "The Shift to cgroup v2 in Kubernetes: What You Need to Know",
+      "firstSeen": "2026-10-23T05:44:20.427Z",
+      "source": "kubernetes-blog"
+    },
+    "ce7097e55616b5f41aeaf709d426e12729ca06b7375406d18db002153921fef5": {
+      "url": "https://kubernetes.io/blog/2026/10/05/scaling-kubernetes-workloads-with-node-swap/",
+      "title": "Scaling Kubernetes Workloads with Node Swap",
+      "firstSeen": "2026-10-23T05:44:20.427Z",
+      "source": "kubernetes-blog"
+    },
+    "ec14786212f2e284b00713ccd2006399d9f560edbefb801317cfb0b0d0899834": {
+      "url": "https://nodejs.org/en/blog/vulnerability/october-2026-security-releases",
+      "title": "Wednesday, October 21, 2026 Security Releases",
+      "firstSeen": "2026-10-23T05:44:20.427Z",
+      "source": "nodejs-blog"
+    },
+    "cd732d5426fc94bd7af33d7a58851e438be3297de5dcbebbe1899778ccff51f6": {
+      "url": "https://nodejs.org/en/blog/release/v26.12.1",
+      "title": "Node.js 26.12.1 (Current)",
+      "firstSeen": "2026-10-23T05:44:20.427Z",
+      "source": "nodejs-blog"
+    }
+  }
 }
