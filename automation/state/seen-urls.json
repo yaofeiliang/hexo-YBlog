@@ -1,4 +1,35 @@
 {
   "version": 1,
-  "items": {}
+  "items": {
+    "ab88661a74761e9bfa4f9dc5cf46f9e3c871288e32015013852170a240df9719": {
+      "url": "https://kubernetes.io/blog/2026/10/27/announcing-workload-conformance-wg/",
+      "title": "Announcing the Workload Conformance Working Group",
+      "firstSeen": "2026-10-30T06:48:27.892Z",
+      "source": "kubernetes-blog"
+    },
+    "5e60471476735c37ea27ab9bec3bf35a98732187733493889ab674a49d2f37b7": {
+      "url": "https://kubernetes.io/blog/2026/10/29/sig-arch-ai-conformance-2026/",
+      "title": "From Working Group to SIG Architecture: spotlight on AI Conformance",
+      "firstSeen": "2026-10-30T06:48:27.892Z",
+      "source": "kubernetes-blog"
+    },
+    "4622528705e7449b29d989c76013d8d99fb02a7fe2606524422eaddb15ad18f3": {
+      "url": "https://kubernetes.io/blog/2026/10/14/tracing-kueue-admission-with-headlamp/",
+      "title": "Why Is My Kubernetes Job Still Pending? Tracing Kueue Admission with Headlamp",
+      "firstSeen": "2026-10-30T06:48:27.892Z",
+      "source": "kubernetes-blog"
+    },
+    "a5ffcf8d373c735182ae9f9a68a69c89efb5b16a13bbe147847983ccd0c2a89f": {
+      "url": "https://kubernetes.io/blog/2026/10/06/kubernetes-cgroups-v2-shift/",
+      "title": "The Shift to cgroup v2 in Kubernetes: What You Need to Know",
+      "firstSeen": "2026-10-30T06:48:27.892Z",
+      "source": "kubernetes-blog"
+    },
+    "ce7097e55616b5f41aeaf709d426e12729ca06b7375406d18db002153921fef5": {
+      "url": "https://kubernetes.io/blog/2026/10/05/scaling-kubernetes-workloads-with-node-swap/",
+      "title": "Scaling Kubernetes Workloads with Node Swap",
+      "firstSeen": "2026-10-30T06:48:27.892Z",
+      "source": "kubernetes-blog"
+    }
+  }
 }
